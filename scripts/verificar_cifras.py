@@ -113,6 +113,98 @@ def comprobaciones() -> list[tuple[str, str, list[str]]]:
         ),
     ]
     salida += comprobaciones_hito2()
+    salida += comprobaciones_hito3()
+    return salida
+
+
+def pct_signo(x: float) -> str:
+    v = round(x * 100)
+    return f"+{v} %" if v > 0 else (f"−{abs(v)} %" if v < 0 or x < 0 else "+0 %")
+
+
+def comprobaciones_hito3() -> list[tuple[str, str, list[str]]]:
+    hs = _j("hito3/hillstrom.json")
+    ss = _j("hito3/semisintetico.json")["escenarios"]
+    comp = hs["experimento_completo"]
+    salida = []
+    for clave, ancla in (
+        ("mujer_visit", "| Correo de mujer, visita |"),
+        ("hombre_visit", "| Correo de hombre, visita |"),
+    ):
+        v = comp[clave]
+        t = v["verdad_experimento"]
+        salida.append(
+            (
+                "docs/hito3.md",
+                ancla,
+                [
+                    f"{coma(t['efecto'], 4)} ({coma(t['ic95'][0], 4)} a {coma(t['ic95'][1], 4)})",
+                    *[
+                        coma(v["metodos"][m]["efecto"], 4)
+                        for m in ("emparejamiento", "dml_att", "bosque_causal")
+                    ],
+                ],
+            )
+        )
+    ses = hs["experimento_sesgado"]
+    obj = ses["efecto_objetivo"]
+    salida.append(
+        (
+            "docs/hito3.md",
+            "tratados es **",
+            [coma(obj["efecto"], 4), f"{coma(obj['ic95'][0], 4)} a {coma(obj['ic95'][1], 4)}"],
+        )
+    )
+    nombres = {
+        "ingenuo": "| Ingenuo |",
+        "regresion": "| Regresión lineal |",
+        "emparejamiento": "| Emparejamiento |",
+        "dml_att": "| Double ML (ATT) | ",
+        "bosque_causal": "| Bosque causal |",
+    }
+    for m, ancla in nombres.items():
+        r = ses["metodos"][m]["resumen"]
+        n = r["repeticiones"]
+        salida.append(
+            (
+                "docs/hito3.md",
+                ancla,
+                [pct_signo(r["sesgo_relativo"]), f"{round(r['cobertura'] * n)} de {n}"],
+            )
+        )
+    filas = {
+        "ingenuo": "| Ingenuo | +",
+        "dml_att": "| Double ML (ATT) | −",
+        "dml_att_rezago": "| Double ML con resultados previos |",
+        "did_dr": "| Diferencias en diferencias (DR) |",
+        "bosque_causal": "| Bosque causal | +",
+    }
+    for m, ancla in filas.items():
+        salida.append(
+            (
+                "docs/hito3.md",
+                ancla,
+                [
+                    pct_signo(ss[e]["metodos"][m]["resumen"]["sesgo_relativo"])
+                    for e in ("observables", "efecto_fijo", "tendencias")
+                ],
+            )
+        )
+    salida.append(
+        (
+            "docs/hito3.md",
+            "los clientes por su efecto (correlación de",
+            [coma(ss["observables"]["bosque_cate"]["correlacion_media"], 2)],
+        )
+    )
+    pl = {e: round(ss[e]["placebo_did"]["rechaza_cero"] * 10) for e in ss}
+    salida.append(
+        (
+            "docs/hito3.md",
+            "(donde el efecto verdadero es cero) rechaza",
+            [f"{pl['tendencias']} de 10", f"{pl['efecto_fijo']} de 10"],
+        )
+    )
     return salida
 
 
@@ -148,6 +240,7 @@ def comprobaciones_hito2() -> list[tuple[str, str, list[str]]]:
 
 
 def main() -> int:
+    sys.stdout.reconfigure(encoding="utf-8")
     fallas = []
     lista = comprobaciones()
     for archivo, ancla, esperados in lista:
@@ -157,10 +250,12 @@ def main() -> int:
         if not posiciones:
             fallas.append(f"{archivo}: no se encontró «{ancla}»")
             continue
-        linea = " ".join(texto[posiciones[0] : posiciones[0] + 2])
-        faltan = [e for e in esperados if e not in linea]
-        if faltan:
-            fallas.append(f"{archivo}: «{ancla}» no tiene {faltan}\n    {linea}")
+        # la línea del ancla y la siguiente (las frases se cortan a 100 columnas); si el ancla
+        # aparece varias veces, basta con que una de sus apariciones tenga todos los valores
+        lineas = [" ".join(texto[i : i + 2]) for i in posiciones]
+        if not any(all(e in linea for e in esperados) for linea in lineas):
+            faltan = [e for e in esperados if e not in lineas[0]]
+            fallas.append(f"{archivo}: «{ancla}» no tiene {faltan} -> {lineas[0]}")
     print(f"{len(lista)} comprobaciones, {len(fallas)} fallas")
     for x in fallas:
         print(" -", x)

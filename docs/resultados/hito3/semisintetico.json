@@ -1,0 +1,3904 @@
+{
+  "n": 50000,
+  "covariables": [
+    "edad",
+    "mujer",
+    "log_renta",
+    "renta_faltante",
+    "antiguedad",
+    "seg_top",
+    "seg_universitario",
+    "extranjero",
+    "residente",
+    "empleado_banco",
+    "relacion_activa",
+    "nuevo",
+    "canal_khe",
+    "canal_kat",
+    "canal_kfc",
+    "canal_khq",
+    "canal_khm",
+    "canal_khn",
+    "canal_khk",
+    "canal_kfa",
+    "canal_faltante",
+    "prov_28",
+    "prov_8",
+    "prov_46",
+    "prov_41",
+    "prov_15",
+    "prov_30",
+    "prov_29",
+    "prov_50",
+    "prov_3",
+    "prov_11",
+    "x_ahor",
+    "x_aval",
+    "x_cco",
+    "x_cder",
+    "x_cno",
+    "x_ctju",
+    "x_ctma",
+    "x_ctop",
+    "x_ctpp",
+    "x_deco",
+    "x_deme",
+    "x_dela",
+    "x_ecue",
+    "x_fond",
+    "x_hip",
+    "x_plan",
+    "x_pres",
+    "x_reca",
+    "x_tjcr",
+    "x_valo",
+    "x_viv",
+    "x_nomina",
+    "x_nom_pens",
+    "x_recibo",
+    "act_m1",
+    "act_m2",
+    "act_m3",
+    "otros_m1",
+    "otros_m3",
+    "otros_m6",
+    "sin_m6",
+    "t"
+  ],
+  "escenarios": {
+    "observables": {
+      "att_verdadero_medio": 0.0653342121648939,
+      "frac_tratados": 0.202702,
+      "metodos": {
+        "ingenuo": {
+          "resumen": {
+            "sesgo": 0.315989915214819,
+            "sesgo_relativo": 4.836643558434317,
+            "rmse": 0.3160038318144444,
+            "cobertura": 0.0,
+            "ancho_ic": 0.015214309776780777,
+            "repeticiones": 10
+          },
+          "corridas": [
+            {
+              "metodo": "ingenuo",
+              "estimando": "diferencia de medias",
+              "efecto": 0.38056101989503455,
+              "ee": 0.003873177971528417,
+              "ic95": [
+                0.37296973056512495,
+                0.38815230922494415
+              ],
+              "n": 50000,
+              "n_tratados": 10137,
+              "extra": {}
+            },
+            {
+              "metodo": "ingenuo",
+              "estimando": "diferencia de medias",
+              "efecto": 0.3823179300241818,
+              "ee": 0.0038811743873909304,
+              "ic95": [
+                0.3747109680071763,
+                0.3899248920411873
+              ],
+              "n": 50000,
+              "n_tratados": 10176,
+              "extra": {}
+            },
+            {
+              "metodo": "ingenuo",
+              "estimando": "diferencia de medias",
+              "efecto": 0.3822078544968933,
+              "ee": 0.0038649487104220294,
+              "ic95": [
+                0.3746326942223716,
+                0.389783014771415
+              ],
+              "n": 50000,
+              "n_tratados": 10176,
+              "extra": {}
+            },
+            {
+              "metodo": "ingenuo",
+              "estimando": "diferencia de medias",
+              "efecto": 0.37837915675074363,
+              "ee": 0.0038867051913209,
+              "ic95": [
+                0.3707613545572298,
+                0.38599695894425745
+              ],
+              "n": 50000,
+              "n_tratados": 10197,
+              "extra": {}
+            },
+            {
+              "metodo": "ingenuo",
+              "estimando": "diferencia de medias",
+              "efecto": 0.3775562611505733,
+              "ee": 0.00391870929169872,
+              "ic95": [
+                0.3698757320729613,
+                0.38523679022818524
+              ],
+              "n": 50000,
+              "n_tratados": 10033,
+              "extra": {}
+            },
+            {
+              "metodo": "ingenuo",
+              "estimando": "diferencia de medias",
+              "efecto": 0.38141287204820074,
+              "ee": 0.0038940393828141807,
+              "ic95": [
+                0.37378069510350437,
+                0.3890450489928971
+              ],
+              "n": 50000,
+              "n_tratados": 10114,
+              "extra": {}
+            },
+            {
+              "metodo": "ingenuo",
+              "estimando": "diferencia de medias",
+              "efecto": 0.3823757691223837,
+              "ee": 0.0038720729279890283,
+              "ic95": [
+                0.3747866456380126,
+                0.38996489260675476
+              ],
+              "n": 50000,
+              "n_tratados": 10069,
+              "extra": {}
+            },
+            {
+              "metodo": "ingenuo",
+              "estimando": "diferencia de medias",
+              "efecto": 0.37778101934553576,
+              "ee": 0.0039308556592924345,
+              "ic95": [
+                0.37007668382489717,
+                0.38548535486617436
+              ],
+              "n": 50000,
+              "n_tratados": 10134,
+              "extra": {}
+            },
+            {
+              "metodo": "ingenuo",
+              "estimando": "diferencia de medias",
+              "efecto": 0.3827880642949135,
+              "ee": 0.0038587622314370405,
+              "ic95": [
+                0.3752250292963935,
+                0.39035109929343353
+              ],
+              "n": 50000,
+              "n_tratados": 10220,
+              "extra": {}
+            },
+            {
+              "metodo": "ingenuo",
+              "estimando": "diferencia de medias",
+              "efecto": 0.3878613266686687,
+              "ee": 0.003832282175775733,
+              "ic95": [
+                0.38035019162555345,
+                0.3953724617117839
+              ],
+              "n": 50000,
+              "n_tratados": 10095,
+              "extra": {}
+            }
+          ]
+        },
+        "regresion": {
+          "resumen": {
+            "sesgo": 0.006476014825814512,
+            "sesgo_relativo": 0.09912936005239444,
+            "rmse": 0.007006122930579485,
+            "cobertura": 0.7,
+            "ancho_ic": 0.014682253916184492,
+            "repeticiones": 10
+          },
+          "corridas": [
+            {
+              "metodo": "regresion",
+              "estimando": "efecto constante (MCO)",
+              "efecto": 0.07407559825040864,
+              "ee": 0.0037629156873554225,
+              "ic95": [
+                0.06670041902633124,
+                0.08145077747448605
+              ],
+              "n": 50000,
+              "n_tratados": 10137,
+              "extra": {}
+            },
+            {
+              "metodo": "regresion",
+              "estimando": "efecto constante (MCO)",
+              "efecto": 0.07244715972022645,
+              "ee": 0.003756843186927819,
+              "ic95": [
+                0.06508388237828325,
+                0.07981043706216964
+              ],
+              "n": 50000,
+              "n_tratados": 10176,
+              "extra": {}
+            },
+            {
+              "metodo": "regresion",
+              "estimando": "efecto constante (MCO)",
+              "efecto": 0.06986563715176884,
+              "ee": 0.003744958226302045,
+              "ic95": [
+                0.06252565390460983,
+                0.07720562039892785
+              ],
+              "n": 50000,
+              "n_tratados": 10176,
+              "extra": {}
+            },
+            {
+              "metodo": "regresion",
+              "estimando": "efecto constante (MCO)",
+              "efecto": 0.07082240349884514,
+              "ee": 0.003721392440926004,
+              "ic95": [
+                0.06352860834229057,
+                0.0781161986553997
+              ],
+              "n": 50000,
+              "n_tratados": 10197,
+              "extra": {}
+            },
+            {
+              "metodo": "regresion",
+              "estimando": "efecto constante (MCO)",
+              "efecto": 0.06803640837371988,
+              "ee": 0.0037561220655166817,
+              "ic95": [
+                0.060674544403770986,
+                0.07539827234366878
+              ],
+              "n": 50000,
+              "n_tratados": 10033,
+              "extra": {}
+            },
+            {
+              "metodo": "regresion",
+              "estimando": "efecto constante (MCO)",
+              "efecto": 0.07007332074909804,
+              "ee": 0.003705504512076133,
+              "ic95": [
+                0.06281066536087815,
+                0.07733597613731794
+              ],
+              "n": 50000,
+              "n_tratados": 10114,
+              "extra": {}
+            },
+            {
+              "metodo": "regresion",
+              "estimando": "efecto constante (MCO)",
+              "efecto": 0.07172626325081242,
+              "ee": 0.0037575780458881003,
+              "ic95": [
+                0.06436154561177335,
+                0.0790909808898515
+              ],
+              "n": 50000,
+              "n_tratados": 10069,
+              "extra": {}
+            },
+            {
+              "metodo": "regresion",
+              "estimando": "efecto constante (MCO)",
+              "efecto": 0.06918812739116448,
+              "ee": 0.0037434816498029826,
+              "ic95": [
+                0.06185103818076405,
+                0.0765252166015649
+              ],
+              "n": 50000,
+              "n_tratados": 10134,
+              "extra": {}
+            },
+            {
+              "metodo": "regresion",
+              "estimando": "efecto constante (MCO)",
+              "efecto": 0.07469407075854112,
+              "ee": 0.0037594584135199277,
+              "ic95": [
+                0.06732566766666598,
+                0.08206247385041626
+              ],
+              "n": 50000,
+              "n_tratados": 10220,
+              "extra": {}
+            },
+            {
+              "metodo": "regresion",
+              "estimando": "efecto constante (MCO)",
+              "efecto": 0.0771732807624992,
+              "ee": 0.0037471634017950312,
+              "ic95": [
+                0.06982897545079435,
+                0.08451758607420405
+              ],
+              "n": 50000,
+              "n_tratados": 10095,
+              "extra": {}
+            }
+          ]
+        },
+        "emparejamiento": {
+          "resumen": {
+            "sesgo": 0.0018819932603735905,
+            "sesgo_relativo": 0.028885778328880563,
+            "rmse": 0.004406840090351487,
+            "cobertura": 0.9,
+            "ancho_ic": 0.014829682959925627,
+            "repeticiones": 10
+          },
+          "corridas": [
+            {
+              "metodo": "emparejamiento",
+              "estimando": "ATT",
+              "efecto": 0.06700217090980856,
+              "ee": 0.003558301745557607,
+              "ic95": [
+                0.060028027642389646,
+                0.07397631417722748
+              ],
+              "n": 50000,
+              "n_tratados": 10137,
+              "extra": {
+                "tratados_emparejados": 0.9997040544539805,
+                "smd_max_antes": 1.1429782004503306,
+                "smd_max_despues": 0.03542911627877534,
+                "controles_distintos": 6643
+              }
+            },
+            {
+              "metodo": "emparejamiento",
+              "estimando": "ATT",
+              "efecto": 0.06645040794259315,
+              "ee": 0.0038773387413389457,
+              "ic95": [
+                0.05885096365370695,
+                0.07404985223147935
+              ],
+              "n": 50000,
+              "n_tratados": 10176,
+              "extra": {
+                "tratados_emparejados": 0.9997051886792453,
+                "smd_max_antes": 1.1406950237572113,
+                "smd_max_despues": 0.029033403767032805,
+                "controles_distintos": 6660
+              }
+            },
+            {
+              "metodo": "emparejamiento",
+              "estimando": "ATT",
+              "efecto": 0.06892144331924098,
+              "ee": 0.0038885581147705276,
+              "ic95": [
+                0.06130000946249978,
+                0.07654287717598218
+              ],
+              "n": 50000,
+              "n_tratados": 10176,
+              "extra": {
+                "tratados_emparejados": 0.9995086477987422,
+                "smd_max_antes": 1.1612328207993323,
+                "smd_max_despues": 0.048137090081017186,
+                "controles_distintos": 6657
+              }
+            },
+            {
+              "metodo": "emparejamiento",
+              "estimando": "ATT",
+              "efecto": 0.06845821890937623,
+              "ee": 0.0034981027529727934,
+              "ic95": [
+                0.06160206349932914,
+                0.07531437431942331
+              ],
+              "n": 50000,
+              "n_tratados": 10197,
+              "extra": {
+                "tratados_emparejados": 0.9999019319407669,
+                "smd_max_antes": 1.1411029829103256,
+                "smd_max_despues": 0.04422881085801432,
+                "controles_distintos": 6717
+              }
+            },
+            {
+              "metodo": "emparejamiento",
+              "estimando": "ATT",
+              "efecto": 0.06478620552177813,
+              "ee": 0.003781698822708454,
+              "ic95": [
+                0.05737421202889204,
+                0.07219819901466423
+              ],
+              "n": 50000,
+              "n_tratados": 10033,
+              "extra": {
+                "tratados_emparejados": 1.0,
+                "smd_max_antes": 1.1300605823686651,
+                "smd_max_despues": 0.04941783900613193,
+                "controles_distintos": 6661
+              }
+            },
+            {
+              "metodo": "emparejamiento",
+              "estimando": "ATT",
+              "efecto": 0.0626853865928416,
+              "ee": 0.0038022715602390885,
+              "ic95": [
+                0.05523307127533207,
+                0.07013770191035114
+              ],
+              "n": 50000,
+              "n_tratados": 10114,
+              "extra": {
+                "tratados_emparejados": 1.0,
+                "smd_max_antes": 1.1498711206859886,
+                "smd_max_despues": 0.02765371992423837,
+                "controles_distintos": 6731
+              }
+            },
+            {
+              "metodo": "emparejamiento",
+              "estimando": "ATT",
+              "efecto": 0.069164265129683,
+              "ee": 0.004118279825414212,
+              "ic95": [
+                0.061092584993613246,
+                0.07723594526575275
+              ],
+              "n": 50000,
+              "n_tratados": 10069,
+              "extra": {
+                "tratados_emparejados": 0.9994041116297547,
+                "smd_max_antes": 1.1495621630722932,
+                "smd_max_despues": 0.050720728906605776,
+                "controles_distintos": 6647
+              }
+            },
+            {
+              "metodo": "emparejamiento",
+              "estimando": "ATT",
+              "efecto": 0.06315997236751208,
+              "ee": 0.0038879871988838164,
+              "ic95": [
+                0.05553965748534704,
+                0.07078028724967714
+              ],
+              "n": 50000,
+              "n_tratados": 10134,
+              "extra": {
+                "tratados_emparejados": 0.9999013222814288,
+                "smd_max_antes": 1.1332195259242142,
+                "smd_max_despues": 0.057219987455627105,
+                "controles_distintos": 6729
+              }
+            },
+            {
+              "metodo": "emparejamiento",
+              "estimando": "ATT",
+              "efecto": 0.07691554946667971,
+              "ee": 0.0038148970718505535,
+              "ic95": [
+                0.06943848860112531,
+                0.08439261033223411
+              ],
+              "n": 50000,
+              "n_tratados": 10220,
+              "extra": {
+                "tratados_emparejados": 0.9999021526418786,
+                "smd_max_antes": 1.1531203197751398,
+                "smd_max_despues": 0.04758922228469889,
+                "controles_distintos": 6668
+              }
+            },
+            {
+              "metodo": "emparejamiento",
+              "estimando": "ATT",
+              "efecto": 0.06461843409316155,
+              "ee": 0.0036040832066654414,
+              "ic95": [
+                0.05755456081081166,
+                0.07168230737551144
+              ],
+              "n": 50000,
+              "n_tratados": 10095,
+              "extra": {
+                "tratados_emparejados": 0.9995047052996533,
+                "smd_max_antes": 1.1524963455982922,
+                "smd_max_despues": 0.05013240359536801,
+                "controles_distintos": 6663
+              }
+            }
+          ]
+        },
+        "dml_att": {
+          "resumen": {
+            "sesgo": -0.00032016070743371566,
+            "sesgo_relativo": -0.004923186861568647,
+            "rmse": 0.0028645892502413843,
+            "cobertura": 1.0,
+            "ancho_ic": 0.011994198225045508,
+            "repeticiones": 10
+          },
+          "corridas": [
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.06816409174559698,
+              "ee": 0.0031797708484685478,
+              "ic95": [
+                0.06193185540350826,
+                0.0743963280876857
+              ],
+              "n": 50000,
+              "n_tratados": 10137,
+              "extra": {
+                "ate": 0.09904078376253361,
+                "ate_ee": 0.008678463727191454,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.9151833170590594,
+                "frac_recortada": 0.00762
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.0661191565764219,
+              "ee": 0.0030463882752735276,
+              "ic95": [
+                0.060148345273960686,
+                0.0720899678788831
+              ],
+              "n": 50000,
+              "n_tratados": 10176,
+              "extra": {
+                "ate": 0.0992099053360198,
+                "ate_ee": 0.00939387249576486,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.8981118201090775,
+                "frac_recortada": 0.01098
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.06167664870805524,
+              "ee": 0.0030136220916231484,
+              "ic95": [
+                0.055770057945459604,
+                0.06758323947065088
+              ],
+              "n": 50000,
+              "n_tratados": 10176,
+              "extra": {
+                "ate": 0.1013131845149591,
+                "ate_ee": 0.009067311651695893,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.9181838890987382,
+                "frac_recortada": 0.01098
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.06436983554265573,
+              "ee": 0.0030353026418876035,
+              "ic95": [
+                0.058420751682376745,
+                0.07031891940293471
+              ],
+              "n": 50000,
+              "n_tratados": 10197,
+              "extra": {
+                "ate": 0.09831811743506973,
+                "ate_ee": 0.009214717263959877,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.905716358764606,
+                "frac_recortada": 0.0037
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.059621291885020786,
+              "ee": 0.003022742638989477,
+              "ic95": [
+                0.053696825178067856,
+                0.06554575859197372
+              ],
+              "n": 50000,
+              "n_tratados": 10033,
+              "extra": {
+                "ate": 0.10867854459777102,
+                "ate_ee": 0.009283022522035066,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.911816920074396,
+                "frac_recortada": 0.01142
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.0629999210596029,
+              "ee": 0.002941768594387595,
+              "ic95": [
+                0.057234160563752204,
+                0.06876568155545361
+              ],
+              "n": 50000,
+              "n_tratados": 10114,
+              "extra": {
+                "ate": 0.09736926586378442,
+                "ate_ee": 0.00867154300867999,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.9327081268651689,
+                "frac_recortada": 0.0081
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.0653802274539109,
+              "ee": 0.0030342246841371526,
+              "ic95": [
+                0.059433256351999655,
+                0.07132719855582213
+              ],
+              "n": 50000,
+              "n_tratados": 10069,
+              "extra": {
+                "ate": 0.11599523412400782,
+                "ate_ee": 0.008995204786628198,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.9199738743963332,
+                "frac_recortada": 0.00752
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.06441691877942397,
+              "ee": 0.003067846677629716,
+              "ic95": [
+                0.05840404978117887,
+                0.07042978777766908
+              ],
+              "n": 50000,
+              "n_tratados": 10134,
+              "extra": {
+                "ate": 0.09218073597780775,
+                "ate_ee": 0.009212071093082067,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.8671241022539283,
+                "frac_recortada": 0.00716
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.06843146545546885,
+              "ee": 0.0031336278778443714,
+              "ic95": [
+                0.06228966767394321,
+                0.07457326323699451
+              ],
+              "n": 50000,
+              "n_tratados": 10220,
+              "extra": {
+                "ate": 0.10957381864645391,
+                "ate_ee": 0.009641084116947493,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.9145614203022614,
+                "frac_recortada": 0.0094
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.06896095736844468,
+              "ee": 0.0031227123669589495,
+              "ic95": [
+                0.06284055359512732,
+                0.07508136114176205
+              ],
+              "n": 50000,
+              "n_tratados": 10095,
+              "extra": {
+                "ate": 0.1170007492620205,
+                "ate_ee": 0.009362804231849802,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.8801920204036405,
+                "frac_recortada": 0.01434
+              }
+            }
+          ]
+        },
+        "did_dr": {
+          "resumen": {
+            "sesgo": -0.000684904792038269,
+            "sesgo_relativo": -0.010525568205634184,
+            "rmse": 0.004811446620154264,
+            "cobertura": 1.0,
+            "ancho_ic": 0.018718516580598685,
+            "repeticiones": 10
+          },
+          "corridas": [
+            {
+              "metodo": "did_dr",
+              "estimando": "ATT",
+              "efecto": 0.06049283488213672,
+              "ee": 0.004924824975605559,
+              "ic95": [
+                0.05084035529978648,
+                0.07014531446448696
+              ],
+              "n": 50000,
+              "n_tratados": 10137,
+              "extra": {
+                "did_sin_ajuste": 0.05019205675363938
+              }
+            },
+            {
+              "metodo": "did_dr",
+              "estimando": "ATT",
+              "efecto": 0.06345775236763566,
+              "ee": 0.004828007137233386,
+              "ic95": [
+                0.0539950322615559,
+                0.07292047247371543
+              ],
+              "n": 50000,
+              "n_tratados": 10176,
+              "extra": {
+                "did_sin_ajuste": 0.05772292742153526
+              }
+            },
+            {
+              "metodo": "did_dr",
+              "estimando": "ATT",
+              "efecto": 0.05963182876758732,
+              "ee": 0.004742293771884874,
+              "ic95": [
+                0.05033710377058436,
+                0.06892655376459028
+              ],
+              "n": 50000,
+              "n_tratados": 10176,
+              "extra": {
+                "did_sin_ajuste": 0.053902461712036095
+              }
+            },
+            {
+              "metodo": "did_dr",
+              "estimando": "ATT",
+              "efecto": 0.06862893435620238,
+              "ee": 0.004820537307963891,
+              "ic95": [
+                0.05918085484646148,
+                0.07807701386594326
+              ],
+              "n": 50000,
+              "n_tratados": 10197,
+              "extra": {
+                "did_sin_ajuste": 0.059524140997728514
+              }
+            },
+            {
+              "metodo": "did_dr",
+              "estimando": "ATT",
+              "efecto": 0.056323513906065756,
+              "ee": 0.004723015546917496,
+              "ic95": [
+                0.04706657353568472,
+                0.06558045427644679
+              ],
+              "n": 50000,
+              "n_tratados": 10033,
+              "extra": {
+                "did_sin_ajuste": 0.050504276912535374
+              }
+            },
+            {
+              "metodo": "did_dr",
+              "estimando": "ATT",
+              "efecto": 0.068204660450484,
+              "ee": 0.004641053875749449,
+              "ic95": [
+                0.05910836200370505,
+                0.07730095889726295
+              ],
+              "n": 50000,
+              "n_tratados": 10114,
+              "extra": {
+                "did_sin_ajuste": 0.06162347642332952
+              }
+            },
+            {
+              "metodo": "did_dr",
+              "estimando": "ATT",
+              "efecto": 0.06365544524134803,
+              "ee": 0.0047418610231420135,
+              "ic95": [
+                0.05436156841629543,
+                0.07294932206640063
+              ],
+              "n": 50000,
+              "n_tratados": 10069,
+              "extra": {
+                "did_sin_ajuste": 0.05663196116289974
+              }
+            },
+            {
+              "metodo": "did_dr",
+              "estimando": "ATT",
+              "efecto": 0.06772958224593911,
+              "ee": 0.00476247190307451,
+              "ic95": [
+                0.05839530883852914,
+                0.07706385565334908
+              ],
+              "n": 50000,
+              "n_tratados": 10134,
+              "extra": {
+                "did_sin_ajuste": 0.05844437262302564
+              }
+            },
+            {
+              "metodo": "did_dr",
+              "estimando": "ATT",
+              "efecto": 0.06483870548989396,
+              "ee": 0.004796571276139087,
+              "ic95": [
+                0.055437598539382016,
+                0.0742398124404059
+              ],
+              "n": 50000,
+              "n_tratados": 10220,
+              "extra": {
+                "did_sin_ajuste": 0.051722536573463235
+              }
+            },
+            {
+              "metodo": "did_dr",
+              "estimando": "ATT",
+              "efecto": 0.07352981602126347,
+              "ee": 0.004771558447733283,
+              "ic95": [
+                0.0641777333135784,
+                0.08288189872894855
+              ],
+              "n": 50000,
+              "n_tratados": 10095,
+              "extra": {
+                "did_sin_ajuste": 0.06191687675266897
+              }
+            }
+          ]
+        },
+        "dml_att_rezago": {
+          "resumen": {
+            "sesgo": -0.0005380191623084694,
+            "sesgo_relativo": -0.008253190643983032,
+            "rmse": 0.0028310787624290542,
+            "cobertura": 0.9,
+            "ancho_ic": 0.011948014145452643,
+            "repeticiones": 10
+          },
+          "corridas": [
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.06760682017940021,
+              "ee": 0.003108039477737244,
+              "ic95": [
+                0.06151517474050654,
+                0.07369846561829389
+              ],
+              "n": 50000,
+              "n_tratados": 10137,
+              "extra": {
+                "ate": 0.0982394817409691,
+                "ate_ee": 0.008612524800588271,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.911392058757895,
+                "frac_recortada": 0.00812
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.06572422801100601,
+              "ee": 0.0030313907706914383,
+              "ic95": [
+                0.05978281127738368,
+                0.07166564474462835
+              ],
+              "n": 50000,
+              "n_tratados": 10176,
+              "extra": {
+                "ate": 0.10324422824661557,
+                "ate_ee": 0.009411903468655867,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.868858564622372,
+                "frac_recortada": 0.01056
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.06217382340159164,
+              "ee": 0.003041186493297301,
+              "ic95": [
+                0.056213207404459266,
+                0.06813443939872402
+              ],
+              "n": 50000,
+              "n_tratados": 10176,
+              "extra": {
+                "ate": 0.09914924484993957,
+                "ate_ee": 0.009176599794958216,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.9127434629673018,
+                "frac_recortada": 0.01138
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.06402742570031303,
+              "ee": 0.0030073394201476605,
+              "ic95": [
+                0.05813314874753604,
+                0.06992170265309001
+              ],
+              "n": 50000,
+              "n_tratados": 10197,
+              "extra": {
+                "ate": 0.09877455266339669,
+                "ate_ee": 0.008989936042425825,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.8979798556405169,
+                "frac_recortada": 0.00386
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.0594370346927671,
+              "ee": 0.0030085934656521314,
+              "ic95": [
+                0.05354029985596638,
+                0.06533376952956782
+              ],
+              "n": 50000,
+              "n_tratados": 10033,
+              "extra": {
+                "ate": 0.10847624014362345,
+                "ate_ee": 0.009253333109870688,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.9194361611671307,
+                "frac_recortada": 0.01178
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.06239880646973263,
+              "ee": 0.002937663570104548,
+              "ic95": [
+                0.05664109167363236,
+                0.0681565212658329
+              ],
+              "n": 50000,
+              "n_tratados": 10114,
+              "extra": {
+                "ate": 0.09818788859113196,
+                "ate_ee": 0.008866602092793524,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.9439040041882303,
+                "frac_recortada": 0.00878
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.06518897769290057,
+              "ee": 0.0030420246824844144,
+              "ic95": [
+                0.05922671887514922,
+                0.07115123651065192
+              ],
+              "n": 50000,
+              "n_tratados": 10069,
+              "extra": {
+                "ate": 0.11433499472326883,
+                "ate_ee": 0.00900889618358913,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.9065249110948661,
+                "frac_recortada": 0.00802
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.06433356782169404,
+              "ee": 0.0030727312994040905,
+              "ic95": [
+                0.05831112514069306,
+                0.07035601050269502
+              ],
+              "n": 50000,
+              "n_tratados": 10134,
+              "extra": {
+                "ate": 0.09038154865422271,
+                "ate_ee": 0.008932589614020941,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.8816025383036001,
+                "frac_recortada": 0.00696
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.06809524421878568,
+              "ee": 0.003112731115687087,
+              "ic95": [
+                0.061994403338481816,
+                0.07419608509908955
+              ],
+              "n": 50000,
+              "n_tratados": 10220,
+              "extra": {
+                "ate": 0.10825585942045969,
+                "ate_ee": 0.009600950151386867,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.9047860590249617,
+                "frac_recortada": 0.00924
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.06897600183766349,
+              "ee": 0.003118487707474379,
+              "ic95": [
+                0.06286387824478283,
+                0.07508812543054415
+              ],
+              "n": 50000,
+              "n_tratados": 10095,
+              "extra": {
+                "ate": 0.11994304109430093,
+                "ate_ee": 0.0094681976443185,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.9037853082473312,
+                "frac_recortada": 0.01312
+              }
+            }
+          ]
+        },
+        "bosque_causal": {
+          "resumen": {
+            "sesgo": 0.00045444182828738717,
+            "sesgo_relativo": 0.006940326136046002,
+            "rmse": 0.0028088611185981796,
+            "cobertura": 1.0,
+            "ancho_ic": 0.157948751306871,
+            "repeticiones": 10
+          },
+          "corridas": [
+            {
+              "metodo": "bosque_causal",
+              "estimando": "ATT",
+              "efecto": 0.06877665419423203,
+              "ee": 0.041326427789248346,
+              "ic95": [
+                -0.012221655882389992,
+                0.14977496427085402
+              ],
+              "n": 50000,
+              "n_tratados": 10137,
+              "extra": {
+                "resultado_binario": true,
+                "cate_sd_tratados": 0.05292637429356538,
+                "att_dr": 0.04363217428878049,
+                "att_dr_ee": 0.04032812281440361,
+                "ic_conservador": true
+              }
+            },
+            {
+              "metodo": "bosque_causal",
+              "estimando": "ATT",
+              "efecto": 0.06698928189631807,
+              "ee": 0.04057662524243072,
+              "ic95": [
+                -0.012539442193024997,
+                0.14651800598566111
+              ],
+              "n": 50000,
+              "n_tratados": 10176,
+              "extra": {
+                "resultado_binario": true,
+                "cate_sd_tratados": 0.056923834062662486,
+                "att_dr": 0.02942877699188946,
+                "att_dr_ee": 0.04307685618405773,
+                "ic_conservador": true
+              }
+            },
+            {
+              "metodo": "bosque_causal",
+              "estimando": "ATT",
+              "efecto": 0.06286425041928798,
+              "ee": 0.04024515391471763,
+              "ic95": [
+                -0.016014801805829773,
+                0.14174330264440568
+              ],
+              "n": 50000,
+              "n_tratados": 10176,
+              "extra": {
+                "resultado_binario": true,
+                "cate_sd_tratados": 0.05035519025555412,
+                "att_dr": 0.08474955232878414,
+                "att_dr_ee": 0.04222884424724035,
+                "ic_conservador": true
+              }
+            },
+            {
+              "metodo": "bosque_causal",
+              "estimando": "ATT",
+              "efecto": 0.06537982453670446,
+              "ee": 0.0395884420861022,
+              "ic95": [
+                -0.012212096156105606,
+                0.1429717452295145
+              ],
+              "n": 50000,
+              "n_tratados": 10197,
+              "extra": {
+                "resultado_binario": true,
+                "cate_sd_tratados": 0.05495433870371241,
+                "att_dr": 0.04453385189437222,
+                "att_dr_ee": 0.039001285137862454,
+                "ic_conservador": true
+              }
+            },
+            {
+              "metodo": "bosque_causal",
+              "estimando": "ATT",
+              "efecto": 0.06050546619336608,
+              "ee": 0.040665264984104374,
+              "ic95": [
+                -0.019196988597256284,
+                0.14020792098398843
+              ],
+              "n": 50000,
+              "n_tratados": 10033,
+              "extra": {
+                "resultado_binario": true,
+                "cate_sd_tratados": 0.05234604124887618,
+                "att_dr": 0.07660594267565882,
+                "att_dr_ee": 0.042024894716072764,
+                "ic_conservador": true
+              }
+            },
+            {
+              "metodo": "bosque_causal",
+              "estimando": "ATT",
+              "efecto": 0.06343952078791873,
+              "ee": 0.039348155651333074,
+              "ic95": [
+                -0.013681447146770304,
+                0.14056048872260773
+              ],
+              "n": 50000,
+              "n_tratados": 10114,
+              "extra": {
+                "resultado_binario": true,
+                "cate_sd_tratados": 0.054243659983322715,
+                "att_dr": 0.05402964014749153,
+                "att_dr_ee": 0.0404457977594651,
+                "ic_conservador": true
+              }
+            },
+            {
+              "metodo": "bosque_causal",
+              "estimando": "ATT",
+              "efecto": 0.0664801870748277,
+              "ee": 0.0402672211360544,
+              "ic95": [
+                -0.012442116109348964,
+                0.1454024902590044
+              ],
+              "n": 50000,
+              "n_tratados": 10069,
+              "extra": {
+                "resultado_binario": true,
+                "cate_sd_tratados": 0.06011559756265532,
+                "att_dr": 0.08518971488989582,
+                "att_dr_ee": 0.04234203462189694,
+                "ic_conservador": true
+              }
+            },
+            {
+              "metodo": "bosque_causal",
+              "estimando": "ATT",
+              "efecto": 0.0648488611273708,
+              "ee": 0.03965877693164017,
+              "ic95": [
+                -0.012880913329551852,
+                0.14257863558429346
+              ],
+              "n": 50000,
+              "n_tratados": 10134,
+              "extra": {
+                "resultado_binario": true,
+                "cate_sd_tratados": 0.04992593562931831,
+                "att_dr": 0.02642091392796119,
+                "att_dr_ee": 0.0399238194151297,
+                "ic_conservador": true
+              }
+            },
+            {
+              "metodo": "bosque_causal",
+              "estimando": "ATT",
+              "efecto": 0.06898620115461808,
+              "ee": 0.03961778566336762,
+              "ic95": [
+                -0.008663231892809764,
+                0.1466356342020459
+              ],
+              "n": 50000,
+              "n_tratados": 10220,
+              "extra": {
+                "resultado_binario": true,
+                "cate_sd_tratados": 0.048078076862089356,
+                "att_dr": 0.08112200420794895,
+                "att_dr_ee": 0.042401460344882104,
+                "ic_conservador": true
+              }
+            },
+            {
+              "metodo": "bosque_causal",
+              "estimando": "ATT",
+              "efecto": 0.06961629254716904,
+              "ee": 0.04164403870705698,
+              "ic95": [
+                -0.012004523489454605,
+                0.1512371085837927
+              ],
+              "n": 50000,
+              "n_tratados": 10095,
+              "extra": {
+                "resultado_binario": true,
+                "cate_sd_tratados": 0.058207608366142624,
+                "att_dr": 0.06880276907413589,
+                "att_dr_ee": 0.04347423266836347,
+                "ic_conservador": true
+              }
+            }
+          ]
+        }
+      },
+      "placebo_did": {
+        "resumen": {
+          "sesgo": 0.0010258565270017356,
+          "sesgo_relativo": null,
+          "rmse": 0.005281852048004668,
+          "cobertura": 1.0,
+          "ancho_ic": 0.020490257701439064,
+          "repeticiones": 10
+        },
+        "rechaza_cero": 0.0
+      },
+      "bosque_cate": {
+        "correlacion_media": 0.7600986677858433,
+        "rmse_medio": 0.03540869732899881,
+        "sd_verdadero_medio": 0.04500021838847973
+      },
+      "verdades": [
+        0.06531827424320921,
+        0.06560204370007618,
+        0.06487036781659111,
+        0.06530773735875468,
+        0.06547944924046009,
+        0.06508934309248644,
+        0.0651112506460637,
+        0.06578742203905022,
+        0.0653376497498877,
+        0.06543858376235975
+      ]
+    },
+    "efecto_fijo": {
+      "att_verdadero_medio": 0.2885291914614854,
+      "frac_tratados": 0.22354599999999997,
+      "metodos": {
+        "ingenuo": {
+          "resumen": {
+            "sesgo": 1.7130737120673838,
+            "sesgo_relativo": 5.937360868282945,
+            "rmse": 1.7131157756708668,
+            "cobertura": 0.0,
+            "ancho_ic": 0.05478956487588591,
+            "repeticiones": 10
+          },
+          "corridas": [
+            {
+              "metodo": "ingenuo",
+              "estimando": "diferencia de medias",
+              "efecto": 1.9982570410205902,
+              "ee": 0.013904702659209059,
+              "ic95": [
+                1.9710043245928022,
+                2.0255097574483782
+              ],
+              "n": 50000,
+              "n_tratados": 11412,
+              "extra": {}
+            },
+            {
+              "metodo": "ingenuo",
+              "estimando": "diferencia de medias",
+              "efecto": 2.0289008636128396,
+              "ee": 0.014044836971587153,
+              "ic95": [
+                2.0013734889797923,
+                2.056428238245887
+              ],
+              "n": 50000,
+              "n_tratados": 11168,
+              "extra": {}
+            },
+            {
+              "metodo": "ingenuo",
+              "estimando": "diferencia de medias",
+              "efecto": 2.0110163250780317,
+              "ee": 0.013977556888394327,
+              "ic95": [
+                1.9836208169849192,
+                2.0384118331711445
+              ],
+              "n": 50000,
+              "n_tratados": 11179,
+              "extra": {}
+            },
+            {
+              "metodo": "ingenuo",
+              "estimando": "diferencia de medias",
+              "efecto": 2.0047873814610315,
+              "ee": 0.013789797232023348,
+              "ic95": [
+                1.9777598755321557,
+                2.0318148873899076
+              ],
+              "n": 50000,
+              "n_tratados": 11343,
+              "extra": {}
+            },
+            {
+              "metodo": "ingenuo",
+              "estimando": "diferencia de medias",
+              "efecto": 2.007765621366779,
+              "ee": 0.014012220861796409,
+              "ic95": [
+                1.9803021731342372,
+                2.0352290695993207
+              ],
+              "n": 50000,
+              "n_tratados": 11104,
+              "extra": {}
+            },
+            {
+              "metodo": "ingenuo",
+              "estimando": "diferencia de medias",
+              "efecto": 2.0022763291539545,
+              "ee": 0.013958407154391742,
+              "ic95": [
+                1.9749183538498005,
+                2.0296343044581087
+              ],
+              "n": 50000,
+              "n_tratados": 11100,
+              "extra": {}
+            },
+            {
+              "metodo": "ingenuo",
+              "estimando": "diferencia de medias",
+              "efecto": 1.9892035581121963,
+              "ee": 0.01409153444012848,
+              "ic95": [
+                1.9615846581226386,
+                2.0168224581017538
+              ],
+              "n": 50000,
+              "n_tratados": 10982,
+              "extra": {}
+            },
+            {
+              "metodo": "ingenuo",
+              "estimando": "diferencia de medias",
+              "efecto": 1.9909119291323198,
+              "ee": 0.013913840365874806,
+              "ic95": [
+                1.9636413031285656,
+                2.018182555136074
+              ],
+              "n": 50000,
+              "n_tratados": 11269,
+              "extra": {}
+            },
+            {
+              "metodo": "ingenuo",
+              "estimando": "diferencia de medias",
+              "efecto": 1.9933841856532122,
+              "ee": 0.014077277092675427,
+              "ic95": [
+                1.9657932295511775,
+                2.0209751417552466
+              ],
+              "n": 50000,
+              "n_tratados": 11090,
+              "extra": {}
+            },
+            {
+              "metodo": "ingenuo",
+              "estimando": "diferencia de medias",
+              "efecto": 1.9895258006977365,
+              "ee": 0.014001692827536013,
+              "ic95": [
+                1.962082987033173,
+                2.0169686143623
+              ],
+              "n": 50000,
+              "n_tratados": 11126,
+              "extra": {}
+            }
+          ]
+        },
+        "regresion": {
+          "resumen": {
+            "sesgo": 0.8699816904493385,
+            "sesgo_relativo": 3.015280318705245,
+            "rmse": 0.8700284750212499,
+            "cobertura": 0.0,
+            "ancho_ic": 0.049288925362981705,
+            "repeticiones": 10
+          },
+          "corridas": [
+            {
+              "metodo": "regresion",
+              "estimando": "efecto constante (MCO)",
+              "efecto": 1.1619632184509412,
+              "ee": 0.012397712002789807,
+              "ic95": [
+                1.1376641494347732,
+                1.1862622874671092
+              ],
+              "n": 50000,
+              "n_tratados": 11412,
+              "extra": {}
+            },
+            {
+              "metodo": "regresion",
+              "estimando": "efecto constante (MCO)",
+              "efecto": 1.1791307766274348,
+              "ee": 0.012660266661863585,
+              "ic95": [
+                1.154317109935509,
+                1.2039444433193607
+              ],
+              "n": 50000,
+              "n_tratados": 11168,
+              "extra": {}
+            },
+            {
+              "metodo": "regresion",
+              "estimando": "efecto constante (MCO)",
+              "efecto": 1.1625343721145331,
+              "ee": 0.012597024527520397,
+              "ic95": [
+                1.1378446577282255,
+                1.1872240865008408
+              ],
+              "n": 50000,
+              "n_tratados": 11179,
+              "extra": {}
+            },
+            {
+              "metodo": "regresion",
+              "estimando": "efecto constante (MCO)",
+              "efecto": 1.1619699003010642,
+              "ee": 0.012445392868168212,
+              "ic95": [
+                1.1375773785060028,
+                1.1863624220961255
+              ],
+              "n": 50000,
+              "n_tratados": 11343,
+              "extra": {}
+            },
+            {
+              "metodo": "regresion",
+              "estimando": "efecto constante (MCO)",
+              "efecto": 1.1553659337703353,
+              "ee": 0.012565827576502724,
+              "ic95": [
+                1.1307373642844496,
+                1.179994503256221
+              ],
+              "n": 50000,
+              "n_tratados": 11104,
+              "extra": {}
+            },
+            {
+              "metodo": "regresion",
+              "estimando": "efecto constante (MCO)",
+              "efecto": 1.1555262258348769,
+              "ee": 0.012657515603592642,
+              "ic95": [
+                1.1307179511180816,
+                1.180334500551672
+              ],
+              "n": 50000,
+              "n_tratados": 11100,
+              "extra": {}
+            },
+            {
+              "metodo": "regresion",
+              "estimando": "efecto constante (MCO)",
+              "efecto": 1.1528656136764215,
+              "ee": 0.012711636653290026,
+              "ic95": [
+                1.1279512636514137,
+                1.1777799637014292
+              ],
+              "n": 50000,
+              "n_tratados": 10982,
+              "extra": {}
+            },
+            {
+              "metodo": "regresion",
+              "estimando": "efecto constante (MCO)",
+              "efecto": 1.1609633048553847,
+              "ee": 0.012609247301928729,
+              "ic95": [
+                1.1362496342714454,
+                1.185676975439324
+              ],
+              "n": 50000,
+              "n_tratados": 11269,
+              "extra": {}
+            },
+            {
+              "metodo": "regresion",
+              "estimando": "efecto constante (MCO)",
+              "efecto": 1.1499411039284069,
+              "ee": 0.012604023574433304,
+              "ic95": [
+                1.1252376716622239,
+                1.1746445361945899
+              ],
+              "n": 50000,
+              "n_tratados": 11090,
+              "extra": {}
+            },
+            {
+              "metodo": "regresion",
+              "estimando": "efecto constante (MCO)",
+              "efecto": 1.1448483695488414,
+              "ee": 0.012490718217651249,
+              "ic95": [
+                1.1203670117012066,
+                1.1693297273964762
+              ],
+              "n": 50000,
+              "n_tratados": 11126,
+              "extra": {}
+            }
+          ]
+        },
+        "emparejamiento": {
+          "resumen": {
+            "sesgo": 0.8513122679469978,
+            "sesgo_relativo": 2.950614869869248,
+            "rmse": 0.8515567769582804,
+            "cobertura": 0.0,
+            "ancho_ic": 0.056940217947067676,
+            "repeticiones": 10
+          },
+          "corridas": [
+            {
+              "metodo": "emparejamiento",
+              "estimando": "ATT",
+              "efecto": 1.156278347271538,
+              "ee": 0.014283232908901555,
+              "ic95": [
+                1.1282837251872937,
+                1.1842729693557825
+              ],
+              "n": 50000,
+              "n_tratados": 11412,
+              "extra": {
+                "tratados_emparejados": 0.9999123729407641,
+                "smd_max_antes": 0.9735854188896319,
+                "smd_max_despues": 0.02568150183306072,
+                "controles_distintos": 7700
+              }
+            },
+            {
+              "metodo": "emparejamiento",
+              "estimando": "ATT",
+              "efecto": 1.1872908806352587,
+              "ee": 0.014102525146710038,
+              "ic95": [
+                1.1596504392566365,
+                1.2149313220138809
+              ],
+              "n": 50000,
+              "n_tratados": 11168,
+              "extra": {
+                "tratados_emparejados": 0.9996418338108882,
+                "smd_max_antes": 1.0055528461428758,
+                "smd_max_despues": 0.04731211096458483,
+                "controles_distintos": 7494
+              }
+            },
+            {
+              "metodo": "emparejamiento",
+              "estimando": "ATT",
+              "efecto": 1.14474417791593,
+              "ee": 0.014397703779984162,
+              "ic95": [
+                1.1165251970470849,
+                1.172963158784775
+              ],
+              "n": 50000,
+              "n_tratados": 11179,
+              "extra": {
+                "tratados_emparejados": 0.9999105465605153,
+                "smd_max_antes": 0.9923231116051117,
+                "smd_max_despues": 0.043229516654052565,
+                "controles_distintos": 7502
+              }
+            },
+            {
+              "metodo": "emparejamiento",
+              "estimando": "ATT",
+              "efecto": 1.1434883028818412,
+              "ee": 0.015353270995423936,
+              "ic95": [
+                1.1133964446859268,
+                1.1735801610777556
+              ],
+              "n": 50000,
+              "n_tratados": 11343,
+              "extra": {
+                "tratados_emparejados": 1.0,
+                "smd_max_antes": 1.0013151943511043,
+                "smd_max_despues": 0.04334018528422588,
+                "controles_distintos": 7532
+              }
+            },
+            {
+              "metodo": "emparejamiento",
+              "estimando": "ATT",
+              "efecto": 1.1345852334098203,
+              "ee": 0.014132121959461924,
+              "ic95": [
+                1.1068867833441474,
+                1.1622836834754933
+              ],
+              "n": 50000,
+              "n_tratados": 11104,
+              "extra": {
+                "tratados_emparejados": 0.9997298270893372,
+                "smd_max_antes": 0.9935283784939114,
+                "smd_max_despues": 0.043282330994713,
+                "controles_distintos": 7483
+              }
+            },
+            {
+              "metodo": "emparejamiento",
+              "estimando": "ATT",
+              "efecto": 1.1435080697174476,
+              "ee": 0.014785041931282935,
+              "ic95": [
+                1.1145299200222185,
+                1.1724862194126766
+              ],
+              "n": 50000,
+              "n_tratados": 11100,
+              "extra": {
+                "tratados_emparejados": 1.0,
+                "smd_max_antes": 0.993085450204734,
+                "smd_max_despues": 0.03599970325597898,
+                "controles_distintos": 7470
+              }
+            },
+            {
+              "metodo": "emparejamiento",
+              "estimando": "ATT",
+              "efecto": 1.1194365891180005,
+              "ee": 0.016144793562292332,
+              "ic95": [
+                1.0877933751980733,
+                1.1510798030379277
+              ],
+              "n": 50000,
+              "n_tratados": 10982,
+              "extra": {
+                "tratados_emparejados": 1.0,
+                "smd_max_antes": 0.9790220232631638,
+                "smd_max_despues": 0.03111935487684151,
+                "controles_distintos": 7482
+              }
+            },
+            {
+              "metodo": "emparejamiento",
+              "estimando": "ATT",
+              "efecto": 1.1339120163402605,
+              "ee": 0.013229387987058002,
+              "ic95": [
+                1.10798289234812,
+                1.159841140332401
+              ],
+              "n": 50000,
+              "n_tratados": 11269,
+              "extra": {
+                "tratados_emparejados": 1.0,
+                "smd_max_antes": 0.9715362221157098,
+                "smd_max_despues": 0.02824367330129631,
+                "controles_distintos": 7578
+              }
+            },
+            {
+              "metodo": "emparejamiento",
+              "estimando": "ATT",
+              "efecto": 1.1209225992169354,
+              "ee": 0.014056261016263512,
+              "ic95": [
+                1.0933728338677646,
+                1.1484723645661061
+              ],
+              "n": 50000,
+              "n_tratados": 11090,
+              "extra": {
+                "tratados_emparejados": 1.0,
+                "smd_max_antes": 0.9798641975680896,
+                "smd_max_despues": 0.03599774748730717,
+                "controles_distintos": 7539
+              }
+            },
+            {
+              "metodo": "emparejamiento",
+              "estimando": "ATT",
+              "efecto": 1.1142483775777998,
+              "ee": 0.014773987896704725,
+              "ic95": [
+                1.085291893392228,
+                1.1432048617633717
+              ],
+              "n": 50000,
+              "n_tratados": 11126,
+              "extra": {
+                "tratados_emparejados": 1.0,
+                "smd_max_antes": 0.986133339802378,
+                "smd_max_despues": 0.03798001354197068,
+                "controles_distintos": 7516
+              }
+            }
+          ]
+        },
+        "dml_att": {
+          "resumen": {
+            "sesgo": 0.8506370452080565,
+            "sesgo_relativo": 2.9482431939269604,
+            "rmse": 0.8507166070124481,
+            "cobertura": 0.0,
+            "ancho_ic": 0.05475329272520315,
+            "repeticiones": 10
+          },
+          "corridas": [
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 1.1348723427256944,
+              "ee": 0.01382021629739184,
+              "ic95": [
+                1.1077852165242528,
+                1.161959468927136
+              ],
+              "n": 50000,
+              "n_tratados": 11412,
+              "extra": {
+                "ate": 1.2083245043283233,
+                "ate_ee": 0.016988479260654603,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.8801633936757828,
+                "frac_recortada": 0.00206
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 1.1674459482738395,
+              "ee": 0.014067638615960576,
+              "ic95": [
+                1.1398738832390318,
+                1.1950180133086472
+              ],
+              "n": 50000,
+              "n_tratados": 11168,
+              "extra": {
+                "ate": 1.248498680478697,
+                "ate_ee": 0.018388866836841582,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.8871695082903152,
+                "frac_recortada": 0.00156
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 1.1419876601872785,
+              "ee": 0.014003024405615083,
+              "ic95": [
+                1.1145422366776376,
+                1.1694330836969193
+              ],
+              "n": 50000,
+              "n_tratados": 11179,
+              "extra": {
+                "ate": 1.2243336048871492,
+                "ate_ee": 0.01778622757782724,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.8865373724400833,
+                "frac_recortada": 0.00368
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 1.1463634636370057,
+              "ee": 0.01392484580679818,
+              "ic95": [
+                1.1190712673654077,
+                1.1736556599086037
+              ],
+              "n": 50000,
+              "n_tratados": 11343,
+              "extra": {
+                "ate": 1.209776225511303,
+                "ate_ee": 0.017395152489067284,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.8826151900050596,
+                "frac_recortada": 0.00148
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 1.1332421269301531,
+              "ee": 0.013782712870590613,
+              "ic95": [
+                1.106228506094539,
+                1.1602557477657673
+              ],
+              "n": 50000,
+              "n_tratados": 11104,
+              "extra": {
+                "ate": 1.2172901131537461,
+                "ate_ee": 0.018323953679330113,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.9102672727884098,
+                "frac_recortada": 0.003
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 1.1312634894648865,
+              "ee": 0.014236260621558364,
+              "ic95": [
+                1.1033609313721062,
+                1.1591660475576668
+              ],
+              "n": 50000,
+              "n_tratados": 11100,
+              "extra": {
+                "ate": 1.2155651300754857,
+                "ate_ee": 0.018364141161608158,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.8897537500074598,
+                "frac_recortada": 0.00368
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 1.1308723437942847,
+              "ee": 0.013955214212652483,
+              "ic95": [
+                1.1035206265409443,
+                1.158224061047625
+              ],
+              "n": 50000,
+              "n_tratados": 10982,
+              "extra": {
+                "ate": 1.2097274609154811,
+                "ate_ee": 0.01906937828344168,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.9099698996362929,
+                "frac_recortada": 0.00432
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 1.146050798661387,
+              "ee": 0.014069516084767739,
+              "ic95": [
+                1.1184750538553352,
+                1.1736265434674389
+              ],
+              "n": 50000,
+              "n_tratados": 11269,
+              "extra": {
+                "ate": 1.2145036102022781,
+                "ate_ee": 0.018109857936582662,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.862095321266702,
+                "frac_recortada": 0.0021
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 1.1341730411006925,
+              "ee": 0.013911161985154928,
+              "ic95": [
+                1.1069076646266862,
+                1.1614384175746988
+              ],
+              "n": 50000,
+              "n_tratados": 11090,
+              "extra": {
+                "ate": 1.1954167568939196,
+                "ate_ee": 0.017499014241082255,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.8429404559157389,
+                "frac_recortada": 0.00236
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 1.1253911519201971,
+              "ee": 0.013908742896177237,
+              "ic95": [
+                1.0981305167734625,
+                1.1526517870669317
+              ],
+              "n": 50000,
+              "n_tratados": 11126,
+              "extra": {
+                "ate": 1.2030433779113057,
+                "ate_ee": 0.017032566263753747,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.8937787273728232,
+                "frac_recortada": 0.00196
+              }
+            }
+          ]
+        },
+        "did_dr": {
+          "resumen": {
+            "sesgo": 0.001634579597133029,
+            "sesgo_relativo": 0.005656337562532708,
+            "rmse": 0.005990256080113971,
+            "cobertura": 1.0,
+            "ancho_ic": 0.03701075713731612,
+            "repeticiones": 10
+          },
+          "corridas": [
+            {
+              "metodo": "did_dr",
+              "estimando": "ATT",
+              "efecto": 0.2949111592993269,
+              "ee": 0.009211267275051303,
+              "ic95": [
+                0.2768574071882539,
+                0.31296491141039984
+              ],
+              "n": 50000,
+              "n_tratados": 11412,
+              "extra": {
+                "did_sin_ajuste": 0.42398354292313967
+              }
+            },
+            {
+              "metodo": "did_dr",
+              "estimando": "ATT",
+              "efecto": 0.2909289884207516,
+              "ee": 0.009500586170939539,
+              "ic95": [
+                0.2723081816936908,
+                0.3095497951478124
+              ],
+              "n": 50000,
+              "n_tratados": 11168,
+              "extra": {
+                "did_sin_ajuste": 0.42352013247041553
+              }
+            },
+            {
+              "metodo": "did_dr",
+              "estimando": "ATT",
+              "efecto": 0.29372408869255423,
+              "ee": 0.009619423735598112,
+              "ic95": [
+                0.2748703646187522,
+                0.31257781276635627
+              ],
+              "n": 50000,
+              "n_tratados": 11179,
+              "extra": {
+                "did_sin_ajuste": 0.4236870076229513
+              }
+            },
+            {
+              "metodo": "did_dr",
+              "estimando": "ATT",
+              "efecto": 0.28953747280216224,
+              "ee": 0.009418134528398516,
+              "ic95": [
+                0.271078268324948,
+                0.30799667727937646
+              ],
+              "n": 50000,
+              "n_tratados": 11343,
+              "extra": {
+                "did_sin_ajuste": 0.41650944781342675
+              }
+            },
+            {
+              "metodo": "did_dr",
+              "estimando": "ATT",
+              "efecto": 0.285559324229192,
+              "ee": 0.009571973546402688,
+              "ic95": [
+                0.2667986008172726,
+                0.3043200476411114
+              ],
+              "n": 50000,
+              "n_tratados": 11104,
+              "extra": {
+                "did_sin_ajuste": 0.4208799419572793
+              }
+            },
+            {
+              "metodo": "did_dr",
+              "estimando": "ATT",
+              "efecto": 0.2924793022075153,
+              "ee": 0.009348064181693053,
+              "ic95": [
+                0.274157433086228,
+                0.3108011713288026
+              ],
+              "n": 50000,
+              "n_tratados": 11100,
+              "extra": {
+                "did_sin_ajuste": 0.4253272125454013
+              }
+            },
+            {
+              "metodo": "did_dr",
+              "estimando": "ATT",
+              "efecto": 0.27796079933641193,
+              "ee": 0.009446213476958471,
+              "ic95": [
+                0.25944656113129644,
+                0.29647503754152743
+              ],
+              "n": 50000,
+              "n_tratados": 10982,
+              "extra": {
+                "did_sin_ajuste": 0.41568428668072477
+              }
+            },
+            {
+              "metodo": "did_dr",
+              "estimando": "ATT",
+              "efecto": 0.29710264574702866,
+              "ee": 0.00937788119530882,
+              "ic95": [
+                0.2787223363529279,
+                0.3154829551411294
+              ],
+              "n": 50000,
+              "n_tratados": 11269,
+              "extra": {
+                "did_sin_ajuste": 0.42164328209349305
+              }
+            },
+            {
+              "metodo": "did_dr",
+              "estimando": "ATT",
+              "efecto": 0.29658449235513157,
+              "ee": 0.009446744817679419,
+              "ic95": [
+                0.2780692127413395,
+                0.31509977196892364
+              ],
+              "n": 50000,
+              "n_tratados": 11090,
+              "extra": {
+                "did_sin_ajuste": 0.4272851859562148
+              }
+            },
+            {
+              "metodo": "did_dr",
+              "estimando": "ATT",
+              "efecto": 0.28284943749611013,
+              "ee": 0.00947664278411438,
+              "ic95": [
+                0.2642755589448946,
+                0.3014233160473257
+              ],
+              "n": 50000,
+              "n_tratados": 11126,
+              "extra": {
+                "did_sin_ajuste": 0.4252898057325623
+              }
+            }
+          ]
+        },
+        "dml_att_rezago": {
+          "resumen": {
+            "sesgo": 0.10639038339015225,
+            "sesgo_relativo": 0.36876953049430233,
+            "rmse": 0.10668442121530025,
+            "cobertura": 0.0,
+            "ancho_ic": 0.04119785040076411,
+            "repeticiones": 10
+          },
+          "corridas": [
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.4039403747152501,
+              "ee": 0.010552349161866075,
+              "ic95": [
+                0.38325815040570116,
+                0.424622599024799
+              ],
+              "n": 50000,
+              "n_tratados": 11412,
+              "extra": {
+                "ate": 0.4407977770706994,
+                "ate_ee": 0.013352507148772086,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.9596080239286929,
+                "frac_recortada": 0.03746
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.40135206807725565,
+              "ee": 0.01025457943415208,
+              "ic95": [
+                0.38125346170971247,
+                0.42145067444479883
+              ],
+              "n": 50000,
+              "n_tratados": 11168,
+              "extra": {
+                "ate": 0.46301754541223256,
+                "ate_ee": 0.015190687888908446,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.9524955186449738,
+                "frac_recortada": 0.04548
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.3882453047180016,
+              "ee": 0.009960080874609482,
+              "ic95": [
+                0.3687239049206608,
+                0.4077667045153424
+              ],
+              "n": 50000,
+              "n_tratados": 11179,
+              "extra": {
+                "ate": 0.4650938422068387,
+                "ate_ee": 0.013610182058289576,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.9545921014536606,
+                "frac_recortada": 0.05204
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.39063893423979007,
+              "ee": 0.011447236424523341,
+              "ic95": [
+                0.3682027631252093,
+                0.41307510535437086
+              ],
+              "n": 50000,
+              "n_tratados": 11343,
+              "extra": {
+                "ate": 0.44451905453356216,
+                "ate_ee": 0.014466527037341248,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.9762793124659339,
+                "frac_recortada": 0.04722
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.39480960631442963,
+              "ee": 0.010833601816190634,
+              "ic95": [
+                0.37357613693184827,
+                0.416043075697011
+              ],
+              "n": 50000,
+              "n_tratados": 11104,
+              "extra": {
+                "ate": 0.43517271787809936,
+                "ate_ee": 0.014096979713195509,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.9673213612858501,
+                "frac_recortada": 0.0526
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.4072309471863096,
+              "ee": 0.009880878290469913,
+              "ic95": [
+                0.38786478160136484,
+                0.42659711277125434
+              ],
+              "n": 50000,
+              "n_tratados": 11100,
+              "extra": {
+                "ate": 0.46817384856262334,
+                "ate_ee": 0.014163521313638046,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.9587972867306679,
+                "frac_recortada": 0.0422
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.3823970292734276,
+              "ee": 0.01102020611029223,
+              "ic95": [
+                0.3607978221950466,
+                0.40399623635180865
+              ],
+              "n": 50000,
+              "n_tratados": 10982,
+              "extra": {
+                "ate": 0.4244650211995834,
+                "ate_ee": 0.013527878737574401,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.9672067140380503,
+                "frac_recortada": 0.0407
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.3884324133077706,
+              "ee": 0.011048829299923048,
+              "ic95": [
+                0.3667771058085905,
+                0.4100877208069507
+              ],
+              "n": 50000,
+              "n_tratados": 11269,
+              "extra": {
+                "ate": 0.45067313605769405,
+                "ate_ee": 0.013281907814081293,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.960654903246716,
+                "frac_recortada": 0.03778
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.40060182805261085,
+              "ee": 0.009887183045263814,
+              "ic95": [
+                0.3812233053753387,
+                0.419980350729883
+              ],
+              "n": 50000,
+              "n_tratados": 11090,
+              "extra": {
+                "ate": 0.44523022336731743,
+                "ate_ee": 0.013678942656134495,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.9630167547627807,
+                "frac_recortada": 0.0464
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.39154724263153107,
+              "ee": 0.010213543896902356,
+              "ic95": [
+                0.37152906443908357,
+                0.41156542082397857
+              ],
+              "n": 50000,
+              "n_tratados": 11126,
+              "extra": {
+                "ate": 0.4589310767483662,
+                "ate_ee": 0.013906438250992529,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.9609977357044878,
+                "frac_recortada": 0.03968
+              }
+            }
+          ]
+        },
+        "bosque_causal": {
+          "resumen": {
+            "sesgo": 0.8434892293015792,
+            "sesgo_relativo": 2.923477209222367,
+            "rmse": 0.8435640913374031,
+            "cobertura": 0.0,
+            "ancho_ic": 0.46031745413139263,
+            "repeticiones": 10
+          },
+          "corridas": [
+            {
+              "metodo": "bosque_causal",
+              "estimando": "ATT",
+              "efecto": 1.1324699672641445,
+              "ee": 0.11566683757681619,
+              "ic95": [
+                0.9057671314079405,
+                1.3591728031203485
+              ],
+              "n": 50000,
+              "n_tratados": 11412,
+              "extra": {
+                "resultado_binario": false,
+                "cate_sd_tratados": 0.13363560354723464,
+                "att_dr": 1.2462993967909723,
+                "att_dr_ee": 0.06561912895724628,
+                "ic_conservador": true
+              }
+            },
+            {
+              "metodo": "bosque_causal",
+              "estimando": "ATT",
+              "efecto": 1.1599187440767693,
+              "ee": 0.11822677010431812,
+              "ic95": [
+                0.9281985326638089,
+                1.3916389554897295
+              ],
+              "n": 50000,
+              "n_tratados": 11168,
+              "extra": {
+                "resultado_binario": false,
+                "cate_sd_tratados": 0.11728391683880353,
+                "att_dr": 1.3038543969848053,
+                "att_dr_ee": 0.07845435552269911,
+                "ic_conservador": true
+              }
+            },
+            {
+              "metodo": "bosque_causal",
+              "estimando": "ATT",
+              "efecto": 1.1285912814669339,
+              "ee": 0.1169094842533285,
+              "ic95": [
+                0.8994529028792574,
+                1.3577296600546103
+              ],
+              "n": 50000,
+              "n_tratados": 11179,
+              "extra": {
+                "resultado_binario": false,
+                "cate_sd_tratados": 0.15238482036169018,
+                "att_dr": 1.2581670185248113,
+                "att_dr_ee": 0.07511488811834052,
+                "ic_conservador": true
+              }
+            },
+            {
+              "metodo": "bosque_causal",
+              "estimando": "ATT",
+              "efecto": 1.1399742766895429,
+              "ee": 0.11725735239568323,
+              "ic95": [
+                0.9101540890714823,
+                1.3697944643076034
+              ],
+              "n": 50000,
+              "n_tratados": 11343,
+              "extra": {
+                "resultado_binario": false,
+                "cate_sd_tratados": 0.13255320516358554,
+                "att_dr": 1.2222007119191456,
+                "att_dr_ee": 0.07351364259483134,
+                "ic_conservador": true
+              }
+            },
+            {
+              "metodo": "bosque_causal",
+              "estimando": "ATT",
+              "efecto": 1.1246132705520528,
+              "ee": 0.11881654296338338,
+              "ic95": [
+                0.8917371255762654,
+                1.3574894155278403
+              ],
+              "n": 50000,
+              "n_tratados": 11104,
+              "extra": {
+                "resultado_binario": false,
+                "cate_sd_tratados": 0.14303051983639128,
+                "att_dr": 1.2340461307333561,
+                "att_dr_ee": 0.07652286800517022,
+                "ic_conservador": true
+              }
+            },
+            {
+              "metodo": "bosque_causal",
+              "estimando": "ATT",
+              "efecto": 1.1242174636625408,
+              "ee": 0.11890223345391424,
+              "ic95": [
+                0.8911733684114953,
+                1.3572615589135864
+              ],
+              "n": 50000,
+              "n_tratados": 11100,
+              "extra": {
+                "resultado_binario": false,
+                "cate_sd_tratados": 0.1468198917241681,
+                "att_dr": 1.2479896057575204,
+                "att_dr_ee": 0.0741797866235221,
+                "ic_conservador": true
+              }
+            },
+            {
+              "metodo": "bosque_causal",
+              "estimando": "ATT",
+              "efecto": 1.1284923025708096,
+              "ee": 0.11812874926040041,
+              "ic95": [
+                0.8969642084816621,
+                1.3600203966599569
+              ],
+              "n": 50000,
+              "n_tratados": 10982,
+              "extra": {
+                "resultado_binario": false,
+                "cate_sd_tratados": 0.13335643652876264,
+                "att_dr": 1.2176096578694657,
+                "att_dr_ee": 0.08361007961482256,
+                "ic_conservador": true
+              }
+            },
+            {
+              "metodo": "bosque_causal",
+              "estimando": "ATT",
+              "efecto": 1.137366716700515,
+              "ee": 0.11742983567473056,
+              "ic95": [
+                0.9072084680675863,
+                1.3675249653334438
+              ],
+              "n": 50000,
+              "n_tratados": 11269,
+              "extra": {
+                "resultado_binario": false,
+                "cate_sd_tratados": 0.12303255963646788,
+                "att_dr": 1.2488667120109092,
+                "att_dr_ee": 0.07486658368639551,
+                "ic_conservador": true
+              }
+            },
+            {
+              "metodo": "bosque_causal",
+              "estimando": "ATT",
+              "efecto": 1.1234280600620519,
+              "ee": 0.11657344266823257,
+              "ic95": [
+                0.8949483108784712,
+                1.3519078092456325
+              ],
+              "n": 50000,
+              "n_tratados": 11090,
+              "extra": {
+                "resultado_binario": false,
+                "cate_sd_tratados": 0.14484023346434177,
+                "att_dr": 1.239360661011307,
+                "att_dr_ee": 0.07386671102441958,
+                "ic_conservador": true
+              }
+            },
+            {
+              "metodo": "bosque_causal",
+              "estimando": "ATT",
+              "efecto": 1.1211121245852855,
+              "ee": 0.11638954942486093,
+              "ic95": [
+                0.8929927995357134,
+                1.3492314496348574
+              ],
+              "n": 50000,
+              "n_tratados": 11126,
+              "extra": {
+                "resultado_binario": false,
+                "cate_sd_tratados": 0.13364996978467475,
+                "att_dr": 1.2519032431931736,
+                "att_dr_ee": 0.07130506381458179,
+                "ic_conservador": true
+              }
+            }
+          ]
+        }
+      },
+      "placebo_did": {
+        "resumen": {
+          "sesgo": -0.001236787619634962,
+          "sesgo_relativo": null,
+          "rmse": 0.007134965303457781,
+          "cobertura": 0.9,
+          "ancho_ic": 0.03685318543890038,
+          "repeticiones": 10
+        },
+        "rechaza_cero": 0.1
+      },
+      "bosque_cate": {
+        "correlacion_media": 0.7612130297037106,
+        "rmse_medio": 0.8481311594323634,
+        "sd_verdadero_medio": 0.11176304006434482
+      },
+      "verdades": [
+        0.28942341395022786,
+        0.2870433381088825,
+        0.2895876196439753,
+        0.28933262805254345,
+        0.28843659942363115,
+        0.28735135135135137,
+        0.28855399745037336,
+        0.28854379270565267,
+        0.2893146979260595,
+        0.2877044760021571
+      ]
+    },
+    "tendencias": {
+      "att_verdadero_medio": 0.2885291914614854,
+      "frac_tratados": 0.22354599999999997,
+      "metodos": {
+        "ingenuo": {
+          "resumen": {
+            "sesgo": 1.992016502105162,
+            "sesgo_relativo": 6.904150720812967,
+            "rmse": 1.992063387470905,
+            "cobertura": 0.0,
+            "ancho_ic": 0.06570459368954298,
+            "repeticiones": 10
+          },
+          "corridas": [
+            {
+              "metodo": "ingenuo",
+              "estimando": "diferencia de medias",
+              "efecto": 2.2790881155801137,
+              "ee": 0.01666543114761983,
+              "ic95": [
+                2.2464244707439467,
+                2.3117517604162807
+              ],
+              "n": 50000,
+              "n_tratados": 11412,
+              "extra": {}
+            },
+            {
+              "metodo": "ingenuo",
+              "estimando": "diferencia de medias",
+              "efecto": 2.312871424226633,
+              "ee": 0.016843895896502047,
+              "ic95": [
+                2.279857994910147,
+                2.3458848535431187
+              ],
+              "n": 50000,
+              "n_tratados": 11168,
+              "extra": {}
+            },
+            {
+              "metodo": "ingenuo",
+              "estimando": "diferencia de medias",
+              "efecto": 2.2889662318684185,
+              "ee": 0.016776800640552057,
+              "ic95": [
+                2.256084306837128,
+                2.321848156899709
+              ],
+              "n": 50000,
+              "n_tratados": 11179,
+              "extra": {}
+            },
+            {
+              "metodo": "ingenuo",
+              "estimando": "diferencia de medias",
+              "efecto": 2.282209256076052,
+              "ee": 0.01654824839394813,
+              "ic95": [
+                2.249775285216691,
+                2.314643226935413
+              ],
+              "n": 50000,
+              "n_tratados": 11343,
+              "extra": {}
+            },
+            {
+              "metodo": "ingenuo",
+              "estimando": "diferencia de medias",
+              "efecto": 2.2892254330309427,
+              "ee": 0.01680808110532796,
+              "ic95": [
+                2.2562821994152715,
+                2.322168666646614
+              ],
+              "n": 50000,
+              "n_tratados": 11104,
+              "extra": {}
+            },
+            {
+              "metodo": "ingenuo",
+              "estimando": "diferencia de medias",
+              "efecto": 2.2790690211059697,
+              "ee": 0.01675471347524795,
+              "ic95": [
+                2.246230386123196,
+                2.3119076560887435
+              ],
+              "n": 50000,
+              "n_tratados": 11100,
+              "extra": {}
+            },
+            {
+              "metodo": "ingenuo",
+              "estimando": "diferencia de medias",
+              "efecto": 2.267744704627826,
+              "ee": 0.01691630794695031,
+              "ic95": [
+                2.2345893503004146,
+                2.300900058955237
+              ],
+              "n": 50000,
+              "n_tratados": 10982,
+              "extra": {}
+            },
+            {
+              "metodo": "ingenuo",
+              "estimando": "diferencia de medias",
+              "efecto": 2.2700867569618897,
+              "ee": 0.016683684878761467,
+              "ic95": [
+                2.2373873354701015,
+                2.302786178453678
+              ],
+              "n": 50000,
+              "n_tratados": 11269,
+              "extra": {}
+            },
+            {
+              "metodo": "ingenuo",
+              "estimando": "diferencia de medias",
+              "efecto": 2.270335179935077,
+              "ee": 0.016870531500997526,
+              "ic95": [
+                2.2372695457930734,
+                2.3034008140770803
+              ],
+              "n": 50000,
+              "n_tratados": 11090,
+              "extra": {}
+            },
+            {
+              "metodo": "ingenuo",
+              "estimando": "diferencia de medias",
+              "efecto": 2.2658608122535506,
+              "ee": 0.016749144424950426,
+              "ic95": [
+                2.233033092408788,
+                2.2986885320983133
+              ],
+              "n": 50000,
+              "n_tratados": 11126,
+              "extra": {}
+            }
+          ]
+        },
+        "regresion": {
+          "resumen": {
+            "sesgo": 1.210909701111109,
+            "sesgo_relativo": 4.1969047951178196,
+            "rmse": 1.2109655658668101,
+            "cobertura": 0.0,
+            "ancho_ic": 0.06486312300757446,
+            "repeticiones": 10
+          },
+          "corridas": [
+            {
+              "metodo": "regresion",
+              "estimando": "efecto constante (MCO)",
+              "efecto": 1.504750128192917,
+              "ee": 0.01633348974334477,
+              "ic95": [
+                1.4727370765541068,
+                1.5367631798317272
+              ],
+              "n": 50000,
+              "n_tratados": 11412,
+              "extra": {}
+            },
+            {
+              "metodo": "regresion",
+              "estimando": "efecto constante (MCO)",
+              "efecto": 1.5263218694596554,
+              "ee": 0.016656896378053992,
+              "ic95": [
+                1.493674952464454,
+                1.558968786454857
+              ],
+              "n": 50000,
+              "n_tratados": 11168,
+              "extra": {}
+            },
+            {
+              "metodo": "regresion",
+              "estimando": "efecto constante (MCO)",
+              "efecto": 1.5025003153448206,
+              "ee": 0.01656404127161674,
+              "ic95": [
+                1.4700353910140167,
+                1.5349652396756246
+              ],
+              "n": 50000,
+              "n_tratados": 11179,
+              "extra": {}
+            },
+            {
+              "metodo": "regresion",
+              "estimando": "efecto constante (MCO)",
+              "efecto": 1.5043336906159923,
+              "ee": 0.016391968502032332,
+              "ic95": [
+                1.4722060227162939,
+                1.5364613585156908
+              ],
+              "n": 50000,
+              "n_tratados": 11343,
+              "extra": {}
+            },
+            {
+              "metodo": "regresion",
+              "estimando": "efecto constante (MCO)",
+              "efecto": 1.497777121909416,
+              "ee": 0.01653582440583595,
+              "ic95": [
+                1.465367501619299,
+                1.530186742199533
+              ],
+              "n": 50000,
+              "n_tratados": 11104,
+              "extra": {}
+            },
+            {
+              "metodo": "regresion",
+              "estimando": "efecto constante (MCO)",
+              "efecto": 1.4945113796702347,
+              "ee": 0.016669487429387488,
+              "ic95": [
+                1.461839784667892,
+                1.5271829746725774
+              ],
+              "n": 50000,
+              "n_tratados": 11100,
+              "extra": {}
+            },
+            {
+              "metodo": "regresion",
+              "estimando": "efecto constante (MCO)",
+              "efecto": 1.494528828455404,
+              "ee": 0.016729453946207,
+              "ic95": [
+                1.4617397012398168,
+                1.527317955670991
+              ],
+              "n": 50000,
+              "n_tratados": 10982,
+              "extra": {}
+            },
+            {
+              "metodo": "regresion",
+              "estimando": "efecto constante (MCO)",
+              "efecto": 1.5011888472887158,
+              "ee": 0.016582551769310932,
+              "ic95": [
+                1.4686876430490954,
+                1.5336900515283363
+              ],
+              "n": 50000,
+              "n_tratados": 11269,
+              "extra": {}
+            },
+            {
+              "metodo": "regresion",
+              "estimando": "efecto constante (MCO)",
+              "efecto": 1.4862916374325157,
+              "ee": 0.016561378496548654,
+              "ic95": [
+                1.4538319320449442,
+                1.5187513428200872
+              ],
+              "n": 50000,
+              "n_tratados": 11090,
+              "extra": {}
+            },
+            {
+              "metodo": "regresion",
+              "estimando": "efecto constante (MCO)",
+              "efecto": 1.4821851073562717,
+              "ee": 0.016445099140780083,
+              "ic95": [
+                1.4499533053181521,
+                1.5144169093943913
+              ],
+              "n": 50000,
+              "n_tratados": 11126,
+              "extra": {}
+            }
+          ]
+        },
+        "emparejamiento": {
+          "resumen": {
+            "sesgo": 1.1915145320179923,
+            "sesgo_relativo": 4.1297349377615715,
+            "rmse": 1.1918167420109518,
+            "cobertura": 0.0,
+            "ancho_ic": 0.07426192981907032,
+            "repeticiones": 10
+          },
+          "corridas": [
+            {
+              "metodo": "emparejamiento",
+              "estimando": "ATT",
+              "efecto": 1.501867279971586,
+              "ee": 0.018707323505913986,
+              "ic95": [
+                1.465201599652855,
+                1.538532960290317
+              ],
+              "n": 50000,
+              "n_tratados": 11412,
+              "extra": {
+                "tratados_emparejados": 0.9999123729407641,
+                "smd_max_antes": 0.9735854188896319,
+                "smd_max_despues": 0.02568150183306072,
+                "controles_distintos": 7700
+              }
+            },
+            {
+              "metodo": "emparejamiento",
+              "estimando": "ATT",
+              "efecto": 1.5445296705284306,
+              "ee": 0.01837678655164,
+              "ic95": [
+                1.5085118307356362,
+                1.580547510321225
+              ],
+              "n": 50000,
+              "n_tratados": 11168,
+              "extra": {
+                "tratados_emparejados": 0.9996418338108882,
+                "smd_max_antes": 1.0055528461428758,
+                "smd_max_despues": 0.04731211096458483,
+                "controles_distintos": 7494
+              }
+            },
+            {
+              "metodo": "emparejamiento",
+              "estimando": "ATT",
+              "efecto": 1.4835978650192203,
+              "ee": 0.018957027672019445,
+              "ic95": [
+                1.446442773528133,
+                1.5207529565103075
+              ],
+              "n": 50000,
+              "n_tratados": 11179,
+              "extra": {
+                "tratados_emparejados": 0.9999105465605153,
+                "smd_max_antes": 0.9923231116051117,
+                "smd_max_despues": 0.043229516654052565,
+                "controles_distintos": 7502
+              }
+            },
+            {
+              "metodo": "emparejamiento",
+              "estimando": "ATT",
+              "efecto": 1.4865716158016877,
+              "ee": 0.02004510535778703,
+              "ic95": [
+                1.4472839312341144,
+                1.525859300369261
+              ],
+              "n": 50000,
+              "n_tratados": 11343,
+              "extra": {
+                "tratados_emparejados": 1.0,
+                "smd_max_antes": 1.0013151943511043,
+                "smd_max_despues": 0.04334018528422588,
+                "controles_distintos": 7532
+              }
+            },
+            {
+              "metodo": "emparejamiento",
+              "estimando": "ATT",
+              "efecto": 1.4735461124733509,
+              "ee": 0.018449810230816,
+              "ic95": [
+                1.437385148899353,
+                1.5097070760473488
+              ],
+              "n": 50000,
+              "n_tratados": 11104,
+              "extra": {
+                "tratados_emparejados": 0.9997298270893372,
+                "smd_max_antes": 0.9935283784939114,
+                "smd_max_despues": 0.043282330994713,
+                "controles_distintos": 7483
+              }
+            },
+            {
+              "metodo": "emparejamiento",
+              "estimando": "ATT",
+              "efecto": 1.480610602136038,
+              "ee": 0.019223677998010752,
+              "ic95": [
+                1.4429328856095418,
+                1.518288318662534
+              ],
+              "n": 50000,
+              "n_tratados": 11100,
+              "extra": {
+                "tratados_emparejados": 1.0,
+                "smd_max_antes": 0.993085450204734,
+                "smd_max_despues": 0.03599970325597898,
+                "controles_distintos": 7470
+              }
+            },
+            {
+              "metodo": "emparejamiento",
+              "estimando": "ATT",
+              "efecto": 1.453649022199395,
+              "ee": 0.020814918189020863,
+              "ic95": [
+                1.4128525322077663,
+                1.4944455121910236
+              ],
+              "n": 50000,
+              "n_tratados": 10982,
+              "extra": {
+                "tratados_emparejados": 1.0,
+                "smd_max_antes": 0.9790220232631638,
+                "smd_max_despues": 0.03111935487684151,
+                "controles_distintos": 7482
+              }
+            },
+            {
+              "metodo": "emparejamiento",
+              "estimando": "ATT",
+              "efecto": 1.4715131580682244,
+              "ee": 0.017119292313390353,
+              "ic95": [
+                1.437959961693166,
+                1.5050663544432827
+              ],
+              "n": 50000,
+              "n_tratados": 11269,
+              "extra": {
+                "tratados_emparejados": 1.0,
+                "smd_max_antes": 0.9715362221157098,
+                "smd_max_despues": 0.02824367330129631,
+                "controles_distintos": 7578
+              }
+            },
+            {
+              "metodo": "emparejamiento",
+              "estimando": "ATT",
+              "efecto": 1.45611025583937,
+              "ee": 0.018367831438497382,
+              "ic95": [
+                1.4201099677458124,
+                1.4921105439329274
+              ],
+              "n": 50000,
+              "n_tratados": 11090,
+              "extra": {
+                "tratados_emparejados": 1.0,
+                "smd_max_antes": 0.9798641975680896,
+                "smd_max_despues": 0.03599774748730717,
+                "controles_distintos": 7539
+              }
+            },
+            {
+              "metodo": "emparejamiento",
+              "estimando": "ATT",
+              "efecto": 1.4484416527574748,
+              "ee": 0.01938540639732381,
+              "ic95": [
+                1.4104469543930478,
+                1.4864363511219019
+              ],
+              "n": 50000,
+              "n_tratados": 11126,
+              "extra": {
+                "tratados_emparejados": 1.0,
+                "smd_max_antes": 0.986133339802378,
+                "smd_max_despues": 0.03798001354197068,
+                "controles_distintos": 7516
+              }
+            }
+          ]
+        },
+        "dml_att": {
+          "resumen": {
+            "sesgo": 1.1917370695994447,
+            "sesgo_relativo": 4.1304758225291005,
+            "rmse": 1.1918283309243545,
+            "cobertura": 0.0,
+            "ancho_ic": 0.07214767073894261,
+            "repeticiones": 10
+          },
+          "corridas": [
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 1.4758567795097397,
+              "ee": 0.018207528791581665,
+              "ic95": [
+                1.4401706788307636,
+                1.5115428801887159
+              ],
+              "n": 50000,
+              "n_tratados": 11412,
+              "extra": {
+                "ate": 1.5604203162724664,
+                "ate_ee": 0.022580935034369996,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.8801633936757828,
+                "frac_recortada": 0.00206
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 1.5175722310355466,
+              "ee": 0.018578596007336398,
+              "ic95": [
+                1.4811588519778476,
+                1.5539856100932457
+              ],
+              "n": 50000,
+              "n_tratados": 11168,
+              "extra": {
+                "ate": 1.610548088194445,
+                "ate_ee": 0.024428851588274233,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.8871695082903152,
+                "frac_recortada": 0.00156
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 1.4823670028748734,
+              "ee": 0.018384261800668298,
+              "ic95": [
+                1.446334511863208,
+                1.5183994938865388
+              ],
+              "n": 50000,
+              "n_tratados": 11179,
+              "extra": {
+                "ate": 1.5797734125369545,
+                "ate_ee": 0.023346590129287963,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.8865373724400833,
+                "frac_recortada": 0.00368
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 1.488061539452285,
+              "ee": 0.018371854584419776,
+              "ic95": [
+                1.4520533661376152,
+                1.5240697127669547
+              ],
+              "n": 50000,
+              "n_tratados": 11343,
+              "extra": {
+                "ate": 1.5600692441107054,
+                "ate_ee": 0.022842661511005467,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.8826151900050596,
+                "frac_recortada": 0.00148
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 1.4748069143387905,
+              "ee": 0.018171602371883627,
+              "ic95": [
+                1.439191228148516,
+                1.510422600529065
+              ],
+              "n": 50000,
+              "n_tratados": 11104,
+              "extra": {
+                "ate": 1.5737361225628044,
+                "ate_ee": 0.024117655189397923,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.9102672727884098,
+                "frac_recortada": 0.003
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 1.4695754369950047,
+              "ee": 0.01878087374097794,
+              "ic95": [
+                1.432765600864494,
+                1.5063852731255154
+              ],
+              "n": 50000,
+              "n_tratados": 11100,
+              "extra": {
+                "ate": 1.5717805578304518,
+                "ate_ee": 0.023992508166721747,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.8897537500074598,
+                "frac_recortada": 0.00368
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 1.4727041689211942,
+              "ee": 0.01837725404262885,
+              "ic95": [
+                1.4366854128628985,
+                1.5087229249794898
+              ],
+              "n": 50000,
+              "n_tratados": 10982,
+              "extra": {
+                "ate": 1.5613196474412614,
+                "ate_ee": 0.025141327993956613,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.9099698996362929,
+                "frac_recortada": 0.00432
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 1.487939324602466,
+              "ee": 0.01855736890882441,
+              "ic95": [
+                1.4515675498933467,
+                1.5243110993115851
+              ],
+              "n": 50000,
+              "n_tratados": 11269,
+              "extra": {
+                "ate": 1.5663577314358124,
+                "ate_ee": 0.024341742198514888,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.862095321266702,
+                "frac_recortada": 0.0021
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 1.4678225805452592,
+              "ee": 0.018284060581406573,
+              "ic95": [
+                1.4319864803145539,
+                1.5036586807759644
+              ],
+              "n": 50000,
+              "n_tratados": 11090,
+              "extra": {
+                "ate": 1.5385483765965182,
+                "ate_ee": 0.023171161332949882,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.8429404559157389,
+                "frac_recortada": 0.00236
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 1.4659566323341415,
+              "ee": 0.01834016165416056,
+              "ic95": [
+                1.4300105760213442,
+                1.5019026886469389
+              ],
+              "n": 50000,
+              "n_tratados": 11126,
+              "extra": {
+                "ate": 1.5523142071355365,
+                "ate_ee": 0.022529664168321643,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.8937787273728232,
+                "frac_recortada": 0.00196
+              }
+            }
+          ]
+        },
+        "did_dr": {
+          "resumen": {
+            "sesgo": 0.3417029331394948,
+            "sesgo_relativo": 1.1843076120139326,
+            "rmse": 0.34176814539011113,
+            "cobertura": 0.0,
+            "ancho_ic": 0.04176832711105401,
+            "repeticiones": 10
+          },
+          "corridas": [
+            {
+              "metodo": "did_dr",
+              "estimando": "ATT",
+              "efecto": 0.632473553679796,
+              "ee": 0.010461387288000345,
+              "ic95": [
+                0.6119696113669901,
+                0.6529774959926018
+              ],
+              "n": 50000,
+              "n_tratados": 11412,
+              "extra": {
+                "did_sin_ajuste": 0.704814617482663
+              }
+            },
+            {
+              "metodo": "did_dr",
+              "estimando": "ATT",
+              "efecto": 0.6396666487655485,
+              "ee": 0.01073947576201201,
+              "ic95": [
+                0.6186176630591641,
+                0.6607156344719328
+              ],
+              "n": 50000,
+              "n_tratados": 11168,
+              "extra": {
+                "did_sin_ajuste": 0.7074906930842086
+              }
+            },
+            {
+              "metodo": "did_dr",
+              "estimando": "ATT",
+              "efecto": 0.6334733520009392,
+              "ee": 0.010849793189905095,
+              "ic95": [
+                0.6122081481090174,
+                0.6547385558928611
+              ],
+              "n": 50000,
+              "n_tratados": 11179,
+              "extra": {
+                "did_sin_ajuste": 0.7016369144133382
+              }
+            },
+            {
+              "metodo": "did_dr",
+              "estimando": "ATT",
+              "efecto": 0.6310912804512573,
+              "ee": 0.010608123400396597,
+              "ic95": [
+                0.6102997406429234,
+                0.6518828202595912
+              ],
+              "n": 50000,
+              "n_tratados": 11343,
+              "extra": {
+                "did_sin_ajuste": 0.6939313224284468
+              }
+            },
+            {
+              "metodo": "did_dr",
+              "estimando": "ATT",
+              "efecto": 0.6262093770992445,
+              "ee": 0.01069188896792861,
+              "ic95": [
+                0.6052536597954034,
+                0.6471650944030857
+              ],
+              "n": 50000,
+              "n_tratados": 11104,
+              "extra": {
+                "did_sin_ajuste": 0.7023397536214431
+              }
+            },
+            {
+              "metodo": "did_dr",
+              "estimando": "ATT",
+              "efecto": 0.629776613877869,
+              "ee": 0.010632807346524768,
+              "ic95": [
+                0.6089366944241276,
+                0.6506165333316104
+              ],
+              "n": 50000,
+              "n_tratados": 11100,
+              "extra": {
+                "did_sin_ajuste": 0.7021199044974159
+              }
+            },
+            {
+              "metodo": "did_dr",
+              "estimando": "ATT",
+              "efecto": 0.6185712900967686,
+              "ee": 0.010656107092901658,
+              "ic95": [
+                0.5976857039792796,
+                0.6394568762142576
+              ],
+              "n": 50000,
+              "n_tratados": 10982,
+              "extra": {
+                "did_sin_ajuste": 0.6942254331963543
+              }
+            },
+            {
+              "metodo": "did_dr",
+              "estimando": "ATT",
+              "efecto": 0.6384740192359472,
+              "ee": 0.010633976869080436,
+              "ic95": [
+                0.6176318075601175,
+                0.6593162309117768
+              ],
+              "n": 50000,
+              "n_tratados": 11269,
+              "extra": {
+                "did_sin_ajuste": 0.7008181099230623
+              }
+            },
+            {
+              "metodo": "did_dr",
+              "estimando": "ATT",
+              "efecto": 0.6329682228242497,
+              "ee": 0.010686754011746645,
+              "ic95": [
+                0.6120225698495874,
+                0.653913875798912
+              ],
+              "n": 50000,
+              "n_tratados": 11090,
+              "extra": {
+                "did_sin_ajuste": 0.704236180238079
+              }
+            },
+            {
+              "metodo": "did_dr",
+              "estimando": "ATT",
+              "efecto": 0.6196168879781825,
+              "ee": 0.010593498897956955,
+              "ic95": [
+                0.5988540116679221,
+                0.6403797642884429
+              ],
+              "n": 50000,
+              "n_tratados": 11126,
+              "extra": {
+                "did_sin_ajuste": 0.7016248172883768
+              }
+            }
+          ]
+        },
+        "dml_att_rezago": {
+          "resumen": {
+            "sesgo": 0.2085647829530001,
+            "sesgo_relativo": 0.7228830391185525,
+            "rmse": 0.20876941375021862,
+            "cobertura": 0.0,
+            "ancho_ic": 0.04969218823963114,
+            "repeticiones": 10
+          },
+          "corridas": [
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.512614561934984,
+              "ee": 0.012875521548434798,
+              "ic95": [
+                0.48737900341788243,
+                0.5378501204520856
+              ],
+              "n": 50000,
+              "n_tratados": 11412,
+              "extra": {
+                "ate": 0.5533458849215881,
+                "ate_ee": 0.017123221715884557,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.957557343465625,
+                "frac_recortada": 0.03384
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.5046525511269215,
+              "ee": 0.01257102806294168,
+              "ic95": [
+                0.4800137888749135,
+                0.5292913133789295
+              ],
+              "n": 50000,
+              "n_tratados": 11168,
+              "extra": {
+                "ate": 0.5616363029236001,
+                "ate_ee": 0.017525360952239617,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.9452729595266467,
+                "frac_recortada": 0.04024
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.48447838074125454,
+              "ee": 0.012012205032314798,
+              "ic95": [
+                0.46093489150300676,
+                0.5080218699795024
+              ],
+              "n": 50000,
+              "n_tratados": 11179,
+              "extra": {
+                "ate": 0.5690977963670087,
+                "ate_ee": 0.01718599049501721,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.9457686982642782,
+                "frac_recortada": 0.0498
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.49143531973211607,
+              "ee": 0.013665729101388701,
+              "ic95": [
+                0.4646509828709133,
+                0.5182196565933188
+              ],
+              "n": 50000,
+              "n_tratados": 11343,
+              "extra": {
+                "ate": 0.5440575645712729,
+                "ate_ee": 0.01865483424490389,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.965915076575848,
+                "frac_recortada": 0.04606
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.49759304853267194,
+              "ee": 0.012991133911029273,
+              "ic95": [
+                0.4721308939487176,
+                0.5230552031166263
+              ],
+              "n": 50000,
+              "n_tratados": 11104,
+              "extra": {
+                "ate": 0.551209656350523,
+                "ate_ee": 0.018036505669906444,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.9696812933203938,
+                "frac_recortada": 0.04816
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.500919541596463,
+              "ee": 0.01232059196996929,
+              "ic95": [
+                0.4767716250671098,
+                0.5250674581258162
+              ],
+              "n": 50000,
+              "n_tratados": 11100,
+              "extra": {
+                "ate": 0.5751712797156181,
+                "ate_ee": 0.016813428399173942,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.9609463448567872,
+                "frac_recortada": 0.03486
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.48198100364161783,
+              "ee": 0.012866925049758785,
+              "ic95": [
+                0.4567622939523144,
+                0.5071997133309213
+              ],
+              "n": 50000,
+              "n_tratados": 10982,
+              "extra": {
+                "ate": 0.5246961181813646,
+                "ate_ee": 0.017872628707629377,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.9739806201969934,
+                "frac_recortada": 0.04078
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.49722632073861656,
+              "ee": 0.013518077162895822,
+              "ic95": [
+                0.47073137635910733,
+                0.5237212651181258
+              ],
+              "n": 50000,
+              "n_tratados": 11269,
+              "extra": {
+                "ate": 0.5560473311879364,
+                "ate_ee": 0.016074834293722494,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.9597402012561295,
+                "frac_recortada": 0.03184
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.5061924187191333,
+              "ee": 0.011707926937852775,
+              "ic95": [
+                0.4832453035873156,
+                0.5291395338509511
+              ],
+              "n": 50000,
+              "n_tratados": 11090,
+              "extra": {
+                "ate": 0.5624629193576026,
+                "ate_ee": 0.016601212624705524,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.9492979479118456,
+                "frac_recortada": 0.04216
+              }
+            },
+            {
+              "metodo": "dml_att",
+              "estimando": "ATT",
+              "efecto": 0.4938465973810761,
+              "ee": 0.012238976942878264,
+              "ic95": [
+                0.4698586433654186,
+                0.5178345513967336
+              ],
+              "n": 50000,
+              "n_tratados": 11126,
+              "extra": {
+                "ate": 0.5677866026799679,
+                "ate_ee": 0.01784241368753121,
+                "propension_min_tratados": 0.01,
+                "propension_max_controles": 0.9641063212296991,
+                "frac_recortada": 0.03562
+              }
+            }
+          ]
+        },
+        "bosque_causal": {
+          "resumen": {
+            "sesgo": 1.181484346866823,
+            "sesgo_relativo": 4.094947792259677,
+            "rmse": 1.1815782711846985,
+            "cobertura": 0.0,
+            "ancho_ic": 0.6019172145943316,
+            "repeticiones": 10
+          },
+          "corridas": [
+            {
+              "metodo": "bosque_causal",
+              "estimando": "ATT",
+              "efecto": 1.470564549510367,
+              "ee": 0.15276984326408696,
+              "ic95": [
+                1.171141158788927,
+                1.769987940231806
+              ],
+              "n": 50000,
+              "n_tratados": 11412,
+              "extra": {
+                "resultado_binario": false,
+                "cate_sd_tratados": 0.15143490766096118,
+                "att_dr": 1.6077787498621614,
+                "att_dr_ee": 0.08750761467448134,
+                "ic_conservador": true
+              }
+            },
+            {
+              "metodo": "bosque_causal",
+              "estimando": "ATT",
+              "efecto": 1.506345122410199,
+              "ee": 0.15257759970787413,
+              "ic95": [
+                1.2072985221351966,
+                1.8053917226852012
+              ],
+              "n": 50000,
+              "n_tratados": 11168,
+              "extra": {
+                "resultado_binario": false,
+                "cate_sd_tratados": 0.13601956467067888,
+                "att_dr": 1.7001762543286516,
+                "att_dr_ee": 0.10264522735081442,
+                "ic_conservador": true
+              }
+            },
+            {
+              "metodo": "bosque_causal",
+              "estimando": "ATT",
+              "efecto": 1.4599040967960204,
+              "ee": 0.15274488320211846,
+              "ic95": [
+                1.160529626897091,
+                1.7592785666949498
+              ],
+              "n": 50000,
+              "n_tratados": 11179,
+              "extra": {
+                "resultado_binario": false,
+                "cate_sd_tratados": 0.17296989115681077,
+                "att_dr": 1.6291322691567007,
+                "att_dr_ee": 0.09995786618312198,
+                "ic_conservador": true
+              }
+            },
+            {
+              "metodo": "bosque_causal",
+              "estimando": "ATT",
+              "efecto": 1.4822548054799787,
+              "ee": 0.1526761404738465,
+              "ic95": [
+                1.1830150688526615,
+                1.7814945421072959
+              ],
+              "n": 50000,
+              "n_tratados": 11343,
+              "extra": {
+                "resultado_binario": false,
+                "cate_sd_tratados": 0.15183996929886726,
+                "att_dr": 1.574050203326464,
+                "att_dr_ee": 0.09565454559407455,
+                "ic_conservador": true
+              }
+            },
+            {
+              "metodo": "bosque_causal",
+              "estimando": "ATT",
+              "efecto": 1.4633227070554204,
+              "ee": 0.15379149528757305,
+              "ic95": [
+                1.1618969151632157,
+                1.764748498947625
+              ],
+              "n": 50000,
+              "n_tratados": 11104,
+              "extra": {
+                "resultado_binario": false,
+                "cate_sd_tratados": 0.16289408181228993,
+                "att_dr": 1.5836640949880327,
+                "att_dr_ee": 0.10064477582432267,
+                "ic_conservador": true
+              }
+            },
+            {
+              "metodo": "bosque_causal",
+              "estimando": "ATT",
+              "efecto": 1.461152536488587,
+              "ee": 0.15663289245002793,
+              "ic95": [
+                1.1541577084921963,
+                1.7681473644849774
+              ],
+              "n": 50000,
+              "n_tratados": 11100,
+              "extra": {
+                "resultado_binario": false,
+                "cate_sd_tratados": 0.16891644122518865,
+                "att_dr": 1.6089906355773682,
+                "att_dr_ee": 0.09785470770883387,
+                "ic_conservador": true
+              }
+            },
+            {
+              "metodo": "bosque_causal",
+              "estimando": "ATT",
+              "efecto": 1.4661627837003988,
+              "ee": 0.15513423860021283,
+              "ic95": [
+                1.162105263274938,
+                1.7702203041258593
+              ],
+              "n": 50000,
+              "n_tratados": 10982,
+              "extra": {
+                "resultado_binario": false,
+                "cate_sd_tratados": 0.15773418017476237,
+                "att_dr": 1.5870173553091522,
+                "att_dr_ee": 0.10959480269087042,
+                "ic_conservador": true
+              }
+            },
+            {
+              "metodo": "bosque_causal",
+              "estimando": "ATT",
+              "efecto": 1.4773601520147353,
+              "ee": 0.15569345583440233,
+              "ic95": [
+                1.1722065859507291,
+                1.7825137180787414
+              ],
+              "n": 50000,
+              "n_tratados": 11269,
+              "extra": {
+                "resultado_binario": false,
+                "cate_sd_tratados": 0.14214962062628025,
+                "att_dr": 1.6008908704754932,
+                "att_dr_ee": 0.09983540641844584,
+                "ic_conservador": true
+              }
+            },
+            {
+              "metodo": "bosque_causal",
+              "estimando": "ATT",
+              "efecto": 1.4573399056729193,
+              "ee": 0.1523566341942305,
+              "ic95": [
+                1.1587263898464837,
+                1.7559534214993548
+              ],
+              "n": 50000,
+              "n_tratados": 11090,
+              "extra": {
+                "resultado_binario": false,
+                "cate_sd_tratados": 0.16360302091137352,
+                "att_dr": 1.568652042623238,
+                "att_dr_ee": 0.09751441167004127,
+                "ic_conservador": true
+              }
+            },
+            {
+              "metodo": "bosque_causal",
+              "estimando": "ATT",
+              "efecto": 1.4557287241544574,
+              "ee": 0.15115413118879076,
+              "ic95": [
+                1.159472070909985,
+                1.7519853773989298
+              ],
+              "n": 50000,
+              "n_tratados": 11126,
+              "extra": {
+                "resultado_binario": false,
+                "cate_sd_tratados": 0.15158681746265223,
+                "att_dr": 1.6130486639057797,
+                "att_dr_ee": 0.09408934745705241,
+                "ic_conservador": true
+              }
+            }
+          ]
+        }
+      },
+      "placebo_did": {
+        "resumen": {
+          "sesgo": 0.33929041097260676,
+          "sesgo_relativo": null,
+          "rmse": 0.3394089680906405,
+          "cobertura": 0.0,
+          "ancho_ic": 0.041503449761408295,
+          "repeticiones": 10
+        },
+        "rechaza_cero": 1.0
+      },
+      "bosque_cate": {
+        "correlacion_media": 0.6704124296800256,
+        "rmse_medio": 1.1871484690457066,
+        "sd_verdadero_medio": 0.11176304006434482
+      },
+      "verdades": [
+        0.28942341395022786,
+        0.2870433381088825,
+        0.2895876196439753,
+        0.28933262805254345,
+        0.28843659942363115,
+        0.28735135135135137,
+        0.28855399745037336,
+        0.28854379270565267,
+        0.2893146979260595,
+        0.2877044760021571
+      ]
+    }
+  }
+}

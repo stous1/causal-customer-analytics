@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@6"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@7"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "layer": [{"data": {"name": "data-9cb8d6b88eb16c6872edc05a349585be"}, "mark": {"type": "rule", "color": "#8a8f98", "strokeDash": [4, 3]}, "encoding": {"x": {"field": "r", "type": "quantitative"}}}, {"data": {"name": "data-d965b18e0b94551ef272d223398cc09c"}, "mark": {"type": "rule", "strokeWidth": 2}, "encoding": {"color": {"value": "#2f6db5"}, "x": {"field": "inf", "title": "Efecto en los tratados (puntos porcentuales de visita)", "type": "quantitative"}, "x2": {"field": "sup"}, "y": {"field": "metodo", "sort": null, "title": null, "type": "nominal"}}}, {"data": {"name": "data-d965b18e0b94551ef272d223398cc09c"}, "mark": {"type": "point", "filled": true, "size": 60}, "encoding": {"color": {"value": "#2f6db5"}, "x": {"field": "efecto", "type": "quantitative"}, "y": {"field": "metodo", "sort": null, "title": null, "type": "nominal"}}}], "data": {"name": "data-d965b18e0b94551ef272d223398cc09c"}, "height": 110, "title": "Hillstrom sesgado: efecto del correo en la visita (l\u00ednea = verdad)", "width": 480, "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json", "datasets": {"data-d965b18e0b94551ef272d223398cc09c": [{"metodo": "Ingenuo (diferencia de medias)", "efecto": 0.06296032802589152, "inf": 0.05514136639496973, "sup": 0.07077928965681332}, {"metodo": "Regresi\u00f3n lineal", "efecto": 0.04473163823497778, "inf": 0.03671119453917004, "sup": 0.05275208193078553}, {"metodo": "Emparejamiento por propensi\u00f3n", "efecto": 0.04316260643729676, "inf": 0.03433624359048235, "sup": 0.051988969284111175}, {"metodo": "Double ML (ATT)", "efecto": 0.044292960997035974, "inf": 0.03566290805407439, "sup": 0.05292301393999756}, {"metodo": "Bosque causal", "efecto": 0.044145049736852085, "inf": -0.024109995574775677, "sup": 0.11240009504847985}], "data-9cb8d6b88eb16c6872edc05a349585be": [{"r": 0.04413128174113362}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

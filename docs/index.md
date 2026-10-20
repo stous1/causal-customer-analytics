@@ -11,3 +11,4 @@ ciencia de datos aplicada a banca.
 
 1. [Datos, calidad y diseños](hito1.md) ✔
 2. [Capa predictiva](hito2.md) ✔
+3. [Validación de métodos causales](hito3.md) ✔

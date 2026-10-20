@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@6"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@7"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "vconcat": [{"layer": [{"data": {"name": "data-2af3004a540e80d6ed620da968cf8a74"}, "mark": {"type": "rule", "color": "#8a8f98", "strokeDash": [4, 3]}, "encoding": {"x": {"field": "r", "type": "quantitative"}}}, {"data": {"name": "data-258ed7d7a3b81b4c50ee28cc8e434831"}, "mark": {"type": "rule", "strokeWidth": 2}, "encoding": {"color": {"value": "#2f6db5"}, "x": {"field": "inf", "title": "Sesgo relativo al efecto verdadero (0 = acierta)", "type": "quantitative"}, "x2": {"field": "sup"}, "y": {"field": "metodo", "sort": null, "title": null, "type": "nominal"}}}, {"data": {"name": "data-258ed7d7a3b81b4c50ee28cc8e434831"}, "mark": {"type": "point", "filled": true, "size": 60}, "encoding": {"color": {"value": "#2f6db5"}, "x": {"field": "sesgo", "type": "quantitative"}, "y": {"field": "metodo", "sort": null, "title": null, "type": "nominal"}}}], "data": {"name": "data-258ed7d7a3b81b4c50ee28cc8e434831"}, "height": 154, "title": "1. Selecci\u00f3n en observables", "width": 480}, {"layer": [{"data": {"name": "data-2af3004a540e80d6ed620da968cf8a74"}, "mark": {"type": "rule", "color": "#8a8f98", "strokeDash": [4, 3]}, "encoding": {"x": {"field": "r", "type": "quantitative"}}}, {"data": {"name": "data-cfc1c8d08482e2ad943e7a0630a4f7ca"}, "mark": {"type": "rule", "strokeWidth": 2}, "encoding": {"color": {"value": "#2f6db5"}, "x": {"field": "inf", "title": "Sesgo relativo al efecto verdadero (0 = acierta)", "type": "quantitative"}, "x2": {"field": "sup"}, "y": {"field": "metodo", "sort": null, "title": null, "type": "nominal"}}}, {"data": {"name": "data-cfc1c8d08482e2ad943e7a0630a4f7ca"}, "mark": {"type": "point", "filled": true, "size": 60}, "encoding": {"color": {"value": "#2f6db5"}, "x": {"field": "sesgo", "type": "quantitative"}, "y": {"field": "metodo", "sort": null, "title": null, "type": "nominal"}}}], "data": {"name": "data-cfc1c8d08482e2ad943e7a0630a4f7ca"}, "height": 154, "title": "2. Efecto fijo no observado", "width": 480}, {"layer": [{"data": {"name": "data-2af3004a540e80d6ed620da968cf8a74"}, "mark": {"type": "rule", "color": "#8a8f98", "strokeDash": [4, 3]}, "encoding": {"x": {"field": "r", "type": "quantitative"}}}, {"data": {"name": "data-7f0bed20444dabc56be563e86c018581"}, "mark": {"type": "rule", "strokeWidth": 2}, "encoding": {"color": {"value": "#2f6db5"}, "x": {"field": "inf", "title": "Sesgo relativo al efecto verdadero (0 = acierta)", "type": "quantitative"}, "x2": {"field": "sup"}, "y": {"field": "metodo", "sort": null, "title": null, "type": "nominal"}}}, {"data": {"name": "data-7f0bed20444dabc56be563e86c018581"}, "mark": {"type": "point", "filled": true, "size": 60}, "encoding": {"color": {"value": "#2f6db5"}, "x": {"field": "sesgo", "type": "quantitative"}, "y": {"field": "metodo", "sort": null, "title": null, "type": "nominal"}}}], "data": {"name": "data-7f0bed20444dabc56be563e86c018581"}, "height": 154, "title": "3. Tendencias no paralelas", "width": 480}], "title": "Semisint\u00e9tico: sesgo relativo (punto: media de 10 corridas; barra: m\u00edn. a m\u00e1x.)", "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json", "datasets": {"data-258ed7d7a3b81b4c50ee28cc8e434831": [{"escenario": "1. Selecci\u00f3n en observables", "metodo": "Ingenuo (diferencia de medias)", "sesgo": 4.836643558434317, "inf": 4.742450572410207, "sup": 4.927104536326569}, {"escenario": "1. Selecci\u00f3n en observables", "metodo": "Regresi\u00f3n lineal", "sesgo": 0.09912936005239444, "inf": 0.03904979597292995, "sup": 0.17932382281917963}, {"escenario": "1. Selecci\u00f3n en observables", "metodo": "Emparejamiento por propensi\u00f3n", "sesgo": 0.028885778328880563, "inf": -0.03993848048915077, "sup": 0.17720104351950466}, {"escenario": "1. Selecci\u00f3n en observables", "metodo": "Double ML (ATT)", "sesgo": -0.004923186861568647, "inf": -0.08946558688858855, "sup": 0.05382716745332431}, {"escenario": "1. Selecci\u00f3n en observables", "metodo": "Diferencias en diferencias (DR)", "sesgo": -0.010525568205634184, "inf": -0.1398291439619629, "sup": 0.12364620066178442}, {"escenario": "1. Selecci\u00f3n en observables", "metodo": "Double ML con resultados previos", "sesgo": -0.008253190643983032, "inf": -0.09227955668202768, "sup": 0.05405706957457807}, {"escenario": "1. Selecci\u00f3n en observables", "metodo": "Bosque causal", "sesgo": 0.006940326136046002, "inf": -0.07596250586696383, "sup": 0.06384167481345013}], "data-2af3004a540e80d6ed620da968cf8a74": [{"r": 0.0}], "data-cfc1c8d08482e2ad943e7a0630a4f7ca": [{"escenario": "2. Efecto fijo no observado", "metodo": "Ingenuo (diferencia de medias)", "sesgo": 5.937360868282945, "inf": 5.890020451579905, "sup": 6.068273651566957}, {"escenario": "2. Efecto fijo no observado", "metodo": "Regresi\u00f3n lineal", "sesgo": 3.015280318705245, "inf": 2.974706823302488, "sup": 3.107849303857252}, {"escenario": "2. Efecto fijo no observado", "metodo": "Emparejamiento por propensi\u00f3n", "sesgo": 2.950614869869248, "inf": 2.8728920490254923, "sup": 3.136277429246208}, {"escenario": "2. Efecto fijo no observado", "metodo": "Double ML (ATT)", "sesgo": 2.9482431939269604, "inf": 2.9116219794639533, "sup": 3.0671417632099827}, {"escenario": "2. Efecto fijo no observado", "metodo": "Diferencias en diferencias (DR)", "sesgo": 0.005656337562532708, "inf": -0.03671131991780249, "sup": 0.02966223241581561}, {"escenario": "2. Efecto fijo no observado", "metodo": "Double ML con resultados previos", "sesgo": 0.36876953049430233, "inf": 0.3252182698983186, "sup": 0.4171882097341473}, {"escenario": "2. Efecto fijo no observado", "metodo": "Bosque causal", "sesgo": 2.923477209222367, "inf": 2.8830659766520665, "sup": 3.0409185306951247}], "data-7f0bed20444dabc56be563e86c018581": [{"escenario": "3. Tendencias no paralelas", "metodo": "Ingenuo (diferencia de medias)", "sesgo": 6.904150720812967, "inf": 6.847286004513013, "sup": 7.057568726257304}, {"escenario": "3. Tendencias no paralelas", "metodo": "Regresi\u00f3n lineal", "sesgo": 4.1969047951178196, "inf": 4.137283546556522, "sup": 4.317391720412213}, {"escenario": "3. Tendencias no paralelas", "metodo": "Emparejamiento por propensi\u00f3n", "sesgo": 4.1297349377615715, "inf": 4.032963296636625, "sup": 4.380823957469979}, {"escenario": "3. Tendencias no paralelas", "metodo": "Double ML (ATT)", "sesgo": 4.1304758225291005, "inf": 4.073446288997015, "sup": 4.286909778271513}, {"escenario": "3. Tendencias no paralelas", "metodo": "Diferencias en diferencias (DR)", "sesgo": 1.1843076120139326, "inf": 1.1436933661026578, "sup": 1.2284671470860173}, {"escenario": "3. Tendencias no paralelas", "metodo": "Double ML con resultados previos", "sesgo": 0.7228830391185525, "inf": 0.6703320969397099, "sup": 0.7711578857373934}, {"escenario": "3. Tendencias no paralelas", "metodo": "Bosque causal", "sesgo": 4.094947792259677, "inf": 4.037213512205914, "sup": 4.247796839091962}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
