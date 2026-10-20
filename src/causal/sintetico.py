@@ -17,7 +17,7 @@ import pandas as pd
 from causal.ingesta import COLUMNAS_CSV, PRODUCTOS
 
 MESES = pd.date_range("2015-01-01", periods=17, freq="MS") + pd.Timedelta(days=27)
-CANALES = ("KHE", "KAT", "KFC", "KHQ", "RED")
+CANALES = ("KHE", "KAT", "KFC", "KHQ", "KHM", "KHN", "RED")
 PROVINCIAS = ((28, "MADRID"), (8, "BARCELONA"), (15, "CORUÑA, A"), (46, "VALENCIA"))
 SEGMENTOS = ("01 - TOP", "02 - PARTICULARES", "03 - UNIVERSITARIO")
 

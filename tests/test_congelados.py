@@ -8,6 +8,7 @@ from causal.rutas import RAIZ
 
 CONGELADOS = {
     "hito2-congelado": ["docs/resultados/hito2/parametros.json"],
+    "preregistro": ["docs/resultados/preregistro.json"],
 }
 
 
