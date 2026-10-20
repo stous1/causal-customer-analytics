@@ -62,6 +62,8 @@ uv run python scripts/hito4.py graficos
 uv run python scripts/hito4_exploratorio.py   # exploratorio (no preregistrado): nómina sin cco
 uv run python scripts/hito5.py                # heterogeneidad y políticas (--solo para rehacer)
 uv run python scripts/resumen.py              # docs/resultados/resumen.json (para un agente)
+uv run python scripts/demo.py                 # datos del simulador (docs/resultados/demo/)
+uv run python scripts/capturas_demo.py        # capturas y GIF; falla con errores de consola
 uv run python scripts/publicar_resultados.py --hito 1   # reports/hitoN -> docs/resultados/hitoN
 uv run python scripts/verificar_cifras.py     # cifras de README y Pages contra los JSON
 ```
@@ -108,6 +110,11 @@ uv run python scripts/verificar_cifras.py     # cifras de README y Pages contra 
   - Hito 4: `refutaciones.py` (DoWhy, valor de robustez, valor E, consistencia, Holm),
     `preregistro.py` (DAG, supuestos, huellas) y `flujo_hito4.py` (`ANALISIS` preregistrados,
     veredicto). `scripts/hito4.py` no corre sin el tag `preregistro`.
+  - Página interactiva `docs/demo.html` ("¿Predice o causa?" y simulador de Hillstrom): HTML
+    estático que lee los JSON publicados. `docs/demo/motor.js` tiene los cálculos (sin DOM) y
+    `tests/test_demo.py` lo compara con `causal.demo` usando Node.js. `causal.demo` resume la
+    mitad de prueba de Hillstrom en celdas alineadas con el árbol de política del hito 5.
+    `scripts/capturas_demo.py` usa Playwright con el Chrome del sistema (`channel="chrome"`).
   - Hito 5: `flujo_hito5.py` (bosque causal, SHAP sobre el efecto, árboles de política;
     Hillstrom con mitad de prueba; contraste predice contra causa).
 - `scripts/`: puntos de entrada delgados que orquestan funciones de `src/`.

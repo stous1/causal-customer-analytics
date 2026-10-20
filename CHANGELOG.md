@@ -2,6 +2,11 @@
 
 ## Después de v1.0 (2026-10-20)
 
+- Página interactiva `docs/demo.html`: "¿Predice o causa?" por pregunta (SHAP predictivo
+  frente al efecto causal y sus pruebas), animación del placebo de adelanto de la nómina y
+  simulador de campaña sobre la mitad de prueba de Hillstrom. Motor de cálculo probado contra
+  Python, capturas en escritorio y celular sin errores de consola, GIF en el README.
+
 - Diagnóstico del MAP@7 (`scripts/hito2_diagnostico_map.py`, sin tocar el modelo congelado):
   confirma que solo se predicen productos nuevos y agrega el MAP@7 sobre todos los
   clientes-mes (0,0251 contra 0,0205 de la referencia), con los 24 productos y con "nuevo

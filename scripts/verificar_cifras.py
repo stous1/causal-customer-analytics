@@ -246,6 +246,16 @@ def comprobaciones_readme() -> list[tuple[str, str, list[str]]]:
             [f"−{coma(abs(c['efecto']), 2)} meses", c["veredicto"]],
         ),
         (
+            "README.md",
+            "<sub>Quienes empiezan a recibir la nómina están",
+            [f"+{coma(n['efecto'] * 100, 1)} pp"],
+        ),
+        (
+            "README.md",
+            "la traerán dentro de cuatro meses ya están",
+            [f"+{coma(n['placebo_adelanto']['efecto'] * 100, 1)} pp"],
+        ),
+        (
             "docs/index.md",
             "**Predicción:** MAP@7 de",
             [coma(h2["map7"]["modelo"], 3), coma(h2["map7"]["referencia"], 3)],

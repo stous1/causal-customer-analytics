@@ -11,6 +11,13 @@ preguntas que suelen confundirse, separadas sobre el panel de Santander (957 mil
 [![Python 3.12](https://img.shields.io/badge/python-3.12-3776ab?logo=python&logoColor=white)](.python-version)
 [![Licencia MIT](https://img.shields.io/badge/licencia-MIT-blue)](LICENSE)
 
+[![El placebo de adelanto: dos tercios del efecto de la nómina ya estaban antes](docs/resultados/demo/placebo.gif)](https://stous1.github.io/causal-customer-analytics/demo.html)
+
+<sub>Quienes empiezan a recibir la nómina están +8,9 pp más activos tres meses después; quienes
+la traerán dentro de cuatro meses ya están +5,8 pp más activos antes de tenerla.
+[Abrir la página interactiva →](https://stous1.github.io/causal-customer-analytics/demo.html)</sub>
+
+**[¿Predice o causa? (interactiva)](https://stous1.github.io/causal-customer-analytics/demo.html)** ·
 **[Sitio](https://stous1.github.io/causal-customer-analytics/)** ·
 **[Preregistro](docs/preregistro.md)** ·
 **[Resumen para agentes (JSON)](docs/resultados/resumen.json)**
@@ -53,6 +60,7 @@ efecto estimado es **menor**.
 
 | Página | Qué muestra |
 |---|---|
+| [¿Predice o causa?](https://stous1.github.io/causal-customer-analytics/demo.html) | Página interactiva: lo que predice contra lo que causa en cada pregunta, la animación del placebo y un simulador de campaña sobre la mitad de prueba de Hillstrom (funciona en celular) |
 | [Hito 1](https://stous1.github.io/causal-customer-analytics/hito1.html) | Datos, calidad (la actividad congelada en enero-julio de 2015) y diseños |
 | [Hito 2](https://stous1.github.io/causal-customer-analytics/hito2.html) | Capa predictiva y lo que predice (SHAP, no causal) |
 | [Hito 3](https://stous1.github.io/causal-customer-analytics/hito3.html) | Validación de métodos en Hillstrom y en el semisintético |

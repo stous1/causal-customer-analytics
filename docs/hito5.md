@@ -1,7 +1,8 @@
 # Hito 5: a quién le cambia el resultado
 
 [← Volver a la portada](index.md) ·
-[Resultados en JSON](resultados/hito5/heterogeneidad.json)
+[Resultados en JSON](resultados/hito5/heterogeneidad.json) ·
+[Simulador de campaña interactivo](demo.html#simulador)
 
 Un efecto promedio esconde a quién le sirve la acción. Aquí se estima el efecto cliente a
 cliente con un bosque causal, se explica con SHAP **sobre el efecto** (no sobre la

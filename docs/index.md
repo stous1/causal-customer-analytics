@@ -5,7 +5,9 @@ preguntas distintas. Este proyecto las separa sobre el panel mensual de Santande
 clientes, 17 meses) y el experimento de correo de Hillstrom. Caso 6 de un portafolio de
 ciencia de datos aplicada a banca.
 
-[Código](https://github.com/stous1/causal-customer-analytics) ·
+[![El placebo de adelanto](resultados/demo/placebo.gif)](demo.html)
+
+**[Abrir la página interactiva "¿Predice o causa?" →](demo.html)** · [Código](https://github.com/stous1/causal-customer-analytics) ·
 [Preregistro](preregistro.md) ·
 [Resumen estructurado (JSON)](resultados/resumen.json)
 
