@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@6"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@7"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "hconcat": [{"layer": [{"data": {"name": "data-a6c0ffaf59b7d86569731f04d91b44d4"}, "mark": {"type": "rule", "color": "#d9822b", "strokeDash": [4, 3]}, "encoding": {"x": {"field": "r", "type": "quantitative"}}}, {"data": {"name": "data-f0a539503dbd82e3eaad8c04244f684d"}, "mark": {"type": "rule", "color": "#8a8f98"}, "encoding": {"x": {"field": "k", "title": "Meses respecto del inicio de la n\u00f3mina", "type": "quantitative"}, "y": {"field": "inf", "type": "quantitative"}, "y2": {"field": "sup"}}}, {"data": {"name": "data-f0a539503dbd82e3eaad8c04244f684d"}, "mark": {"type": "line", "color": "#2f6db5", "point": true}, "encoding": {"x": {"field": "k", "title": "Meses respecto del inicio de la n\u00f3mina", "type": "quantitative"}, "y": {"field": "efecto", "title": "Tratados - controles emparejados", "type": "quantitative"}}}], "height": 200, "title": "Activo", "width": 260}, {"layer": [{"data": {"name": "data-a6c0ffaf59b7d86569731f04d91b44d4"}, "mark": {"type": "rule", "color": "#d9822b", "strokeDash": [4, 3]}, "encoding": {"x": {"field": "r", "type": "quantitative"}}}, {"data": {"name": "data-e4311dd126f7067a59ad6b64ed048c61"}, "mark": {"type": "rule", "color": "#8a8f98"}, "encoding": {"x": {"field": "k", "title": "Meses respecto del inicio de la n\u00f3mina", "type": "quantitative"}, "y": {"field": "inf", "type": "quantitative"}, "y2": {"field": "sup"}}}, {"data": {"name": "data-e4311dd126f7067a59ad6b64ed048c61"}, "mark": {"type": "line", "color": "#2f6db5", "point": true}, "encoding": {"x": {"field": "k", "title": "Meses respecto del inicio de la n\u00f3mina", "type": "quantitative"}, "y": {"field": "efecto", "title": "Tratados - controles emparejados", "type": "quantitative"}}}], "height": 200, "title": "Otros productos", "width": 260}], "title": "Estudio de eventos de la n\u00f3mina (diferencia respecto de t-1)", "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json", "datasets": {"data-a6c0ffaf59b7d86569731f04d91b44d4": [{"r": -0.5}], "data-f0a539503dbd82e3eaad8c04244f684d": [{"serie": "Activo", "k": -3, "efecto": -0.0016455826391031574, "inf": -0.00792965134217834, "sup": 0.003828550858788445}, {"serie": "Activo", "k": -2, "efecto": -0.003394014193150262, "inf": -0.008644451301038775, "sup": 0.0013370358942713155}, {"serie": "Activo", "k": -1, "efecto": 0.0, "inf": 0.0, "sup": 0.0}, {"serie": "Activo", "k": 0, "efecto": 0.08814152010696287, "inf": 0.08288851177620077, "sup": 0.09338938599197778}, {"serie": "Activo", "k": 1, "efecto": 0.09503239740820735, "inf": 0.089056875449964, "sup": 0.10151187904967603}, {"serie": "Activo", "k": 2, "efecto": 0.09729507353697418, "inf": 0.09100329116527821, "sup": 0.10367427748637252}, {"serie": "Activo", "k": 3, "efecto": 0.09492954849326339, "inf": 0.08813637766121567, "sup": 0.1007919366450684}], "data-e4311dd126f7067a59ad6b64ed048c61": [{"serie": "Otros productos", "k": -6, "efecto": 0.028958254983076345, "inf": 0.010141657264635827, "sup": 0.0476432242697756}, {"serie": "Otros productos", "k": -5, "efecto": 0.009823647768966742, "inf": -0.005968161912652384, "sup": 0.028065451532725768}, {"serie": "Otros productos", "k": -4, "efecto": 0.01407202216066482, "inf": -0.002343490304709141, "sup": 0.027385041551246544}, {"serie": "Otros productos", "k": -3, "efecto": 0.01820425794507868, "inf": 0.005024169495011828, "sup": 0.032294559292399466}, {"serie": "Otros productos", "k": -2, "efecto": 0.019952689499125785, "inf": 0.009449244060475162, "sup": 0.030960094621001747}, {"serie": "Otros productos", "k": -1, "efecto": 0.0, "inf": 0.0, "sup": 0.0}, {"serie": "Otros productos", "k": 0, "efecto": -0.2738866604957318, "inf": -0.2884963488635195, "sup": -0.25752854057389696}, {"serie": "Otros productos", "k": 1, "efecto": -0.41201275326545306, "inf": -0.42744780417566597, "sup": -0.39770904041962357}, {"serie": "Otros productos", "k": 2, "efecto": -0.3930885529157667, "inf": -0.41100226267612877, "sup": -0.37835544585004627}, {"serie": "Otros productos", "k": 3, "efecto": -0.37488429497068804, "inf": -0.39351023346703695, "sup": -0.3555435565154788}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

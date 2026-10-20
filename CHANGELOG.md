@@ -1,5 +1,24 @@
 # Cambios
 
+## Preregistro (2026-10-20)
+
+- Preguntas, DAG supuesto, tratamientos, resultados, ventanas, métodos, criterios de
+  refutación y regla de veredicto, con huellas SHA-256; tag `preregistro`.
+- Positividad revisada sin leer resultados: KHQ frente a KHM queda como exploratorio.
+
+## Hito 3 (2026-10-20)
+
+- Estimadores con salida común: ingenuo, regresión, emparejamiento, Double ML del ATT,
+  diferencias en diferencias doble robusto y bosque causal.
+- Hillstrom completo y sesgado (10 sorteos) y semisintético con tres escenarios
+  (10 repeticiones) sobre covariables reales de Santander.
+
+## Hito 2 (2026-10-20)
+
+- Propensión a adquirir 13 productos el mes siguiente con LightGBM, partición temporal,
+  referencia por celdas, AP con IC, MAP@7 y SHAP marcado como predictivo.
+- Congelado en `hito2-congelado` y medido una vez en prueba (abril y mayo de 2016).
+
 ## Hito 1 (2026-10-19)
 
 - Estructura del repositorio, uv, ruff, pytest, CI y fuente de Pages en `docs/`.

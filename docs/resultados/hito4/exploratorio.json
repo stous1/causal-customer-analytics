@@ -1,0 +1,71 @@
+{
+  "tipo": "exploratorio (no preregistrado)",
+  "descomposicion_sin_ajuste": {
+    "descripcion": "Cambio t-1 a t+3 por producto: tratados menos controles, sin ajuste",
+    "productos": {
+      "ahor": 5.030130481584693e-06,
+      "aval": 5.030130481584693e-06,
+      "cco": -0.5155830705572579,
+      "cder": 0.00010787904542553203,
+      "cno": 0.5705600676407124,
+      "ctju": 0.0002565366545608193,
+      "ctma": -0.00398102312580838,
+      "ctop": -0.0010823042510496148,
+      "ctpp": -0.0010872381556472565,
+      "deco": -0.00052718488673618,
+      "deme": -0.00010734152556845432,
+      "dela": 0.00012160571950430282,
+      "ecue": 0.029012764138977933,
+      "fond": -0.00026049174532824857,
+      "hip": -0.00016545678603521714,
+      "plan": 0.0008730926243674256,
+      "pres": -7.266813205443918e-05,
+      "reca": 0.009495794754526958,
+      "tjcr": 0.0082557514472091,
+      "valo": 0.0049759139214479945,
+      "viv": -1.733669675700757e-05,
+      "nomina": 0.5892894566189829,
+      "nom_pens": 0.5805025651942702,
+      "recibo": 0.07542473305876654
+    }
+  },
+  "frac_tratados_cambian_cuenta_corriente_por_nomina": 0.513833179059961,
+  "otros_sin_cuenta_corriente_principal": {
+    "metodo": "dml_att",
+    "estimando": "ATT",
+    "efecto": 0.148536828442108,
+    "ee": 0.006552748409215683,
+    "ic95": [
+      0.13569367756029313,
+      0.16137997932392287
+    ],
+    "n": 208525,
+    "n_tratados": 9723,
+    "extra": {
+      "ate": 0.2525865204362319,
+      "ate_ee": 0.006735888865718617,
+      "propension_min_tratados": 0.01,
+      "propension_max_controles": 0.8150238204862839,
+      "frac_recortada": 0.6071070615034169
+    }
+  },
+  "otros_sin_cuenta_corriente_placebo_adelanto": {
+    "metodo": "dml_att",
+    "estimando": "ATT",
+    "efecto": 0.09442040571158732,
+    "ee": 0.00739449634206929,
+    "ic95": [
+      0.07992745919731833,
+      0.1089133522258563
+    ],
+    "n": 161370,
+    "n_tratados": 4905,
+    "extra": {
+      "ate": 0.14277718894123573,
+      "ate_ee": 0.007030376320895827,
+      "propension_min_tratados": 0.01,
+      "propension_max_controles": 0.6558887780089427,
+      "frac_recortada": 0.616583007994051
+    }
+  }
+}

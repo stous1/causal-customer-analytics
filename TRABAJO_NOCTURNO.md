@@ -62,3 +62,13 @@ anotan con su justificación.
     que se hace en Santander (los rezagos de actividad y tenencia son covariables).
 18. **Costo por correo en la política de Hillstrom: 0,05 visitas** (supuesto ilustrativo; el
     efecto medio del correo de hombre es 0,077 y el de mujer 0,045).
+19. **Ensayo del flujo del hito 4 sobre el mini-Santander sintético antes del preregistro.**
+    *Por qué:* corregir errores de código después del tag sería una desviación; el ensayo no
+    toca datos reales. Se agregaron los canales KHM y KHN al generador sintético para eso.
+20. **KHQ frente a KHM (18 a 30 años) queda como exploratorio:** el 86 % de los tratados por
+    KHQ tiene propensión mayor que 0,95 (positividad mala). Se anotó en el preregistro antes
+    de estimar.
+21. **Tag `preregistro`** sobre el commit con `docs/preregistro.md` y
+    `docs/resultados/preregistro.json` (huellas SHA-256 de diseños, métodos, refutaciones,
+    flujo del hito 4 y resultados del hito 3). `scripts/hito4.py` se niega a estimar sin ese
+    tag, y `tests/test_congelados.py` verifica que el JSON no cambie.

@@ -114,4 +114,14 @@ Multiplicidad: Holm-Bonferroni sobre los seis análisis primarios.
 Cualquier cambio en los archivos con huella (diseños, métodos, refutaciones, flujo del hito 4
 y resultados del hito 3) después del tag se informa aquí, con su motivo.
 
-*Ninguna hasta ahora.*
+**En el código, ninguna:** `git diff preregistro -- src/ docs/resultados/` está vacío al
+estimar el hito 4.
+
+**Agregado después del tag, marcado como exploratorio** (no cambia ningún resultado
+preregistrado): `scripts/hito4_exploratorio.py` descompone el cambio de productos tras la
+nómina y lo repite sin la cuenta corriente, porque el 51 % de quienes inician la nómina cambia
+la cuenta corriente por la cuenta nómina, algo que la definición preregistrada de "otros
+productos" no previó.
+
+**Lectura del veredicto de KHQ frente a KHM:** la regla da "creíble", pero el análisis ya estaba
+declarado exploratorio por positividad y no se interpreta como causal.

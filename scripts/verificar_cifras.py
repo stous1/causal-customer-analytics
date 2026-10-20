@@ -114,6 +114,83 @@ def comprobaciones() -> list[tuple[str, str, list[str]]]:
     ]
     salida += comprobaciones_hito2()
     salida += comprobaciones_hito3()
+    salida += comprobaciones_hito4()
+    return salida
+
+
+def _ic(ic: list[float], d: int) -> str:
+    return f"({coma(ic[0], d)} a {coma(ic[1], d)})".replace("-", "−")
+
+
+def _n(x: float, d: int) -> str:
+    v = coma(x, d)
+    return v.replace("-", "−") if x < 0 else f"+{v}"
+
+
+def comprobaciones_hito4() -> list[tuple[str, str, list[str]]]:
+    est = _j("hito4/estimaciones.json")["analisis"]
+    exp = _j("hito4/exploratorio.json")
+    filas = {
+        "nomina_actividad": ("| Iniciar la nómina -> activo en t+3 |", 3),
+        "nomina_productos": ("| Iniciar la nómina -> otros productos |", 3),
+        "canal_meses_activo": ("| Alta por KHM (frente a KHN) -> meses activo |", 2),
+        "producto_recibo": ("| Débito automático -> inactivo en t+3 |", 4),
+        "producto_tjcr": ("| Tarjeta de crédito -> inactivo en t+3 |", 4),
+        "producto_ecue": ("| Cuenta electrónica -> inactivo en t+3 |", 4),
+    }
+    salida = []
+    for k, (ancla, d) in filas.items():
+        v = est[k]
+        esperados = [_n(v["efecto"], d), _ic(v["ic95"], d), v["veredicto"]]
+        if "placebo_adelanto" in v:
+            esperados.append(_n(v["placebo_adelanto"]["efecto"], 3))
+        salida.append(("docs/hito4.md", ancla, esperados))
+    m = est["nomina_actividad"]["metodos"]
+    salida.append(
+        (
+            "docs/hito4.md",
+            "coinciden (emparejamiento",
+            [
+                coma(m["emparejamiento"]["efecto"], 3),
+                coma(m["did_dr"]["efecto"], 3),
+                coma(m["bosque_causal"]["efecto"], 3),
+            ],
+        )
+    )
+    salida.append(
+        (
+            "docs/hito4.md",
+            "tres refutadores de DoWhy pasan. El ingenuo",
+            [coma(m["ingenuo"]["efecto"], 3)],
+        )
+    )
+    sin_cco = exp["otros_sin_cuenta_corriente_principal"]
+    salida.append(
+        (
+            "docs/hito4.md",
+            "cuenta corriente, el cambio es",
+            [_n(sin_cco["efecto"], 3), _ic(sin_cco["ic95"], 3)],
+        )
+    )
+    salida.append(
+        (
+            "docs/hito4.md",
+            "(+0,075 sin ajuste); pero el placebo da",
+            [_n(exp["otros_sin_cuenta_corriente_placebo_adelanto"]["efecto"], 3)],
+        )
+    )
+    salida.append(("docs/hito4.md", "nómina. Con eso", []))
+    c = est["canal_meses_activo"]
+    salida.append(
+        (
+            "docs/hito4.md",
+            "estuvieron activos **",
+            [coma(abs(c["efecto"]), 2), coma(c["media_tratados"], 2)],
+        )
+    )
+    salida.append(
+        ("docs/hito4.md", "(valor de robustez", [coma(c["sensibilidad"]["valor_robustez_ic"], 3)])
+    )
     return salida
 
 

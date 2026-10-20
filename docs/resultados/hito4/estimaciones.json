@@ -1,0 +1,3220 @@
+{
+  "analisis": {
+    "nomina_actividad": {
+      "id": "nomina_actividad",
+      "descripcion": "Iniciar la nómina -> activo en t+3",
+      "diseno": "nomina",
+      "resultado": "y_activo_3",
+      "primario": true,
+      "metodo_principal": "dml_att",
+      "estimando": "ATT (efecto en los tratados, intención de tratar)",
+      "efecto": 0.08886623289710849,
+      "ic95": [
+        0.08293469429520559,
+        0.09479777149901139
+      ],
+      "p_valor": 0.0,
+      "n": 208525,
+      "n_tratados": 9723,
+      "media_tratados": 0.9786074256916589,
+      "metodos": {
+        "ingenuo": {
+          "metodo": "ingenuo",
+          "estimando": "diferencia de medias",
+          "efecto": 0.5932742801498636,
+          "ee": 0.001828867552331386,
+          "ic95": [
+            0.5896897656148001,
+            0.5968587946849271
+          ],
+          "n": 208525,
+          "n_tratados": 9723,
+          "extra": {}
+        },
+        "regresion": {
+          "metodo": "regresion",
+          "estimando": "efecto constante (MCO)",
+          "efecto": 0.1025674739501042,
+          "ee": 0.0031972629830885717,
+          "ic95": [
+            0.0963009536541475,
+            0.1088339942460609
+          ],
+          "n": 208525,
+          "n_tratados": 9723,
+          "extra": {}
+        },
+        "emparejamiento": {
+          "metodo": "emparejamiento",
+          "estimando": "ATT",
+          "efecto": 0.07250848503548288,
+          "ee": 0.003216062661662876,
+          "ic95": [
+            0.06620511804659962,
+            0.07881185202436614
+          ],
+          "n": 208525,
+          "n_tratados": 9723,
+          "extra": {
+            "tratados_emparejados": 1.0,
+            "smd_max_antes": 1.321043917049031,
+            "smd_max_despues": 0.09736220366590431,
+            "controles_distintos": 7675
+          }
+        },
+        "dml_att": {
+          "metodo": "dml_att",
+          "estimando": "ATT",
+          "efecto": 0.08886623289710849,
+          "ee": 0.003026350814958908,
+          "ic95": [
+            0.08293469429520559,
+            0.09479777149901139
+          ],
+          "n": 208525,
+          "n_tratados": 9723,
+          "extra": {
+            "ate": 0.509463174674197,
+            "ate_ee": 0.0038496474440850815,
+            "propension_min_tratados": 0.01,
+            "propension_max_controles": 0.8150238204862839,
+            "frac_recortada": 0.6071070615034169
+          }
+        },
+        "did_dr": {
+          "metodo": "did_dr",
+          "estimando": "ATT",
+          "efecto": 0.08800065391489652,
+          "ee": 0.003021899949563551,
+          "ic95": [
+            0.08207783884886855,
+            0.09392346898092449
+          ],
+          "n": 208525,
+          "n_tratados": 9723,
+          "extra": {
+            "did_sin_ajuste": 0.0680325116593722
+          }
+        },
+        "bosque_causal": {
+          "metodo": "bosque_causal",
+          "estimando": "ATT",
+          "efecto": 0.08652227812827182,
+          "ee": 0.03148892310485678,
+          "ic95": [
+            0.02480512293080133,
+            0.14823943332574227
+          ],
+          "n": 120000,
+          "n_tratados": 9723,
+          "extra": {
+            "resultado_binario": true,
+            "cate_sd_tratados": 0.1932809026669566,
+            "att_dr": 0.21961916555261438,
+            "att_dr_ee": 0.06604904753539874,
+            "ic_conservador": true
+          }
+        }
+      },
+      "covariables": [
+        "edad",
+        "mujer",
+        "log_renta",
+        "renta_faltante",
+        "antiguedad",
+        "seg_top",
+        "seg_universitario",
+        "extranjero",
+        "residente",
+        "empleado_banco",
+        "relacion_activa",
+        "nuevo",
+        "canal_khe",
+        "canal_kat",
+        "canal_kfc",
+        "canal_khq",
+        "canal_khm",
+        "canal_khn",
+        "canal_khk",
+        "canal_kfa",
+        "canal_faltante",
+        "prov_28",
+        "prov_8",
+        "prov_46",
+        "prov_41",
+        "prov_15",
+        "prov_30",
+        "prov_29",
+        "prov_50",
+        "prov_3",
+        "prov_11",
+        "x_ahor",
+        "x_aval",
+        "x_cco",
+        "x_cder",
+        "x_cno",
+        "x_ctju",
+        "x_ctma",
+        "x_ctop",
+        "x_ctpp",
+        "x_deco",
+        "x_deme",
+        "x_dela",
+        "x_ecue",
+        "x_fond",
+        "x_hip",
+        "x_plan",
+        "x_pres",
+        "x_reca",
+        "x_tjcr",
+        "x_valo",
+        "x_viv",
+        "x_nom_pens",
+        "x_recibo",
+        "act_m1",
+        "act_m2",
+        "act_m3",
+        "otros_m1",
+        "otros_m3",
+        "otros_m6",
+        "sin_m6",
+        "t"
+      ],
+      "placebo_adelanto": {
+        "metodo": "dml_att",
+        "estimando": "ATT",
+        "efecto": 0.05834776649644584,
+        "ee": 0.0041817913830155705,
+        "ic95": [
+          0.05015160599487538,
+          0.0665439269980163
+        ],
+        "n": 161370,
+        "n_tratados": 4905,
+        "extra": {
+          "ate": 0.26744727231544757,
+          "ate_ee": 0.006771998791637027,
+          "propension_min_tratados": 0.01,
+          "propension_max_controles": 0.6558887780089427,
+          "frac_recortada": 0.616583007994051
+        },
+        "pasa": false,
+        "ic_contiene_cero": false,
+        "criterio": "En el placebo de adelanto (tratamiento 4 meses después, resultado antes), |efecto| <= 25 % del efecto estimado."
+      },
+      "dowhy": {
+        "efecto_dowhy_lineardml": 0.14382807985190793,
+        "refutadores": {
+          "placebo_permutacion": {
+            "efecto_original": 0.14382807985190793,
+            "efecto_nuevo": -0.0006868164205041822,
+            "p_valor": 0.2809928193741664,
+            "simulaciones": 5,
+            "pasa": true,
+            "criterio": "Con el tratamiento permutado, |efecto| <= 25 % del efecto estimado."
+          },
+          "causa_comun_aleatoria": {
+            "efecto_original": 0.14382807985190793,
+            "efecto_nuevo": 0.1444818265516104,
+            "p_valor": 0.0049770574577587615,
+            "simulaciones": 5,
+            "pasa": true,
+            "criterio": "Al agregar una covariable aleatoria, el efecto cambia <= 10 %."
+          },
+          "subconjunto": {
+            "efecto_original": 0.14382807985190793,
+            "efecto_nuevo": 0.14058236231955876,
+            "p_valor": 0.013502980851622381,
+            "simulaciones": 5,
+            "pasa": true,
+            "criterio": "En subconjuntos del 80 %, el efecto medio cambia <= 10 %."
+          }
+        }
+      },
+      "sensibilidad": {
+        "efecto_mco": 0.1026172837430937,
+        "t": 54.38102353047778,
+        "r2_parcial_tratamiento_resultado": 0.013987823155630309,
+        "valor_robustez": 0.11222397162022314,
+        "valor_robustez_ic": 0.10841124631937687,
+        "covariable_mas_fuerte": "relacion_activa",
+        "r2_parcial_y_mas_fuerte": 0.0017038315700887569,
+        "r2_parcial_d_mas_fuerte": 0.0023685657584035253,
+        "max_r2_parcial_y": 0.15129456191776786,
+        "max_r2_parcial_d": 0.08120896600600497,
+        "robusto": true,
+        "interpretacion": "Un confusor omitido que explique más de valor_robustez de la varianza residual del tratamiento y del resultado anularía el efecto; con valor_robustez_ic, el IC dejaría de excluir el cero."
+      },
+      "valor_e": {
+        "cociente_riesgos": 1.0998787440851112,
+        "valor_e": 1.4313218125073222
+      },
+      "consistencia": {
+        "estimaciones": {
+          "emparejamiento": 0.07250848503548288,
+          "dml_att": 0.08886623289710849,
+          "bosque_causal": 0.08652227812827182,
+          "did_dr": 0.08800065391489652
+        },
+        "mismo_signo": true,
+        "razon_max_min": 1.2255977056150154,
+        "pasa": true,
+        "criterio": "Emparejamiento, Double ML y bosque causal (y DiD si aplica) dan el mismo signo y el mayor no supera el doble del menor en valor absoluto."
+      },
+      "estudio_eventos": {
+        "actividad": [
+          {
+            "desfase": "m3",
+            "efecto": -0.0016455826391031574,
+            "ic95": [
+              -0.00792965134217834,
+              0.003828550858788445
+            ],
+            "n": 9723
+          },
+          {
+            "desfase": "m2",
+            "efecto": -0.003394014193150262,
+            "ic95": [
+              -0.008644451301038775,
+              0.0013370358942713155
+            ],
+            "n": 9723
+          },
+          {
+            "desfase": "m1",
+            "efecto": 0.0,
+            "ic95": [
+              0.0,
+              0.0
+            ],
+            "n": 9723
+          },
+          {
+            "desfase": "t",
+            "efecto": 0.08814152010696287,
+            "ic95": [
+              0.08288851177620077,
+              0.09338938599197778
+            ],
+            "n": 9723
+          },
+          {
+            "desfase": "p1",
+            "efecto": 0.09503239740820735,
+            "ic95": [
+              0.089056875449964,
+              0.10151187904967603
+            ],
+            "n": 9723
+          },
+          {
+            "desfase": "p2",
+            "efecto": 0.09729507353697418,
+            "ic95": [
+              0.09100329116527821,
+              0.10367427748637252
+            ],
+            "n": 9723
+          },
+          {
+            "desfase": "p3",
+            "efecto": 0.09492954849326339,
+            "ic95": [
+              0.08813637766121567,
+              0.1007919366450684
+            ],
+            "n": 9723
+          }
+        ],
+        "otros_productos": [
+          {
+            "desfase": "m6",
+            "efecto": 0.028958254983076345,
+            "ic95": [
+              0.010141657264635827,
+              0.0476432242697756
+            ],
+            "n": 7977
+          },
+          {
+            "desfase": "m5",
+            "efecto": 0.009823647768966742,
+            "ic95": [
+              -0.005968161912652384,
+              0.028065451532725768
+            ],
+            "n": 8449
+          },
+          {
+            "desfase": "m4",
+            "efecto": 0.01407202216066482,
+            "ic95": [
+              -0.002343490304709141,
+              0.027385041551246544
+            ],
+            "n": 9025
+          },
+          {
+            "desfase": "m3",
+            "efecto": 0.01820425794507868,
+            "ic95": [
+              0.005024169495011828,
+              0.032294559292399466
+            ],
+            "n": 9723
+          },
+          {
+            "desfase": "m2",
+            "efecto": 0.019952689499125785,
+            "ic95": [
+              0.009449244060475162,
+              0.030960094621001747
+            ],
+            "n": 9723
+          },
+          {
+            "desfase": "m1",
+            "efecto": 0.0,
+            "ic95": [
+              0.0,
+              0.0
+            ],
+            "n": 9723
+          },
+          {
+            "desfase": "t",
+            "efecto": -0.2738866604957318,
+            "ic95": [
+              -0.2884963488635195,
+              -0.25752854057389696
+            ],
+            "n": 9723
+          },
+          {
+            "desfase": "p1",
+            "efecto": -0.41201275326545306,
+            "ic95": [
+              -0.42744780417566597,
+              -0.39770904041962357
+            ],
+            "n": 9723
+          },
+          {
+            "desfase": "p2",
+            "efecto": -0.3930885529157667,
+            "ic95": [
+              -0.41100226267612877,
+              -0.37835544585004627
+            ],
+            "n": 9723
+          },
+          {
+            "desfase": "p3",
+            "efecto": -0.37488429497068804,
+            "ic95": [
+              -0.39351023346703695,
+              -0.3555435565154788
+            ],
+            "n": 9723
+          }
+        ]
+      },
+      "pruebas": {
+        "significativo": true,
+        "placebo_permutacion": true,
+        "causa_comun_aleatoria": true,
+        "subconjunto": true,
+        "consistencia": true,
+        "sensibilidad_robusto": true,
+        "placebo_adelanto": false
+      },
+      "segundos": 156,
+      "p_holm": 0.0,
+      "veredicto": "no separable de la selección"
+    },
+    "nomina_productos": {
+      "id": "nomina_productos",
+      "descripcion": "Iniciar la nómina -> cambio en otros productos (t-1 a t+3)",
+      "diseno": "nomina",
+      "resultado": "y_dprod_3",
+      "primario": true,
+      "metodo_principal": "dml_att",
+      "estimando": "ATT (efecto en los tratados, intención de tratar)",
+      "efecto": -0.4231507761906444,
+      "ic95": [
+        -0.4393655492765377,
+        -0.4069360031047511
+      ],
+      "p_valor": 0.0,
+      "n": 208525,
+      "n_tratados": 9723,
+      "media_tratados": -0.3983338475779081,
+      "metodos": {
+        "ingenuo": {
+          "metodo": "ingenuo",
+          "estimando": "diferencia de medias",
+          "efecto": -0.394349984236493,
+          "ee": 0.007460391363814859,
+          "ic95": [
+            -0.40897208262014373,
+            -0.37972788585284223
+          ],
+          "n": 208525,
+          "n_tratados": 9723,
+          "extra": {}
+        },
+        "regresion": {
+          "metodo": "regresion",
+          "estimando": "efecto constante (MCO)",
+          "efecto": -0.4462037657259384,
+          "ee": 0.007502134958397455,
+          "ic95": [
+            -0.4609076800515563,
+            -0.4314998514003205
+          ],
+          "n": 208525,
+          "n_tratados": 9723,
+          "extra": {}
+        },
+        "emparejamiento": {
+          "metodo": "emparejamiento",
+          "estimando": "ATT",
+          "efecto": -0.37488429497068804,
+          "ee": 0.008905044957006279,
+          "ic95": [
+            -0.39233786236713036,
+            -0.3574307275742457
+          ],
+          "n": 208525,
+          "n_tratados": 9723,
+          "extra": {
+            "tratados_emparejados": 1.0,
+            "smd_max_antes": 1.321043917049031,
+            "smd_max_despues": 0.09736220366590431,
+            "controles_distintos": 7675
+          }
+        },
+        "dml_att": {
+          "metodo": "dml_att",
+          "estimando": "ATT",
+          "efecto": -0.4231507761906444,
+          "ee": 0.008272995429402453,
+          "ic95": [
+            -0.4393655492765377,
+            -0.4069360031047511
+          ],
+          "n": 208525,
+          "n_tratados": 9723,
+          "extra": {
+            "ate": -0.3213647925711806,
+            "ate_ee": 0.007403825017664807,
+            "propension_min_tratados": 0.01,
+            "propension_max_controles": 0.8150238204862839,
+            "frac_recortada": 0.6071070615034169
+          }
+        },
+        "bosque_causal": {
+          "metodo": "bosque_causal",
+          "estimando": "ATT",
+          "efecto": -0.41498315276149206,
+          "ee": 0.07857159248461833,
+          "ic95": [
+            -0.5689806442393021,
+            -0.2609856612836822
+          ],
+          "n": 120000,
+          "n_tratados": 9723,
+          "extra": {
+            "resultado_binario": false,
+            "cate_sd_tratados": 0.308975882830611,
+            "att_dr": -0.14359131812943104,
+            "att_dr_ee": 0.12248723738559321,
+            "ic_conservador": true
+          }
+        }
+      },
+      "covariables": [
+        "edad",
+        "mujer",
+        "log_renta",
+        "renta_faltante",
+        "antiguedad",
+        "seg_top",
+        "seg_universitario",
+        "extranjero",
+        "residente",
+        "empleado_banco",
+        "relacion_activa",
+        "nuevo",
+        "canal_khe",
+        "canal_kat",
+        "canal_kfc",
+        "canal_khq",
+        "canal_khm",
+        "canal_khn",
+        "canal_khk",
+        "canal_kfa",
+        "canal_faltante",
+        "prov_28",
+        "prov_8",
+        "prov_46",
+        "prov_41",
+        "prov_15",
+        "prov_30",
+        "prov_29",
+        "prov_50",
+        "prov_3",
+        "prov_11",
+        "x_ahor",
+        "x_aval",
+        "x_cco",
+        "x_cder",
+        "x_cno",
+        "x_ctju",
+        "x_ctma",
+        "x_ctop",
+        "x_ctpp",
+        "x_deco",
+        "x_deme",
+        "x_dela",
+        "x_ecue",
+        "x_fond",
+        "x_hip",
+        "x_plan",
+        "x_pres",
+        "x_reca",
+        "x_tjcr",
+        "x_valo",
+        "x_viv",
+        "x_nom_pens",
+        "x_recibo",
+        "act_m1",
+        "act_m2",
+        "act_m3",
+        "otros_m1",
+        "otros_m3",
+        "otros_m6",
+        "sin_m6",
+        "t"
+      ],
+      "placebo_adelanto": {
+        "metodo": "dml_att",
+        "estimando": "ATT",
+        "efecto": 0.1096161235242393,
+        "ee": 0.00882844515954188,
+        "ic95": [
+          0.09231268897205025,
+          0.12691955807642835
+        ],
+        "n": 161370,
+        "n_tratados": 4905,
+        "extra": {
+          "ate": 0.24193552671331553,
+          "ate_ee": 0.008665321549371713,
+          "propension_min_tratados": 0.01,
+          "propension_max_controles": 0.6558887780089427,
+          "frac_recortada": 0.616583007994051
+        },
+        "pasa": false,
+        "ic_contiene_cero": false,
+        "criterio": "En el placebo de adelanto (tratamiento 4 meses después, resultado antes), |efecto| <= 25 % del efecto estimado."
+      },
+      "dowhy": {
+        "efecto_dowhy_lineardml": -0.471660617907208,
+        "refutadores": {
+          "placebo_permutacion": {
+            "efecto_original": -0.471660617907208,
+            "efecto_nuevo": 0.001008770293275899,
+            "p_valor": 0.4189311547746258,
+            "simulaciones": 5,
+            "pasa": true,
+            "criterio": "Con el tratamiento permutado, |efecto| <= 25 % del efecto estimado."
+          },
+          "causa_comun_aleatoria": {
+            "efecto_original": -0.471660617907208,
+            "efecto_nuevo": -0.4714125581016928,
+            "p_valor": 0.4302620915688289,
+            "simulaciones": 5,
+            "pasa": true,
+            "criterio": "Al agregar una covariable aleatoria, el efecto cambia <= 10 %."
+          },
+          "subconjunto": {
+            "efecto_original": -0.471660617907208,
+            "efecto_nuevo": -0.47320578629682714,
+            "p_valor": 0.40324983753703947,
+            "simulaciones": 5,
+            "pasa": true,
+            "criterio": "En subconjuntos del 80 %, el efecto medio cambia <= 10 %."
+          }
+        }
+      },
+      "sensibilidad": {
+        "efecto_mco": -0.44615019690156726,
+        "t": -130.99730558389862,
+        "r2_parcial_tratamiento_resultado": 0.07605761718254195,
+        "valor_robustez": 0.24869008611247972,
+        "valor_robustez_ic": 0.24549025773359157,
+        "covariable_mas_fuerte": "x_cno",
+        "r2_parcial_y_mas_fuerte": 0.035580697665877625,
+        "r2_parcial_d_mas_fuerte": 0.08120896600600497,
+        "max_r2_parcial_y": 0.035580697665877625,
+        "max_r2_parcial_d": 0.08120896600600497,
+        "robusto": true,
+        "interpretacion": "Un confusor omitido que explique más de valor_robustez de la varianza residual del tratamiento y del resultado anularía el efecto; con valor_robustez_ic, el IC dejaría de excluir el cero."
+      },
+      "consistencia": {
+        "estimaciones": {
+          "emparejamiento": -0.37488429497068804,
+          "dml_att": -0.4231507761906444,
+          "bosque_causal": -0.41498315276149206
+        },
+        "mismo_signo": true,
+        "razon_max_min": 1.1287503420854967,
+        "pasa": true,
+        "criterio": "Emparejamiento, Double ML y bosque causal (y DiD si aplica) dan el mismo signo y el mayor no supera el doble del menor en valor absoluto."
+      },
+      "pruebas": {
+        "significativo": true,
+        "placebo_permutacion": true,
+        "causa_comun_aleatoria": true,
+        "subconjunto": true,
+        "consistencia": true,
+        "sensibilidad_robusto": true,
+        "placebo_adelanto": false
+      },
+      "segundos": 136,
+      "p_holm": 0.0,
+      "veredicto": "no separable de la selección"
+    },
+    "nomina_actividad_1": {
+      "id": "nomina_actividad_1",
+      "descripcion": "Iniciar la nómina -> activo en t+1",
+      "diseno": "nomina",
+      "resultado": "y_activo_1",
+      "primario": false,
+      "metodo_principal": "dml_att",
+      "estimando": "ATT (efecto en los tratados, intención de tratar)",
+      "efecto": 0.08942821490364439,
+      "ic95": [
+        0.08386122352384184,
+        0.09499520628344693
+      ],
+      "p_valor": 0.0,
+      "n": 208525,
+      "n_tratados": 9723,
+      "media_tratados": 0.9909492954849326,
+      "metodos": {
+        "ingenuo": {
+          "metodo": "ingenuo",
+          "estimando": "diferencia de medias",
+          "efecto": 0.604504491106707,
+          "ee": 0.0014543731660743827,
+          "ic95": [
+            0.6016539720811197,
+            0.6073550101322943
+          ],
+          "n": 208525,
+          "n_tratados": 9723,
+          "extra": {}
+        },
+        "regresion": {
+          "metodo": "regresion",
+          "estimando": "efecto constante (MCO)",
+          "efecto": 0.10677214421568376,
+          "ee": 0.003137051677580924,
+          "ic95": [
+            0.10062363590998419,
+            0.11292065252138334
+          ],
+          "n": 208525,
+          "n_tratados": 9723,
+          "extra": {}
+        },
+        "emparejamiento": {
+          "metodo": "emparejamiento",
+          "estimando": "ATT",
+          "efecto": 0.07261133395042682,
+          "ee": 0.002698896328768016,
+          "ic95": [
+            0.06732159434803414,
+            0.0779010735528195
+          ],
+          "n": 208525,
+          "n_tratados": 9723,
+          "extra": {
+            "tratados_emparejados": 1.0,
+            "smd_max_antes": 1.321043917049031,
+            "smd_max_despues": 0.09736220366590431,
+            "controles_distintos": 7675
+          }
+        },
+        "dml_att": {
+          "metodo": "dml_att",
+          "estimando": "ATT",
+          "efecto": 0.08942821490364439,
+          "ee": 0.0028403539165588027,
+          "ic95": [
+            0.08386122352384184,
+            0.09499520628344693
+          ],
+          "n": 208525,
+          "n_tratados": 9723,
+          "extra": {
+            "ate": 0.5401278717663553,
+            "ate_ee": 0.0031261811376555966,
+            "propension_min_tratados": 0.01,
+            "propension_max_controles": 0.8150238204862839,
+            "frac_recortada": 0.6071070615034169
+          }
+        },
+        "bosque_causal": {
+          "metodo": "bosque_causal",
+          "estimando": "ATT",
+          "efecto": 0.08871107480191216,
+          "ee": 0.02569255226283262,
+          "ic95": [
+            0.03835459769584715,
+            0.13906755190797718
+          ],
+          "n": 120000,
+          "n_tratados": 9723,
+          "extra": {
+            "resultado_binario": true,
+            "cate_sd_tratados": 0.21753821940456897,
+            "att_dr": 0.158369612999409,
+            "att_dr_ee": 0.057365597843119655,
+            "ic_conservador": true
+          }
+        }
+      },
+      "covariables": [
+        "edad",
+        "mujer",
+        "log_renta",
+        "renta_faltante",
+        "antiguedad",
+        "seg_top",
+        "seg_universitario",
+        "extranjero",
+        "residente",
+        "empleado_banco",
+        "relacion_activa",
+        "nuevo",
+        "canal_khe",
+        "canal_kat",
+        "canal_kfc",
+        "canal_khq",
+        "canal_khm",
+        "canal_khn",
+        "canal_khk",
+        "canal_kfa",
+        "canal_faltante",
+        "prov_28",
+        "prov_8",
+        "prov_46",
+        "prov_41",
+        "prov_15",
+        "prov_30",
+        "prov_29",
+        "prov_50",
+        "prov_3",
+        "prov_11",
+        "x_ahor",
+        "x_aval",
+        "x_cco",
+        "x_cder",
+        "x_cno",
+        "x_ctju",
+        "x_ctma",
+        "x_ctop",
+        "x_ctpp",
+        "x_deco",
+        "x_deme",
+        "x_dela",
+        "x_ecue",
+        "x_fond",
+        "x_hip",
+        "x_plan",
+        "x_pres",
+        "x_reca",
+        "x_tjcr",
+        "x_valo",
+        "x_viv",
+        "x_nom_pens",
+        "x_recibo",
+        "act_m1",
+        "act_m2",
+        "act_m3",
+        "otros_m1",
+        "otros_m3",
+        "otros_m6",
+        "sin_m6",
+        "t"
+      ],
+      "placebo_adelanto": {
+        "metodo": "dml_att",
+        "estimando": "ATT",
+        "efecto": 0.027407442399542976,
+        "ee": 0.0033715477558799696,
+        "ic95": [
+          0.020799330225861393,
+          0.034015554573224555
+        ],
+        "n": 161370,
+        "n_tratados": 4905,
+        "extra": {
+          "ate": 0.10895807351686887,
+          "ate_ee": 0.005430912016576298,
+          "propension_min_tratados": 0.01,
+          "propension_max_controles": 0.6558887780089427,
+          "frac_recortada": 0.616583007994051
+        },
+        "pasa": false,
+        "ic_contiene_cero": false,
+        "criterio": "En el placebo de adelanto (tratamiento 4 meses después, resultado antes), |efecto| <= 25 % del efecto estimado."
+      },
+      "dowhy": {
+        "efecto_dowhy_lineardml": 0.15328934375660516,
+        "refutadores": {
+          "placebo_permutacion": {
+            "efecto_original": 0.15328934375660516,
+            "efecto_nuevo": 0.0003946271128904432,
+            "p_valor": 0.3201078464222259,
+            "simulaciones": 5,
+            "pasa": true,
+            "criterio": "Con el tratamiento permutado, |efecto| <= 25 % del efecto estimado."
+          },
+          "causa_comun_aleatoria": {
+            "efecto_original": 0.15328934375660516,
+            "efecto_nuevo": 0.15375595115207877,
+            "p_valor": 0.016059980609127975,
+            "simulaciones": 5,
+            "pasa": true,
+            "criterio": "Al agregar una covariable aleatoria, el efecto cambia <= 10 %."
+          },
+          "subconjunto": {
+            "efecto_original": 0.15328934375660516,
+            "efecto_nuevo": 0.15063189175062042,
+            "p_valor": 0.04849803156789878,
+            "simulaciones": 5,
+            "pasa": true,
+            "criterio": "En subconjuntos del 80 %, el efecto medio cambia <= 10 %."
+          }
+        }
+      },
+      "sensibilidad": {
+        "efecto_mco": 0.10681912707649696,
+        "t": 67.74056832184381,
+        "r2_parcial_tratamiento_resultado": 0.021538454342028005,
+        "valor_robustez": 0.1377677357751956,
+        "valor_robustez_ic": 0.1340682679205496,
+        "covariable_mas_fuerte": "relacion_activa",
+        "r2_parcial_y_mas_fuerte": 0.0015965408878477853,
+        "r2_parcial_d_mas_fuerte": 0.0023685657584035253,
+        "max_r2_parcial_y": 0.2355461010159877,
+        "max_r2_parcial_d": 0.08120896600600497,
+        "robusto": true,
+        "interpretacion": "Un confusor omitido que explique más de valor_robustez de la varianza residual del tratamiento y del resultado anularía el efecto; con valor_robustez_ic, el IC dejaría de excluir el cero."
+      },
+      "valor_e": {
+        "cociente_riesgos": 1.0991970313616874,
+        "valor_e": 1.429404666634797
+      },
+      "consistencia": {
+        "estimaciones": {
+          "emparejamiento": 0.07261133395042682,
+          "dml_att": 0.08942821490364439,
+          "bosque_causal": 0.08871107480191216
+        },
+        "mismo_signo": true,
+        "razon_max_min": 1.2316013222494822,
+        "pasa": true,
+        "criterio": "Emparejamiento, Double ML y bosque causal (y DiD si aplica) dan el mismo signo y el mayor no supera el doble del menor en valor absoluto."
+      },
+      "pruebas": {
+        "significativo": true,
+        "placebo_permutacion": true,
+        "causa_comun_aleatoria": true,
+        "subconjunto": true,
+        "consistencia": true,
+        "sensibilidad_robusto": true,
+        "placebo_adelanto": false
+      },
+      "segundos": 149,
+      "p_holm": null,
+      "veredicto": "no separable de la selección"
+    },
+    "canal_meses_activo": {
+      "id": "canal_meses_activo",
+      "descripcion": "Alta por KHM (frente a KHN) -> meses activo de alta+2 a alta+7",
+      "diseno": "canal",
+      "resultado": "y_meses_activo_6",
+      "primario": true,
+      "metodo_principal": "dml_att",
+      "estimando": "ATT (efecto en los tratados, intención de tratar)",
+      "efecto": -0.38054981851291103,
+      "ic95": [
+        -0.5043701332283852,
+        -0.2567295037974369
+      ],
+      "p_valor": 1.7041033029130404e-09,
+      "n": 13322,
+      "n_tratados": 8842,
+      "media_tratados": 4.378421171680615,
+      "metodos": {
+        "ingenuo": {
+          "metodo": "ingenuo",
+          "estimando": "diferencia de medias",
+          "efecto": -0.5443466854622425,
+          "ee": 0.04035238897769772,
+          "ic95": [
+            -0.6234359145486811,
+            -0.46525745637580396
+          ],
+          "n": 13322,
+          "n_tratados": 8842,
+          "extra": {}
+        },
+        "regresion": {
+          "metodo": "regresion",
+          "estimando": "efecto constante (MCO)",
+          "efecto": -0.47575895737356433,
+          "ee": 0.041057141100748804,
+          "ic95": [
+            -0.5562294752392112,
+            -0.3952884395079175
+          ],
+          "n": 13322,
+          "n_tratados": 8842,
+          "extra": {}
+        },
+        "emparejamiento": {
+          "metodo": "emparejamiento",
+          "estimando": "ATT",
+          "efecto": -0.4149983033593485,
+          "ee": 0.03461223548810969,
+          "ic95": [
+            -0.48283703834046265,
+            -0.34715956837823436
+          ],
+          "n": 13322,
+          "n_tratados": 8842,
+          "extra": {
+            "tratados_emparejados": 0.9998869034155169,
+            "smd_max_antes": 0.3577777787861736,
+            "smd_max_despues": 0.10474561814572522,
+            "controles_distintos": 2731
+          }
+        },
+        "dml_att": {
+          "metodo": "dml_att",
+          "estimando": "ATT",
+          "efecto": -0.38054981851291103,
+          "ee": 0.06317479080848065,
+          "ic95": [
+            -0.5043701332283852,
+            -0.2567295037974369
+          ],
+          "n": 13322,
+          "n_tratados": 8842,
+          "extra": {
+            "ate": -0.38796348098334144,
+            "ate_ee": 0.05287352739997449,
+            "propension_min_tratados": 0.13593523093927048,
+            "propension_max_controles": 0.9696750703177718,
+            "frac_recortada": 0.0
+          }
+        },
+        "bosque_causal": {
+          "metodo": "bosque_causal",
+          "estimando": "ATT",
+          "efecto": -0.4424578719624984,
+          "ee": 0.24279757846267475,
+          "ic95": [
+            -0.9183323812828789,
+            0.03341663735788203
+          ],
+          "n": 13322,
+          "n_tratados": 8842,
+          "extra": {
+            "resultado_binario": false,
+            "cate_sd_tratados": 0.23747185009148483,
+            "att_dr": -0.44311489975611157,
+            "att_dr_ee": 0.040355337083675044,
+            "ic_conservador": true
+          }
+        }
+      },
+      "covariables": [
+        "edad",
+        "mujer",
+        "log_renta",
+        "renta_faltante",
+        "seg_top",
+        "seg_universitario",
+        "extranjero",
+        "prov_28",
+        "prov_8",
+        "prov_46",
+        "prov_41",
+        "prov_15",
+        "prov_30",
+        "prov_29",
+        "prov_50",
+        "prov_3",
+        "prov_11",
+        "t"
+      ],
+      "dowhy": {
+        "efecto_dowhy_lineardml": -0.4120406512547604,
+        "refutadores": {
+          "placebo_permutacion": {
+            "efecto_original": -0.4120406512547604,
+            "efecto_nuevo": 0.018469064974954534,
+            "p_valor": 0.37505667964508516,
+            "simulaciones": 5,
+            "pasa": true,
+            "criterio": "Con el tratamiento permutado, |efecto| <= 25 % del efecto estimado."
+          },
+          "causa_comun_aleatoria": {
+            "efecto_original": -0.4120406512547604,
+            "efecto_nuevo": -0.4123663584679583,
+            "p_valor": 0.48685652203134866,
+            "simulaciones": 5,
+            "pasa": true,
+            "criterio": "Al agregar una covariable aleatoria, el efecto cambia <= 10 %."
+          },
+          "subconjunto": {
+            "efecto_original": -0.4120406512547604,
+            "efecto_nuevo": -0.4073797507389803,
+            "p_valor": 0.38378482822402316,
+            "simulaciones": 5,
+            "pasa": true,
+            "criterio": "En subconjuntos del 80 %, el efecto medio cambia <= 10 %."
+          }
+        }
+      },
+      "sensibilidad": {
+        "efecto_mco": -0.47575895737356433,
+        "t": -11.025834466810771,
+        "r2_parcial_tratamiento_resultado": 0.009056386230581316,
+        "valor_robustez": 0.0911384946451628,
+        "valor_robustez_ic": 0.07557617002623966,
+        "covariable_mas_fuerte": "extranjero",
+        "r2_parcial_y_mas_fuerte": 0.007649556996254226,
+        "r2_parcial_d_mas_fuerte": 0.004920144741454598,
+        "max_r2_parcial_y": 0.007649556996254226,
+        "max_r2_parcial_d": 0.015204748754437393,
+        "robusto": true,
+        "interpretacion": "Un confusor omitido que explique más de valor_robustez de la varianza residual del tratamiento y del resultado anularía el efecto; con valor_robustez_ic, el IC dejaría de excluir el cero."
+      },
+      "consistencia": {
+        "estimaciones": {
+          "emparejamiento": -0.4149983033593485,
+          "dml_att": -0.38054981851291103,
+          "bosque_causal": -0.4424578719624984
+        },
+        "mismo_signo": true,
+        "razon_max_min": 1.1626805491367933,
+        "pasa": true,
+        "criterio": "Emparejamiento, Double ML y bosque causal (y DiD si aplica) dan el mismo signo y el mayor no supera el doble del menor en valor absoluto."
+      },
+      "pruebas": {
+        "significativo": true,
+        "placebo_permutacion": true,
+        "causa_comun_aleatoria": true,
+        "subconjunto": true,
+        "consistencia": true,
+        "sensibilidad_robusto": true
+      },
+      "segundos": 21,
+      "p_holm": 6.816413211652161e-09,
+      "veredicto": "creíble"
+    },
+    "canal_activo_7": {
+      "id": "canal_activo_7",
+      "descripcion": "Alta por KHM (frente a KHN) -> activo en alta+7",
+      "diseno": "canal",
+      "resultado": "y_activo_6",
+      "primario": false,
+      "metodo_principal": "dml_att",
+      "estimando": "ATT (efecto en los tratados, intención de tratar)",
+      "efecto": -0.059491129012089784,
+      "ic95": [
+        -0.0833532344818358,
+        -0.03562902354234376
+      ],
+      "p_valor": 1.0268163601612201e-06,
+      "n": 13322,
+      "n_tratados": 8842,
+      "media_tratados": 0.7094548744627912,
+      "metodos": {
+        "ingenuo": {
+          "metodo": "ingenuo",
+          "estimando": "diferencia de medias",
+          "efecto": -0.08451833982292312,
+          "ee": 0.007735410317249564,
+          "ic95": [
+            -0.09967946545037182,
+            -0.06935721419547441
+          ],
+          "n": 13322,
+          "n_tratados": 8842,
+          "extra": {}
+        },
+        "regresion": {
+          "metodo": "regresion",
+          "estimando": "efecto constante (MCO)",
+          "efecto": -0.07702953937223873,
+          "ee": 0.007869279919518376,
+          "ic95": [
+            -0.092453044598759,
+            -0.06160603414571846
+          ],
+          "n": 13322,
+          "n_tratados": 8842,
+          "extra": {}
+        },
+        "emparejamiento": {
+          "metodo": "emparejamiento",
+          "estimando": "ATT",
+          "efecto": -0.06763940730686574,
+          "ee": 0.006230686291506334,
+          "ic95": [
+            -0.07985132803718559,
+            -0.05542748657654589
+          ],
+          "n": 13322,
+          "n_tratados": 8842,
+          "extra": {
+            "tratados_emparejados": 0.9998869034155169,
+            "smd_max_antes": 0.3577777787861736,
+            "smd_max_despues": 0.10474561814572522,
+            "controles_distintos": 2731
+          }
+        },
+        "dml_att": {
+          "metodo": "dml_att",
+          "estimando": "ATT",
+          "efecto": -0.059491129012089784,
+          "ee": 0.01217476732121981,
+          "ic95": [
+            -0.0833532344818358,
+            -0.03562902354234376
+          ],
+          "n": 13322,
+          "n_tratados": 8842,
+          "extra": {
+            "ate": -0.06282751414378643,
+            "ate_ee": 0.010196381702334886,
+            "propension_min_tratados": 0.13593523093927048,
+            "propension_max_controles": 0.9696750703177718,
+            "frac_recortada": 0.0
+          }
+        },
+        "bosque_causal": {
+          "metodo": "bosque_causal",
+          "estimando": "ATT",
+          "efecto": -0.07250706344507629,
+          "ee": 0.04510450050275863,
+          "ic95": [
+            -0.160910259971152,
+            0.01589613308099938
+          ],
+          "n": 13322,
+          "n_tratados": 8842,
+          "extra": {
+            "resultado_binario": true,
+            "cate_sd_tratados": 0.04087030076788545,
+            "att_dr": -0.07268348227206613,
+            "att_dr_ee": 0.007655754008808824,
+            "ic_conservador": true
+          }
+        }
+      },
+      "covariables": [
+        "edad",
+        "mujer",
+        "log_renta",
+        "renta_faltante",
+        "seg_top",
+        "seg_universitario",
+        "extranjero",
+        "prov_28",
+        "prov_8",
+        "prov_46",
+        "prov_41",
+        "prov_15",
+        "prov_30",
+        "prov_29",
+        "prov_50",
+        "prov_3",
+        "prov_11",
+        "t"
+      ],
+      "dowhy": {
+        "efecto_dowhy_lineardml": -0.06746625670609088,
+        "refutadores": {
+          "placebo_permutacion": {
+            "efecto_original": -0.06746625670609088,
+            "efecto_nuevo": 0.0026801168161127826,
+            "p_valor": 0.396867562480857,
+            "simulaciones": 5,
+            "pasa": true,
+            "criterio": "Con el tratamiento permutado, |efecto| <= 25 % del efecto estimado."
+          },
+          "causa_comun_aleatoria": {
+            "efecto_original": -0.06746625670609088,
+            "efecto_nuevo": -0.06726096374153047,
+            "p_valor": 0.43704655169775414,
+            "simulaciones": 5,
+            "pasa": true,
+            "criterio": "Al agregar una covariable aleatoria, el efecto cambia <= 10 %."
+          },
+          "subconjunto": {
+            "efecto_original": -0.06746625670609088,
+            "efecto_nuevo": -0.06851266404976923,
+            "p_valor": 0.4091139327504253,
+            "simulaciones": 5,
+            "pasa": true,
+            "criterio": "En subconjuntos del 80 %, el efecto medio cambia <= 10 %."
+          }
+        }
+      },
+      "sensibilidad": {
+        "efecto_mco": -0.07702953937223873,
+        "t": -9.452701548040038,
+        "r2_parcial_tratamiento_resultado": 0.006672482069286177,
+        "valor_robustez": 0.07866929301836997,
+        "valor_robustez_ic": 0.06288911082972523,
+        "covariable_mas_fuerte": "extranjero",
+        "r2_parcial_y_mas_fuerte": 0.005284351394103955,
+        "r2_parcial_d_mas_fuerte": 0.004920144741454598,
+        "max_r2_parcial_y": 0.005284351394103955,
+        "max_r2_parcial_d": 0.015204748754437393,
+        "robusto": true,
+        "interpretacion": "Un confusor omitido que explique más de valor_robustez de la varianza residual del tratamiento y del resultado anularía el efecto; con valor_robustez_ic, el IC dejaría de excluir el cero."
+      },
+      "valor_e": {
+        "cociente_riesgos": 0.9226328913301477,
+        "valor_e": 1.385328279396604
+      },
+      "consistencia": {
+        "estimaciones": {
+          "emparejamiento": -0.06763940730686574,
+          "dml_att": -0.059491129012089784,
+          "bosque_causal": -0.07250706344507629
+        },
+        "mismo_signo": true,
+        "razon_max_min": 1.2187878201192217,
+        "pasa": true,
+        "criterio": "Emparejamiento, Double ML y bosque causal (y DiD si aplica) dan el mismo signo y el mayor no supera el doble del menor en valor absoluto."
+      },
+      "pruebas": {
+        "significativo": true,
+        "placebo_permutacion": true,
+        "causa_comun_aleatoria": true,
+        "subconjunto": true,
+        "consistencia": true,
+        "sensibilidad_robusto": true
+      },
+      "segundos": 21,
+      "p_holm": null,
+      "veredicto": "creíble"
+    },
+    "canal_khq_jovenes": {
+      "id": "canal_khq_jovenes",
+      "descripcion": "Alta por KHQ (frente a KHM), 18 a 30 años -> meses activo",
+      "diseno": "canal",
+      "resultado": "y_meses_activo_6",
+      "primario": false,
+      "metodo_principal": "dml_att",
+      "estimando": "ATT (efecto en los tratados, intención de tratar)",
+      "efecto": -2.4105333487352203,
+      "ic95": [
+        -2.5555046480450954,
+        -2.2655620494253452
+      ],
+      "p_valor": 0.0,
+      "n": 63625,
+      "n_tratados": 60726,
+      "media_tratados": 1.8825708922043276,
+      "metodos": {
+        "ingenuo": {
+          "metodo": "ingenuo",
+          "estimando": "diferencia de medias",
+          "efecto": -2.1819341095204052,
+          "ee": 0.049355690909091,
+          "ic95": [
+            -2.2786694861343144,
+            -2.085198732906496
+          ],
+          "n": 63625,
+          "n_tratados": 60726,
+          "extra": {}
+        },
+        "regresion": {
+          "metodo": "regresion",
+          "estimando": "efecto constante (MCO)",
+          "efecto": -1.6704545738585517,
+          "ee": 0.062195532028331064,
+          "ic95": [
+            -1.792355576633388,
+            -1.5485535710837153
+          ],
+          "n": 63625,
+          "n_tratados": 60726,
+          "extra": {}
+        },
+        "emparejamiento": {
+          "metodo": "emparejamiento",
+          "estimando": "ATT",
+          "efecto": -2.387395843625465,
+          "ee": 0.01427605335487432,
+          "ic95": [
+            -2.415376394042391,
+            -2.3594152932085395
+          ],
+          "n": 63625,
+          "n_tratados": 60726,
+          "extra": {
+            "tratados_emparejados": 1.0,
+            "smd_max_antes": 1.2849450575088825,
+            "smd_max_despues": 0.2146038399963286,
+            "controles_distintos": 1329
+          }
+        },
+        "dml_att": {
+          "metodo": "dml_att",
+          "estimando": "ATT",
+          "efecto": -2.4105333487352203,
+          "ee": 0.07396630777575001,
+          "ic95": [
+            -2.5555046480450954,
+            -2.2655620494253452
+          ],
+          "n": 63625,
+          "n_tratados": 60726,
+          "extra": {
+            "ate": -2.4211571773711364,
+            "ate_ee": 0.07196156452979859,
+            "propension_min_tratados": 0.011123439113820155,
+            "propension_max_controles": 0.99,
+            "frac_recortada": 0.6277721021611002
+          }
+        },
+        "bosque_causal": {
+          "metodo": "bosque_causal",
+          "estimando": "ATT",
+          "efecto": -2.491471174586217,
+          "ee": 0.8869122673268053,
+          "ic95": [
+            -4.229787275993516,
+            -0.7531550731789183
+          ],
+          "n": 63625,
+          "n_tratados": 60726,
+          "extra": {
+            "resultado_binario": false,
+            "cate_sd_tratados": 1.1813574761203314,
+            "att_dr": -2.500638481593469,
+            "att_dr_ee": 0.011099696809021634,
+            "ic_conservador": true
+          }
+        }
+      },
+      "covariables": [
+        "edad",
+        "mujer",
+        "log_renta",
+        "renta_faltante",
+        "seg_top",
+        "seg_universitario",
+        "extranjero",
+        "prov_28",
+        "prov_8",
+        "prov_46",
+        "prov_41",
+        "prov_15",
+        "prov_30",
+        "prov_29",
+        "prov_50",
+        "prov_3",
+        "prov_11",
+        "t"
+      ],
+      "dowhy": {
+        "efecto_dowhy_lineardml": -2.535088185908283,
+        "refutadores": {
+          "placebo_permutacion": {
+            "efecto_original": -2.535088185908283,
+            "efecto_nuevo": -0.00705136706704459,
+            "p_valor": 0.39870709048156927,
+            "simulaciones": 5,
+            "pasa": true,
+            "criterio": "Con el tratamiento permutado, |efecto| <= 25 % del efecto estimado."
+          },
+          "causa_comun_aleatoria": {
+            "efecto_original": -2.535088185908283,
+            "efecto_nuevo": -2.5101791842708048,
+            "p_valor": 0.02207974545499563,
+            "simulaciones": 5,
+            "pasa": true,
+            "criterio": "Al agregar una covariable aleatoria, el efecto cambia <= 10 %."
+          },
+          "subconjunto": {
+            "efecto_original": -2.535088185908283,
+            "efecto_nuevo": -2.5249796602358097,
+            "p_valor": 0.43796555784847746,
+            "simulaciones": 5,
+            "pasa": true,
+            "criterio": "En subconjuntos del 80 %, el efecto medio cambia <= 10 %."
+          }
+        }
+      },
+      "sensibilidad": {
+        "efecto_mco": -1.6704545738585517,
+        "t": -30.004837877643883,
+        "r2_parcial_tratamiento_resultado": 0.013956844344573572,
+        "valor_robustez": 0.11210535891498524,
+        "valor_robustez_ic": 0.10518960301760967,
+        "covariable_mas_fuerte": "seg_universitario",
+        "r2_parcial_y_mas_fuerte": 0.013552061482817287,
+        "r2_parcial_d_mas_fuerte": 0.1609905737839108,
+        "max_r2_parcial_y": 0.019747623902071326,
+        "max_r2_parcial_d": 0.1609905737839108,
+        "robusto": true,
+        "interpretacion": "Un confusor omitido que explique más de valor_robustez de la varianza residual del tratamiento y del resultado anularía el efecto; con valor_robustez_ic, el IC dejaría de excluir el cero."
+      },
+      "consistencia": {
+        "estimaciones": {
+          "emparejamiento": -2.387395843625465,
+          "dml_att": -2.4105333487352203,
+          "bosque_causal": -2.491471174586217
+        },
+        "mismo_signo": true,
+        "razon_max_min": 1.0435936634633258,
+        "pasa": true,
+        "criterio": "Emparejamiento, Double ML y bosque causal (y DiD si aplica) dan el mismo signo y el mayor no supera el doble del menor en valor absoluto."
+      },
+      "pruebas": {
+        "significativo": true,
+        "placebo_permutacion": true,
+        "causa_comun_aleatoria": true,
+        "subconjunto": true,
+        "consistencia": true,
+        "sensibilidad_robusto": true
+      },
+      "segundos": 35,
+      "p_holm": null,
+      "veredicto": "creíble"
+    },
+    "producto_recibo": {
+      "id": "producto_recibo",
+      "descripcion": "Adquirir recibo estando activo -> inactivo en t+3",
+      "diseno": "producto_recibo",
+      "resultado": "y_inactivo_3",
+      "primario": true,
+      "metodo_principal": "dml_att",
+      "estimando": "ATT (efecto en los tratados, intención de tratar)",
+      "efecto": -0.002617267275210803,
+      "ic95": [
+        -0.006717771505494598,
+        0.0014832369550729922
+      ],
+      "p_valor": 0.2109328042515506,
+      "n": 79755,
+      "n_tratados": 20547,
+      "media_tratados": 0.04497006862315667,
+      "metodos": {
+        "ingenuo": {
+          "metodo": "ingenuo",
+          "estimando": "diferencia de medias",
+          "efecto": 0.004435005793809281,
+          "ee": 0.0016574690301118132,
+          "ic95": [
+            0.001186426189299593,
+            0.0076835853983189695
+          ],
+          "n": 79755,
+          "n_tratados": 20547,
+          "extra": {}
+        },
+        "regresion": {
+          "metodo": "regresion",
+          "estimando": "efecto constante (MCO)",
+          "efecto": 0.006900016934935368,
+          "ee": 0.0019429146935215664,
+          "ic95": [
+            0.0030919741105994206,
+            0.010708059759271315
+          ],
+          "n": 79755,
+          "n_tratados": 20547,
+          "extra": {}
+        },
+        "emparejamiento": {
+          "metodo": "emparejamiento",
+          "estimando": "ATT",
+          "efecto": 0.00141194800136326,
+          "ee": 0.002119649698186035,
+          "ic95": [
+            -0.0027424890669225646,
+            0.005566385069649084
+          ],
+          "n": 79755,
+          "n_tratados": 20547,
+          "extra": {
+            "tratados_emparejados": 0.9996106487565095,
+            "smd_max_antes": 0.5020073035247543,
+            "smd_max_despues": 0.03291994099493502,
+            "controles_distintos": 13447
+          }
+        },
+        "dml_att": {
+          "metodo": "dml_att",
+          "estimando": "ATT",
+          "efecto": -0.002617267275210803,
+          "ee": 0.0020921324384672625,
+          "ic95": [
+            -0.006717771505494598,
+            0.0014832369550729922
+          ],
+          "n": 79755,
+          "n_tratados": 20547,
+          "extra": {
+            "ate": 0.026366567356684127,
+            "ate_ee": 0.0030678234035960462,
+            "propension_min_tratados": 0.01,
+            "propension_max_controles": 0.9332703713081086,
+            "frac_recortada": 0.009453952730236349
+          }
+        },
+        "bosque_causal": {
+          "metodo": "bosque_causal",
+          "estimando": "ATT",
+          "efecto": -0.001975254796358352,
+          "ee": 0.023618629523084415,
+          "ic95": [
+            -0.048266918025798244,
+            0.04431640843308154
+          ],
+          "n": 79755,
+          "n_tratados": 20547,
+          "extra": {
+            "resultado_binario": true,
+            "cate_sd_tratados": 0.03866439743876702,
+            "att_dr": 0.048925992962188095,
+            "att_dr_ee": 0.011248690863919232,
+            "ic_conservador": true
+          }
+        }
+      },
+      "covariables": [
+        "nomina_m1",
+        "edad",
+        "mujer",
+        "log_renta",
+        "renta_faltante",
+        "antiguedad",
+        "seg_top",
+        "seg_universitario",
+        "extranjero",
+        "residente",
+        "empleado_banco",
+        "relacion_activa",
+        "nuevo",
+        "canal_khe",
+        "canal_kat",
+        "canal_kfc",
+        "canal_khq",
+        "canal_khm",
+        "canal_khn",
+        "canal_khk",
+        "canal_kfa",
+        "canal_faltante",
+        "prov_28",
+        "prov_8",
+        "prov_46",
+        "prov_41",
+        "prov_15",
+        "prov_30",
+        "prov_29",
+        "prov_50",
+        "prov_3",
+        "prov_11",
+        "x_ahor",
+        "x_cco",
+        "x_cder",
+        "x_cno",
+        "x_ctju",
+        "x_ctma",
+        "x_ctop",
+        "x_ctpp",
+        "x_deco",
+        "x_deme",
+        "x_dela",
+        "x_ecue",
+        "x_fond",
+        "x_hip",
+        "x_plan",
+        "x_pres",
+        "x_reca",
+        "x_tjcr",
+        "x_valo",
+        "x_viv",
+        "x_nomina",
+        "x_nom_pens",
+        "act_m3",
+        "otros_m1",
+        "otros_m3",
+        "otros_m6",
+        "sin_m6",
+        "t"
+      ],
+      "placebo_adelanto": {
+        "metodo": "dml_att",
+        "estimando": "ATT",
+        "efecto": -0.03020298942457019,
+        "ee": 0.002158346444489619,
+        "ic95": [
+          -0.03443327072192992,
+          -0.025972708127210458
+        ],
+        "n": 52907,
+        "n_tratados": 7851,
+        "extra": {
+          "ate": -0.023019437025132,
+          "ate_ee": 0.00242057768452596,
+          "propension_min_tratados": 0.01,
+          "propension_max_controles": 0.8623294390175953,
+          "frac_recortada": 0.01064131400381802
+        },
+        "pasa": false,
+        "ic_contiene_cero": false,
+        "criterio": "En el placebo de adelanto (tratamiento 4 meses después, resultado antes), |efecto| <= 25 % del efecto estimado."
+      },
+      "dowhy": {
+        "efecto_dowhy_lineardml": 0.012063187214232015,
+        "refutadores": {
+          "placebo_permutacion": {
+            "efecto_original": 0.012063187214232015,
+            "efecto_nuevo": -0.0006866635840096638,
+            "p_valor": 0.3571584131284906,
+            "simulaciones": 5,
+            "pasa": true,
+            "criterio": "Con el tratamiento permutado, |efecto| <= 25 % del efecto estimado."
+          },
+          "causa_comun_aleatoria": {
+            "efecto_original": 0.012063187214232015,
+            "efecto_nuevo": 0.012273664871886842,
+            "p_valor": 0.24794399772208675,
+            "simulaciones": 5,
+            "pasa": true,
+            "criterio": "Al agregar una covariable aleatoria, el efecto cambia <= 10 %."
+          },
+          "subconjunto": {
+            "efecto_original": 0.012063187214232015,
+            "efecto_nuevo": 0.011991278283860592,
+            "p_valor": 0.4126574474281992,
+            "simulaciones": 5,
+            "pasa": true,
+            "criterio": "En subconjuntos del 80 %, el efecto medio cambia <= 10 %."
+          }
+        }
+      },
+      "sensibilidad": {
+        "efecto_mco": 0.006901024319389535,
+        "t": 3.9589160778229333,
+        "r2_parcial_tratamiento_resultado": 0.0001966238135763628,
+        "valor_robustez": 0.01392565361121285,
+        "valor_robustez_ic": 0.007055722022991097,
+        "covariable_mas_fuerte": "act_m3",
+        "r2_parcial_y_mas_fuerte": 0.00431664590935923,
+        "r2_parcial_d_mas_fuerte": 0.004352002768625306,
+        "max_r2_parcial_y": 0.00431664590935923,
+        "max_r2_parcial_d": 0.023428706506037924,
+        "robusto": true,
+        "interpretacion": "Un confusor omitido que explique más de valor_robustez de la varianza residual del tratamiento y del resultado anularía el efecto; con valor_robustez_ic, el IC dejaría de excluir el cero."
+      },
+      "valor_e": {
+        "cociente_riesgos": 0.9450007606897659,
+        "valor_e": 1.3063684364533688
+      },
+      "consistencia": {
+        "estimaciones": {
+          "emparejamiento": 0.00141194800136326,
+          "dml_att": -0.002617267275210803,
+          "bosque_causal": -0.001975254796358352
+        },
+        "mismo_signo": false,
+        "razon_max_min": 1.853656985019127,
+        "pasa": false,
+        "criterio": "Emparejamiento, Double ML y bosque causal (y DiD si aplica) dan el mismo signo y el mayor no supera el doble del menor en valor absoluto."
+      },
+      "pruebas": {
+        "significativo": false,
+        "placebo_permutacion": true,
+        "causa_comun_aleatoria": true,
+        "subconjunto": true,
+        "consistencia": false,
+        "sensibilidad_robusto": true,
+        "placebo_adelanto": false
+      },
+      "segundos": 113,
+      "p_holm": 0.2109328042515506,
+      "veredicto": "sin efecto detectable"
+    },
+    "producto_recibo_1": {
+      "id": "producto_recibo_1",
+      "descripcion": "Adquirir recibo estando activo -> inactivo en t+1",
+      "diseno": "producto_recibo",
+      "resultado": "y_inactivo_1",
+      "primario": false,
+      "metodo_principal": "dml_att",
+      "estimando": "ATT (efecto en los tratados, intención de tratar)",
+      "efecto": 0.000681161175780156,
+      "ic95": [
+        -0.0028822680292786454,
+        0.004244590380838957
+      ],
+      "p_valor": 0.7079181479715433,
+      "n": 79755,
+      "n_tratados": 20547,
+      "media_tratados": 0.0328515111695138,
+      "metodos": {
+        "ingenuo": {
+          "metodo": "ingenuo",
+          "estimando": "diferencia de medias",
+          "efecto": 0.006790843692145877,
+          "ee": 0.0014053785350344919,
+          "ic95": [
+            0.004036352378832609,
+            0.009545335005459144
+          ],
+          "n": 79755,
+          "n_tratados": 20547,
+          "extra": {}
+        },
+        "regresion": {
+          "metodo": "regresion",
+          "estimando": "efecto constante (MCO)",
+          "efecto": 0.008361965473262359,
+          "ee": 0.001669075810397723,
+          "ic95": [
+            0.005090636997415817,
+            0.0116332939491089
+          ],
+          "n": 79755,
+          "n_tratados": 20547,
+          "extra": {}
+        },
+        "emparejamiento": {
+          "metodo": "emparejamiento",
+          "estimando": "ATT",
+          "efecto": 0.0036029017965821123,
+          "ee": 0.0018188136378241673,
+          "ic95": [
+            3.809257185646668e-05,
+            0.007167711021307758
+          ],
+          "n": 79755,
+          "n_tratados": 20547,
+          "extra": {
+            "tratados_emparejados": 0.9996106487565095,
+            "smd_max_antes": 0.5020073035247543,
+            "smd_max_despues": 0.03291994099493502,
+            "controles_distintos": 13447
+          }
+        },
+        "dml_att": {
+          "metodo": "dml_att",
+          "estimando": "ATT",
+          "efecto": 0.000681161175780156,
+          "ee": 0.0018181095332193227,
+          "ic95": [
+            -0.0028822680292786454,
+            0.004244590380838957
+          ],
+          "n": 79755,
+          "n_tratados": 20547,
+          "extra": {
+            "ate": 0.02435686467515411,
+            "ate_ee": 0.002709346081279449,
+            "propension_min_tratados": 0.01,
+            "propension_max_controles": 0.9332703713081086,
+            "frac_recortada": 0.009453952730236349
+          }
+        },
+        "bosque_causal": {
+          "metodo": "bosque_causal",
+          "estimando": "ATT",
+          "efecto": 0.002055665331159027,
+          "ee": 0.02070084881930559,
+          "ic95": [
+            -0.03851725280408844,
+            0.04262858346640649
+          ],
+          "n": 79755,
+          "n_tratados": 20547,
+          "extra": {
+            "resultado_binario": true,
+            "cate_sd_tratados": 0.03620312442837357,
+            "att_dr": 0.04578891443644221,
+            "att_dr_ee": 0.010173581867881022,
+            "ic_conservador": true
+          }
+        }
+      },
+      "covariables": [
+        "nomina_m1",
+        "edad",
+        "mujer",
+        "log_renta",
+        "renta_faltante",
+        "antiguedad",
+        "seg_top",
+        "seg_universitario",
+        "extranjero",
+        "residente",
+        "empleado_banco",
+        "relacion_activa",
+        "nuevo",
+        "canal_khe",
+        "canal_kat",
+        "canal_kfc",
+        "canal_khq",
+        "canal_khm",
+        "canal_khn",
+        "canal_khk",
+        "canal_kfa",
+        "canal_faltante",
+        "prov_28",
+        "prov_8",
+        "prov_46",
+        "prov_41",
+        "prov_15",
+        "prov_30",
+        "prov_29",
+        "prov_50",
+        "prov_3",
+        "prov_11",
+        "x_ahor",
+        "x_cco",
+        "x_cder",
+        "x_cno",
+        "x_ctju",
+        "x_ctma",
+        "x_ctop",
+        "x_ctpp",
+        "x_deco",
+        "x_deme",
+        "x_dela",
+        "x_ecue",
+        "x_fond",
+        "x_hip",
+        "x_plan",
+        "x_pres",
+        "x_reca",
+        "x_tjcr",
+        "x_valo",
+        "x_viv",
+        "x_nomina",
+        "x_nom_pens",
+        "act_m3",
+        "otros_m1",
+        "otros_m3",
+        "otros_m6",
+        "sin_m6",
+        "t"
+      ],
+      "placebo_adelanto": {
+        "metodo": "dml_att",
+        "estimando": "ATT",
+        "efecto": -0.0075936257583602085,
+        "ee": 0.002071768004293333,
+        "ic95": [
+          -0.011654216431097566,
+          -0.003533035085622852
+        ],
+        "n": 52907,
+        "n_tratados": 7851,
+        "extra": {
+          "ate": -0.0004813372004983611,
+          "ate_ee": 0.002846172440035649,
+          "propension_min_tratados": 0.01,
+          "propension_max_controles": 0.8623294390175953,
+          "frac_recortada": 0.01064131400381802
+        },
+        "pasa": false,
+        "ic_contiene_cero": false,
+        "criterio": "En el placebo de adelanto (tratamiento 4 meses después, resultado antes), |efecto| <= 25 % del efecto estimado."
+      },
+      "dowhy": {
+        "efecto_dowhy_lineardml": 0.012035032085133344,
+        "refutadores": {
+          "placebo_permutacion": {
+            "efecto_original": 0.012035032085133344,
+            "efecto_nuevo": -0.0004566424972677496,
+            "p_valor": 0.13965745199481916,
+            "simulaciones": 5,
+            "pasa": true,
+            "criterio": "Con el tratamiento permutado, |efecto| <= 25 % del efecto estimado."
+          },
+          "causa_comun_aleatoria": {
+            "efecto_original": 0.012035032085133344,
+            "efecto_nuevo": 0.01251314675310336,
+            "p_valor": 6.665650778144533e-06,
+            "simulaciones": 5,
+            "pasa": true,
+            "criterio": "Al agregar una covariable aleatoria, el efecto cambia <= 10 %."
+          },
+          "subconjunto": {
+            "efecto_original": 0.012035032085133344,
+            "efecto_nuevo": 0.012437567193792236,
+            "p_valor": 0.292754105495749,
+            "simulaciones": 5,
+            "pasa": true,
+            "criterio": "En subconjuntos del 80 %, el efecto medio cambia <= 10 %."
+          }
+        }
+      },
+      "sensibilidad": {
+        "efecto_mco": 0.008362749593219027,
+        "t": 5.814481239158576,
+        "r2_parcial_tratamiento_resultado": 0.00042403985268508283,
+        "valor_robustez": 0.020385577606579258,
+        "valor_robustez_ic": 0.013560807721420421,
+        "covariable_mas_fuerte": "act_m3",
+        "r2_parcial_y_mas_fuerte": 0.003327429031551497,
+        "r2_parcial_d_mas_fuerte": 0.004352002768625306,
+        "max_r2_parcial_y": 0.003327429031551497,
+        "max_r2_parcial_d": 0.023428706506037924,
+        "robusto": true,
+        "interpretacion": "Un confusor omitido que explique más de valor_robustez de la varianza residual del tratamiento y del resultado anularía el efecto; con valor_robustez_ic, el IC dejaría de excluir el cero."
+      },
+      "valor_e": {
+        "cociente_riesgos": 1.021173570567707,
+        "valor_e": 1.1682174098072093
+      },
+      "consistencia": {
+        "estimaciones": {
+          "emparejamiento": 0.0036029017965821123,
+          "dml_att": 0.000681161175780156,
+          "bosque_causal": 0.002055665331159027
+        },
+        "mismo_signo": true,
+        "razon_max_min": 5.28935283555407,
+        "pasa": false,
+        "criterio": "Emparejamiento, Double ML y bosque causal (y DiD si aplica) dan el mismo signo y el mayor no supera el doble del menor en valor absoluto."
+      },
+      "pruebas": {
+        "significativo": false,
+        "placebo_permutacion": true,
+        "causa_comun_aleatoria": true,
+        "subconjunto": true,
+        "consistencia": false,
+        "sensibilidad_robusto": true,
+        "placebo_adelanto": false
+      },
+      "segundos": 113,
+      "p_holm": null,
+      "veredicto": "sin efecto detectable"
+    },
+    "producto_tjcr": {
+      "id": "producto_tjcr",
+      "descripcion": "Adquirir tjcr estando activo -> inactivo en t+3",
+      "diseno": "producto_tjcr",
+      "resultado": "y_inactivo_3",
+      "primario": true,
+      "metodo_principal": "dml_att",
+      "estimando": "ATT (efecto en los tratados, intención de tratar)",
+      "efecto": -0.0025743474797898054,
+      "ic95": [
+        -0.004668218188026802,
+        -0.00048047677155280914
+      ],
+      "p_valor": 0.015965055510865023,
+      "n": 87098,
+      "n_tratados": 9148,
+      "media_tratados": 0.008307826847398338,
+      "metodos": {
+        "ingenuo": {
+          "metodo": "ingenuo",
+          "estimando": "diferencia de medias",
+          "efecto": -0.026522192395706218,
+          "ee": 0.0011541139912171323,
+          "ic95": [
+            -0.028784214252545574,
+            -0.024260170538866862
+          ],
+          "n": 87098,
+          "n_tratados": 9148,
+          "extra": {}
+        },
+        "regresion": {
+          "metodo": "regresion",
+          "estimando": "efecto constante (MCO)",
+          "efecto": -0.0027727801312751343,
+          "ee": 0.0012657253202798062,
+          "ic95": [
+            -0.005253556173343979,
+            -0.0002920040892062893
+          ],
+          "n": 87098,
+          "n_tratados": 9148,
+          "extra": {}
+        },
+        "emparejamiento": {
+          "metodo": "emparejamiento",
+          "estimando": "ATT",
+          "efecto": -0.005247048535198951,
+          "ee": 0.001620266169894566,
+          "ic95": [
+            -0.008422711873560957,
+            -0.002071385196836945
+          ],
+          "n": 87098,
+          "n_tratados": 9148,
+          "extra": {
+            "tratados_emparejados": 1.0,
+            "smd_max_antes": 0.921352269762212,
+            "smd_max_despues": 0.046721781653023806,
+            "controles_distintos": 6953
+          }
+        },
+        "dml_att": {
+          "metodo": "dml_att",
+          "estimando": "ATT",
+          "efecto": -0.0025743474797898054,
+          "ee": 0.0010683210124028714,
+          "ic95": [
+            -0.004668218188026802,
+            -0.00048047677155280914
+          ],
+          "n": 87098,
+          "n_tratados": 9148,
+          "extra": {
+            "ate": -0.010107225206707409,
+            "ate_ee": 0.00369061201622472,
+            "propension_min_tratados": 0.01,
+            "propension_max_controles": 0.8628094370422433,
+            "frac_recortada": 0.25694045787503733
+          }
+        },
+        "bosque_causal": {
+          "metodo": "bosque_causal",
+          "estimando": "ATT",
+          "efecto": -0.0034130461254493695,
+          "ee": 0.014444964950392582,
+          "ic95": [
+            -0.03172465718616225,
+            0.0248985649352635
+          ],
+          "n": 87098,
+          "n_tratados": 9148,
+          "extra": {
+            "resultado_binario": true,
+            "cate_sd_tratados": 0.014689551564304178,
+            "att_dr": 0.029457002178626564,
+            "att_dr_ee": 0.034233871076013285,
+            "ic_conservador": true
+          }
+        }
+      },
+      "covariables": [
+        "nomina_m1",
+        "edad",
+        "mujer",
+        "log_renta",
+        "renta_faltante",
+        "antiguedad",
+        "seg_top",
+        "seg_universitario",
+        "extranjero",
+        "residente",
+        "empleado_banco",
+        "relacion_activa",
+        "nuevo",
+        "canal_khe",
+        "canal_kat",
+        "canal_kfc",
+        "canal_khq",
+        "canal_khm",
+        "canal_khn",
+        "canal_khk",
+        "canal_kfa",
+        "canal_faltante",
+        "prov_28",
+        "prov_8",
+        "prov_46",
+        "prov_41",
+        "prov_15",
+        "prov_30",
+        "prov_29",
+        "prov_50",
+        "prov_3",
+        "prov_11",
+        "x_ahor",
+        "x_aval",
+        "x_cco",
+        "x_cder",
+        "x_cno",
+        "x_ctju",
+        "x_ctma",
+        "x_ctop",
+        "x_ctpp",
+        "x_deco",
+        "x_deme",
+        "x_dela",
+        "x_ecue",
+        "x_fond",
+        "x_hip",
+        "x_plan",
+        "x_pres",
+        "x_reca",
+        "x_valo",
+        "x_viv",
+        "x_nomina",
+        "x_nom_pens",
+        "x_recibo",
+        "act_m3",
+        "otros_m1",
+        "otros_m3",
+        "otros_m6",
+        "sin_m6",
+        "t"
+      ],
+      "placebo_adelanto": {
+        "metodo": "dml_att",
+        "estimando": "ATT",
+        "efecto": -0.009716753369332644,
+        "ee": 0.0012425041390379877,
+        "ic95": [
+          -0.012152016732489048,
+          -0.00728149000617624
+        ],
+        "n": 64752,
+        "n_tratados": 3656,
+        "extra": {
+          "ate": -0.023894063005186688,
+          "ate_ee": 0.002753420944332287,
+          "propension_min_tratados": 0.01,
+          "propension_max_controles": 0.7176134785279112,
+          "frac_recortada": 0.30155053125772174
+        },
+        "pasa": false,
+        "ic_contiene_cero": false,
+        "criterio": "En el placebo de adelanto (tratamiento 4 meses después, resultado antes), |efecto| <= 25 % del efecto estimado."
+      },
+      "dowhy": {
+        "efecto_dowhy_lineardml": -0.004681553995784519,
+        "refutadores": {
+          "placebo_permutacion": {
+            "efecto_original": -0.004681553995784519,
+            "efecto_nuevo": -0.00011425816447438363,
+            "p_valor": 0.46728533922583404,
+            "simulaciones": 5,
+            "pasa": true,
+            "criterio": "Con el tratamiento permutado, |efecto| <= 25 % del efecto estimado."
+          },
+          "causa_comun_aleatoria": {
+            "efecto_original": -0.004681553995784519,
+            "efecto_nuevo": -0.004868128403021277,
+            "p_valor": 0.0,
+            "simulaciones": 5,
+            "pasa": true,
+            "criterio": "Al agregar una covariable aleatoria, el efecto cambia <= 10 %."
+          },
+          "subconjunto": {
+            "efecto_original": -0.004681553995784519,
+            "efecto_nuevo": -0.004723697063295508,
+            "p_valor": 0.4579093448098217,
+            "simulaciones": 5,
+            "pasa": true,
+            "criterio": "En subconjuntos del 80 %, el efecto medio cambia <= 10 %."
+          }
+        }
+      },
+      "sensibilidad": {
+        "efecto_mco": -0.0027727391560821327,
+        "t": -1.3194698460708412,
+        "r2_parcial_tratamiento_resultado": 2.0002594875271847e-05,
+        "valor_robustez": 0.004462480477543251,
+        "valor_robustez_ic": 0.0,
+        "covariable_mas_fuerte": "x_cno",
+        "r2_parcial_y_mas_fuerte": 0.0006704462314898341,
+        "r2_parcial_d_mas_fuerte": 0.006671346803772782,
+        "max_r2_parcial_y": 0.007426420989232344,
+        "max_r2_parcial_d": 0.030325902074041646,
+        "robusto": false,
+        "interpretacion": "Un confusor omitido que explique más de valor_robustez de la varianza residual del tratamiento y del resultado anularía el efecto; con valor_robustez_ic, el IC dejaría de excluir el cero."
+      },
+      "valor_e": {
+        "cociente_riesgos": 0.7634344569027877,
+        "valor_e": 1.946964832856778
+      },
+      "consistencia": {
+        "estimaciones": {
+          "emparejamiento": -0.005247048535198951,
+          "dml_att": -0.0025743474797898054,
+          "bosque_causal": -0.0034130461254493695
+        },
+        "mismo_signo": true,
+        "razon_max_min": 2.038205244782018,
+        "pasa": false,
+        "criterio": "Emparejamiento, Double ML y bosque causal (y DiD si aplica) dan el mismo signo y el mayor no supera el doble del menor en valor absoluto."
+      },
+      "pruebas": {
+        "significativo": true,
+        "placebo_permutacion": true,
+        "causa_comun_aleatoria": true,
+        "subconjunto": true,
+        "consistencia": false,
+        "sensibilidad_robusto": false,
+        "placebo_adelanto": false
+      },
+      "segundos": 125,
+      "p_holm": 0.04789516653259507,
+      "veredicto": "no separable de la selección"
+    },
+    "producto_tjcr_1": {
+      "id": "producto_tjcr_1",
+      "descripcion": "Adquirir tjcr estando activo -> inactivo en t+1",
+      "diseno": "producto_tjcr",
+      "resultado": "y_inactivo_1",
+      "primario": false,
+      "metodo_principal": "dml_att",
+      "estimando": "ATT (efecto en los tratados, intención de tratar)",
+      "efecto": -0.002852787369134076,
+      "ic95": [
+        -0.004384472409398086,
+        -0.0013211023288700657
+      ],
+      "p_valor": 0.00026176739736816224,
+      "n": 87098,
+      "n_tratados": 9148,
+      "media_tratados": 0.003935286401399213,
+      "metodos": {
+        "ingenuo": {
+          "metodo": "ingenuo",
+          "estimando": "diferencia de medias",
+          "efecto": -0.01837388614510496,
+          "ee": 0.0008416360070833877,
+          "ic95": [
+            -0.020023462407080497,
+            -0.01672430988312942
+          ],
+          "n": 87098,
+          "n_tratados": 9148,
+          "extra": {}
+        },
+        "regresion": {
+          "metodo": "regresion",
+          "estimando": "efecto constante (MCO)",
+          "efecto": -0.002755890590914271,
+          "ee": 0.0009107806687468577,
+          "ic95": [
+            -0.004540987899473417,
+            -0.0009707932823551247
+          ],
+          "n": 87098,
+          "n_tratados": 9148,
+          "extra": {}
+        },
+        "emparejamiento": {
+          "metodo": "emparejamiento",
+          "estimando": "ATT",
+          "efecto": -0.003935286401399213,
+          "ee": 0.0012708880628267082,
+          "ic95": [
+            -0.006426181232921439,
+            -0.0014443915698769873
+          ],
+          "n": 87098,
+          "n_tratados": 9148,
+          "extra": {
+            "tratados_emparejados": 1.0,
+            "smd_max_antes": 0.921352269762212,
+            "smd_max_despues": 0.046721781653023806,
+            "controles_distintos": 6953
+          }
+        },
+        "dml_att": {
+          "metodo": "dml_att",
+          "estimando": "ATT",
+          "efecto": -0.002852787369134076,
+          "ee": 0.0007814863193128785,
+          "ic95": [
+            -0.004384472409398086,
+            -0.0013211023288700657
+          ],
+          "n": 87098,
+          "n_tratados": 9148,
+          "extra": {
+            "ate": -0.009796096481397292,
+            "ate_ee": 0.0027724534954651366,
+            "propension_min_tratados": 0.01,
+            "propension_max_controles": 0.8628094370422433,
+            "frac_recortada": 0.25694045787503733
+          }
+        },
+        "bosque_causal": {
+          "metodo": "bosque_causal",
+          "estimando": "ATT",
+          "efecto": -0.0028780631895154486,
+          "ee": 0.010600468671123936,
+          "ic95": [
+            -0.023654600004163535,
+            0.01789847362513263
+          ],
+          "n": 87098,
+          "n_tratados": 9148,
+          "extra": {
+            "resultado_binario": true,
+            "cate_sd_tratados": 0.01128269254494144,
+            "att_dr": 0.011613011558633672,
+            "att_dr_ee": 0.027284344570638025,
+            "ic_conservador": true
+          }
+        }
+      },
+      "covariables": [
+        "nomina_m1",
+        "edad",
+        "mujer",
+        "log_renta",
+        "renta_faltante",
+        "antiguedad",
+        "seg_top",
+        "seg_universitario",
+        "extranjero",
+        "residente",
+        "empleado_banco",
+        "relacion_activa",
+        "nuevo",
+        "canal_khe",
+        "canal_kat",
+        "canal_kfc",
+        "canal_khq",
+        "canal_khm",
+        "canal_khn",
+        "canal_khk",
+        "canal_kfa",
+        "canal_faltante",
+        "prov_28",
+        "prov_8",
+        "prov_46",
+        "prov_41",
+        "prov_15",
+        "prov_30",
+        "prov_29",
+        "prov_50",
+        "prov_3",
+        "prov_11",
+        "x_ahor",
+        "x_aval",
+        "x_cco",
+        "x_cder",
+        "x_cno",
+        "x_ctju",
+        "x_ctma",
+        "x_ctop",
+        "x_ctpp",
+        "x_deco",
+        "x_deme",
+        "x_dela",
+        "x_ecue",
+        "x_fond",
+        "x_hip",
+        "x_plan",
+        "x_pres",
+        "x_reca",
+        "x_valo",
+        "x_viv",
+        "x_nomina",
+        "x_nom_pens",
+        "x_recibo",
+        "act_m3",
+        "otros_m1",
+        "otros_m3",
+        "otros_m6",
+        "sin_m6",
+        "t"
+      ],
+      "placebo_adelanto": {
+        "metodo": "dml_att",
+        "estimando": "ATT",
+        "efecto": -0.004691980389284289,
+        "ee": 0.0009751195728583247,
+        "ic95": [
+          -0.006603179632706686,
+          -0.0027807811458618915
+        ],
+        "n": 64752,
+        "n_tratados": 3656,
+        "extra": {
+          "ate": -0.017576420490740284,
+          "ate_ee": 0.0018559940290315147,
+          "propension_min_tratados": 0.01,
+          "propension_max_controles": 0.7176134785279112,
+          "frac_recortada": 0.30155053125772174
+        },
+        "pasa": false,
+        "ic_contiene_cero": false,
+        "criterio": "En el placebo de adelanto (tratamiento 4 meses después, resultado antes), |efecto| <= 25 % del efecto estimado."
+      },
+      "dowhy": {
+        "efecto_dowhy_lineardml": -0.004714799413450645,
+        "refutadores": {
+          "placebo_permutacion": {
+            "efecto_original": -0.004714799413450645,
+            "efecto_nuevo": -0.000673228862328039,
+            "p_valor": 0.3515176244514756,
+            "simulaciones": 5,
+            "pasa": true,
+            "criterio": "Con el tratamiento permutado, |efecto| <= 25 % del efecto estimado."
+          },
+          "causa_comun_aleatoria": {
+            "efecto_original": -0.004714799413450645,
+            "efecto_nuevo": -0.004579940693023043,
+            "p_valor": 0.07281082228590684,
+            "simulaciones": 5,
+            "pasa": true,
+            "criterio": "Al agregar una covariable aleatoria, el efecto cambia <= 10 %."
+          },
+          "subconjunto": {
+            "efecto_original": -0.004714799413450645,
+            "efecto_nuevo": -0.004274643242063516,
+            "p_valor": 0.2084791753450767,
+            "simulaciones": 5,
+            "pasa": true,
+            "criterio": "En subconjuntos del 80 %, el efecto medio cambia <= 10 %."
+          }
+        }
+      },
+      "sensibilidad": {
+        "efecto_mco": -0.002755771991491712,
+        "t": -1.629393513274163,
+        "r2_parcial_tratamiento_resultado": 3.0502455730573213e-05,
+        "valor_robustez": 0.005507756434101037,
+        "valor_robustez_ic": 0.0,
+        "covariable_mas_fuerte": "otros_m3",
+        "r2_parcial_y_mas_fuerte": 0.0012361924089509249,
+        "r2_parcial_d_mas_fuerte": 0.006419175984714087,
+        "max_r2_parcial_y": 0.007060847110105813,
+        "max_r2_parcial_d": 0.030325902074041646,
+        "robusto": false,
+        "interpretacion": "Un confusor omitido que explique más de valor_robustez de la varianza residual del tratamiento y del resultado anularía el efecto; con valor_robustez_ic, el IC dejaría de excluir el cero."
+      },
+      "valor_e": {
+        "cociente_riesgos": 0.5797353615221608,
+        "valor_e": 2.843156240080895
+      },
+      "consistencia": {
+        "estimaciones": {
+          "emparejamiento": -0.003935286401399213,
+          "dml_att": -0.002852787369134076,
+          "bosque_causal": -0.0028780631895154486
+        },
+        "mismo_signo": true,
+        "razon_max_min": 1.3794531075036673,
+        "pasa": true,
+        "criterio": "Emparejamiento, Double ML y bosque causal (y DiD si aplica) dan el mismo signo y el mayor no supera el doble del menor en valor absoluto."
+      },
+      "pruebas": {
+        "significativo": true,
+        "placebo_permutacion": true,
+        "causa_comun_aleatoria": true,
+        "subconjunto": true,
+        "consistencia": true,
+        "sensibilidad_robusto": false,
+        "placebo_adelanto": false
+      },
+      "segundos": 129,
+      "p_holm": null,
+      "veredicto": "no separable de la selección"
+    },
+    "producto_ecue": {
+      "id": "producto_ecue",
+      "descripcion": "Adquirir ecue estando activo -> inactivo en t+3",
+      "diseno": "producto_ecue",
+      "resultado": "y_inactivo_3",
+      "primario": true,
+      "metodo_principal": "dml_att",
+      "estimando": "ATT (efecto en los tratados, intención de tratar)",
+      "efecto": -0.032514948720077944,
+      "ic95": [
+        -0.06090397649814165,
+        -0.004125920942014239
+      ],
+      "p_valor": 0.024779981873039203,
+      "n": 79943,
+      "n_tratados": 6645,
+      "media_tratados": 0.060948081264108354,
+      "metodos": {
+        "ingenuo": {
+          "metodo": "ingenuo",
+          "estimando": "diferencia de medias",
+          "efecto": 0.02562651723780477,
+          "ee": 0.003013167043609118,
+          "ic95": [
+            0.01972081835292787,
+            0.03153221612268167
+          ],
+          "n": 79943,
+          "n_tratados": 6645,
+          "extra": {}
+        },
+        "regresion": {
+          "metodo": "regresion",
+          "estimando": "efecto constante (MCO)",
+          "efecto": -0.0069996998735597235,
+          "ee": 0.0024346970535418754,
+          "ic95": [
+            -0.011771618411767586,
+            -0.00222778133535186
+          ],
+          "n": 79943,
+          "n_tratados": 6645,
+          "extra": {}
+        },
+        "emparejamiento": {
+          "metodo": "emparejamiento",
+          "estimando": "ATT",
+          "efecto": -0.026795122685533645,
+          "ee": 0.004638909830327137,
+          "ic95": [
+            -0.03588721888050365,
+            -0.017703026490563642
+          ],
+          "n": 79943,
+          "n_tratados": 6645,
+          "extra": {
+            "tratados_emparejados": 0.999699021820918,
+            "smd_max_antes": 0.8032749076066723,
+            "smd_max_despues": 0.20154706631191083,
+            "controles_distintos": 4163
+          }
+        },
+        "dml_att": {
+          "metodo": "dml_att",
+          "estimando": "ATT",
+          "efecto": -0.032514948720077944,
+          "ee": 0.01448446400137591,
+          "ic95": [
+            -0.06090397649814165,
+            -0.004125920942014239
+          ],
+          "n": 79943,
+          "n_tratados": 6645,
+          "extra": {
+            "ate": -0.023155540218900907,
+            "ate_ee": 0.0027587049546665536,
+            "propension_min_tratados": 0.01,
+            "propension_max_controles": 0.9881035240554613,
+            "frac_recortada": 0.26057315837534245
+          }
+        },
+        "bosque_causal": {
+          "metodo": "bosque_causal",
+          "estimando": "ATT",
+          "efecto": -0.0280913336189524,
+          "ee": 0.03450846946177456,
+          "ic95": [
+            -0.09572669092563087,
+            0.039544023687726054
+          ],
+          "n": 79943,
+          "n_tratados": 6645,
+          "extra": {
+            "resultado_binario": true,
+            "cate_sd_tratados": 0.039070979864630824,
+            "att_dr": -0.045333033702168075,
+            "att_dr_ee": 0.029562550915901157,
+            "ic_conservador": true
+          }
+        }
+      },
+      "covariables": [
+        "nomina_m1",
+        "edad",
+        "mujer",
+        "log_renta",
+        "renta_faltante",
+        "antiguedad",
+        "seg_top",
+        "seg_universitario",
+        "extranjero",
+        "residente",
+        "empleado_banco",
+        "relacion_activa",
+        "nuevo",
+        "canal_khe",
+        "canal_kat",
+        "canal_kfc",
+        "canal_khq",
+        "canal_khm",
+        "canal_khn",
+        "canal_khk",
+        "canal_kfa",
+        "canal_faltante",
+        "prov_28",
+        "prov_8",
+        "prov_46",
+        "prov_41",
+        "prov_15",
+        "prov_30",
+        "prov_29",
+        "prov_50",
+        "prov_3",
+        "prov_11",
+        "x_ahor",
+        "x_cco",
+        "x_cder",
+        "x_cno",
+        "x_ctju",
+        "x_ctma",
+        "x_ctop",
+        "x_ctpp",
+        "x_deco",
+        "x_deme",
+        "x_dela",
+        "x_fond",
+        "x_hip",
+        "x_plan",
+        "x_pres",
+        "x_reca",
+        "x_tjcr",
+        "x_valo",
+        "x_viv",
+        "x_nomina",
+        "x_nom_pens",
+        "x_recibo",
+        "act_m3",
+        "otros_m1",
+        "otros_m3",
+        "otros_m6",
+        "sin_m6",
+        "t"
+      ],
+      "placebo_adelanto": {
+        "metodo": "dml_att",
+        "estimando": "ATT",
+        "efecto": -0.011835602124962492,
+        "ee": 0.0023177891318824245,
+        "ic95": [
+          -0.0163783853472104,
+          -0.007292818902714583
+        ],
+        "n": 61164,
+        "n_tratados": 3891,
+        "extra": {
+          "ate": -0.02026783331495769,
+          "ate_ee": 0.0032587768463819724,
+          "propension_min_tratados": 0.01,
+          "propension_max_controles": 0.9175052452814748,
+          "frac_recortada": 0.23641357661369433
+        },
+        "pasa": false,
+        "ic_contiene_cero": false,
+        "criterio": "En el placebo de adelanto (tratamiento 4 meses después, resultado antes), |efecto| <= 25 % del efecto estimado."
+      },
+      "dowhy": {
+        "efecto_dowhy_lineardml": -0.01699826572941588,
+        "refutadores": {
+          "placebo_permutacion": {
+            "efecto_original": -0.01699826572941588,
+            "efecto_nuevo": 0.0007879143541239017,
+            "p_valor": 0.24015202604186398,
+            "simulaciones": 5,
+            "pasa": true,
+            "criterio": "Con el tratamiento permutado, |efecto| <= 25 % del efecto estimado."
+          },
+          "causa_comun_aleatoria": {
+            "efecto_original": -0.01699826572941588,
+            "efecto_nuevo": -0.016664604054208006,
+            "p_valor": 0.10997996653812708,
+            "simulaciones": 5,
+            "pasa": true,
+            "criterio": "Al agregar una covariable aleatoria, el efecto cambia <= 10 %."
+          },
+          "subconjunto": {
+            "efecto_original": -0.01699826572941588,
+            "efecto_nuevo": -0.015850474488943465,
+            "p_valor": 0.00014696033118087254,
+            "simulaciones": 5,
+            "pasa": true,
+            "criterio": "En subconjuntos del 80 %, el efecto medio cambia <= 10 %."
+          }
+        }
+      },
+      "sensibilidad": {
+        "efecto_mco": -0.007005035913235299,
+        "t": -2.45411517104424,
+        "r2_parcial_tratamiento_resultado": 7.538809551817574e-05,
+        "valor_robustez": 0.008645344073457389,
+        "valor_robustez_ic": 0.0017467123054678852,
+        "covariable_mas_fuerte": "x_deco",
+        "r2_parcial_y_mas_fuerte": 0.002912761186626147,
+        "r2_parcial_d_mas_fuerte": 0.028160867806211114,
+        "max_r2_parcial_y": 0.007482721490490124,
+        "max_r2_parcial_d": 0.038425763922739706,
+        "robusto": false,
+        "interpretacion": "Un confusor omitido que explique más de valor_robustez de la varianza residual del tratamiento y del resultado anularía el efecto; con valor_robustez_ic, el IC dejaría de excluir el cero."
+      },
+      "valor_e": {
+        "cociente_riesgos": 0.652108981213434,
+        "valor_e": 2.4379711313431476
+      },
+      "consistencia": {
+        "estimaciones": {
+          "emparejamiento": -0.026795122685533645,
+          "dml_att": -0.032514948720077944,
+          "bosque_causal": -0.0280913336189524
+        },
+        "mismo_signo": true,
+        "razon_max_min": 1.2134651929633582,
+        "pasa": true,
+        "criterio": "Emparejamiento, Double ML y bosque causal (y DiD si aplica) dan el mismo signo y el mayor no supera el doble del menor en valor absoluto."
+      },
+      "pruebas": {
+        "significativo": true,
+        "placebo_permutacion": true,
+        "causa_comun_aleatoria": true,
+        "subconjunto": true,
+        "consistencia": true,
+        "sensibilidad_robusto": false,
+        "placebo_adelanto": false
+      },
+      "segundos": 120,
+      "p_holm": 0.049559963746078406,
+      "veredicto": "no separable de la selección"
+    },
+    "producto_ecue_1": {
+      "id": "producto_ecue_1",
+      "descripcion": "Adquirir ecue estando activo -> inactivo en t+1",
+      "diseno": "producto_ecue",
+      "resultado": "y_inactivo_1",
+      "primario": false,
+      "metodo_principal": "dml_att",
+      "estimando": "ATT (efecto en los tratados, intención de tratar)",
+      "efecto": -0.039555917160079314,
+      "ic95": [
+        -0.06776754301351015,
+        -0.011344291306648477
+      ],
+      "p_valor": 0.0059942994374109215,
+      "n": 79943,
+      "n_tratados": 6645,
+      "media_tratados": 0.038073739653875095,
+      "metodos": {
+        "ingenuo": {
+          "metodo": "ingenuo",
+          "estimando": "diferencia de medias",
+          "efecto": 0.015276391840837903,
+          "ee": 0.002411700222419293,
+          "ic95": [
+            0.01054954626338885,
+            0.020003237418286954
+          ],
+          "n": 79943,
+          "n_tratados": 6645,
+          "extra": {}
+        },
+        "regresion": {
+          "metodo": "regresion",
+          "estimando": "efecto constante (MCO)",
+          "efecto": -0.006044566312072602,
+          "ee": 0.0018999507219122083,
+          "ic95": [
+            -0.009768401299421406,
+            -0.0023207313247237977
+          ],
+          "n": 79943,
+          "n_tratados": 6645,
+          "extra": {}
+        },
+        "emparejamiento": {
+          "metodo": "emparejamiento",
+          "estimando": "ATT",
+          "efecto": -0.024386572331777812,
+          "ee": 0.003820745690796425,
+          "ic95": [
+            -0.03187509627982541,
+            -0.01689804838373021
+          ],
+          "n": 79943,
+          "n_tratados": 6645,
+          "extra": {
+            "tratados_emparejados": 0.999699021820918,
+            "smd_max_antes": 0.8032749076066723,
+            "smd_max_despues": 0.20154706631191083,
+            "controles_distintos": 4163
+          }
+        },
+        "dml_att": {
+          "metodo": "dml_att",
+          "estimando": "ATT",
+          "efecto": -0.039555917160079314,
+          "ee": 0.014393951152143888,
+          "ic95": [
+            -0.06776754301351015,
+            -0.011344291306648477
+          ],
+          "n": 79943,
+          "n_tratados": 6645,
+          "extra": {
+            "ate": -0.01815133066975929,
+            "ate_ee": 0.0023096752332011907,
+            "propension_min_tratados": 0.01,
+            "propension_max_controles": 0.9881035240554613,
+            "frac_recortada": 0.26057315837534245
+          }
+        },
+        "bosque_causal": {
+          "metodo": "bosque_causal",
+          "estimando": "ATT",
+          "efecto": -0.028458058878506456,
+          "ee": 0.030413914632963158,
+          "ic95": [
+            -0.08806823618798999,
+            0.031152118430977073
+          ],
+          "n": 79943,
+          "n_tratados": 6645,
+          "extra": {
+            "resultado_binario": true,
+            "cate_sd_tratados": 0.04064653985636167,
+            "att_dr": -0.03983639465230365,
+            "att_dr_ee": 0.023994567398519597,
+            "ic_conservador": true
+          }
+        }
+      },
+      "covariables": [
+        "nomina_m1",
+        "edad",
+        "mujer",
+        "log_renta",
+        "renta_faltante",
+        "antiguedad",
+        "seg_top",
+        "seg_universitario",
+        "extranjero",
+        "residente",
+        "empleado_banco",
+        "relacion_activa",
+        "nuevo",
+        "canal_khe",
+        "canal_kat",
+        "canal_kfc",
+        "canal_khq",
+        "canal_khm",
+        "canal_khn",
+        "canal_khk",
+        "canal_kfa",
+        "canal_faltante",
+        "prov_28",
+        "prov_8",
+        "prov_46",
+        "prov_41",
+        "prov_15",
+        "prov_30",
+        "prov_29",
+        "prov_50",
+        "prov_3",
+        "prov_11",
+        "x_ahor",
+        "x_cco",
+        "x_cder",
+        "x_cno",
+        "x_ctju",
+        "x_ctma",
+        "x_ctop",
+        "x_ctpp",
+        "x_deco",
+        "x_deme",
+        "x_dela",
+        "x_fond",
+        "x_hip",
+        "x_plan",
+        "x_pres",
+        "x_reca",
+        "x_tjcr",
+        "x_valo",
+        "x_viv",
+        "x_nomina",
+        "x_nom_pens",
+        "x_recibo",
+        "act_m3",
+        "otros_m1",
+        "otros_m3",
+        "otros_m6",
+        "sin_m6",
+        "t"
+      ],
+      "placebo_adelanto": {
+        "metodo": "dml_att",
+        "estimando": "ATT",
+        "efecto": -0.009045376129078839,
+        "ee": 0.0020385827306083357,
+        "ic95": [
+          -0.013040924860576496,
+          -0.005049827397581181
+        ],
+        "n": 61164,
+        "n_tratados": 3891,
+        "extra": {
+          "ate": -0.011706066536857697,
+          "ate_ee": 0.0032051536496899577,
+          "propension_min_tratados": 0.01,
+          "propension_max_controles": 0.9175052452814748,
+          "frac_recortada": 0.23641357661369433
+        },
+        "pasa": true,
+        "ic_contiene_cero": false,
+        "criterio": "En el placebo de adelanto (tratamiento 4 meses después, resultado antes), |efecto| <= 25 % del efecto estimado."
+      },
+      "dowhy": {
+        "efecto_dowhy_lineardml": -0.011888649030586812,
+        "refutadores": {
+          "placebo_permutacion": {
+            "efecto_original": -0.011888649030586812,
+            "efecto_nuevo": 0.0005394509486201602,
+            "p_valor": 0.3695384977521332,
+            "simulaciones": 5,
+            "pasa": true,
+            "criterio": "Con el tratamiento permutado, |efecto| <= 25 % del efecto estimado."
+          },
+          "causa_comun_aleatoria": {
+            "efecto_original": -0.011888649030586812,
+            "efecto_nuevo": -0.011535704663144627,
+            "p_valor": 0.014638184338088046,
+            "simulaciones": 5,
+            "pasa": true,
+            "criterio": "Al agregar una covariable aleatoria, el efecto cambia <= 10 %."
+          },
+          "subconjunto": {
+            "efecto_original": -0.011888649030586812,
+            "efecto_nuevo": -0.011283573306823502,
+            "p_valor": 0.16885573058812242,
+            "simulaciones": 5,
+            "pasa": true,
+            "criterio": "En subconjuntos del 80 %, el efecto medio cambia <= 10 %."
+          }
+        }
+      },
+      "sensibilidad": {
+        "efecto_mco": -0.006047999305477559,
+        "t": -2.611692977370445,
+        "r2_parcial_tratamiento_resultado": 8.53793402935663e-05,
+        "valor_robustez": 0.00919789396405645,
+        "valor_robustez_ic": 0.002303112574752196,
+        "covariable_mas_fuerte": "x_deco",
+        "r2_parcial_y_mas_fuerte": 0.0026108467697118355,
+        "r2_parcial_d_mas_fuerte": 0.028160867806211114,
+        "max_r2_parcial_y": 0.006531036161929717,
+        "max_r2_parcial_d": 0.038425763922739706,
+        "robusto": false,
+        "interpretacion": "Un confusor omitido que explique más de valor_robustez de la varianza residual del tratamiento y del resultado anularía el efecto; con valor_robustez_ic, el IC dejaría de excluir el cero."
+      },
+      "valor_e": {
+        "cociente_riesgos": 0.49045353562649147,
+        "valor_e": 3.4943681904250328
+      },
+      "consistencia": {
+        "estimaciones": {
+          "emparejamiento": -0.024386572331777812,
+          "dml_att": -0.039555917160079314,
+          "bosque_causal": -0.028458058878506456
+        },
+        "mismo_signo": true,
+        "razon_max_min": 1.6220367758914005,
+        "pasa": true,
+        "criterio": "Emparejamiento, Double ML y bosque causal (y DiD si aplica) dan el mismo signo y el mayor no supera el doble del menor en valor absoluto."
+      },
+      "pruebas": {
+        "significativo": true,
+        "placebo_permutacion": true,
+        "causa_comun_aleatoria": true,
+        "subconjunto": true,
+        "consistencia": true,
+        "sensibilidad_robusto": false,
+        "placebo_adelanto": true
+      },
+      "segundos": 114,
+      "p_holm": null,
+      "veredicto": "creíble pero sensible"
+    }
+  },
+  "definiciones": {
+    "nomina_actividad": {
+      "id": "nomina_actividad",
+      "pregunta": "nomina",
+      "tabla": "d_nomina",
+      "resultado": "y_activo_3",
+      "primario": true,
+      "descripcion": "Iniciar la nómina -> activo en t+3",
+      "tabla_placebo": "d_nomina_placebo",
+      "y_pre": "y_activo_base",
+      "filtro": "",
+      "tratado": "",
+      "binario": true
+    },
+    "nomina_productos": {
+      "id": "nomina_productos",
+      "pregunta": "nomina",
+      "tabla": "d_nomina",
+      "resultado": "y_dprod_3",
+      "primario": true,
+      "descripcion": "Iniciar la nómina -> cambio en otros productos (t-1 a t+3)",
+      "tabla_placebo": "d_nomina_placebo",
+      "y_pre": null,
+      "filtro": "",
+      "tratado": "",
+      "binario": false
+    },
+    "nomina_actividad_1": {
+      "id": "nomina_actividad_1",
+      "pregunta": "nomina",
+      "tabla": "d_nomina",
+      "resultado": "y_activo_1",
+      "primario": false,
+      "descripcion": "Iniciar la nómina -> activo en t+1",
+      "tabla_placebo": "d_nomina_placebo",
+      "y_pre": null,
+      "filtro": "",
+      "tratado": "",
+      "binario": true
+    },
+    "canal_meses_activo": {
+      "id": "canal_meses_activo",
+      "pregunta": "canal",
+      "tabla": "d_canal",
+      "resultado": "y_meses_activo_6",
+      "primario": true,
+      "descripcion": "Alta por KHM (frente a KHN) -> meses activo de alta+2 a alta+7",
+      "tabla_placebo": null,
+      "y_pre": null,
+      "filtro": "canal IN ('KHM', 'KHN')",
+      "tratado": "KHM",
+      "binario": false
+    },
+    "canal_activo_7": {
+      "id": "canal_activo_7",
+      "pregunta": "canal",
+      "tabla": "d_canal",
+      "resultado": "y_activo_6",
+      "primario": false,
+      "descripcion": "Alta por KHM (frente a KHN) -> activo en alta+7",
+      "tabla_placebo": null,
+      "y_pre": null,
+      "filtro": "canal IN ('KHM', 'KHN')",
+      "tratado": "KHM",
+      "binario": true
+    },
+    "canal_khq_jovenes": {
+      "id": "canal_khq_jovenes",
+      "pregunta": "canal",
+      "tabla": "d_canal",
+      "resultado": "y_meses_activo_6",
+      "primario": false,
+      "descripcion": "Alta por KHQ (frente a KHM), 18 a 30 años -> meses activo",
+      "tabla_placebo": null,
+      "y_pre": null,
+      "filtro": "canal IN ('KHQ', 'KHM') AND edad BETWEEN 18 AND 30",
+      "tratado": "KHQ",
+      "binario": false
+    },
+    "producto_recibo": {
+      "id": "producto_recibo",
+      "pregunta": "producto_recibo",
+      "tabla": "d_producto_recibo",
+      "resultado": "y_inactivo_3",
+      "primario": true,
+      "descripcion": "Adquirir recibo estando activo -> inactivo en t+3",
+      "tabla_placebo": "d_producto_recibo_placebo",
+      "y_pre": null,
+      "filtro": "",
+      "tratado": "",
+      "binario": true
+    },
+    "producto_recibo_1": {
+      "id": "producto_recibo_1",
+      "pregunta": "producto_recibo",
+      "tabla": "d_producto_recibo",
+      "resultado": "y_inactivo_1",
+      "primario": false,
+      "descripcion": "Adquirir recibo estando activo -> inactivo en t+1",
+      "tabla_placebo": "d_producto_recibo_placebo",
+      "y_pre": null,
+      "filtro": "",
+      "tratado": "",
+      "binario": true
+    },
+    "producto_tjcr": {
+      "id": "producto_tjcr",
+      "pregunta": "producto_tjcr",
+      "tabla": "d_producto_tjcr",
+      "resultado": "y_inactivo_3",
+      "primario": true,
+      "descripcion": "Adquirir tjcr estando activo -> inactivo en t+3",
+      "tabla_placebo": "d_producto_tjcr_placebo",
+      "y_pre": null,
+      "filtro": "",
+      "tratado": "",
+      "binario": true
+    },
+    "producto_tjcr_1": {
+      "id": "producto_tjcr_1",
+      "pregunta": "producto_tjcr",
+      "tabla": "d_producto_tjcr",
+      "resultado": "y_inactivo_1",
+      "primario": false,
+      "descripcion": "Adquirir tjcr estando activo -> inactivo en t+1",
+      "tabla_placebo": "d_producto_tjcr_placebo",
+      "y_pre": null,
+      "filtro": "",
+      "tratado": "",
+      "binario": true
+    },
+    "producto_ecue": {
+      "id": "producto_ecue",
+      "pregunta": "producto_ecue",
+      "tabla": "d_producto_ecue",
+      "resultado": "y_inactivo_3",
+      "primario": true,
+      "descripcion": "Adquirir ecue estando activo -> inactivo en t+3",
+      "tabla_placebo": "d_producto_ecue_placebo",
+      "y_pre": null,
+      "filtro": "",
+      "tratado": "",
+      "binario": true
+    },
+    "producto_ecue_1": {
+      "id": "producto_ecue_1",
+      "pregunta": "producto_ecue",
+      "tabla": "d_producto_ecue",
+      "resultado": "y_inactivo_1",
+      "primario": false,
+      "descripcion": "Adquirir ecue estando activo -> inactivo en t+1",
+      "tabla_placebo": "d_producto_ecue_placebo",
+      "y_pre": null,
+      "filtro": "",
+      "tratado": "",
+      "binario": true
+    }
+  },
+  "criterios": {
+    "significativo": "El IC 95 % del estimador principal (Double ML, ATT) excluye el cero.",
+    "placebo_permutacion": "Con el tratamiento permutado, |efecto| <= 25 % del efecto estimado.",
+    "causa_comun_aleatoria": "Al agregar una covariable aleatoria, el efecto cambia <= 10 %.",
+    "subconjunto": "En subconjuntos del 80 %, el efecto medio cambia <= 10 %.",
+    "placebo_adelanto": "En el placebo de adelanto (tratamiento 4 meses después, resultado antes), |efecto| <= 25 % del efecto estimado.",
+    "consistencia": "Emparejamiento, Double ML y bosque causal (y DiD si aplica) dan el mismo signo y el mayor no supera el doble del menor en valor absoluto.",
+    "sensibilidad": "Informativo: valor de robustez frente al R² parcial de la covariable observada más fuerte. 'Robusto' si un confusor omitido tendría que ser más fuerte que esa covariable para anular el efecto."
+  },
+  "tipo": "causal"
+}
