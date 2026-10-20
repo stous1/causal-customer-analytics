@@ -1,0 +1,98 @@
+{
+  "tipo": "diagnóstico (el modelo congelado no cambia)",
+  "mismo_modelo": {
+    "ap_coincide_con_publicada": {
+      "cco": true,
+      "cno": true,
+      "ctma": true,
+      "ctop": true,
+      "dela": true,
+      "ecue": true,
+      "fond": true,
+      "reca": true,
+      "tjcr": true,
+      "valo": true,
+      "nomina": true,
+      "nom_pens": true,
+      "recibo": true
+    },
+    "todos": true
+  },
+  "definicion": {
+    "etiqueta": "1 si el cliente no tenía el producto en t y lo tiene en t+1",
+    "etiquetas_en_productos_ya_tenidos": 0,
+    "puntajes_en_productos_ya_tenidos": 0,
+    "conclusion": "Solo productos nuevos respecto de t, como en Kaggle."
+  },
+  "frac_altas_que_vuelven_tras_tenerlo_en_t_menos_1": {
+    "cco": 0.3031341200355285,
+    "cno": 0.2185318383752909,
+    "ctma": 0.029783393501805054,
+    "ctop": 0.38197424892703863,
+    "dela": 0.3310344827586207,
+    "ecue": 0.08753529649052037,
+    "fond": 0.08391608391608392,
+    "reca": 0.0,
+    "tjcr": 0.3457115476760901,
+    "valo": 0.2090032154340836,
+    "nomina": 0.4490191851692175,
+    "nom_pens": 0.47770957029284494,
+    "recibo": 0.35472397555355173
+  },
+  "map7": {
+    "modelo": {
+      "publicada": {
+        "map7": 0.8557325301815093,
+        "clientes_mes": 54213
+      },
+      "24_productos": {
+        "map7": 0.8491164471196424,
+        "clientes_mes": 54611
+      },
+      "todos_los_clientes": {
+        "map7": 0.02506441531549811,
+        "clientes_mes": 1850077
+      },
+      "nuevo_estricto": {
+        "map7": 0.7745254512479043,
+        "clientes_mes": 36837
+      }
+    },
+    "referencia": {
+      "publicada": {
+        "map7": 0.7003337606601123,
+        "clientes_mes": 54213
+      },
+      "24_productos": {
+        "map7": 0.694934287033864,
+        "clientes_mes": 54611
+      },
+      "todos_los_clientes": {
+        "map7": 0.020513230719157286,
+        "clientes_mes": 1850077
+      },
+      "nuevo_estricto": {
+        "map7": 0.6729908819677938,
+        "clientes_mes": 36837
+      }
+    },
+    "popularidad_global": {
+      "publicada": {
+        "map7": 0.6458765901050502,
+        "clientes_mes": 54213
+      },
+      "24_productos": {
+        "map7": 0.6408967682829178,
+        "clientes_mes": 54611
+      },
+      "todos_los_clientes": {
+        "map7": 0.01891813876541269,
+        "clientes_mes": 1850077
+      },
+      "nuevo_estricto": {
+        "map7": 0.6035951086101748,
+        "clientes_mes": 36837
+      }
+    }
+  }
+}

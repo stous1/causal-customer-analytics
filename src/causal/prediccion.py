@@ -230,6 +230,23 @@ def referencia_puntuar(modelo: dict, X: pd.DataFrame) -> np.ndarray:
     return np.array([modelo["tasas"].get(k, modelo["global"]) for k in claves])
 
 
+def ap_por_fila(puntajes: pd.DataFrame, verdad: pd.DataFrame, k: int = 7) -> np.ndarray:
+    """AP@k de cada fila (cliente-mes); NaN en las filas sin ninguna adquisición.
+
+    NaN en ``puntajes`` = producto no candidato (ya lo tiene o no se modela): nunca se recomienda.
+    """
+    P = puntajes.to_numpy(dtype=float)
+    V = np.nan_to_num(verdad.to_numpy(dtype=float))
+    P = np.where(np.isnan(P), -np.inf, P)
+    orden = np.argsort(-P, axis=1, kind="stable")[:, :k]
+    aciertos = np.take_along_axis(V, orden, axis=1)
+    aciertos = np.where(np.isinf(np.take_along_axis(P, orden, axis=1)), 0.0, aciertos)
+    prec = np.cumsum(aciertos, axis=1) / np.arange(1, orden.shape[1] + 1)
+    n = V.sum(axis=1)
+    with np.errstate(invalid="ignore", divide="ignore"):
+        return np.where(n > 0, (prec * aciertos).sum(axis=1) / np.minimum(n, k), np.nan)
+
+
 def map_k(puntajes: pd.DataFrame, verdad: pd.DataFrame, k: int = 7) -> tuple[float, int]:
     """MAP@k por cliente (métrica de la competencia de Kaggle).
 

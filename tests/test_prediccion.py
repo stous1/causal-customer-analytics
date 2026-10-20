@@ -47,3 +47,14 @@ def test_tabla_pred(con) -> None:
     assert df.loc[df.tjcr == 1, "y_tjcr"].isna().all()
     cols = prediccion.variables(c)
     assert not any(x.startswith("y_") for x in cols)
+
+
+def test_ap_por_fila_coincide_con_map_k() -> None:
+    puntajes = pd.DataFrame({"a": [0.9, 0.1, 0.3], "b": [0.5, np.nan, 0.2], "c": [0.1, 0.8, 0.4]})
+    verdad = pd.DataFrame({"a": [0, 0, 0], "b": [1, np.nan, 0], "c": [0, 1, 0]})
+    ap = prediccion.ap_por_fila(puntajes, verdad)
+    assert np.isnan(ap[2])  # sin adquisiciones
+    assert abs(np.nanmean(ap) - prediccion.map_k(puntajes, verdad)[0]) < 1e-12
+    # un producto no candidato (NaN) nunca cuenta como acierto
+    ap2 = prediccion.ap_por_fila(puntajes.assign(c=np.nan), verdad)
+    assert ap2[1] == 0.0
