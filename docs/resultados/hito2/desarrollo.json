@@ -1,0 +1,664 @@
+{
+  "ventanas": {
+    "entrenamiento": [
+      6,
+      11
+    ],
+    "validacion": [
+      12,
+      13
+    ]
+  },
+  "positivos_por_mes": [
+    {
+      "t": 6,
+      "ahor": 0.0,
+      "aval": 0.0,
+      "cco": 5730.0,
+      "cder": 10.0,
+      "cno": 2412.0,
+      "ctju": 37.0,
+      "ctma": 240.0,
+      "ctop": 231.0,
+      "ctpp": 145.0,
+      "deco": 322.0,
+      "deme": 33.0,
+      "dela": 1024.0,
+      "ecue": 924.0,
+      "fond": 223.0,
+      "hip": 1.0,
+      "plan": 22.0,
+      "pres": 13.0,
+      "reca": 264.0,
+      "tjcr": 4379.0,
+      "valo": 445.0,
+      "viv": 2.0,
+      "nomina": 2950.0,
+      "nom_pens": 2968.0,
+      "recibo": 7115.0
+    },
+    {
+      "t": 7,
+      "ahor": 0.0,
+      "aval": 0.0,
+      "cco": 4389.0,
+      "cder": 7.0,
+      "cno": 1775.0,
+      "ctju": 22.0,
+      "ctma": 471.0,
+      "ctop": 191.0,
+      "ctpp": 122.0,
+      "deco": 387.0,
+      "deme": 30.0,
+      "dela": 1348.0,
+      "ecue": 1072.0,
+      "fond": 130.0,
+      "hip": 8.0,
+      "plan": 21.0,
+      "pres": 13.0,
+      "reca": 271.0,
+      "tjcr": 4463.0,
+      "valo": 328.0,
+      "viv": 2.0,
+      "nomina": 4683.0,
+      "nom_pens": 4753.0,
+      "recibo": 11210.0
+    },
+    {
+      "t": 8,
+      "ahor": 0.0,
+      "aval": 0.0,
+      "cco": 5682.0,
+      "cder": 3.0,
+      "cno": 2409.0,
+      "ctju": 43.0,
+      "ctma": 468.0,
+      "ctop": 223.0,
+      "ctpp": 153.0,
+      "deco": 349.0,
+      "deme": 22.0,
+      "dela": 1390.0,
+      "ecue": 1205.0,
+      "fond": 146.0,
+      "hip": 7.0,
+      "plan": 19.0,
+      "pres": 9.0,
+      "reca": 593.0,
+      "tjcr": 4461.0,
+      "valo": 911.0,
+      "viv": 2.0,
+      "nomina": 4818.0,
+      "nom_pens": 4790.0,
+      "recibo": 12100.0
+    },
+    {
+      "t": 9,
+      "ahor": 0.0,
+      "aval": 0.0,
+      "cco": 4670.0,
+      "cder": 6.0,
+      "cno": 2930.0,
+      "ctju": 31.0,
+      "ctma": 633.0,
+      "ctop": 209.0,
+      "ctpp": 140.0,
+      "deco": 110.0,
+      "deme": 1.0,
+      "dela": 908.0,
+      "ecue": 1588.0,
+      "fond": 169.0,
+      "hip": 3.0,
+      "plan": 37.0,
+      "pres": 8.0,
+      "reca": 416.0,
+      "tjcr": 4312.0,
+      "valo": 133.0,
+      "viv": 5.0,
+      "nomina": 4395.0,
+      "nom_pens": 4409.0,
+      "recibo": 10102.0
+    },
+    {
+      "t": 10,
+      "ahor": 0.0,
+      "aval": 0.0,
+      "cco": 9077.0,
+      "cder": 9.0,
+      "cno": 3869.0,
+      "ctju": 69.0,
+      "ctma": 592.0,
+      "ctop": 283.0,
+      "ctpp": 155.0,
+      "deco": 8.0,
+      "deme": 0.0,
+      "dela": 1199.0,
+      "ecue": 1816.0,
+      "fond": 205.0,
+      "hip": 3.0,
+      "plan": 157.0,
+      "pres": 11.0,
+      "reca": 235.0,
+      "tjcr": 4295.0,
+      "valo": 255.0,
+      "viv": 8.0,
+      "nomina": 5071.0,
+      "nom_pens": 5148.0,
+      "recibo": 9888.0
+    },
+    {
+      "t": 11,
+      "ahor": 0.0,
+      "aval": 1.0,
+      "cco": 4436.0,
+      "cder": 12.0,
+      "cno": 2155.0,
+      "ctju": 37.0,
+      "ctma": 545.0,
+      "ctop": 259.0,
+      "ctpp": 149.0,
+      "deco": 0.0,
+      "deme": 0.0,
+      "dela": 447.0,
+      "ecue": 2272.0,
+      "fond": 145.0,
+      "hip": 2.0,
+      "plan": 104.0,
+      "pres": 7.0,
+      "reca": 445.0,
+      "tjcr": 3792.0,
+      "valo": 739.0,
+      "viv": 2.0,
+      "nomina": 2437.0,
+      "nom_pens": 2892.0,
+      "recibo": 10078.0
+    },
+    {
+      "t": 12,
+      "ahor": 0.0,
+      "aval": 0.0,
+      "cco": 3988.0,
+      "cder": 9.0,
+      "cno": 2211.0,
+      "ctju": 48.0,
+      "ctma": 770.0,
+      "ctop": 217.0,
+      "ctpp": 141.0,
+      "deco": 1.0,
+      "deme": 0.0,
+      "dela": 684.0,
+      "ecue": 2342.0,
+      "fond": 82.0,
+      "hip": 6.0,
+      "plan": 45.0,
+      "pres": 6.0,
+      "reca": 557.0,
+      "tjcr": 3881.0,
+      "valo": 320.0,
+      "viv": 2.0,
+      "nomina": 9499.0,
+      "nom_pens": 12687.0,
+      "recibo": 11528.0
+    },
+    {
+      "t": 13,
+      "ahor": 0.0,
+      "aval": 0.0,
+      "cco": 4551.0,
+      "cder": 5.0,
+      "cno": 2428.0,
+      "ctju": 45.0,
+      "ctma": 643.0,
+      "ctop": 225.0,
+      "ctpp": 131.0,
+      "deco": 0.0,
+      "deme": 0.0,
+      "dela": 239.0,
+      "ecue": 1909.0,
+      "fond": 92.0,
+      "hip": 2.0,
+      "plan": 30.0,
+      "pres": 7.0,
+      "reca": 199.0,
+      "tjcr": 4401.0,
+      "valo": 163.0,
+      "viv": 4.0,
+      "nomina": 4974.0,
+      "nom_pens": 5038.0,
+      "recibo": 10117.0
+    },
+    {
+      "t": 14,
+      "ahor": 0.0,
+      "aval": 0.0,
+      "cco": 4027.0,
+      "cder": 5.0,
+      "cno": 2381.0,
+      "ctju": 40.0,
+      "ctma": 596.0,
+      "ctop": 240.0,
+      "ctpp": 161.0,
+      "deco": 0.0,
+      "deme": 0.0,
+      "dela": 99.0,
+      "ecue": 2249.0,
+      "fond": 83.0,
+      "hip": 5.0,
+      "plan": 21.0,
+      "pres": 4.0,
+      "reca": 807.0,
+      "tjcr": 4100.0,
+      "valo": 128.0,
+      "viv": 3.0,
+      "nomina": 3790.0,
+      "nom_pens": 4424.0,
+      "recibo": 9799.0
+    },
+    {
+      "t": 15,
+      "ahor": 1.0,
+      "aval": 0.0,
+      "cco": 3854.0,
+      "cder": 5.0,
+      "cno": 2346.0,
+      "ctju": 40.0,
+      "ctma": 512.0,
+      "ctop": 226.0,
+      "ctpp": 131.0,
+      "deco": 0.0,
+      "deme": 0.0,
+      "dela": 46.0,
+      "ecue": 2709.0,
+      "fond": 60.0,
+      "hip": 3.0,
+      "plan": 22.0,
+      "pres": 7.0,
+      "reca": 279.0,
+      "tjcr": 4248.0,
+      "valo": 183.0,
+      "viv": 7.0,
+      "nomina": 5488.0,
+      "nom_pens": 5513.0,
+      "recibo": 10163.0
+    }
+  ],
+  "productos": {
+    "cco": {
+      "referencia": {
+        "ap": 0.029934755541767027,
+        "auc": 0.7492136434475384,
+        "tasa_base": 0.011961880000168103,
+        "precision_top1pct": 0.06038105912020174,
+        "positivos": 8539,
+        "filas": 713851
+      },
+      "positivos_entrenamiento": 33984,
+      "hojas31": {
+        "ap": 0.36691074418092984,
+        "auc": 0.9232376600428603,
+        "tasa_base": 0.011961880000168103,
+        "precision_top1pct": 0.4724012328383301,
+        "positivos": 8539,
+        "filas": 713851,
+        "rondas": 98
+      },
+      "hojas127": {
+        "ap": 0.365061442041345,
+        "auc": 0.9246734787997885,
+        "tasa_base": 0.011961880000168103,
+        "precision_top1pct": 0.4774446623704119,
+        "positivos": 8539,
+        "filas": 713851,
+        "rondas": 77
+      }
+    },
+    "cno": {
+      "referencia": {
+        "ap": 0.010505677160861359,
+        "auc": 0.8264134933081542,
+        "tasa_base": 0.0027330790943309964,
+        "precision_top1pct": 0.01779296529782596,
+        "positivos": 4639,
+        "filas": 1697353
+      },
+      "positivos_entrenamiento": 15550,
+      "hojas31": {
+        "ap": 0.422802723484003,
+        "auc": 0.9519130200992546,
+        "tasa_base": 0.0027330790943309964,
+        "precision_top1pct": 0.15471631414599657,
+        "positivos": 4639,
+        "filas": 1697353,
+        "rondas": 191
+      },
+      "hojas127": {
+        "ap": 0.4079374725836259,
+        "auc": 0.9496532993804888,
+        "tasa_base": 0.0027330790943309964,
+        "precision_top1pct": 0.15312555234784658,
+        "positivos": 4639,
+        "filas": 1697353,
+        "rondas": 295
+      }
+    },
+    "ctma": {
+      "referencia": {
+        "ap": 0.0030812746425986242,
+        "auc": 0.8154979244124309,
+        "tasa_base": 0.0007777697658379079,
+        "precision_top1pct": 0.00022017944624869268,
+        "positivos": 1413,
+        "filas": 1816733
+      },
+      "positivos_entrenamiento": 2949,
+      "hojas31": {
+        "ap": 0.1159953050921586,
+        "auc": 0.9816055873218331,
+        "tasa_base": 0.0007777697658379079,
+        "precision_top1pct": 0.06005394396433093,
+        "positivos": 1413,
+        "filas": 1816733,
+        "rondas": 52
+      },
+      "hojas127": {
+        "ap": 0.12223221575611559,
+        "auc": 0.9823926679773014,
+        "tasa_base": 0.0007777697658379079,
+        "precision_top1pct": 0.06087961688776353,
+        "positivos": 1413,
+        "filas": 1816733,
+        "rondas": 56
+      }
+    },
+    "ctop": {
+      "referencia": {
+        "ap": 0.001057628076973857,
+        "auc": 0.8444409719271704,
+        "tasa_base": 0.00027124735119597374,
+        "precision_top1pct": 0.0017796870205584534,
+        "positivos": 442,
+        "filas": 1629509
+      },
+      "positivos_entrenamiento": 1396,
+      "hojas31": {
+        "ap": 0.09198129747020412,
+        "auc": 0.9706856031606821,
+        "tasa_base": 0.00027124735119597374,
+        "precision_top1pct": 0.014912549861920834,
+        "positivos": 442,
+        "filas": 1629509,
+        "rondas": 364
+      },
+      "hojas127": {
+        "ap": 0.12358708420847264,
+        "auc": 0.9718228550369171,
+        "tasa_base": 0.00027124735119597374,
+        "precision_top1pct": 0.015035286897821418,
+        "positivos": 442,
+        "filas": 1629509,
+        "rondas": 93
+      }
+    },
+    "dela": {
+      "referencia": {
+        "ap": 0.0036562471476630468,
+        "auc": 0.8501415888920768,
+        "tasa_base": 0.0005228436805022925,
+        "precision_top1pct": 0.007590777771483601,
+        "positivos": 923,
+        "filas": 1765346
+      },
+      "positivos_entrenamiento": 6316,
+      "hojas31": {
+        "ap": 0.02832353760290219,
+        "auc": 0.9078103250286882,
+        "tasa_base": 0.0005228436805022925,
+        "precision_top1pct": 0.01903359202401858,
+        "positivos": 923,
+        "filas": 1765346,
+        "rondas": 192
+      },
+      "hojas127": {
+        "ap": 0.029665174710037948,
+        "auc": 0.908076121716793,
+        "tasa_base": 0.0005228436805022925,
+        "precision_top1pct": 0.01971336316773353,
+        "positivos": 923,
+        "filas": 1765346,
+        "rondas": 90
+      }
+    },
+    "ecue": {
+      "referencia": {
+        "ap": 0.017571099592081144,
+        "auc": 0.8497667411627146,
+        "tasa_base": 0.0025102956964166132,
+        "precision_top1pct": 0.03525451753867958,
+        "positivos": 4251,
+        "filas": 1693426
+      },
+      "positivos_entrenamiento": 8877,
+      "hojas31": {
+        "ap": 0.28314155883473024,
+        "auc": 0.9354008867478298,
+        "tasa_base": 0.0025102956964166132,
+        "precision_top1pct": 0.12288886264320302,
+        "positivos": 4251,
+        "filas": 1693426,
+        "rondas": 107
+      },
+      "hojas127": {
+        "ap": 0.26903305002752087,
+        "auc": 0.9365011845304394,
+        "tasa_base": 0.0025102956964166132,
+        "precision_top1pct": 0.12123538443368372,
+        "positivos": 4251,
+        "filas": 1693426,
+        "rondas": 84
+      }
+    },
+    "fond": {
+      "referencia": {
+        "ap": 0.0004787875428886585,
+        "auc": 0.8391510414569152,
+        "tasa_base": 9.648356230620112e-05,
+        "precision_top1pct": 0.0008872130420317178,
+        "positivos": 174,
+        "filas": 1803416
+      },
+      "positivos_entrenamiento": 1018,
+      "hojas31": {
+        "ap": 0.011465360260756226,
+        "auc": 0.9160101543545573,
+        "tasa_base": 9.648356230620112e-05,
+        "precision_top1pct": 0.0023289342353332593,
+        "positivos": 174,
+        "filas": 1803416,
+        "rondas": 68
+      },
+      "hojas127": {
+        "ap": 0.008395399390669224,
+        "auc": 0.9107767785217805,
+        "tasa_base": 9.648356230620112e-05,
+        "precision_top1pct": 0.0020516801596983476,
+        "positivos": 174,
+        "filas": 1803416,
+        "rondas": 109
+      }
+    },
+    "reca": {
+      "referencia": {
+        "ap": 0.0014917061264005018,
+        "auc": 0.8332745193728319,
+        "tasa_base": 0.00043316211206637236,
+        "precision_top1pct": 0.002979430470406234,
+        "positivos": 756,
+        "filas": 1745305
+      },
+      "positivos_entrenamiento": 2224,
+      "hojas31": {
+        "ap": 0.005739680610879164,
+        "auc": 0.8924422185299351,
+        "tasa_base": 0.00043316211206637236,
+        "precision_top1pct": 0.006417234859336504,
+        "positivos": 756,
+        "filas": 1745305,
+        "rondas": 11
+      },
+      "hojas127": {
+        "ap": 0.004610296445517351,
+        "auc": 0.8950327529049737,
+        "tasa_base": 0.00043316211206637236,
+        "precision_top1pct": 0.006646421818598522,
+        "positivos": 756,
+        "filas": 1745305,
+        "rondas": 13
+      }
+    },
+    "tjcr": {
+      "referencia": {
+        "ap": 0.02044747341843429,
+        "auc": 0.86243643413514,
+        "tasa_base": 0.00469586852021741,
+        "precision_top1pct": 0.03538217282830574,
+        "positivos": 8282,
+        "filas": 1763678
+      },
+      "positivos_entrenamiento": 25702,
+      "hojas31": {
+        "ap": 0.23934312411061875,
+        "auc": 0.958911736538252,
+        "tasa_base": 0.00469586852021741,
+        "precision_top1pct": 0.23627806758902245,
+        "positivos": 8282,
+        "filas": 1763678,
+        "rondas": 38
+      },
+      "hojas127": {
+        "ap": 0.24042978169235452,
+        "auc": 0.9612873647133691,
+        "tasa_base": 0.00469586852021741,
+        "precision_top1pct": 0.23735540938988434,
+        "positivos": 8282,
+        "filas": 1763678,
+        "rondas": 57
+      }
+    },
+    "valo": {
+      "referencia": {
+        "ap": 0.0008864193811426595,
+        "auc": 0.8177590024385972,
+        "tasa_base": 0.0002697647349910553,
+        "precision_top1pct": 0.0018431635388739946,
+        "positivos": 483,
+        "filas": 1790449
+      },
+      "positivos_entrenamiento": 2811,
+      "hojas31": {
+        "ap": 0.005381279068178584,
+        "auc": 0.8911437730467644,
+        "tasa_base": 0.0002697647349910553,
+        "precision_top1pct": 0.004021447721179625,
+        "positivos": 483,
+        "filas": 1790449,
+        "rondas": 204
+      },
+      "hojas127": {
+        "ap": 0.00764904919477048,
+        "auc": 0.8840247029779802,
+        "tasa_base": 0.0002697647349910553,
+        "precision_top1pct": 0.004468275245755138,
+        "positivos": 483,
+        "filas": 1790449,
+        "rondas": 254
+      }
+    },
+    "nomina": {
+      "referencia": {
+        "ap": 0.0342776414962628,
+        "auc": 0.8542042668855511,
+        "tasa_base": 0.008281145845551738,
+        "precision_top1pct": 0.06253933741488814,
+        "positivos": 14473,
+        "filas": 1747705
+      },
+      "positivos_entrenamiento": 24354,
+      "hojas31": {
+        "ap": 0.5856551269792061,
+        "auc": 0.9748773755265484,
+        "tasa_base": 0.008281145845551738,
+        "precision_top1pct": 0.5727527607712994,
+        "positivos": 14473,
+        "filas": 1747705,
+        "rondas": 154
+      },
+      "hojas127": {
+        "ap": 0.5854260786641237,
+        "auc": 0.974731714801845,
+        "tasa_base": 0.008281145845551738,
+        "precision_top1pct": 0.5745265205698918,
+        "positivos": 14473,
+        "filas": 1747705,
+        "rondas": 72
+      }
+    },
+    "nom_pens": {
+      "referencia": {
+        "ap": 0.033842295240459765,
+        "auc": 0.8219435386364033,
+        "tasa_base": 0.010177463965461505,
+        "precision_top1pct": 0.0640826873385013,
+        "positivos": 17725,
+        "filas": 1741593
+      },
+      "positivos_entrenamiento": 24960,
+      "hojas31": {
+        "ap": 0.598535248791464,
+        "auc": 0.9777505798183646,
+        "tasa_base": 0.010177463965461505,
+        "precision_top1pct": 0.648119437266724,
+        "positivos": 17725,
+        "filas": 1741593,
+        "rondas": 601
+      },
+      "hojas127": {
+        "ap": 0.6381958233537254,
+        "auc": 0.9773012920990355,
+        "tasa_base": 0.010177463965461505,
+        "precision_top1pct": 0.7174275050244042,
+        "positivos": 17725,
+        "filas": 1741593,
+        "rondas": 11
+      }
+    },
+    "recibo": {
+      "referencia": {
+        "ap": 0.05005987885004676,
+        "auc": 0.8470254220764042,
+        "tasa_base": 0.013379346665084262,
+        "precision_top1pct": 0.07498300055634542,
+        "positivos": 21645,
+        "filas": 1617792
+      },
+      "positivos_entrenamiento": 60493,
+      "hojas31": {
+        "ap": 0.3585764570323228,
+        "auc": 0.9494116932181846,
+        "tasa_base": 0.013379346665084262,
+        "precision_top1pct": 0.49180935896643385,
+        "positivos": 21645,
+        "filas": 1617792,
+        "rondas": 143
+      },
+      "hojas127": {
+        "ap": 0.36041183077362865,
+        "auc": 0.9488292600821709,
+        "tasa_base": 0.013379346665084262,
+        "precision_top1pct": 0.48717314706064163,
+        "positivos": 21645,
+        "filas": 1617792,
+        "rondas": 28
+      }
+    }
+  },
+  "nota": "Métricas de validación: con ellas se eligió la configuración (optimistas)."
+}

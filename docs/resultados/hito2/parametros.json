@@ -1,0 +1,173 @@
+{
+  "productos": {
+    "cco": {
+      "configuracion": "hojas31",
+      "rondas": 98
+    },
+    "cno": {
+      "configuracion": "hojas31",
+      "rondas": 191
+    },
+    "ctma": {
+      "configuracion": "hojas127",
+      "rondas": 56
+    },
+    "ctop": {
+      "configuracion": "hojas127",
+      "rondas": 93
+    },
+    "dela": {
+      "configuracion": "hojas127",
+      "rondas": 90
+    },
+    "ecue": {
+      "configuracion": "hojas31",
+      "rondas": 107
+    },
+    "fond": {
+      "configuracion": "hojas31",
+      "rondas": 68
+    },
+    "reca": {
+      "configuracion": "hojas31",
+      "rondas": 20
+    },
+    "tjcr": {
+      "configuracion": "hojas127",
+      "rondas": 57
+    },
+    "valo": {
+      "configuracion": "hojas127",
+      "rondas": 254
+    },
+    "nomina": {
+      "configuracion": "hojas31",
+      "rondas": 154
+    },
+    "nom_pens": {
+      "configuracion": "hojas127",
+      "rondas": 20
+    },
+    "recibo": {
+      "configuracion": "hojas127",
+      "rondas": 28
+    }
+  },
+  "variables": [
+    "edad",
+    "mujer",
+    "log_renta",
+    "renta_faltante",
+    "antiguedad",
+    "seg_top",
+    "seg_universitario",
+    "extranjero",
+    "empleado_banco",
+    "relacion_activa",
+    "nuevo",
+    "canal_khe",
+    "canal_kat",
+    "canal_kfc",
+    "canal_khq",
+    "canal_khm",
+    "canal_khn",
+    "canal_khk",
+    "canal_kfa",
+    "prov_28",
+    "prov_8",
+    "prov_46",
+    "prov_41",
+    "prov_15",
+    "prov_30",
+    "prov_29",
+    "prov_50",
+    "prov_3",
+    "prov_11",
+    "activo",
+    "activo_ant",
+    "n_productos",
+    "n_productos_t3",
+    "altas_3m",
+    "bajas_3m",
+    "ahor",
+    "aval",
+    "cco",
+    "cder",
+    "cno",
+    "ctju",
+    "ctma",
+    "ctop",
+    "ctpp",
+    "deco",
+    "deme",
+    "dela",
+    "ecue",
+    "fond",
+    "hip",
+    "plan",
+    "pres",
+    "reca",
+    "tjcr",
+    "valo",
+    "viv",
+    "nomina",
+    "nom_pens",
+    "recibo",
+    "ahor_ant",
+    "aval_ant",
+    "cco_ant",
+    "cder_ant",
+    "cno_ant",
+    "ctju_ant",
+    "ctma_ant",
+    "ctop_ant",
+    "ctpp_ant",
+    "deco_ant",
+    "deme_ant",
+    "dela_ant",
+    "ecue_ant",
+    "fond_ant",
+    "hip_ant",
+    "plan_ant",
+    "pres_ant",
+    "reca_ant",
+    "tjcr_ant",
+    "valo_ant",
+    "viv_ant",
+    "nomina_ant",
+    "nom_pens_ant",
+    "recibo_ant"
+  ],
+  "configuraciones": {
+    "hojas31": {
+      "num_leaves": 31,
+      "learning_rate": 0.05,
+      "min_data_in_leaf": 100,
+      "feature_fraction": 0.8,
+      "bagging_fraction": 0.8,
+      "lambda_l2": 1.0,
+      "rondas": 1000
+    },
+    "hojas127": {
+      "num_leaves": 127,
+      "learning_rate": 0.05,
+      "min_data_in_leaf": 300,
+      "feature_fraction": 0.8,
+      "bagging_fraction": 0.8,
+      "lambda_l2": 1.0,
+      "rondas": 1000
+    }
+  },
+  "frac_negativos": 0.1,
+  "min_positivos": 1000,
+  "min_positivos_validacion": 100,
+  "entrenamiento_final": [
+    6,
+    13
+  ],
+  "prueba": [
+    14,
+    15
+  ],
+  "referencia": "Tasa de adquisición por celda (segmento, tramo de edad, actividad) en el entrenamiento."
+}
