@@ -1,0 +1,1141 @@
+{
+  "titulo": "Preregistro de las preguntas causales en Santander",
+  "estado": "Escrito antes de estimar cualquier efecto en Santander (tag preregistro).",
+  "preguntas": {
+    "nomina": {
+      "nombre": "nomina",
+      "pregunta": "¿Empezar a recibir la nómina en el banco vuelve más activo al cliente y aumenta su tenencia de otros productos, o los más activos son los que la traen?",
+      "tratamiento": "Inicia la nómina en t: nomina_t = 1 con nomina = 0 en t-1, t-2 y t-3.",
+      "control": "No inicia la nómina en t (nomina_t = 0); puede iniciarla después (ITT).",
+      "elegibilidad": [
+        "Presente en el panel en t-3 ... t+3",
+        "Sin nómina en t-1, t-2 y t-3",
+        "Edad >= 18 en t-1, no fallecido, actividad conocida en t-1"
+      ],
+      "resultados": {
+        "y_activo_3": "Activo en t+3 (ind_actividad_cliente)",
+        "y_dprod_3": "Cambio en otros productos entre t-1 y t+3 (sin nómina, pensiones ni cuenta nómina)",
+        "y_activo_1": "Activo en t+1 (secundario)"
+      },
+      "meses_t": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "covariables": "Demografía y los 24 productos en t-1; actividad en t-1, t-2 y t-3; otros productos en t-1, t-3 y t-6; mes t.",
+      "razon_controles": 20,
+      "placebo": "Adelanto: entre elegibles sin nómina en t ... t+3, inician en t+4 contra no inician en t+4; resultados en t+3, antes del inicio (efecto verdadero = 0).",
+      "notas": [
+        "La actividad puede incluir mecánicamente el abono de la nómina: un efecto sobre actividad puede ser de definición.",
+        "Cohortes t = 9 ... 13 para tener actividad real en t-3 (mes >= 6)."
+      ]
+    },
+    "canal": {
+      "nombre": "canal",
+      "pregunta": "¿El canal de vinculación influye en cuánto tiempo se mantiene activo el cliente?",
+      "tratamiento": "Canal de vinculación KHM (tratado) frente a KHN (referencia).",
+      "control": "Canal KHN.",
+      "elegibilidad": [
+        "Alta (fecha_alta) en julio a octubre de 2015 (meses 6 a 9)",
+        "Primer mes en el panel = mes de alta (covariables medidas al entrar)",
+        "Presente en el panel de alta+1 a alta+7",
+        "Edad >= 18 al entrar"
+      ],
+      "resultados": {
+        "y_meses_activo_6": "Meses activo entre alta+2 y alta+7 (0 a 6)",
+        "y_activo_6": "Activo en alta+7"
+      },
+      "meses_t": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "covariables": "Al entrar (canal, segmento y renta en alta+1, porque se registran con un mes de retraso): edad, sexo, renta, segmento, extranjero, residente, empleado del banco, provincia y mes de alta. Los productos del mes de alta no se ajustan: pueden ser parte del efecto del canal (mediadores).",
+      "razon_controles": 0,
+      "placebo": "No hay un placebo de diseño limpio: el canal se fija al entrar.",
+      "notas": [
+        "Contraste secundario: KHQ frente a KHM con edad 18 a 30 (positividad débil: KHQ es el canal universitario).",
+        "Los códigos de canal están anonimizados: no se sabe qué canal es cada uno."
+      ]
+    },
+    "producto_recibo": {
+      "nombre": "producto_recibo",
+      "pregunta": "¿Adquirir débito automático frena el paso de activo a inactivo?",
+      "tratamiento": "Adquiere recibo en t: recibo_t = 1 con recibo = 0 en t-1, t-2 y t-3.",
+      "control": "No adquiere recibo en t; puede adquirirlo después (ITT).",
+      "elegibilidad": [
+        "Presente en t-3 ... t+3",
+        "Activo en t-1 y t-2",
+        "Sin recibo en t-1, t-2 y t-3",
+        "Edad >= 18 en t-1, no fallecido"
+      ],
+      "resultados": {
+        "y_inactivo_3": "Inactivo en t+3",
+        "y_inactivo_1": "Inactivo en t+1 (secundario)"
+      },
+      "meses_t": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "covariables": "Demografía y los 24 productos en t-1; actividad en t-3; otros productos en t-1, t-3 y t-6; nómina en t-1; mes t.",
+      "razon_controles": 20,
+      "placebo": "Adelanto: elegibles sin recibo en t ... t+3; adquieren en t+4 contra no; resultados en t+3.",
+      "notas": [
+        "Un débito automático o una tarjeta generan movimientos: parte del efecto puede ser mecánico sobre la definición de actividad."
+      ]
+    },
+    "producto_tjcr": {
+      "nombre": "producto_tjcr",
+      "pregunta": "¿Adquirir tarjeta de crédito frena el paso de activo a inactivo?",
+      "tratamiento": "Adquiere tjcr en t: tjcr_t = 1 con tjcr = 0 en t-1, t-2 y t-3.",
+      "control": "No adquiere tjcr en t; puede adquirirlo después (ITT).",
+      "elegibilidad": [
+        "Presente en t-3 ... t+3",
+        "Activo en t-1 y t-2",
+        "Sin tjcr en t-1, t-2 y t-3",
+        "Edad >= 18 en t-1, no fallecido"
+      ],
+      "resultados": {
+        "y_inactivo_3": "Inactivo en t+3",
+        "y_inactivo_1": "Inactivo en t+1 (secundario)"
+      },
+      "meses_t": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "covariables": "Demografía y los 24 productos en t-1; actividad en t-3; otros productos en t-1, t-3 y t-6; nómina en t-1; mes t.",
+      "razon_controles": 20,
+      "placebo": "Adelanto: elegibles sin tjcr en t ... t+3; adquieren en t+4 contra no; resultados en t+3.",
+      "notas": [
+        "Un débito automático o una tarjeta generan movimientos: parte del efecto puede ser mecánico sobre la definición de actividad."
+      ]
+    },
+    "producto_ecue": {
+      "nombre": "producto_ecue",
+      "pregunta": "¿Adquirir cuenta electrónica frena el paso de activo a inactivo?",
+      "tratamiento": "Adquiere ecue en t: ecue_t = 1 con ecue = 0 en t-1, t-2 y t-3.",
+      "control": "No adquiere ecue en t; puede adquirirlo después (ITT).",
+      "elegibilidad": [
+        "Presente en t-3 ... t+3",
+        "Activo en t-1 y t-2",
+        "Sin ecue en t-1, t-2 y t-3",
+        "Edad >= 18 en t-1, no fallecido"
+      ],
+      "resultados": {
+        "y_inactivo_3": "Inactivo en t+3",
+        "y_inactivo_1": "Inactivo en t+1 (secundario)"
+      },
+      "meses_t": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "covariables": "Demografía y los 24 productos en t-1; actividad en t-3; otros productos en t-1, t-3 y t-6; nómina en t-1; mes t.",
+      "razon_controles": 20,
+      "placebo": "Adelanto: elegibles sin ecue en t ... t+3; adquieren en t+4 contra no; resultados en t+3.",
+      "notas": [
+        "Un débito automático o una tarjeta generan movimientos: parte del efecto puede ser mecánico sobre la definición de actividad."
+      ]
+    }
+  },
+  "analisis": [
+    {
+      "id": "nomina_actividad",
+      "pregunta": "nomina",
+      "tabla": "d_nomina",
+      "resultado": "y_activo_3",
+      "primario": true,
+      "descripcion": "Iniciar la nómina -> activo en t+3",
+      "tabla_placebo": "d_nomina_placebo",
+      "y_pre": "y_activo_base",
+      "filtro": "",
+      "tratado": "",
+      "binario": true
+    },
+    {
+      "id": "nomina_productos",
+      "pregunta": "nomina",
+      "tabla": "d_nomina",
+      "resultado": "y_dprod_3",
+      "primario": true,
+      "descripcion": "Iniciar la nómina -> cambio en otros productos (t-1 a t+3)",
+      "tabla_placebo": "d_nomina_placebo",
+      "y_pre": null,
+      "filtro": "",
+      "tratado": "",
+      "binario": false
+    },
+    {
+      "id": "nomina_actividad_1",
+      "pregunta": "nomina",
+      "tabla": "d_nomina",
+      "resultado": "y_activo_1",
+      "primario": false,
+      "descripcion": "Iniciar la nómina -> activo en t+1",
+      "tabla_placebo": "d_nomina_placebo",
+      "y_pre": null,
+      "filtro": "",
+      "tratado": "",
+      "binario": true
+    },
+    {
+      "id": "canal_meses_activo",
+      "pregunta": "canal",
+      "tabla": "d_canal",
+      "resultado": "y_meses_activo_6",
+      "primario": true,
+      "descripcion": "Alta por KHM (frente a KHN) -> meses activo de alta+2 a alta+7",
+      "tabla_placebo": null,
+      "y_pre": null,
+      "filtro": "canal IN ('KHM', 'KHN')",
+      "tratado": "KHM",
+      "binario": false
+    },
+    {
+      "id": "canal_activo_7",
+      "pregunta": "canal",
+      "tabla": "d_canal",
+      "resultado": "y_activo_6",
+      "primario": false,
+      "descripcion": "Alta por KHM (frente a KHN) -> activo en alta+7",
+      "tabla_placebo": null,
+      "y_pre": null,
+      "filtro": "canal IN ('KHM', 'KHN')",
+      "tratado": "KHM",
+      "binario": true
+    },
+    {
+      "id": "canal_khq_jovenes",
+      "pregunta": "canal",
+      "tabla": "d_canal",
+      "resultado": "y_meses_activo_6",
+      "primario": false,
+      "descripcion": "Alta por KHQ (frente a KHM), 18 a 30 años -> meses activo",
+      "tabla_placebo": null,
+      "y_pre": null,
+      "filtro": "canal IN ('KHQ', 'KHM') AND edad BETWEEN 18 AND 30",
+      "tratado": "KHQ",
+      "binario": false
+    },
+    {
+      "id": "producto_recibo",
+      "pregunta": "producto_recibo",
+      "tabla": "d_producto_recibo",
+      "resultado": "y_inactivo_3",
+      "primario": true,
+      "descripcion": "Adquirir recibo estando activo -> inactivo en t+3",
+      "tabla_placebo": "d_producto_recibo_placebo",
+      "y_pre": null,
+      "filtro": "",
+      "tratado": "",
+      "binario": true
+    },
+    {
+      "id": "producto_recibo_1",
+      "pregunta": "producto_recibo",
+      "tabla": "d_producto_recibo",
+      "resultado": "y_inactivo_1",
+      "primario": false,
+      "descripcion": "Adquirir recibo estando activo -> inactivo en t+1",
+      "tabla_placebo": "d_producto_recibo_placebo",
+      "y_pre": null,
+      "filtro": "",
+      "tratado": "",
+      "binario": true
+    },
+    {
+      "id": "producto_tjcr",
+      "pregunta": "producto_tjcr",
+      "tabla": "d_producto_tjcr",
+      "resultado": "y_inactivo_3",
+      "primario": true,
+      "descripcion": "Adquirir tjcr estando activo -> inactivo en t+3",
+      "tabla_placebo": "d_producto_tjcr_placebo",
+      "y_pre": null,
+      "filtro": "",
+      "tratado": "",
+      "binario": true
+    },
+    {
+      "id": "producto_tjcr_1",
+      "pregunta": "producto_tjcr",
+      "tabla": "d_producto_tjcr",
+      "resultado": "y_inactivo_1",
+      "primario": false,
+      "descripcion": "Adquirir tjcr estando activo -> inactivo en t+1",
+      "tabla_placebo": "d_producto_tjcr_placebo",
+      "y_pre": null,
+      "filtro": "",
+      "tratado": "",
+      "binario": true
+    },
+    {
+      "id": "producto_ecue",
+      "pregunta": "producto_ecue",
+      "tabla": "d_producto_ecue",
+      "resultado": "y_inactivo_3",
+      "primario": true,
+      "descripcion": "Adquirir ecue estando activo -> inactivo en t+3",
+      "tabla_placebo": "d_producto_ecue_placebo",
+      "y_pre": null,
+      "filtro": "",
+      "tratado": "",
+      "binario": true
+    },
+    {
+      "id": "producto_ecue_1",
+      "pregunta": "producto_ecue",
+      "tabla": "d_producto_ecue",
+      "resultado": "y_inactivo_1",
+      "primario": false,
+      "descripcion": "Adquirir ecue estando activo -> inactivo en t+1",
+      "tabla_placebo": "d_producto_ecue_placebo",
+      "y_pre": null,
+      "filtro": "",
+      "tratado": "",
+      "binario": true
+    }
+  ],
+  "primarios": [
+    "nomina_actividad",
+    "nomina_productos",
+    "canal_meses_activo",
+    "producto_recibo",
+    "producto_tjcr",
+    "producto_ecue"
+  ],
+  "dag": {
+    "nomina": [
+      {
+        "desde": "Demografía en t-1 (edad, sexo, renta, segmento, provincia, canal)",
+        "hacia": "Inicia nómina en t"
+      },
+      {
+        "desde": "Demografía en t-1 (edad, sexo, renta, segmento, provincia, canal)",
+        "hacia": "Resultado en t+3"
+      },
+      {
+        "desde": "Historia: actividad t-1..t-3, productos t-1/t-3/t-6",
+        "hacia": "Inicia nómina en t"
+      },
+      {
+        "desde": "Historia: actividad t-1..t-3, productos t-1/t-3/t-6",
+        "hacia": "Resultado en t+3"
+      },
+      {
+        "desde": "Mes t",
+        "hacia": "Inicia nómina en t"
+      },
+      {
+        "desde": "Mes t",
+        "hacia": "Resultado en t+3"
+      },
+      {
+        "desde": "Inicia nómina en t",
+        "hacia": "Resultado en t+3"
+      },
+      {
+        "desde": "Inicia nómina en t",
+        "hacia": "Cuenta nómina (excluida del resultado)"
+      },
+      {
+        "desde": "U: cambio de empleo (no observado)",
+        "hacia": "Inicia nómina en t"
+      },
+      {
+        "desde": "U: cambio de empleo (no observado)",
+        "hacia": "Resultado en t+3"
+      }
+    ],
+    "canal": [
+      {
+        "desde": "Perfil al entrar (edad, sexo, renta, segmento, provincia, mes)",
+        "hacia": "Canal de alta"
+      },
+      {
+        "desde": "Perfil al entrar (edad, sexo, renta, segmento, provincia, mes)",
+        "hacia": "Meses activo"
+      },
+      {
+        "desde": "Canal de alta",
+        "hacia": "Productos del mes de alta (mediador, no se ajusta)"
+      },
+      {
+        "desde": "Productos del mes de alta (mediador, no se ajusta)",
+        "hacia": "Meses activo"
+      },
+      {
+        "desde": "Canal de alta",
+        "hacia": "Meses activo"
+      },
+      {
+        "desde": "U: motivación o necesidad del cliente (no observada)",
+        "hacia": "Canal de alta"
+      },
+      {
+        "desde": "U: motivación o necesidad del cliente (no observada)",
+        "hacia": "Meses activo"
+      }
+    ],
+    "producto": [
+      {
+        "desde": "Demografía y productos en t-1",
+        "hacia": "Adquiere el producto en t"
+      },
+      {
+        "desde": "Demografía y productos en t-1",
+        "hacia": "Inactivo en t+3"
+      },
+      {
+        "desde": "Historia: actividad t-3, productos t-3/t-6, nómina t-1",
+        "hacia": "Adquiere el producto en t"
+      },
+      {
+        "desde": "Historia: actividad t-3, productos t-3/t-6, nómina t-1",
+        "hacia": "Inactivo en t+3"
+      },
+      {
+        "desde": "Adquiere el producto en t",
+        "hacia": "Inactivo en t+3"
+      },
+      {
+        "desde": "U: planes de dejar o concentrar el banco (no observado)",
+        "hacia": "Adquiere el producto en t"
+      },
+      {
+        "desde": "U: planes de dejar o concentrar el banco (no observado)",
+        "hacia": "Inactivo en t+3"
+      }
+    ]
+  },
+  "metodos": {
+    "principal": "dml_att: Double ML (modelo interactivo, puntaje del ATT, ajuste cruzado de 3 pliegues, LightGBM), sobre todas las filas del diseño.",
+    "secundarios": [
+      "emparejamiento por propensión (logística, 1:1 con reemplazo, caliper 0,2 sd)",
+      "bosque causal (CausalForestDML) sobre hasta 120000 filas",
+      "diferencias en diferencias doble robusto (solo nómina -> actividad; en nómina -> productos el resultado ya es un cambio)",
+      "regresión lineal e ingenuo, como referencia"
+    ],
+    "refutaciones": {
+      "dowhy": "placebo por permutación, causa común aleatoria y subconjunto del 80 % (5 simulaciones, LinearDML, hasta 40000 filas)",
+      "placebo_adelanto": "mismo estimador sobre la tabla placebo del diseño",
+      "sensibilidad": "valor de robustez (Cinelli y Hazlett) y valor E",
+      "consistencia": "entre métodos"
+    },
+    "multiplicidad": "Holm-Bonferroni sobre los p-valores de los análisis primarios.",
+    "validacion": {
+      "hillstrom_sesgado": {
+        "ingenuo": {
+          "sesgo": 0.018829046284757903,
+          "sesgo_relativo": 0.426659855365312,
+          "rmse": 0.018891805091632602,
+          "cobertura": 0.0,
+          "ancho_ic": 0.015637923261843593,
+          "repeticiones": 10
+        },
+        "regresion": {
+          "sesgo": 0.0006003564938441653,
+          "sesgo_relativo": 0.01360387621111373,
+          "rmse": 0.001873619071888391,
+          "cobertura": 1.0,
+          "ancho_ic": 0.016040887391615497,
+          "repeticiones": 10
+        },
+        "emparejamiento": {
+          "sesgo": -0.0009686753038368572,
+          "sesgo_relativo": -0.021949856555695278,
+          "rmse": 0.0032147157967165733,
+          "cobertura": 1.0,
+          "ancho_ic": 0.017652725693628822,
+          "repeticiones": 10
+        },
+        "dml_att": {
+          "sesgo": 0.00016167925590235277,
+          "sesgo_relativo": 0.0036635975553743266,
+          "rmse": 0.0013726264916444032,
+          "cobertura": 1.0,
+          "ancho_ic": 0.01726010588592316,
+          "repeticiones": 10
+        },
+        "bosque_causal": {
+          "sesgo": 1.3767995718468734e-05,
+          "sesgo_relativo": 0.00031197815189754427,
+          "rmse": 0.0013305011054769137,
+          "cobertura": 1.0,
+          "ancho_ic": 0.13651009062325553,
+          "repeticiones": 10
+        }
+      },
+      "semisintetico": {
+        "observables": {
+          "ingenuo": {
+            "sesgo": 0.315989915214819,
+            "sesgo_relativo": 4.836643558434317,
+            "rmse": 0.3160038318144444,
+            "cobertura": 0.0,
+            "ancho_ic": 0.015214309776780777,
+            "repeticiones": 10
+          },
+          "regresion": {
+            "sesgo": 0.006476014825814512,
+            "sesgo_relativo": 0.09912936005239444,
+            "rmse": 0.007006122930579485,
+            "cobertura": 0.7,
+            "ancho_ic": 0.014682253916184492,
+            "repeticiones": 10
+          },
+          "emparejamiento": {
+            "sesgo": 0.0018819932603735905,
+            "sesgo_relativo": 0.028885778328880563,
+            "rmse": 0.004406840090351487,
+            "cobertura": 0.9,
+            "ancho_ic": 0.014829682959925627,
+            "repeticiones": 10
+          },
+          "dml_att": {
+            "sesgo": -0.00032016070743371566,
+            "sesgo_relativo": -0.004923186861568647,
+            "rmse": 0.0028645892502413843,
+            "cobertura": 1.0,
+            "ancho_ic": 0.011994198225045508,
+            "repeticiones": 10
+          },
+          "did_dr": {
+            "sesgo": -0.000684904792038269,
+            "sesgo_relativo": -0.010525568205634184,
+            "rmse": 0.004811446620154264,
+            "cobertura": 1.0,
+            "ancho_ic": 0.018718516580598685,
+            "repeticiones": 10
+          },
+          "dml_att_rezago": {
+            "sesgo": -0.0005380191623084694,
+            "sesgo_relativo": -0.008253190643983032,
+            "rmse": 0.0028310787624290542,
+            "cobertura": 0.9,
+            "ancho_ic": 0.011948014145452643,
+            "repeticiones": 10
+          },
+          "bosque_causal": {
+            "sesgo": 0.00045444182828738717,
+            "sesgo_relativo": 0.006940326136046002,
+            "rmse": 0.0028088611185981796,
+            "cobertura": 1.0,
+            "ancho_ic": 0.157948751306871,
+            "repeticiones": 10
+          }
+        },
+        "efecto_fijo": {
+          "ingenuo": {
+            "sesgo": 1.7130737120673838,
+            "sesgo_relativo": 5.937360868282945,
+            "rmse": 1.7131157756708668,
+            "cobertura": 0.0,
+            "ancho_ic": 0.05478956487588591,
+            "repeticiones": 10
+          },
+          "regresion": {
+            "sesgo": 0.8699816904493385,
+            "sesgo_relativo": 3.015280318705245,
+            "rmse": 0.8700284750212499,
+            "cobertura": 0.0,
+            "ancho_ic": 0.049288925362981705,
+            "repeticiones": 10
+          },
+          "emparejamiento": {
+            "sesgo": 0.8513122679469978,
+            "sesgo_relativo": 2.950614869869248,
+            "rmse": 0.8515567769582804,
+            "cobertura": 0.0,
+            "ancho_ic": 0.056940217947067676,
+            "repeticiones": 10
+          },
+          "dml_att": {
+            "sesgo": 0.8506370452080565,
+            "sesgo_relativo": 2.9482431939269604,
+            "rmse": 0.8507166070124481,
+            "cobertura": 0.0,
+            "ancho_ic": 0.05475329272520315,
+            "repeticiones": 10
+          },
+          "did_dr": {
+            "sesgo": 0.001634579597133029,
+            "sesgo_relativo": 0.005656337562532708,
+            "rmse": 0.005990256080113971,
+            "cobertura": 1.0,
+            "ancho_ic": 0.03701075713731612,
+            "repeticiones": 10
+          },
+          "dml_att_rezago": {
+            "sesgo": 0.10639038339015225,
+            "sesgo_relativo": 0.36876953049430233,
+            "rmse": 0.10668442121530025,
+            "cobertura": 0.0,
+            "ancho_ic": 0.04119785040076411,
+            "repeticiones": 10
+          },
+          "bosque_causal": {
+            "sesgo": 0.8434892293015792,
+            "sesgo_relativo": 2.923477209222367,
+            "rmse": 0.8435640913374031,
+            "cobertura": 0.0,
+            "ancho_ic": 0.46031745413139263,
+            "repeticiones": 10
+          }
+        },
+        "tendencias": {
+          "ingenuo": {
+            "sesgo": 1.992016502105162,
+            "sesgo_relativo": 6.904150720812967,
+            "rmse": 1.992063387470905,
+            "cobertura": 0.0,
+            "ancho_ic": 0.06570459368954298,
+            "repeticiones": 10
+          },
+          "regresion": {
+            "sesgo": 1.210909701111109,
+            "sesgo_relativo": 4.1969047951178196,
+            "rmse": 1.2109655658668101,
+            "cobertura": 0.0,
+            "ancho_ic": 0.06486312300757446,
+            "repeticiones": 10
+          },
+          "emparejamiento": {
+            "sesgo": 1.1915145320179923,
+            "sesgo_relativo": 4.1297349377615715,
+            "rmse": 1.1918167420109518,
+            "cobertura": 0.0,
+            "ancho_ic": 0.07426192981907032,
+            "repeticiones": 10
+          },
+          "dml_att": {
+            "sesgo": 1.1917370695994447,
+            "sesgo_relativo": 4.1304758225291005,
+            "rmse": 1.1918283309243545,
+            "cobertura": 0.0,
+            "ancho_ic": 0.07214767073894261,
+            "repeticiones": 10
+          },
+          "did_dr": {
+            "sesgo": 0.3417029331394948,
+            "sesgo_relativo": 1.1843076120139326,
+            "rmse": 0.34176814539011113,
+            "cobertura": 0.0,
+            "ancho_ic": 0.04176832711105401,
+            "repeticiones": 10
+          },
+          "dml_att_rezago": {
+            "sesgo": 0.2085647829530001,
+            "sesgo_relativo": 0.7228830391185525,
+            "rmse": 0.20876941375021862,
+            "cobertura": 0.0,
+            "ancho_ic": 0.04969218823963114,
+            "repeticiones": 10
+          },
+          "bosque_causal": {
+            "sesgo": 1.181484346866823,
+            "sesgo_relativo": 4.094947792259677,
+            "rmse": 1.1815782711846985,
+            "cobertura": 0.0,
+            "ancho_ic": 0.6019172145943316,
+            "repeticiones": 10
+          }
+        }
+      }
+    }
+  },
+  "criterios": {
+    "significativo": "El IC 95 % del estimador principal (Double ML, ATT) excluye el cero.",
+    "placebo_permutacion": "Con el tratamiento permutado, |efecto| <= 25 % del efecto estimado.",
+    "causa_comun_aleatoria": "Al agregar una covariable aleatoria, el efecto cambia <= 10 %.",
+    "subconjunto": "En subconjuntos del 80 %, el efecto medio cambia <= 10 %.",
+    "placebo_adelanto": "En el placebo de adelanto (tratamiento 4 meses después, resultado antes), |efecto| <= 25 % del efecto estimado.",
+    "consistencia": "Emparejamiento, Double ML y bosque causal (y DiD si aplica) dan el mismo signo y el mayor no supera el doble del menor en valor absoluto.",
+    "sensibilidad": "Informativo: valor de robustez frente al R² parcial de la covariable observada más fuerte. 'Robusto' si un confusor omitido tendría que ser más fuerte que esa covariable para anular el efecto."
+  },
+  "veredicto": {
+    "sin efecto detectable": "El IC del estimador principal incluye el cero.",
+    "creíble": "Significativo; pasan placebo de adelanto, consistencia y los tres refutadores de DoWhy; robusto en sensibilidad.",
+    "creíble pero sensible": "Como 'creíble', pero un confusor omitido más débil que la covariable observada más fuerte bastaría para anularlo.",
+    "no separable de la selección": "Falla el placebo de adelanto.",
+    "frágil": "Falla la consistencia entre métodos o algún refutador de DoWhy."
+  },
+  "supuestos": [
+    "Intercambiabilidad condicional: dadas las covariables de t-1 (y antes), iniciar o no el tratamiento en t es como si fuera al azar. Es el supuesto que no se puede probar; el placebo de adelanto y la sensibilidad lo ponen a prueba.",
+    "Positividad: cada perfil de covariables tiene clientes tratados y no tratados. Se revisa con la distribución de la propensión.",
+    "Consistencia y no interferencia: el resultado de un cliente depende solo de su tratamiento.",
+    "Las covariables de t-1 no son consecuencia del tratamiento en t.",
+    "Nómina (DiD): tendencias paralelas condicionales entre t-1 y t+3."
+  ],
+  "limitaciones": [
+    "Datos observacionales: ningún método garantiza que no haya confusión no observada.",
+    "La actividad (ind_actividad_cliente) no tiene definición pública: puede incluir mecánicamente el abono de la nómina o los movimientos de un débito o una tarjeta.",
+    "Enero a julio de 2015 no sirven para variables no-producto (congeladas).",
+    "Los códigos de canal están anonimizados.",
+    "El panel termina en mayo de 2016: los resultados se miden a 3 meses (6 en el canal).",
+    "Efecto de intención de tratar: algunos controles inician el tratamiento después."
+  ],
+  "conteos_disenos": {
+    "d_nomina": {
+      "por_mes": [
+        {
+          "t": 9,
+          "tratados": 2096,
+          "controles": 38081
+        },
+        {
+          "t": 10,
+          "tratados": 2126,
+          "controles": 38482
+        },
+        {
+          "t": 11,
+          "tratados": 2317,
+          "controles": 39426
+        },
+        {
+          "t": 12,
+          "tratados": 1434,
+          "controles": 40867
+        },
+        {
+          "t": 13,
+          "tratados": 1750,
+          "controles": 41946
+        }
+      ],
+      "tratados": 9723,
+      "controles": 198802
+    },
+    "d_nomina_placebo": {
+      "por_mes": [
+        {
+          "t": 9,
+          "tratados": 1171,
+          "controles": 37904
+        },
+        {
+          "t": 10,
+          "tratados": 1211,
+          "controles": 38564
+        },
+        {
+          "t": 11,
+          "tratados": 1128,
+          "controles": 39333
+        },
+        {
+          "t": 12,
+          "tratados": 1395,
+          "controles": 40664
+        }
+      ],
+      "tratados": 4905,
+      "controles": 156465
+    },
+    "d_canal": {
+      "por_mes": [
+        {
+          "canal": "KHM",
+          "t": 6,
+          "clientes": 1924
+        },
+        {
+          "canal": "KHM",
+          "t": 7,
+          "clientes": 1918
+        },
+        {
+          "canal": "KHM",
+          "t": 8,
+          "clientes": 2416
+        },
+        {
+          "canal": "KHM",
+          "t": 9,
+          "clientes": 2584
+        },
+        {
+          "canal": "KHN",
+          "t": 6,
+          "clientes": 964
+        },
+        {
+          "canal": "KHN",
+          "t": 7,
+          "clientes": 942
+        },
+        {
+          "canal": "KHN",
+          "t": 8,
+          "clientes": 1265
+        },
+        {
+          "canal": "KHN",
+          "t": 9,
+          "clientes": 1309
+        },
+        {
+          "canal": "KHQ",
+          "t": 6,
+          "clientes": 12523
+        },
+        {
+          "canal": "KHQ",
+          "t": 7,
+          "clientes": 10311
+        },
+        {
+          "canal": "KHQ",
+          "t": 8,
+          "clientes": 17856
+        },
+        {
+          "canal": "KHQ",
+          "t": 9,
+          "clientes": 22250
+        }
+      ],
+      "por_canal": {
+        "KHM": 8842,
+        "KHN": 4480,
+        "KHQ": 62940
+      }
+    },
+    "d_producto_recibo": {
+      "por_mes": [
+        {
+          "t": 9,
+          "tratados": 5038,
+          "controles": 11365
+        },
+        {
+          "t": 10,
+          "tratados": 4106,
+          "controles": 11617
+        },
+        {
+          "t": 11,
+          "tratados": 3851,
+          "controles": 11734
+        },
+        {
+          "t": 12,
+          "tratados": 3753,
+          "controles": 12257
+        },
+        {
+          "t": 13,
+          "tratados": 3799,
+          "controles": 12235
+        }
+      ],
+      "tratados": 20547,
+      "controles": 59208
+    },
+    "d_producto_recibo_placebo": {
+      "por_mes": [
+        {
+          "t": 9,
+          "tratados": 2046,
+          "controles": 10738
+        },
+        {
+          "t": 10,
+          "tratados": 1949,
+          "controles": 11148
+        },
+        {
+          "t": 11,
+          "tratados": 1820,
+          "controles": 11561
+        },
+        {
+          "t": 12,
+          "tratados": 2036,
+          "controles": 11609
+        }
+      ],
+      "tratados": 7851,
+      "controles": 45056
+    },
+    "d_producto_tjcr": {
+      "por_mes": [
+        {
+          "t": 9,
+          "tratados": 1875,
+          "controles": 14900
+        },
+        {
+          "t": 10,
+          "tratados": 1879,
+          "controles": 15192
+        },
+        {
+          "t": 11,
+          "tratados": 1951,
+          "controles": 15495
+        },
+        {
+          "t": 12,
+          "tratados": 1819,
+          "controles": 16144
+        },
+        {
+          "t": 13,
+          "tratados": 1624,
+          "controles": 16219
+        }
+      ],
+      "tratados": 9148,
+      "controles": 77950
+    },
+    "d_producto_tjcr_placebo": {
+      "por_mes": [
+        {
+          "t": 9,
+          "tratados": 851,
+          "controles": 14658
+        },
+        {
+          "t": 10,
+          "tratados": 910,
+          "controles": 15087
+        },
+        {
+          "t": 11,
+          "tratados": 868,
+          "controles": 15582
+        },
+        {
+          "t": 12,
+          "tratados": 1027,
+          "controles": 15769
+        }
+      ],
+      "tratados": 3656,
+      "controles": 61096
+    },
+    "d_producto_ecue": {
+      "por_mes": [
+        {
+          "t": 9,
+          "tratados": 764,
+          "controles": 14096
+        },
+        {
+          "t": 10,
+          "tratados": 1147,
+          "controles": 14298
+        },
+        {
+          "t": 11,
+          "tratados": 1324,
+          "controles": 14565
+        },
+        {
+          "t": 12,
+          "tratados": 1632,
+          "controles": 15208
+        },
+        {
+          "t": 13,
+          "tratados": 1778,
+          "controles": 15131
+        }
+      ],
+      "tratados": 6645,
+      "controles": 73298
+    },
+    "d_producto_ecue_placebo": {
+      "por_mes": [
+        {
+          "t": 9,
+          "tratados": 980,
+          "controles": 13762
+        },
+        {
+          "t": 10,
+          "tratados": 875,
+          "controles": 14232
+        },
+        {
+          "t": 11,
+          "tratados": 951,
+          "controles": 14572
+        },
+        {
+          "t": 12,
+          "tratados": 1085,
+          "controles": 14707
+        }
+      ],
+      "tratados": 3891,
+      "controles": 57273
+    }
+  },
+  "desviaciones": "Cualquier cambio en los archivos con huella después del tag se informa en docs/preregistro.md como desviación, con su motivo.",
+  "huellas_sha256": {
+    "src/causal/ingesta.py": "df4b79f5a056c376afdac904d8a68dd1a6fcabe5242789a571808bdb6b2b430f",
+    "src/causal/disenos.py": "2491c7d30ae9f21fa928985c9586efd45a039cab73b2f5c00003e9d73849fc15",
+    "src/causal/metodos.py": "36e39539c6c6ac04fd153bacb02870673680c2e23e4aec980228734fdf1fdd97",
+    "src/causal/refutaciones.py": "899ac455688001691830998db9eaa06dd51c365932b96ed6b6b08b2a81dc6869",
+    "src/causal/flujo_hito4.py": "1050435184df63c3d5a753b6bdd0456d710f52f56c23d2d9aa2e5d6a6994cb69",
+    "docs/resultados/hito1/exploracion.json": "22a8ed7e80c44375013595ec923ba4389ebe2f75f6e0dbc912b1bbae44d01aea",
+    "docs/resultados/hito3/hillstrom.json": "967b6a76e0e1e3418332f609ffa6fecdc6a67173d5a3170e0b57cc42970eeeec",
+    "docs/resultados/hito3/semisintetico.json": "35955ba5786267adcd36d53d8c950678980a28ce9f36953c05058d4582f11ca4"
+  },
+  "positividad": {
+    "nomina_actividad": {
+      "tratados": 9723,
+      "controles": 198802,
+      "cuantiles_tratados": {
+        "0.01": 0.0044548409745571805,
+        "0.05": 0.013824074771933098,
+        "0.5": 0.16877291199316122,
+        "0.95": 0.6921012758279415,
+        "0.99": 0.7937846539378494
+      },
+      "cuantiles_controles": {
+        "0.01": 0.0006373794256599036,
+        "0.05": 0.0014031589163339688,
+        "0.5": 0.008937910856372952,
+        "0.95": 0.15131333201383387,
+        "0.99": 0.45483138152916014
+      },
+      "frac_tratados_propension_mayor_0_95": 0.0,
+      "frac_controles_propension_menor_0_001": 0.027167734731038923
+    },
+    "nomina_productos": {
+      "tratados": 9723,
+      "controles": 198802,
+      "cuantiles_tratados": {
+        "0.01": 0.0044548409745548655,
+        "0.05": 0.013824074771932362,
+        "0.5": 0.16877291199314018,
+        "0.95": 0.6921012758280406,
+        "0.99": 0.7937846539378324
+      },
+      "cuantiles_controles": {
+        "0.01": 0.0006373794256592107,
+        "0.05": 0.0014031589163326808,
+        "0.5": 0.008937910856366936,
+        "0.95": 0.1513133320138852,
+        "0.99": 0.4548313815289078
+      },
+      "frac_tratados_propension_mayor_0_95": 0.0,
+      "frac_controles_propension_menor_0_001": 0.027167734731038923
+    },
+    "canal_meses_activo": {
+      "tratados": 8842,
+      "controles": 4480,
+      "cuantiles_tratados": {
+        "0.01": 0.4858257528241376,
+        "0.05": 0.5466355577896425,
+        "0.5": 0.6517389653475779,
+        "0.95": 0.8634345039600746,
+        "0.99": 0.9019420383368584
+      },
+      "cuantiles_controles": {
+        "0.01": 0.45495727770334693,
+        "0.05": 0.5204945895128557,
+        "0.5": 0.6291441338652028,
+        "0.95": 0.8308036822023769,
+        "0.99": 0.87007522720189
+      },
+      "frac_tratados_propension_mayor_0_95": 0.0,
+      "frac_controles_propension_menor_0_001": 0.0
+    },
+    "canal_khq_jovenes": {
+      "tratados": 60726,
+      "controles": 2899,
+      "cuantiles_tratados": {
+        "0.01": 0.6979953603084242,
+        "0.05": 0.8705366447692721,
+        "0.5": 0.9934212323557008,
+        "0.95": 0.9977817230752334,
+        "0.99": 0.9986903070271593
+      },
+      "cuantiles_controles": {
+        "0.01": 0.008201691227627568,
+        "0.05": 0.024394991076038375,
+        "0.5": 0.6759879598416263,
+        "0.95": 0.9940854370355865,
+        "0.99": 0.9965658519622419
+      },
+      "frac_tratados_propension_mayor_0_95": 0.8635345650956756,
+      "frac_controles_propension_menor_0_001": 0.004139358399448086
+    },
+    "producto_recibo": {
+      "tratados": 20547,
+      "controles": 59208,
+      "cuantiles_tratados": {
+        "0.01": 0.05629151864223277,
+        "0.05": 0.1177539022419327,
+        "0.5": 0.33730724584013416,
+        "0.95": 0.7880137971204615,
+        "0.99": 0.9038803512541913
+      },
+      "cuantiles_controles": {
+        "0.01": 0.00963897129530154,
+        "0.05": 0.03295992447620847,
+        "0.5": 0.19068658473222283,
+        "0.95": 0.5238483691054896,
+        "0.99": 0.7419935319177425
+      },
+      "frac_tratados_propension_mayor_0_95": 0.00253078308268847,
+      "frac_controles_propension_menor_0_001": 0.004002837454398054
+    },
+    "producto_tjcr": {
+      "tratados": 9148,
+      "controles": 77950,
+      "cuantiles_tratados": {
+        "0.01": 0.01499386125770812,
+        "0.05": 0.04252445397082097,
+        "0.5": 0.21715207309334217,
+        "0.95": 0.6873224432492422,
+        "0.99": 0.8264648711197993
+      },
+      "cuantiles_controles": {
+        "0.01": 0.00020409311322719295,
+        "0.05": 0.0011057051668482724,
+        "0.5": 0.05536173138346299,
+        "0.95": 0.311312996164615,
+        "0.99": 0.5395787710359405
+      },
+      "frac_tratados_propension_mayor_0_95": 0.00021862702229995628,
+      "frac_controles_propension_menor_0_001": 0.04509300833867864
+    },
+    "producto_ecue": {
+      "tratados": 6645,
+      "controles": 73298,
+      "cuantiles_tratados": {
+        "0.01": 0.010848231853951423,
+        "0.05": 0.02669255095623548,
+        "0.5": 0.20882906057913164,
+        "0.95": 0.897990327029654,
+        "0.99": 0.9761774118748646
+      },
+      "cuantiles_controles": {
+        "0.01": 0.001657123309818428,
+        "0.05": 0.003243653233190495,
+        "0.5": 0.03253341492614364,
+        "0.95": 0.19371802633557014,
+        "0.99": 0.47129986475460633
+      },
+      "frac_tratados_propension_mayor_0_95": 0.016252821670428894,
+      "frac_controles_propension_menor_0_001": 0.0015280089497667058
+    }
+  }
+}
