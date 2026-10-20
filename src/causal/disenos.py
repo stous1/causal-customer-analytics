@@ -410,15 +410,27 @@ def leer(con: duckdb.DuckDBPyConnection, tabla: str) -> pd.DataFrame:
     return con.execute(f"SELECT * FROM {tabla} ORDER BY t, cliente").df()
 
 
-def columnas_x(df: pd.DataFrame, diseno: str) -> list[str]:
-    """Covariables de ajuste del diseño (las del preregistro).
+def nombres_x(columnas: list[str], diseno: str) -> list[str]:
+    """Covariables de ajuste del diseño (las del preregistro), a partir de los nombres.
 
     En ``canal`` se excluyen los productos y la relación del mes de alta (posibles
     mediadores), los indicadores de canal (son el tratamiento) y lo que es constante al entrar.
     """
     fuera = {"cliente", "d", "canal"}
-    cols = [c for c in df.columns if c not in fuera and not c.startswith(("y_", "ev_"))]
+    cols = [c for c in columnas if c not in fuera and not c.startswith(("y_", "ev_"))]
     if diseno == "canal":
         excluir = {"relacion_activa", "nuevo", "antiguedad", "canal_faltante"}
         cols = [c for c in cols if not c.startswith(("x_", "canal_")) and c not in excluir]
     return cols
+
+
+def columnas_x(df: pd.DataFrame, diseno: str) -> list[str]:
+    """Covariables de ajuste de un DataFrame de diseño."""
+    return nombres_x(list(df.columns), diseno)
+
+
+def leer_covariables(con: duckdb.DuckDBPyConnection, tabla: str, diseno: str) -> pd.DataFrame:
+    """Solo las covariables de una tabla de diseño (sin tratamiento ni resultados)."""
+    nombres = [r[0] for r in con.execute(f"SELECT column_name FROM (DESCRIBE {tabla})").fetchall()]
+    cols = nombres_x(nombres, diseno)
+    return con.execute(f"SELECT {', '.join(cols)} FROM {tabla} ORDER BY t, cliente").df()

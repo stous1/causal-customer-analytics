@@ -17,7 +17,7 @@ def _normalizar(x: object) -> object:
         return int(x)
     if isinstance(x, np.floating | float):
         v = float(x)
-        return None if math.isnan(v) else v
+        return None if not math.isfinite(v) else v
     if isinstance(x, np.bool_):
         return bool(x)
     if isinstance(x, dt.date | dt.datetime):

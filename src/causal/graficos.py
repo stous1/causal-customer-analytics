@@ -116,8 +116,24 @@ def intervalos(
             .mark_rule(color=GRIS, strokeDash=[4, 3])
             .encode(x="r:Q"),
         )
+    if fila:
+        # un panel por valor de ``fila`` (facet no filtra bien capas con datos propios)
+        paneles = [
+            intervalos(
+                df[df[fila] == v],
+                y,
+                est,
+                inf,
+                sup,
+                color=color,
+                titulo=str(v),
+                eje_x=eje_x,
+                referencia=referencia,
+                ancho=ancho,
+            )
+            for v in dict.fromkeys(df[fila])
+        ]
+        return alt.vconcat(*paneles).properties(title=titulo)
     alto = max(100, 22 * df[y].nunique())
     g = alt.layer(*capas, data=df).properties(width=ancho, height=alto)
-    if fila:
-        g = g.facet(row=alt.Row(f"{fila}:N", title=None)).resolve_scale(x="independent")
     return g.properties(title=titulo)
