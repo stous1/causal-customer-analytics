@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@6"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@7"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "vconcat": [{"data": {"name": "data-421e562fece6e45bba8279f15065cdd9"}, "mark": {"type": "bar", "color": "#2e9e6b"}, "encoding": {"x": {"field": "shap_medio_abs", "title": "SHAP medio absoluto sobre el efecto", "type": "quantitative"}, "y": {"field": "variable", "sort": "-x", "title": null, "type": "nominal"}}, "height": 150, "title": "Iniciar la n\u00f3mina -> activo en t+3 (no separable de la selecci\u00f3n)", "width": 360}, {"data": {"name": "data-e3fae0af4bb6e9c80d5751a62f7abe2a"}, "mark": {"type": "bar", "color": "#2e9e6b"}, "encoding": {"x": {"field": "shap_medio_abs", "title": "SHAP medio absoluto sobre el efecto", "type": "quantitative"}, "y": {"field": "variable", "sort": "-x", "title": null, "type": "nominal"}}, "height": 150, "title": "Iniciar la n\u00f3mina -> cambio en otros productos (t-1 a t+3) (no separable de la selecci\u00f3n)", "width": 360}, {"data": {"name": "data-0303f52afc89b45ee4c3da7266b71b5d"}, "mark": {"type": "bar", "color": "#2e9e6b"}, "encoding": {"x": {"field": "shap_medio_abs", "title": "SHAP medio absoluto sobre el efecto", "type": "quantitative"}, "y": {"field": "variable", "sort": "-x", "title": null, "type": "nominal"}}, "height": 150, "title": "Alta por KHM (frente a KHN) -> meses activo de alta+2 a alta+7 (cre\u00edble)", "width": 360}, {"data": {"name": "data-609f269208036ba1e5ce39d133c975c9"}, "mark": {"type": "bar", "color": "#2e9e6b"}, "encoding": {"x": {"field": "shap_medio_abs", "title": "SHAP medio absoluto sobre el efecto", "type": "quantitative"}, "y": {"field": "variable", "sort": "-x", "title": null, "type": "nominal"}}, "height": 150, "title": "Adquirir tjcr estando activo -> inactivo en t+3 (no separable de la selecci\u00f3n)", "width": 360}, {"data": {"name": "data-4024413655d2373fd4089a8472a40828"}, "mark": {"type": "bar", "color": "#2e9e6b"}, "encoding": {"x": {"field": "shap_medio_abs", "title": "SHAP medio absoluto sobre el efecto", "type": "quantitative"}, "y": {"field": "variable", "sort": "-x", "title": null, "type": "nominal"}}, "height": 150, "title": "Adquirir ecue estando activo -> inactivo en t+3 (no separable de la selecci\u00f3n)", "width": 360}], "title": "Qu\u00e9 hace que el EFECTO sea mayor o menor (SHAP sobre el bosque causal)", "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json", "datasets": {"data-421e562fece6e45bba8279f15065cdd9": [{"variable": "act_m1", "shap_medio_abs": 0.05812103561652559, "correlacion_valor_shap": -0.9701674877454548}, {"variable": "otros_m1", "shap_medio_abs": 0.017205004035370307, "correlacion_valor_shap": -0.6754024677497644}, {"variable": "antiguedad", "shap_medio_abs": 0.013719526270307054, "correlacion_valor_shap": -0.1118587911215146}, {"variable": "log_renta", "shap_medio_abs": 0.010004066351873965, "correlacion_valor_shap": 0.03106909586352892}, {"variable": "relacion_activa", "shap_medio_abs": 0.009464907000517457, "correlacion_valor_shap": -0.43230540485762087}, {"variable": "edad", "shap_medio_abs": 0.009260292616265646, "correlacion_valor_shap": -0.01711256634819321}, {"variable": "t", "shap_medio_abs": 0.004953249705215053, "correlacion_valor_shap": -0.09764211641817018}, {"variable": "act_m3", "shap_medio_abs": 0.004649878748094142, "correlacion_valor_shap": -0.8126028416741223}], "data-e3fae0af4bb6e9c80d5751a62f7abe2a": [{"variable": "x_cco", "shap_medio_abs": 0.25042406560965946, "correlacion_valor_shap": -0.990581325535766}, {"variable": "antiguedad", "shap_medio_abs": 0.0564649770271667, "correlacion_valor_shap": 0.7705495145070773}, {"variable": "edad", "shap_medio_abs": 0.04091887633384595, "correlacion_valor_shap": 0.6530957370403082}, {"variable": "t", "shap_medio_abs": 0.022557934135234853, "correlacion_valor_shap": 0.5443388301414931}, {"variable": "log_renta", "shap_medio_abs": 0.01352549482155984, "correlacion_valor_shap": 0.018309672122464288}, {"variable": "x_cno", "shap_medio_abs": 0.009530874844956233, "correlacion_valor_shap": -0.12261792938524775}, {"variable": "x_recibo", "shap_medio_abs": 0.009014113436638166, "correlacion_valor_shap": -0.8001694968558661}, {"variable": "otros_m1", "shap_medio_abs": 0.008208469913673617, "correlacion_valor_shap": 0.47032114530164454}], "data-0303f52afc89b45ee4c3da7266b71b5d": [{"variable": "edad", "shap_medio_abs": 0.13926722750475348, "correlacion_valor_shap": 0.2502517446934465}, {"variable": "log_renta", "shap_medio_abs": 0.047235667872791966, "correlacion_valor_shap": 0.22027653079551798}, {"variable": "t", "shap_medio_abs": 0.03573701294490032, "correlacion_valor_shap": 0.4220811601398631}, {"variable": "mujer", "shap_medio_abs": 0.02536621937425133, "correlacion_valor_shap": -0.49582173037145155}, {"variable": "prov_28", "shap_medio_abs": 0.02182595151134905, "correlacion_valor_shap": 0.48166063144343924}, {"variable": "extranjero", "shap_medio_abs": 0.016923984462984154, "correlacion_valor_shap": -0.33656598776513597}, {"variable": "seg_universitario", "shap_medio_abs": 0.012724297217108717, "correlacion_valor_shap": 0.3798634546944706}, {"variable": "prov_8", "shap_medio_abs": 0.0032578630824149388, "correlacion_valor_shap": -0.5581195113415621}], "data-609f269208036ba1e5ce39d133c975c9": [{"variable": "antiguedad", "shap_medio_abs": 0.009027503417483236, "correlacion_valor_shap": 0.006346742761024576}, {"variable": "relacion_activa", "shap_medio_abs": 0.0069148030971989925, "correlacion_valor_shap": 0.9261896277811843}, {"variable": "log_renta", "shap_medio_abs": 0.00547747103709295, "correlacion_valor_shap": 0.1600214207725844}, {"variable": "edad", "shap_medio_abs": 0.004785375380773147, "correlacion_valor_shap": 0.08841862850379575}, {"variable": "sin_m6", "shap_medio_abs": 0.003588586244886606, "correlacion_valor_shap": -0.16990355530725698}, {"variable": "t", "shap_medio_abs": 0.00262686588966764, "correlacion_valor_shap": -0.04805726491597676}, {"variable": "seg_universitario", "shap_medio_abs": 0.002351467452772894, "correlacion_valor_shap": 0.32253035442165073}, {"variable": "otros_m1", "shap_medio_abs": 0.002154750158673536, "correlacion_valor_shap": 0.046081780137799754}], "data-4024413655d2373fd4089a8472a40828": [{"variable": "antiguedad", "shap_medio_abs": 0.01902617702671997, "correlacion_valor_shap": -0.1463243761954854}, {"variable": "edad", "shap_medio_abs": 0.011893733419464519, "correlacion_valor_shap": 0.04883895731063605}, {"variable": "log_renta", "shap_medio_abs": 0.011569537338416092, "correlacion_valor_shap": 0.13480863081963948}, {"variable": "relacion_activa", "shap_medio_abs": 0.010968339125999474, "correlacion_valor_shap": 0.707005153201585}, {"variable": "x_ctma", "shap_medio_abs": 0.010912467899303235, "correlacion_valor_shap": 0.8797380608029719}, {"variable": "x_deco", "shap_medio_abs": 0.010303795409656619, "correlacion_valor_shap": -0.8945653068451171}, {"variable": "otros_m1", "shap_medio_abs": 0.00794793599292518, "correlacion_valor_shap": 0.5511086144128766}, {"variable": "t", "shap_medio_abs": 0.007576988450124636, "correlacion_valor_shap": 0.24612276136209166}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

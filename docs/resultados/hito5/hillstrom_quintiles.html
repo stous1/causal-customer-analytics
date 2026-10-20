@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@6"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@7"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "layer": [{"data": {"name": "data-2af3004a540e80d6ed620da968cf8a74"}, "mark": {"type": "rule", "color": "#8a8f98", "strokeDash": [4, 3]}, "encoding": {"x": {"field": "r", "type": "quantitative"}}}, {"data": {"name": "data-d18b5ca260933a0bd14cc444e2f05552"}, "mark": {"type": "rule", "strokeWidth": 2}, "encoding": {"color": {"field": "brazo", "scale": {"range": ["#2f6db5", "#d9822b", "#2e9e6b", "#c8453b", "#7b5ea7", "#8a8f98", "#3aa6b9", "#b5892f"]}, "title": null, "type": "nominal"}, "x": {"field": "inf", "title": "Efecto real en la visita (diferencia del experimento)", "type": "quantitative"}, "x2": {"field": "sup"}, "y": {"field": "grupo", "sort": null, "title": null, "type": "nominal"}}}, {"data": {"name": "data-d18b5ca260933a0bd14cc444e2f05552"}, "mark": {"type": "point", "filled": true, "size": 60}, "encoding": {"color": {"field": "brazo", "scale": {"range": ["#2f6db5", "#d9822b", "#2e9e6b", "#c8453b", "#7b5ea7", "#8a8f98", "#3aa6b9", "#b5892f"]}, "title": null, "type": "nominal"}, "x": {"field": "efecto", "type": "quantitative"}, "y": {"field": "grupo", "sort": null, "title": null, "type": "nominal"}}}], "data": {"name": "data-d18b5ca260933a0bd14cc444e2f05552"}, "height": 110, "title": "Hillstrom, mitad de prueba: efecto real por quintil del efecto estimado", "width": 480, "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json", "datasets": {"data-d18b5ca260933a0bd14cc444e2f05552": [{"brazo": "Correo de hombre", "grupo": "Q1", "efecto": 0.07145112900678982, "inf": 0.05131753872349195, "sup": 0.09158471929008768}, {"brazo": "Correo de hombre", "grupo": "Q2", "efecto": 0.07189254042084879, "inf": 0.05248059315188998, "sup": 0.0913044876898076}, {"brazo": "Correo de hombre", "grupo": "Q3", "efecto": 0.07060270765550926, "inf": 0.049792893426151605, "sup": 0.09141252188486691}, {"brazo": "Correo de hombre", "grupo": "Q4", "efecto": 0.10143915646741582, "inf": 0.07979319444800394, "sup": 0.1230851184868277}, {"brazo": "Correo de hombre", "grupo": "Q5", "efecto": 0.07222051620087871, "inf": 0.04932791567128107, "sup": 0.09511311673047636}, {"brazo": "Correo de mujer", "grupo": "Q1", "efecto": 0.014473422704967792, "inf": -0.003543985699554549, "sup": 0.03249083110949014}, {"brazo": "Correo de mujer", "grupo": "Q2", "efecto": 0.003974119978869886, "inf": -0.014955012035948873, "sup": 0.022903251993688645}, {"brazo": "Correo de mujer", "grupo": "Q3", "efecto": 0.03636887482265633, "inf": 0.015995310866870307, "sup": 0.056742438778442345}, {"brazo": "Correo de mujer", "grupo": "Q4", "efecto": 0.059699891507572836, "inf": 0.039087384214728, "sup": 0.08031239880041767}, {"brazo": "Correo de mujer", "grupo": "Q5", "efecto": 0.08500439313558662, "inf": 0.0640437219129334, "sup": 0.10596506435823985}], "data-2af3004a540e80d6ed620da968cf8a74": [{"r": 0.0}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

@@ -211,8 +211,13 @@ def _puntajes_dr(X: pd.DataFrame, d: np.ndarray, y: np.ndarray, semilla: int) ->
 
 
 def santander_heterogeneidad(
-    con: duckdb.DuckDBPyConnection, analisis_id: str, modelos_hito2: Path | None, semilla: int = 0
+    con: duckdb.DuckDBPyConnection,
+    analisis_id: str,
+    modelos_hito2: Path | None,
+    att: float,
+    semilla: int = 0,
 ) -> dict:
+    """``att``: el efecto en los tratados del hito 4 (umbral del árbol de política)."""
     a = next(x for x in flujo_hito4.ANALISIS if x.id == analisis_id)
     df, cols = flujo_hito4.cargar(con, a)
     df = flujo_hito4._submuestra(df, flujo_hito4.MAX_FILAS_BOSQUE, semilla)
@@ -261,16 +266,21 @@ def santander_heterogeneidad(
     from econml.policy import PolicyTree
 
     vp = [c for c in VARIABLES_POLITICA_SANTANDER if c in X.columns]
-    att = float(dr[d == 1].mean())
-    beneficio = dr - att
+    # umbral: el ATT del hito 4. El árbol se ajusta sobre el efecto condicional del bosque
+    # (menos ruidoso que el puntaje individual) en una mitad y se evalúa con el puntaje doble
+    # robusto en la otra.
+    # en "inactivo" un efecto más negativo es mejor
+    signo = -1.0 if a.resultado.startswith("y_inactivo") else 1.0
+    beneficio = signo * (cate - att)
     arbol = PolicyTree(max_depth=2, min_samples_leaf=2000, honest=True, random_state=semilla)
     Xp = X[vp].fillna(X[vp].median()).to_numpy()
     arbol.fit(Xp[~mitad], np.column_stack([np.zeros((~mitad).sum()), beneficio[~mitad]]))
     hoja_b = arbol.predict(Xp[mitad])
     res["politica"] = {
         "variables": vp,
-        "umbral": "efecto mayor que el promedio (ATT doble robusto)",
-        "att_dr": att,
+        "umbral": "efecto condicional mejor que el ATT del hito 4 (más negativo si el "
+        "resultado es la inactividad)",
+        "att_hito4": att,
         "reglas": _reglas_policy(arbol, vp),
         "efecto_dr_mitad_prueba": {
             "recomendados": float(dr[mitad][hoja_b == 1].mean()) if (hoja_b == 1).any() else None,
@@ -369,31 +379,24 @@ def graficos_hito5(res: dict, salida: Path) -> None:
         eje_x="Efecto real en la visita (diferencia del experimento)",
     )
     graficos.guardar(g, salida / "hillstrom_quintiles")
-    filas = []
-    for s in res["santander"].values():
-        for v in s["shap_efecto"][:8]:
-            filas.append(
-                {
-                    "analisis": s["descripcion"],
-                    "variable": v["variable"],
-                    "shap": v["shap_medio_abs"],
-                }
-            )
-    if filas:
-        import altair as alt
+    import altair as alt
 
-        g = (
-            alt.Chart(pd.DataFrame(filas))
+    paneles = []
+    for s in res["santander"].values():
+        d = pd.DataFrame(s["shap_efecto"][:8])
+        paneles.append(
+            alt.Chart(d)
             .mark_bar(color=graficos.VERDE)
             .encode(
-                x=alt.X("shap:Q", title="SHAP medio absoluto sobre el efecto"),
+                x=alt.X("shap_medio_abs:Q", title="SHAP medio absoluto sobre el efecto"),
                 y=alt.Y("variable:N", sort="-x", title=None),
             )
-            .properties(width=300, height=160)
-            .facet(row=alt.Row("analisis:N", title=None))
-            .resolve_scale(y="independent")
             .properties(
-                title="Qué hace que el EFECTO sea mayor o menor (SHAP sobre el bosque causal)"
+                width=360, height=150, title=f"{s['descripcion']} ({s.get('veredicto_hito4', '')})"
             )
+        )
+    if paneles:
+        g = alt.vconcat(*paneles).properties(
+            title="Qué hace que el EFECTO sea mayor o menor (SHAP sobre el bosque causal)"
         )
         graficos.guardar(g, salida / "shap_efecto")
