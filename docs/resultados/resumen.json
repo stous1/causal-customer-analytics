@@ -1,0 +1,1183 @@
+{
+  "proyecto": "Analítica de clientes causal y explicable (Santander + Hillstrom)",
+  "como_leer": {
+    "predictivo": "Dice quién va a adquirir un producto. Nunca dice por qué.",
+    "causal": "Dice cuánto cambia un resultado por una acción, bajo supuestos. Solo 'creíble' pasó todas las pruebas preregistradas.",
+    "veredictos": {
+      "sin efecto detectable": "El IC del estimador principal incluye el cero.",
+      "creíble": "Significativo; pasan placebo de adelanto, consistencia y los tres refutadores de DoWhy; robusto en sensibilidad.",
+      "creíble pero sensible": "Como 'creíble', pero un confusor omitido más débil que la covariable observada más fuerte bastaría para anularlo.",
+      "no separable de la selección": "Falla el placebo de adelanto.",
+      "frágil": "Falla la consistencia entre métodos o algún refutador de DoWhy."
+    }
+  },
+  "predictivo": {
+    "map7": {
+      "modelo": 0.8557325301815092,
+      "referencia": 0.7003337606601123,
+      "clientes": 54213
+    },
+    "productos": {
+      "cco": {
+        "tipo": "predictivo",
+        "producto": "Cuenta corriente",
+        "ap_prueba": 0.3710081088226161,
+        "ap_referencia": 0.027141220490915535,
+        "lo_que_mas_predice": [],
+        "advertencia": "Importancias SHAP de un modelo predictivo: dicen qué variables usa el modelo para anticipar una adquisición, no qué la causa."
+      },
+      "cno": {
+        "tipo": "predictivo",
+        "producto": "Cuenta nómina",
+        "ap_prueba": 0.471550202339924,
+        "ap_referencia": 0.010390510994273749,
+        "lo_que_mas_predice": [],
+        "advertencia": "Importancias SHAP de un modelo predictivo: dicen qué variables usa el modelo para anticipar una adquisición, no qué la causa."
+      },
+      "ctma": {
+        "tipo": "predictivo",
+        "producto": "Cuenta más particulares",
+        "ap_prueba": 0.1375827950791603,
+        "ap_referencia": 0.0025198197443727964,
+        "lo_que_mas_predice": [],
+        "advertencia": "Importancias SHAP de un modelo predictivo: dicen qué variables usa el modelo para anticipar una adquisición, no qué la causa."
+      },
+      "ctop": {
+        "tipo": "predictivo",
+        "producto": "Cuenta particulares",
+        "ap_prueba": 0.10476805235570998,
+        "ap_referencia": 0.001092342858370365,
+        "lo_que_mas_predice": [],
+        "advertencia": "Importancias SHAP de un modelo predictivo: dicen qué variables usa el modelo para anticipar una adquisición, no qué la causa."
+      },
+      "dela": {
+        "tipo": "predictivo",
+        "producto": "Depósito a largo plazo",
+        "ap_prueba": 0.021126329712409034,
+        "ap_referencia": 0.0012845867572718647,
+        "lo_que_mas_predice": [],
+        "advertencia": "Importancias SHAP de un modelo predictivo: dicen qué variables usa el modelo para anticipar una adquisición, no qué la causa."
+      },
+      "ecue": {
+        "tipo": "predictivo",
+        "producto": "Cuenta electrónica",
+        "ap_prueba": 0.35145845619452964,
+        "ap_referencia": 0.022528283966717324,
+        "lo_que_mas_predice": [
+          "Activo en t",
+          "Canal KHE",
+          "Relación activa (tiprel A)",
+          "Segmento universitario",
+          "Edad"
+        ],
+        "advertencia": "Importancias SHAP de un modelo predictivo: dicen qué variables usa el modelo para anticipar una adquisición, no qué la causa."
+      },
+      "fond": {
+        "tipo": "predictivo",
+        "producto": "Fondos",
+        "ap_prueba": 0.01683178501767858,
+        "ap_referencia": 0.00032508442373430346,
+        "lo_que_mas_predice": [],
+        "advertencia": "Importancias SHAP de un modelo predictivo: dicen qué variables usa el modelo para anticipar una adquisición, no qué la causa."
+      },
+      "reca": {
+        "tipo": "predictivo",
+        "producto": "Impuestos",
+        "ap_prueba": 0.00624726401589948,
+        "ap_referencia": 0.002203201644244903,
+        "lo_que_mas_predice": [],
+        "advertencia": "Importancias SHAP de un modelo predictivo: dicen qué variables usa el modelo para anticipar una adquisición, no qué la causa."
+      },
+      "tjcr": {
+        "tipo": "predictivo",
+        "producto": "Tarjeta de crédito",
+        "ap_prueba": 0.2388830770927844,
+        "ap_referencia": 0.020315680075254104,
+        "lo_que_mas_predice": [
+          "Relación activa (tiprel A)",
+          "Productos en t-3",
+          "Edad",
+          "Activo en t",
+          "Número de productos"
+        ],
+        "advertencia": "Importancias SHAP de un modelo predictivo: dicen qué variables usa el modelo para anticipar una adquisición, no qué la causa."
+      },
+      "valo": {
+        "tipo": "predictivo",
+        "producto": "Valores",
+        "ap_prueba": 0.04609419313791581,
+        "ap_referencia": 0.0006695895362111055,
+        "lo_que_mas_predice": [],
+        "advertencia": "Importancias SHAP de un modelo predictivo: dicen qué variables usa el modelo para anticipar una adquisición, no qué la causa."
+      },
+      "nomina": {
+        "tipo": "predictivo",
+        "producto": "Nómina",
+        "ap_prueba": 0.3506695885415632,
+        "ap_referencia": 0.020269757861030035,
+        "lo_que_mas_predice": [
+          "Relación activa (tiprel A)",
+          "Activo en t",
+          "Antigüedad (meses)",
+          "Edad",
+          "Activo en t-1"
+        ],
+        "advertencia": "Importancias SHAP de un modelo predictivo: dicen qué variables usa el modelo para anticipar una adquisición, no qué la causa."
+      },
+      "nom_pens": {
+        "tipo": "predictivo",
+        "producto": "Pensiones (nómina)",
+        "ap_prueba": 0.38949991114079374,
+        "ap_referencia": 0.020365451618052983,
+        "lo_que_mas_predice": [],
+        "advertencia": "Importancias SHAP de un modelo predictivo: dicen qué variables usa el modelo para anticipar una adquisición, no qué la causa."
+      },
+      "recibo": {
+        "tipo": "predictivo",
+        "producto": "Débito automático",
+        "ap_prueba": 0.3049644788232823,
+        "ap_referencia": 0.046034823753149774,
+        "lo_que_mas_predice": [
+          "Activo en t",
+          "Activo en t-1",
+          "Relación activa (tiprel A)",
+          "Débito automático en t-1",
+          "Tiene cuenta corriente"
+        ],
+        "advertencia": "Importancias SHAP de un modelo predictivo: dicen qué variables usa el modelo para anticipar una adquisición, no qué la causa."
+      }
+    }
+  },
+  "causal": {
+    "nomina_actividad": {
+      "tipo": "causal",
+      "pregunta": "Iniciar la nómina -> activo en t+3",
+      "primario": true,
+      "estimando": "ATT (efecto en los tratados, intención de tratar)",
+      "metodo": "dml_att",
+      "efecto": 0.08886623289710849,
+      "ic95": [
+        0.08293469429520559,
+        0.09479777149901139
+      ],
+      "p_holm": 0.0,
+      "veredicto_regla": "no separable de la selección",
+      "veredicto_publicado": "no separable de la selección",
+      "nota": null,
+      "pruebas": {
+        "significativo": true,
+        "placebo_permutacion": true,
+        "causa_comun_aleatoria": true,
+        "subconjunto": true,
+        "consistencia": true,
+        "sensibilidad_robusto": true,
+        "placebo_adelanto": false
+      },
+      "placebo_adelanto": 0.05834776649644584,
+      "valor_robustez_ic": 0.10841124631937687,
+      "n_tratados": 9723
+    },
+    "nomina_productos": {
+      "tipo": "causal",
+      "pregunta": "Iniciar la nómina -> cambio en otros productos (t-1 a t+3)",
+      "primario": true,
+      "estimando": "ATT (efecto en los tratados, intención de tratar)",
+      "metodo": "dml_att",
+      "efecto": -0.4231507761906444,
+      "ic95": [
+        -0.4393655492765377,
+        -0.4069360031047511
+      ],
+      "p_holm": 0.0,
+      "veredicto_regla": "no separable de la selección",
+      "veredicto_publicado": "no separable de la selección",
+      "nota": null,
+      "pruebas": {
+        "significativo": true,
+        "placebo_permutacion": true,
+        "causa_comun_aleatoria": true,
+        "subconjunto": true,
+        "consistencia": true,
+        "sensibilidad_robusto": true,
+        "placebo_adelanto": false
+      },
+      "placebo_adelanto": 0.1096161235242393,
+      "valor_robustez_ic": 0.24549025773359157,
+      "n_tratados": 9723
+    },
+    "nomina_actividad_1": {
+      "tipo": "causal",
+      "pregunta": "Iniciar la nómina -> activo en t+1",
+      "primario": false,
+      "estimando": "ATT (efecto en los tratados, intención de tratar)",
+      "metodo": "dml_att",
+      "efecto": 0.08942821490364439,
+      "ic95": [
+        0.08386122352384184,
+        0.09499520628344693
+      ],
+      "p_holm": null,
+      "veredicto_regla": "no separable de la selección",
+      "veredicto_publicado": "no separable de la selección",
+      "nota": null,
+      "pruebas": {
+        "significativo": true,
+        "placebo_permutacion": true,
+        "causa_comun_aleatoria": true,
+        "subconjunto": true,
+        "consistencia": true,
+        "sensibilidad_robusto": true,
+        "placebo_adelanto": false
+      },
+      "placebo_adelanto": 0.027407442399542976,
+      "valor_robustez_ic": 0.1340682679205496,
+      "n_tratados": 9723
+    },
+    "canal_meses_activo": {
+      "tipo": "causal",
+      "pregunta": "Alta por KHM (frente a KHN) -> meses activo de alta+2 a alta+7",
+      "primario": true,
+      "estimando": "ATT (efecto en los tratados, intención de tratar)",
+      "metodo": "dml_att",
+      "efecto": -0.38054981851291103,
+      "ic95": [
+        -0.5043701332283852,
+        -0.2567295037974369
+      ],
+      "p_holm": 6.816413211652161e-09,
+      "veredicto_regla": "creíble",
+      "veredicto_publicado": "creíble",
+      "nota": null,
+      "pruebas": {
+        "significativo": true,
+        "placebo_permutacion": true,
+        "causa_comun_aleatoria": true,
+        "subconjunto": true,
+        "consistencia": true,
+        "sensibilidad_robusto": true
+      },
+      "placebo_adelanto": null,
+      "valor_robustez_ic": 0.07557617002623966,
+      "n_tratados": 8842
+    },
+    "canal_activo_7": {
+      "tipo": "causal",
+      "pregunta": "Alta por KHM (frente a KHN) -> activo en alta+7",
+      "primario": false,
+      "estimando": "ATT (efecto en los tratados, intención de tratar)",
+      "metodo": "dml_att",
+      "efecto": -0.059491129012089784,
+      "ic95": [
+        -0.0833532344818358,
+        -0.03562902354234376
+      ],
+      "p_holm": null,
+      "veredicto_regla": "creíble",
+      "veredicto_publicado": "creíble",
+      "nota": null,
+      "pruebas": {
+        "significativo": true,
+        "placebo_permutacion": true,
+        "causa_comun_aleatoria": true,
+        "subconjunto": true,
+        "consistencia": true,
+        "sensibilidad_robusto": true
+      },
+      "placebo_adelanto": null,
+      "valor_robustez_ic": 0.06288911082972523,
+      "n_tratados": 8842
+    },
+    "canal_khq_jovenes": {
+      "tipo": "causal",
+      "pregunta": "Alta por KHQ (frente a KHM), 18 a 30 años -> meses activo",
+      "primario": false,
+      "estimando": "ATT (efecto en los tratados, intención de tratar)",
+      "metodo": "dml_att",
+      "efecto": -2.4105333487352203,
+      "ic95": [
+        -2.5555046480450954,
+        -2.2655620494253452
+      ],
+      "p_holm": null,
+      "veredicto_regla": "creíble",
+      "veredicto_publicado": "exploratorio",
+      "nota": "Positividad mala (86 % de tratados con propensión > 0,95); declarado exploratorio en el preregistro: no se interpreta como causal.",
+      "pruebas": {
+        "significativo": true,
+        "placebo_permutacion": true,
+        "causa_comun_aleatoria": true,
+        "subconjunto": true,
+        "consistencia": true,
+        "sensibilidad_robusto": true
+      },
+      "placebo_adelanto": null,
+      "valor_robustez_ic": 0.10518960301760967,
+      "n_tratados": 60726
+    },
+    "producto_recibo": {
+      "tipo": "causal",
+      "pregunta": "Adquirir recibo estando activo -> inactivo en t+3",
+      "primario": true,
+      "estimando": "ATT (efecto en los tratados, intención de tratar)",
+      "metodo": "dml_att",
+      "efecto": -0.002617267275210803,
+      "ic95": [
+        -0.006717771505494598,
+        0.0014832369550729922
+      ],
+      "p_holm": 0.2109328042515506,
+      "veredicto_regla": "sin efecto detectable",
+      "veredicto_publicado": "sin efecto detectable",
+      "nota": null,
+      "pruebas": {
+        "significativo": false,
+        "placebo_permutacion": true,
+        "causa_comun_aleatoria": true,
+        "subconjunto": true,
+        "consistencia": false,
+        "sensibilidad_robusto": true,
+        "placebo_adelanto": false
+      },
+      "placebo_adelanto": -0.03020298942457019,
+      "valor_robustez_ic": 0.007055722022991097,
+      "n_tratados": 20547
+    },
+    "producto_recibo_1": {
+      "tipo": "causal",
+      "pregunta": "Adquirir recibo estando activo -> inactivo en t+1",
+      "primario": false,
+      "estimando": "ATT (efecto en los tratados, intención de tratar)",
+      "metodo": "dml_att",
+      "efecto": 0.000681161175780156,
+      "ic95": [
+        -0.0028822680292786454,
+        0.004244590380838957
+      ],
+      "p_holm": null,
+      "veredicto_regla": "sin efecto detectable",
+      "veredicto_publicado": "sin efecto detectable",
+      "nota": null,
+      "pruebas": {
+        "significativo": false,
+        "placebo_permutacion": true,
+        "causa_comun_aleatoria": true,
+        "subconjunto": true,
+        "consistencia": false,
+        "sensibilidad_robusto": true,
+        "placebo_adelanto": false
+      },
+      "placebo_adelanto": -0.0075936257583602085,
+      "valor_robustez_ic": 0.013560807721420421,
+      "n_tratados": 20547
+    },
+    "producto_tjcr": {
+      "tipo": "causal",
+      "pregunta": "Adquirir tjcr estando activo -> inactivo en t+3",
+      "primario": true,
+      "estimando": "ATT (efecto en los tratados, intención de tratar)",
+      "metodo": "dml_att",
+      "efecto": -0.0025743474797898054,
+      "ic95": [
+        -0.004668218188026802,
+        -0.00048047677155280914
+      ],
+      "p_holm": 0.04789516653259507,
+      "veredicto_regla": "no separable de la selección",
+      "veredicto_publicado": "no separable de la selección",
+      "nota": null,
+      "pruebas": {
+        "significativo": true,
+        "placebo_permutacion": true,
+        "causa_comun_aleatoria": true,
+        "subconjunto": true,
+        "consistencia": false,
+        "sensibilidad_robusto": false,
+        "placebo_adelanto": false
+      },
+      "placebo_adelanto": -0.009716753369332644,
+      "valor_robustez_ic": 0.0,
+      "n_tratados": 9148
+    },
+    "producto_tjcr_1": {
+      "tipo": "causal",
+      "pregunta": "Adquirir tjcr estando activo -> inactivo en t+1",
+      "primario": false,
+      "estimando": "ATT (efecto en los tratados, intención de tratar)",
+      "metodo": "dml_att",
+      "efecto": -0.002852787369134076,
+      "ic95": [
+        -0.004384472409398086,
+        -0.0013211023288700657
+      ],
+      "p_holm": null,
+      "veredicto_regla": "no separable de la selección",
+      "veredicto_publicado": "no separable de la selección",
+      "nota": null,
+      "pruebas": {
+        "significativo": true,
+        "placebo_permutacion": true,
+        "causa_comun_aleatoria": true,
+        "subconjunto": true,
+        "consistencia": true,
+        "sensibilidad_robusto": false,
+        "placebo_adelanto": false
+      },
+      "placebo_adelanto": -0.004691980389284289,
+      "valor_robustez_ic": 0.0,
+      "n_tratados": 9148
+    },
+    "producto_ecue": {
+      "tipo": "causal",
+      "pregunta": "Adquirir ecue estando activo -> inactivo en t+3",
+      "primario": true,
+      "estimando": "ATT (efecto en los tratados, intención de tratar)",
+      "metodo": "dml_att",
+      "efecto": -0.032514948720077944,
+      "ic95": [
+        -0.06090397649814165,
+        -0.004125920942014239
+      ],
+      "p_holm": 0.049559963746078406,
+      "veredicto_regla": "no separable de la selección",
+      "veredicto_publicado": "no separable de la selección",
+      "nota": null,
+      "pruebas": {
+        "significativo": true,
+        "placebo_permutacion": true,
+        "causa_comun_aleatoria": true,
+        "subconjunto": true,
+        "consistencia": true,
+        "sensibilidad_robusto": false,
+        "placebo_adelanto": false
+      },
+      "placebo_adelanto": -0.011835602124962492,
+      "valor_robustez_ic": 0.0017467123054678852,
+      "n_tratados": 6645
+    },
+    "producto_ecue_1": {
+      "tipo": "causal",
+      "pregunta": "Adquirir ecue estando activo -> inactivo en t+1",
+      "primario": false,
+      "estimando": "ATT (efecto en los tratados, intención de tratar)",
+      "metodo": "dml_att",
+      "efecto": -0.039555917160079314,
+      "ic95": [
+        -0.06776754301351015,
+        -0.011344291306648477
+      ],
+      "p_holm": null,
+      "veredicto_regla": "creíble pero sensible",
+      "veredicto_publicado": "creíble pero sensible",
+      "nota": null,
+      "pruebas": {
+        "significativo": true,
+        "placebo_permutacion": true,
+        "causa_comun_aleatoria": true,
+        "subconjunto": true,
+        "consistencia": true,
+        "sensibilidad_robusto": false,
+        "placebo_adelanto": true
+      },
+      "placebo_adelanto": -0.009045376129078839,
+      "valor_robustez_ic": 0.002303112574752196,
+      "n_tratados": 6645
+    }
+  },
+  "exploratorio": {
+    "nomina_otros_productos_sin_cuenta_corriente": {
+      "tipo": "exploratorio (no preregistrado)",
+      "descomposicion_sin_ajuste": {
+        "descripcion": "Cambio t-1 a t+3 por producto: tratados menos controles, sin ajuste",
+        "productos": {
+          "ahor": 5.030130481584693e-06,
+          "aval": 5.030130481584693e-06,
+          "cco": -0.5155830705572579,
+          "cder": 0.00010787904542553203,
+          "cno": 0.5705600676407124,
+          "ctju": 0.0002565366545608193,
+          "ctma": -0.00398102312580838,
+          "ctop": -0.0010823042510496148,
+          "ctpp": -0.0010872381556472565,
+          "deco": -0.00052718488673618,
+          "deme": -0.00010734152556845432,
+          "dela": 0.00012160571950430282,
+          "ecue": 0.029012764138977933,
+          "fond": -0.00026049174532824857,
+          "hip": -0.00016545678603521714,
+          "plan": 0.0008730926243674256,
+          "pres": -7.266813205443918e-05,
+          "reca": 0.009495794754526958,
+          "tjcr": 0.0082557514472091,
+          "valo": 0.0049759139214479945,
+          "viv": -1.733669675700757e-05,
+          "nomina": 0.5892894566189829,
+          "nom_pens": 0.5805025651942702,
+          "recibo": 0.07542473305876654
+        }
+      },
+      "frac_tratados_cambian_cuenta_corriente_por_nomina": 0.513833179059961,
+      "otros_sin_cuenta_corriente_principal": {
+        "metodo": "dml_att",
+        "estimando": "ATT",
+        "efecto": 0.148536828442108,
+        "ee": 0.006552748409215683,
+        "ic95": [
+          0.13569367756029313,
+          0.16137997932392287
+        ],
+        "n": 208525,
+        "n_tratados": 9723,
+        "extra": {
+          "ate": 0.2525865204362319,
+          "ate_ee": 0.006735888865718617,
+          "propension_min_tratados": 0.01,
+          "propension_max_controles": 0.8150238204862839,
+          "frac_recortada": 0.6071070615034169
+        }
+      },
+      "otros_sin_cuenta_corriente_placebo_adelanto": {
+        "metodo": "dml_att",
+        "estimando": "ATT",
+        "efecto": 0.09442040571158732,
+        "ee": 0.00739449634206929,
+        "ic95": [
+          0.07992745919731833,
+          0.1089133522258563
+        ],
+        "n": 161370,
+        "n_tratados": 4905,
+        "extra": {
+          "ate": 0.14277718894123573,
+          "ate_ee": 0.007030376320895827,
+          "propension_min_tratados": 0.01,
+          "propension_max_controles": 0.6558887780089427,
+          "frac_recortada": 0.616583007994051
+        }
+      }
+    }
+  },
+  "heterogeneidad": {
+    "hillstrom_validado": {
+      "hombre": {
+        "qini_auc_prueba": 0.007234797776889068,
+        "quintiles_prueba": [
+          {
+            "grupo": 1,
+            "cate_estimado_medio": 0.03931754078894379,
+            "efecto_real": 0.07145112900678982,
+            "ic95": [
+              0.05131753872349195,
+              0.09158471929008768
+            ],
+            "n": 4259
+          },
+          {
+            "grupo": 2,
+            "cate_estimado_medio": 0.06216793849135641,
+            "efecto_real": 0.07189254042084879,
+            "ic95": [
+              0.05248059315188998,
+              0.0913044876898076
+            ],
+            "n": 4259
+          },
+          {
+            "grupo": 3,
+            "cate_estimado_medio": 0.07611409301020346,
+            "efecto_real": 0.07060270765550926,
+            "ic95": [
+              0.049792893426151605,
+              0.09141252188486691
+            ],
+            "n": 4258
+          },
+          {
+            "grupo": 4,
+            "cate_estimado_medio": 0.09001816884719221,
+            "efecto_real": 0.10143915646741582,
+            "ic95": [
+              0.07979319444800394,
+              0.1230851184868277
+            ],
+            "n": 4259
+          },
+          {
+            "grupo": 5,
+            "cate_estimado_medio": 0.11258669560141173,
+            "efecto_real": 0.07222051620087871,
+            "ic95": [
+              0.04932791567128107,
+              0.09511311673047636
+            ],
+            "n": 4259
+          }
+        ]
+      },
+      "mujer": {
+        "qini_auc_prueba": 0.07064910373326447,
+        "quintiles_prueba": [
+          {
+            "grupo": 1,
+            "cate_estimado_medio": 0.002320719897848331,
+            "efecto_real": 0.014473422704967792,
+            "ic95": [
+              -0.003543985699554549,
+              0.03249083110949014
+            ],
+            "n": 4282
+          },
+          {
+            "grupo": 2,
+            "cate_estimado_medio": 0.0268720763604441,
+            "efecto_real": 0.003974119978869886,
+            "ic95": [
+              -0.014955012035948873,
+              0.022903251993688645
+            ],
+            "n": 4281
+          },
+          {
+            "grupo": 3,
+            "cate_estimado_medio": 0.049864200208383704,
+            "efecto_real": 0.03636887482265633,
+            "ic95": [
+              0.015995310866870307,
+              0.056742438778442345
+            ],
+            "n": 4281
+          },
+          {
+            "grupo": 4,
+            "cate_estimado_medio": 0.07198029394761367,
+            "efecto_real": 0.059699891507572836,
+            "ic95": [
+              0.039087384214728,
+              0.08031239880041767
+            ],
+            "n": 4279
+          },
+          {
+            "grupo": 5,
+            "cate_estimado_medio": 0.09757939651447764,
+            "efecto_real": 0.08500439313558662,
+            "ic95": [
+              0.0640437219129334,
+              0.10596506435823985
+            ],
+            "n": 4284
+          }
+        ]
+      }
+    },
+    "hillstrom_politica": {
+      "costo_por_correo_en_visitas": 0.05,
+      "reglas": [
+        "mens <= 0.50 y log_history <= 4.78 -> correo de hombre",
+        "mens <= 0.50 y log_history > 4.78 -> correo de mujer",
+        "mens > 0.50 y log_history <= 4.35 -> correo de hombre",
+        "mens > 0.50 y log_history > 4.35 -> correo de hombre"
+      ],
+      "reparto_prueba": {
+        "sin correo": 0.0,
+        "correo de hombre": 0.7560556873517293,
+        "correo de mujer": 0.24394431264827068
+      },
+      "valor_neto_prueba": {
+        "arbol": {
+          "valor": 0.1316316019478087,
+          "ic95": [
+            0.12439895742289923,
+            0.13927300536895992
+          ]
+        },
+        "todos_hombre": {
+          "valor": 0.13321419652890498,
+          "ic95": [
+            0.12550595423898114,
+            0.14038550380821574
+          ]
+        },
+        "todos_mujer": {
+          "valor": 0.09700649269571732,
+          "ic95": [
+            0.09006379541765513,
+            0.10449982051442128
+          ]
+        },
+        "nadie": {
+          "valor": 0.10619303283805719,
+          "ic95": [
+            0.10069843301286054,
+            0.11153077787489075
+          ]
+        }
+      },
+      "nota": "Valor neto por cliente = visitas menos costo de los correos enviados, estimado en la mitad de prueba con la probabilidad conocida de cada brazo (1/3)."
+    },
+    "santander": {
+      "nomina_actividad": {
+        "veredicto_hito4": "no separable de la selección",
+        "lo_que_modula_el_efecto": [
+          "act_m1",
+          "otros_m1",
+          "antiguedad",
+          "log_renta",
+          "relacion_activa"
+        ],
+        "quintiles_mitad_independiente": [
+          {
+            "grupo": 1,
+            "cate_estimado_medio": 0.0061230105095762015,
+            "efecto_dr": 0.015053412774326232,
+            "ic95": [
+              0.009720963233433282,
+              0.020385862315219182
+            ]
+          },
+          {
+            "grupo": 2,
+            "cate_estimado_medio": 0.043601415354114006,
+            "efecto_dr": 0.029913689562690023,
+            "ic95": [
+              0.017952289076755636,
+              0.041875090048624414
+            ]
+          },
+          {
+            "grupo": 3,
+            "cate_estimado_medio": 0.4899597533405829,
+            "efecto_dr": 0.664557765722726,
+            "ic95": [
+              0.6267213460719171,
+              0.7023941853735348
+            ]
+          },
+          {
+            "grupo": 4,
+            "cate_estimado_medio": 0.7635947807829053,
+            "efecto_dr": 0.8639979421345587,
+            "ic95": [
+              0.8200883104192987,
+              0.9079075738498187
+            ]
+          },
+          {
+            "grupo": 5,
+            "cate_estimado_medio": 0.9068004665138197,
+            "efecto_dr": 0.8754821857932914,
+            "ic95": [
+              0.8308936581568669,
+              0.9200707134297159
+            ]
+          }
+        ],
+        "politica": {
+          "variables": [
+            "edad",
+            "act_m1",
+            "act_m3",
+            "otros_m1",
+            "log_renta",
+            "antiguedad",
+            "seg_universitario",
+            "seg_top",
+            "mujer",
+            "relacion_activa",
+            "x_cco",
+            "x_tjcr",
+            "x_recibo"
+          ],
+          "umbral": "efecto condicional mayor que el ATT del hito 4",
+          "att_hito4": 0.08886623289710849,
+          "reglas": [
+            "act_m1 <= 0.50 y mujer <= 0.50 -> aplicar",
+            "act_m1 <= 0.50 y mujer > 0.50 -> aplicar",
+            "act_m1 > 0.50 y mujer <= 0.50 -> no aplicar",
+            "act_m1 > 0.50 y mujer > 0.50 -> no aplicar"
+          ],
+          "efecto_dr_mitad_prueba": {
+            "recomendados": 0.8465693679716046,
+            "no_recomendados": 0.024166213640345675,
+            "frac_recomendados": 0.5661917507605858
+          }
+        },
+        "predice_contra_causa": null
+      },
+      "nomina_productos": {
+        "veredicto_hito4": "no separable de la selección",
+        "lo_que_modula_el_efecto": [
+          "x_cco",
+          "antiguedad",
+          "edad",
+          "t",
+          "log_renta"
+        ],
+        "quintiles_mitad_independiente": [
+          {
+            "grupo": 1,
+            "cate_estimado_medio": -0.8389138208921255,
+            "efecto_dr": -0.8124625615741246,
+            "ic95": [
+              -0.8637382278206931,
+              -0.761186895327556
+            ]
+          },
+          {
+            "grupo": 2,
+            "cate_estimado_medio": -0.6939948046941286,
+            "efecto_dr": -0.7132645774301366,
+            "ic95": [
+              -0.7613601976809445,
+              -0.6651689571793287
+            ]
+          },
+          {
+            "grupo": 3,
+            "cate_estimado_medio": -0.49804163631880505,
+            "efecto_dr": -0.46906127653614904,
+            "ic95": [
+              -0.5440455205612871,
+              -0.394077032511011
+            ]
+          },
+          {
+            "grupo": 4,
+            "cate_estimado_medio": -0.12190315878532476,
+            "efecto_dr": 0.06425548255031875,
+            "ic95": [
+              0.0014991833942581273,
+              0.1270117817063794
+            ]
+          },
+          {
+            "grupo": 5,
+            "cate_estimado_medio": 0.20782888317273615,
+            "efecto_dr": 0.43485586025924244,
+            "ic95": [
+              0.3594911803140984,
+              0.5102205402043866
+            ]
+          }
+        ],
+        "politica": {
+          "variables": [
+            "edad",
+            "act_m1",
+            "act_m3",
+            "otros_m1",
+            "log_renta",
+            "antiguedad",
+            "seg_universitario",
+            "seg_top",
+            "mujer",
+            "relacion_activa",
+            "x_cco",
+            "x_tjcr",
+            "x_recibo"
+          ],
+          "umbral": "efecto condicional mayor que el ATT del hito 4",
+          "att_hito4": -0.4231507761906444,
+          "reglas": [
+            "x_cco <= 0.50 y act_m1 <= 0.50 -> aplicar",
+            "x_cco <= 0.50 y act_m1 > 0.50 -> aplicar",
+            "x_cco > 0.50 y act_m1 <= 0.50 -> no aplicar",
+            "x_cco > 0.50 y act_m1 > 0.50 -> no aplicar"
+          ],
+          "efecto_dr_mitad_prueba": {
+            "recomendados": 0.33014483494270497,
+            "no_recomendados": -0.6450860313260603,
+            "frac_recomendados": 0.3547405695665907
+          }
+        },
+        "predice_contra_causa": null
+      },
+      "canal_meses_activo": {
+        "veredicto_hito4": "creíble",
+        "lo_que_modula_el_efecto": [
+          "edad",
+          "log_renta",
+          "t",
+          "mujer",
+          "prov_28"
+        ],
+        "quintiles_mitad_independiente": [
+          {
+            "grupo": 1,
+            "cate_estimado_medio": -0.6632636763861022,
+            "efecto_dr": -0.220792182933939,
+            "ic95": [
+              -0.6299925868338682,
+              0.18840822096599016
+            ]
+          },
+          {
+            "grupo": 2,
+            "cate_estimado_medio": -0.4640090663496629,
+            "efecto_dr": -0.46114497726443643,
+            "ic95": [
+              -0.7719997905183273,
+              -0.15029016401054557
+            ]
+          },
+          {
+            "grupo": 3,
+            "cate_estimado_medio": -0.3368011770629706,
+            "efecto_dr": -0.30772662397672884,
+            "ic95": [
+              -0.6218516629942091,
+              0.006398415040751448
+            ]
+          },
+          {
+            "grupo": 4,
+            "cate_estimado_medio": -0.23488035579142713,
+            "efecto_dr": -0.5865961337148639,
+            "ic95": [
+              -0.8886349200885336,
+              -0.2845573473411941
+            ]
+          },
+          {
+            "grupo": 5,
+            "cate_estimado_medio": -0.07388611646015719,
+            "efecto_dr": -0.5187854777166064,
+            "ic95": [
+              -0.7799417391101802,
+              -0.25762921632303265
+            ]
+          }
+        ],
+        "politica": {
+          "variables": [
+            "edad",
+            "log_renta",
+            "seg_universitario",
+            "seg_top",
+            "mujer"
+          ],
+          "umbral": "efecto condicional mayor que el ATT del hito 4",
+          "att_hito4": -0.38054981851291103,
+          "reglas": [
+            "todos -> no aplicar"
+          ],
+          "efecto_dr_mitad_prueba": {
+            "recomendados": null,
+            "no_recomendados": -0.41897753234743756,
+            "frac_recomendados": 0.0
+          }
+        },
+        "predice_contra_causa": null
+      },
+      "producto_tjcr": {
+        "veredicto_hito4": "no separable de la selección",
+        "lo_que_modula_el_efecto": [
+          "antiguedad",
+          "relacion_activa",
+          "log_renta",
+          "edad",
+          "sin_m6"
+        ],
+        "quintiles_mitad_independiente": [
+          {
+            "grupo": 1,
+            "cate_estimado_medio": -0.04339272931959859,
+            "efecto_dr": -0.034459709547404606,
+            "ic95": [
+              -0.06775838918045113,
+              -0.0011610299143580832
+            ]
+          },
+          {
+            "grupo": 2,
+            "cate_estimado_medio": -0.014283410756664427,
+            "efecto_dr": -0.02417396571831875,
+            "ic95": [
+              -0.0519103227294417,
+              0.0035623912928042026
+            ]
+          },
+          {
+            "grupo": 3,
+            "cate_estimado_medio": -0.00510752661854351,
+            "efecto_dr": 0.004709525217939399,
+            "ic95": [
+              -0.019945814043114185,
+              0.02936486447899298
+            ]
+          },
+          {
+            "grupo": 4,
+            "cate_estimado_medio": -0.0003264608535188214,
+            "efecto_dr": -0.003240701895296743,
+            "ic95": [
+              -0.009744503432031624,
+              0.0032630996414381376
+            ]
+          },
+          {
+            "grupo": 5,
+            "cate_estimado_medio": 0.017900294000738774,
+            "efecto_dr": -0.0013320593311592819,
+            "ic95": [
+              -0.02157643544492625,
+              0.01891231678260769
+            ]
+          }
+        ],
+        "politica": {
+          "variables": [
+            "edad",
+            "act_m3",
+            "otros_m1",
+            "log_renta",
+            "antiguedad",
+            "seg_universitario",
+            "seg_top",
+            "mujer",
+            "relacion_activa",
+            "x_cco",
+            "x_recibo"
+          ],
+          "umbral": "efecto condicional mejor que el ATT del hito 4 (más negativo si el resultado es la inactividad)",
+          "att_hito4": -0.0025743474797898054,
+          "reglas": [
+            "antiguedad <= 54.50 y antiguedad <= 9.50 -> aplicar",
+            "antiguedad <= 54.50 y antiguedad > 9.50 -> aplicar",
+            "antiguedad > 54.50 y log_renta <= 10.76 -> aplicar",
+            "antiguedad > 54.50 y log_renta > 10.76 -> no aplicar"
+          ],
+          "efecto_dr_mitad_prueba": {
+            "recomendados": -0.019711411307372265,
+            "no_recomendados": -0.0011255574181725013,
+            "frac_recomendados": 0.5689129388026506
+          }
+        },
+        "predice_contra_causa": {
+          "correlacion_spearman": 0.3043927174918159,
+          "cate_medio_por_quintil_de_propension": {
+            "1": -0.015126423621330291,
+            "2": -0.007658889094577709,
+            "3": -0.005713547146211718,
+            "4": -0.005613649202891531,
+            "5": -0.002391467578918846
+          },
+          "n": 87098,
+          "lectura": "Si la correlación es baja, los clientes que más probablemente adquieren el producto no son aquellos en quienes adquirirlo más cambia el resultado."
+        }
+      },
+      "producto_ecue": {
+        "veredicto_hito4": "no separable de la selección",
+        "lo_que_modula_el_efecto": [
+          "antiguedad",
+          "edad",
+          "log_renta",
+          "relacion_activa",
+          "x_ctma"
+        ],
+        "quintiles_mitad_independiente": [
+          {
+            "grupo": 1,
+            "cate_estimado_medio": -0.0671274345809675,
+            "efecto_dr": -0.061816066463434335,
+            "ic95": [
+              -0.08113782621962407,
+              -0.04249430670724461
+            ]
+          },
+          {
+            "grupo": 2,
+            "cate_estimado_medio": -0.032032253057856876,
+            "efecto_dr": -0.0260685839324508,
+            "ic95": [
+              -0.04875925737463412,
+              -0.0033779104902674773
+            ]
+          },
+          {
+            "grupo": 3,
+            "cate_estimado_medio": -0.016317238202386966,
+            "efecto_dr": -0.006094337879774322,
+            "ic95": [
+              -0.03292444419685863,
+              0.020735768437309985
+            ]
+          },
+          {
+            "grupo": 4,
+            "cate_estimado_medio": -0.006946044767272864,
+            "efecto_dr": -0.013234351333483028,
+            "ic95": [
+              -0.01746205974206527,
+              -0.009006642924900787
+            ]
+          },
+          {
+            "grupo": 5,
+            "cate_estimado_medio": 0.008187904642887012,
+            "efecto_dr": -0.0028099787193921807,
+            "ic95": [
+              -0.01526111564046542,
+              0.00964115820168106
+            ]
+          }
+        ],
+        "politica": {
+          "variables": [
+            "edad",
+            "act_m3",
+            "otros_m1",
+            "log_renta",
+            "antiguedad",
+            "seg_universitario",
+            "seg_top",
+            "mujer",
+            "relacion_activa",
+            "x_cco",
+            "x_tjcr",
+            "x_recibo"
+          ],
+          "umbral": "efecto condicional mejor que el ATT del hito 4 (más negativo si el resultado es la inactividad)",
+          "att_hito4": -0.032514948720077944,
+          "reglas": [
+            "antiguedad <= 29.50 y edad <= 38.50 -> aplicar",
+            "antiguedad <= 29.50 y edad > 38.50 -> aplicar",
+            "antiguedad > 29.50 y edad <= 30.50 -> no aplicar",
+            "antiguedad > 29.50 y edad > 30.50 -> no aplicar"
+          ],
+          "efecto_dr_mitad_prueba": {
+            "recomendados": -0.051325219124657914,
+            "no_recomendados": -0.00661195289141138,
+            "frac_recomendados": 0.34424305971639707
+          }
+        },
+        "predice_contra_causa": {
+          "correlacion_spearman": 0.34245161085858034,
+          "cate_medio_por_quintil_de_propension": {
+            "1": -0.04991911362546541,
+            "2": -0.016972675715031606,
+            "3": -0.01696691469364625,
+            "4": -0.01604881268275184,
+            "5": -0.018545082702236523
+          },
+          "n": 79943,
+          "lectura": "Si la correlación es baja, los clientes que más probablemente adquieren el producto no son aquellos en quienes adquirirlo más cambia el resultado."
+        }
+      }
+    }
+  },
+  "supuestos": [
+    "Intercambiabilidad condicional: dadas las covariables de t-1 (y antes), iniciar o no el tratamiento en t es como si fuera al azar. Es el supuesto que no se puede probar; el placebo de adelanto y la sensibilidad lo ponen a prueba.",
+    "Positividad: cada perfil de covariables tiene clientes tratados y no tratados. Se revisa con la distribución de la propensión.",
+    "Consistencia y no interferencia: el resultado de un cliente depende solo de su tratamiento.",
+    "Las covariables de t-1 no son consecuencia del tratamiento en t.",
+    "Nómina (DiD): tendencias paralelas condicionales entre t-1 y t+3."
+  ],
+  "limitaciones": [
+    "Datos observacionales: ningún método garantiza que no haya confusión no observada.",
+    "La actividad (ind_actividad_cliente) no tiene definición pública: puede incluir mecánicamente el abono de la nómina o los movimientos de un débito o una tarjeta.",
+    "Enero a julio de 2015 no sirven para variables no-producto (congeladas).",
+    "Los códigos de canal están anonimizados.",
+    "El panel termina en mayo de 2016: los resultados se miden a 3 meses (6 en el canal).",
+    "Efecto de intención de tratar: algunos controles inician el tratamiento después."
+  ]
+}

@@ -1,5 +1,17 @@
 # Cambios
 
+## v1.0 (2026-10-20)
+
+- **Hito 4:** estimación en Santander según el preregistro (12 análisis, 6 primarios), con
+  refutaciones de DoWhy, placebo de adelanto, valor de robustez, valor E, consistencia y Holm.
+  Exploratorio aparte: el reemplazo de la cuenta corriente por la cuenta nómina.
+- **Hito 5:** bosque causal, SHAP sobre el efecto y árboles de política; en Hillstrom con
+  mitad de prueba y valor de política por ponderación; en Santander, contraste de la
+  propensión a adquirir (hito 2) con el efecto de adquirir.
+- `docs/resultados/resumen.json`: resumen estructurado para un futuro agente intérprete.
+- README final, portada de Pages y `scripts/verificar_cifras.py` (comprobaciones de README y
+  páginas contra los JSON, también en CI).
+
 ## Preregistro (2026-10-20)
 
 - Preguntas, DAG supuesto, tratamientos, resultados, ventanas, métodos, criterios de

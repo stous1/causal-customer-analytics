@@ -58,7 +58,9 @@ uv run python scripts/hito3.py graficos
 uv run python scripts/preregistrar.py         # docs/resultados/preregistro.json (+ tag preregistro)
 uv run python scripts/hito4.py estimar        # Santander; se niega a correr sin el tag preregistro
 uv run python scripts/hito4.py graficos
-uv run python scripts/hito5.py                # heterogeneidad y políticas
+uv run python scripts/hito4_exploratorio.py   # exploratorio (no preregistrado): nómina sin cco
+uv run python scripts/hito5.py                # heterogeneidad y políticas (--solo para rehacer)
+uv run python scripts/resumen.py              # docs/resultados/resumen.json (para un agente)
 uv run python scripts/publicar_resultados.py --hito 1   # reports/hitoN -> docs/resultados/hitoN
 uv run python scripts/verificar_cifras.py     # cifras de README y Pages contra los JSON
 ```

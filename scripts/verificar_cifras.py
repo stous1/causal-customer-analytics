@@ -115,7 +115,142 @@ def comprobaciones() -> list[tuple[str, str, list[str]]]:
     salida += comprobaciones_hito2()
     salida += comprobaciones_hito3()
     salida += comprobaciones_hito4()
+    salida += comprobaciones_hito5()
+    salida += comprobaciones_readme()
     return salida
+
+
+def comprobaciones_hito5() -> list[tuple[str, str, list[str]]]:
+    h5 = _j("hito5/heterogeneidad.json")
+    m = h5["hillstrom"]["brazos"]["mujer"]
+    q1, q5 = m["quintiles_prueba"][0], m["quintiles_prueba"][-1]
+    pol = h5["hillstrom"]["politica"]
+    sa = h5["santander"]
+    salida = [
+        (
+            "docs/hito5.md",
+            "efecto real es",
+            [coma(q1["efecto_real"], 3), _ic(q1["ic95"], 3).strip("()").split(" a ")[0]],
+        ),
+        (
+            "docs/hito5.md",
+            "en el de mayor efecto,",
+            [coma(q5["efecto_real"], 3), _ic(q5["ic95"], 3)],
+        ),
+        ("docs/hito5.md", "mujer. Qini en prueba:", [coma(m["qini_auc_prueba"], 3)]),
+        (
+            "docs/hito5.md",
+            "hay heterogeneidad que aprovechar. Qini",
+            [coma(h5["hillstrom"]["brazos"]["hombre"]["qini_auc_prueba"], 3)],
+        ),
+        (
+            "docs/hito5.md",
+            "correo): manda correo de mujer al",
+            [f"{round(pol['reparto_prueba']['correo de mujer'] * 100)} %"],
+        ),
+        (
+            "docs/hito5.md",
+            "visitas por cliente) **no supera**",
+            [coma(pol["valor_neto_prueba"]["todos_hombre"]["valor"], 3)],
+        ),
+        ("docs/hito5.md", "correo): manda", []),
+    ]
+    for p, ancla in (
+        ("producto_tjcr", "| Tarjeta de crédito |"),
+        ("producto_ecue", "| Cuenta electrónica |"),
+    ):
+        pc = sa[p]["predice_contra_causa"]
+        qs = pc["cate_medio_por_quintil_de_propension"]
+        salida.append(
+            (
+                "docs/hito5.md",
+                ancla,
+                [
+                    f"+{coma(pc['correlacion_spearman'], 2)}",
+                    f"{coma(qs['1'] * 100, 1)} pp".replace("-", "−"),
+                    f"{coma(qs['5'] * 100, 1)} pp".replace("-", "−"),
+                ],
+            )
+        )
+    t = sa["producto_tjcr"]["politica"]["efecto_dr_mitad_prueba"]
+    e = sa["producto_ecue"]["politica"]["efecto_dr_mitad_prueba"]
+    salida.append(
+        (
+            "docs/hito5.md",
+            "robusto en la mitad de prueba:",
+            [
+                f"{coma(t['recomendados'] * 100, 1)} pp".replace("-", "−"),
+                f"{coma(e['recomendados'] * 100, 1)} pp".replace("-", "−"),
+            ],
+        )
+    )
+    salida.append(
+        (
+            "docs/hito5.md",
+            "−0,1 pp y −0,7 pp",
+            [
+                f"{coma(t['no_recomendados'] * 100, 1)} pp".replace("-", "−"),
+                f"{coma(e['no_recomendados'] * 100, 1)} pp".replace("-", "−"),
+            ],
+        )
+    )
+    return salida
+
+
+def comprobaciones_readme() -> list[tuple[str, str, list[str]]]:
+    h2 = _j("hito2/metricas.json")
+    est = _j("hito4/estimaciones.json")["analisis"]
+    hs = _j("hito3/hillstrom.json")["experimento_sesgado"]["metodos"]
+    n = est["nomina_actividad"]
+    c = est["canal_meses_activo"]
+    return [
+        (
+            "README.md",
+            "MAP@7 de **",
+            [coma(h2["map7"]["modelo"], 3), coma(h2["map7"]["referencia"], 3)],
+        ),
+        (
+            "README.md",
+            "ingenuo se equivoca",
+            [
+                f"{round(hs['ingenuo']['resumen']['sesgo_relativo'] * 100)} %",
+                f"Double ML {round(hs['dml_att']['resumen']['sesgo_relativo'] * 100)} %",
+            ],
+        ),
+        (
+            "README.md",
+            "| ¿La nómina vuelve más activo al cliente? |",
+            [
+                f"+{coma(n['efecto'] * 100, 1)} pp",
+                f"({coma(n['ic95'][0] * 100, 1)} a {coma(n['ic95'][1] * 100, 1)})",
+                f"{coma(n['placebo_adelanto']['efecto'] * 100, 1)} pp",
+                n["veredicto"],
+            ],
+        ),
+        (
+            "README.md",
+            "| ¿El canal de vinculación",
+            [f"−{coma(abs(c['efecto']), 2)} meses", c["veredicto"]],
+        ),
+        (
+            "docs/index.md",
+            "| ¿La nómina vuelve más activo al cliente? |",
+            [
+                f"+{coma(n['efecto'] * 100, 1)} pp",
+                f"{coma(n['placebo_adelanto']['efecto'] * 100, 1)} pp",
+            ],
+        ),
+        (
+            "docs/index.md",
+            "| ¿El canal de vinculación",
+            [f"−{coma(abs(c['efecto']), 2)} meses", c["veredicto"]],
+        ),
+        (
+            "docs/index.md",
+            "**Predicción:** MAP@7 de",
+            [coma(h2["map7"]["modelo"], 3), coma(h2["map7"]["referencia"], 3)],
+        ),
+    ]
 
 
 def _ic(ic: list[float], d: int) -> str:
