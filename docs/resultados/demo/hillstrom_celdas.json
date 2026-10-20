@@ -1,0 +1,166 @@
+{
+  "descripcion": "Hillstrom, mitad de prueba del hito 5: clientes y visitas por celda y brazo del experimento (aleatorizado: aquí se conoce la verdad).",
+  "acciones": [
+    "sin correo",
+    "correo de hombre",
+    "correo de mujer"
+  ],
+  "costo_hito5": 0.05,
+  "corte_historia_usd": 118.02999831975134,
+  "celdas": [
+    {
+      "comprador": "solo ropa de mujer",
+      "historia": "historia de hasta 118 USD",
+      "clientes_prueba": 6573,
+      "accion_arbol": 1,
+      "brazos": [
+        {
+          "clientes": 2153,
+          "visitas": 199
+        },
+        {
+          "clientes": 2204,
+          "visitas": 326
+        },
+        {
+          "clientes": 2216,
+          "visitas": 376
+        }
+      ]
+    },
+    {
+      "comprador": "solo ropa de mujer",
+      "historia": "historia de más de 118 USD",
+      "clientes_prueba": 7815,
+      "accion_arbol": 2,
+      "brazos": [
+        {
+          "clientes": 2599,
+          "visitas": 257
+        },
+        {
+          "clientes": 2569,
+          "visitas": 451
+        },
+        {
+          "clientes": 2647,
+          "visitas": 438
+        }
+      ]
+    },
+    {
+      "comprador": "solo ropa de hombre",
+      "historia": "historia de hasta 118 USD",
+      "clientes_prueba": 6562,
+      "accion_arbol": 1,
+      "brazos": [
+        {
+          "clientes": 2204,
+          "visitas": 183
+        },
+        {
+          "clientes": 2201,
+          "visitas": 365
+        },
+        {
+          "clientes": 2157,
+          "visitas": 200
+        }
+      ]
+    },
+    {
+      "comprador": "solo ropa de hombre",
+      "historia": "historia de más de 118 USD",
+      "clientes_prueba": 7871,
+      "accion_arbol": 1,
+      "brazos": [
+        {
+          "clientes": 2656,
+          "visitas": 319
+        },
+        {
+          "clientes": 2568,
+          "visitas": 465
+        },
+        {
+          "clientes": 2647,
+          "visitas": 300
+        }
+      ]
+    },
+    {
+      "comprador": "ambas",
+      "historia": "historia de más de 118 USD",
+      "clientes_prueba": 3215,
+      "accion_arbol": 1,
+      "brazos": [
+        {
+          "clientes": 1053,
+          "visitas": 176
+        },
+        {
+          "clientes": 1087,
+          "visitas": 347
+        },
+        {
+          "clientes": 1075,
+          "visitas": 259
+        }
+      ]
+    }
+  ],
+  "celdas_con_accion_mixta": 0,
+  "celdas_vacias": [
+    "ambas, historia de hasta 118 USD"
+  ],
+  "estrategias": {
+    "nadie": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "todos_hombre": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "todos_mujer": [
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "arbol": [
+      1,
+      2,
+      1,
+      1,
+      1
+    ]
+  },
+  "verificacion": {
+    "nadie": {
+      "valor": 0.10637642015376231,
+      "ee": 0.0029770938602357716
+    },
+    "todos_hombre": {
+      "valor": 0.1336667235362436,
+      "ee": 0.0037277538547696135
+    },
+    "todos_mujer": {
+      "valor": 0.09619552808815393,
+      "ee": 0.00337967850031217
+    },
+    "arbol": {
+      "valor": 0.13120670449842994,
+      "ee": 0.003694314096398544
+    }
+  },
+  "clientes_prueba": 32036,
+  "clientes_experimento": 64000
+}
