@@ -26,8 +26,10 @@ activo al cliente" puede ser falso aunque el modelo acierte.
 **Qué se construyó.** Un sistema local en DuckDB con dos capas:
 
 1. **Predicción** (LightGBM, partición temporal, congelado antes de la prueba): propensión a
-   adquirir 13 productos el mes siguiente. MAP@7 de **0,856** contra 0,700 de una referencia
-   por segmento, edad y actividad.
+   adquirir 13 productos nuevos el mes siguiente. MAP@7 de **0,856** contra 0,700 de una
+   referencia por segmento, edad y actividad, promediado sobre los clientes que adquieren algo;
+   sobre todos los clientes, como en Kaggle, **0,0251 contra 0,0205**
+   ([qué mide](docs/hito2.md#qué-mide-el-map7-y-por-qué-0856-no-se-compara-con-kaggle)).
 2. **Causalidad**: tres preguntas **preregistradas con tag antes de estimar**, emuladas como
    ensayos mes a mes, con Double ML, emparejamiento, diferencias en diferencias y bosques
    causales; refutaciones de DoWhy, placebo de adelanto y sensibilidad a confusores omitidos.

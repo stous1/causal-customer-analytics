@@ -334,6 +334,88 @@ def pct_signo(x: float) -> str:
     return f"+{v} %" if v > 0 else (f"−{abs(v)} %" if v < 0 or x < 0 else "+0 %")
 
 
+def comprobaciones_diagnostico_map() -> list[tuple[str, str, list[str]]]:
+    dm = _j("hito2/diagnostico_map.json")
+    h2 = _j("hito2/metricas.json")
+    m = dm["map7"]
+    filas = {
+        "publicada": ("| Publicada: con alguna adquisición", 3),
+        "24_productos": ("| Con alguna adquisición entre los 24", 3),
+        "todos_los_clientes": ("| Todos los clientes-mes", 4),
+        "nuevo_estricto": ('| "Nuevo estricto"', 3),
+    }
+    salida = []
+    for k, (ancla, d) in filas.items():
+        salida.append(
+            (
+                "docs/hito2.md",
+                ancla,
+                [
+                    miles(m["modelo"][k]["clientes_mes"]),
+                    *[
+                        coma(m[q][k]["map7"], d)
+                        for q in ("modelo", "referencia", "popularidad_global")
+                    ],
+                ],
+            )
+        )
+    v = dm["frac_altas_que_vuelven_tras_tenerlo_en_t_menos_1"]
+    pub = {q: m[q]["publicada"]["map7"] for q in ("modelo", "referencia")}
+    tod = {q: m[q]["todos_los_clientes"]["map7"] for q in ("modelo", "referencia")}
+    salida += [
+        (
+            "docs/hito2.md",
+            "(45 % de las altas de nómina",
+            [
+                f"{round(v['nomina'] * 100)} %",
+                f"{round(v['recibo'] * 100)} %",
+                f"{round(v['tjcr'] * 100)} %",
+            ],
+        ),
+        (
+            "docs/hito2.md",
+            "clientes-mes con adquisición se queda",
+            [
+                miles(m["modelo"]["publicada"]["clientes_mes"]),
+                miles(m["modelo"]["nuevo_estricto"]["clientes_mes"]),
+            ],
+        ),
+        ("docs/hito2.md", "no se compara con Kaggle", []),
+        (
+            "docs/hito2.md",
+            "(+0,16 sobre la referencia",
+            [
+                f"+{coma(pub['modelo'] - pub['referencia'], 2)}",
+                f"+{round((tod['modelo'] / tod['referencia'] - 1) * 100)} %",
+            ],
+        ),
+        (
+            "README.md",
+            "MAP@7 de **",
+            [coma(h2["map7"]["modelo"], 3), coma(h2["map7"]["referencia"], 3)],
+        ),
+        (
+            "README.md",
+            "sobre todos los clientes, como en Kaggle, **",
+            [
+                coma(m["modelo"]["todos_los_clientes"]["map7"], 4),
+                coma(m["referencia"]["todos_los_clientes"]["map7"], 4),
+            ],
+        ),
+        (
+            "docs/index.md",
+            "cada cliente que adquiere algo; sobre todos",
+            [
+                coma(m["modelo"]["todos_los_clientes"]["map7"], 4),
+                coma(m["referencia"]["todos_los_clientes"]["map7"], 4),
+            ],
+        ),
+    ]
+    assert dm["mismo_modelo"]["todos"], "el diagnóstico no reprodujo el modelo congelado"
+    assert dm["definicion"]["etiquetas_en_productos_ya_tenidos"] == 0
+    return salida
+
+
 def comprobaciones_hito3() -> list[tuple[str, str, list[str]]]:
     hs = _j("hito3/hillstrom.json")
     ss = _j("hito3/semisintetico.json")["escenarios"]
@@ -437,17 +519,7 @@ def comprobaciones_hito2() -> list[tuple[str, str, list[str]]]:
                 ],
             )
         )
-    salida.append(
-        (
-            "docs/hito2.md",
-            "**MAP@7:**",
-            [
-                coma(h2["map7"]["modelo"], 3),
-                coma(h2["map7"]["referencia"], 3),
-                miles(h2["map7"]["clientes"]),
-            ],
-        )
-    )
+    salida += comprobaciones_diagnostico_map()
     return salida
 
 

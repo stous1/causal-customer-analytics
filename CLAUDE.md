@@ -52,6 +52,7 @@ uv run python scripts/hito1.py explorar       # -> reports/hito1/exploracion.jso
 uv run python scripts/hito2.py desarrollar    # validación -> reports/hito2/parametros.json (~10 min)
 uv run python scripts/publicar_resultados.py --hito 2 --solo-parametros   # congelar (+ tag)
 uv run python scripts/hito2.py evaluar        # prueba, una vez, con los parámetros publicados
+uv run python scripts/hito2_diagnostico_map.py  # MAP@7 con varias definiciones (diagnóstico)
 uv run python scripts/hito3.py hillstrom      # validación en Hillstrom (~5 min)
 uv run python scripts/hito3.py semisintetico  # validación en el semisintético (~15 min)
 uv run python scripts/hito3.py graficos

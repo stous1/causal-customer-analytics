@@ -158,3 +158,15 @@ cifras de README y Pages contra los JSON publicados, sin fallas (también corren
     de publicar.
 24. **Hito 5 solo con análisis primarios con efecto distinto de cero**, cada uno con el
     veredicto del hito 4 al lado; los no creíbles se presentan como ilustración del método.
+
+## Revisión posterior: qué mide el MAP@7
+
+A pedido del usuario se verificó la cifra de 0,856. **Solo se predicen productos nuevos** (0
+etiquetas y 0 puntajes en productos ya tenidos en `t`), así que la tenencia previa no la
+infla. Lo que la hace alta es que promedia solo el 3 % de clientes-mes que adquieren algo, con
+13 candidatos: una popularidad global ya da 0,646. Sobre todos los clientes-mes, como en Kaggle,
+el modelo da **0,0251 frente a 0,0205** de la referencia (+22 %). Un tercio de los
+clientes-mes con adquisición solo recuperan productos que tenían en `t-1` (nóminas que van y
+vienen); sin ellos, 0,775. **No se reentrenó:** el modelo ya era para productos nuevos; el
+diagnóstico reproduce el modelo congelado (AP idéntica en los 13 productos) y mide otras
+definiciones sobre la misma prueba, sin nuevo tag.

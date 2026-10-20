@@ -1,5 +1,12 @@
 # Cambios
 
+## Después de v1.0 (2026-10-20)
+
+- Diagnóstico del MAP@7 (`scripts/hito2_diagnostico_map.py`, sin tocar el modelo congelado):
+  confirma que solo se predicen productos nuevos y agrega el MAP@7 sobre todos los
+  clientes-mes (0,0251 contra 0,0205 de la referencia), con los 24 productos y con "nuevo
+  estricto". La página del hito 2, el README y la portada explican qué mide 0,856.
+
 ## v1.0 (2026-10-20)
 
 - **Hito 4:** estimación en Santander según el preregistro (12 análisis, 6 primarios), con

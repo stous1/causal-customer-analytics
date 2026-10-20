@@ -21,6 +21,7 @@ EXPLORATORIOS = {
 
 def main() -> None:
     h2 = leer_json(docs_hito(2) / "metricas.json")
+    dmap = leer_json(docs_hito(2) / "diagnostico_map.json")
     h4 = leer_json(docs_hito(4) / "estimaciones.json")
     exp = leer_json(docs_hito(4) / "exploratorio.json")
     h5 = leer_json(docs_hito(5) / "heterogeneidad.json")
@@ -65,7 +66,14 @@ def main() -> None:
             "'creíble' pasó todas las pruebas preregistradas.",
             "veredictos": prereg["veredicto"],
         },
-        "predictivo": {"map7": h2["map7"], "productos": predictivo},
+        "predictivo": {
+            "map7": h2["map7"],
+            "map7_definicion": "Solo productos nuevos (no tenidos en t); promedio sobre los "
+            "clientes-mes con alguna adquisición entre los 13 productos modelados (3 % del "
+            "total). No comparable con Kaggle: ver map7_diagnostico.todos_los_clientes.",
+            "map7_diagnostico": dmap["map7"],
+            "productos": predictivo,
+        },
         "causal": causal,
         "exploratorio": {"nomina_otros_productos_sin_cuenta_corriente": exp},
         "heterogeneidad": {

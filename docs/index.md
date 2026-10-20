@@ -17,9 +17,10 @@ ciencia de datos aplicada a banca.
 | ¿El canal de vinculación cambia cuánto dura activo? | KHM: −0,38 meses de 6 frente a KHN | creíble |
 | ¿Qué productos frenan el paso a inactivo? | débito, tarjeta, cuenta electrónica | ninguno con credibilidad |
 
-**Predicción:** MAP@7 de 0,856 (referencia 0,700) para anticipar qué producto adquiere cada
-cliente. Lo que más predice una adquisición es que el cliente ya sea activo; adquirir el
-producto no causa de forma creíble más actividad.
+**Predicción:** MAP@7 de 0,856 (referencia 0,700) para anticipar qué producto nuevo adquiere
+cada cliente que adquiere algo; sobre todos los clientes, como en Kaggle, 0,0251 (referencia
+0,0205) ([qué mide](hito2.md)). Lo que más predice una adquisición es que el cliente ya sea
+activo; adquirir el producto no causa de forma creíble más actividad.
 
 ## En un minuto
 

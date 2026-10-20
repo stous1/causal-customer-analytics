@@ -17,7 +17,7 @@
 - Referencia simple: la tasa de adquisición de cada producto por segmento, tramo de edad y
   actividad.
 - Métricas: precisión promedio (AP) por producto, con IC por bootstrap, y MAP@7 por cliente
-  (la métrica de la competencia). Nunca exactitud: con 1 % de positivos, decir "nadie
+  (la métrica de la competencia; ver abajo qué mide exactamente). Nunca exactitud: con 1 % de positivos, decir "nadie
   compra" acierta el 99 %.
 
 ## Resultados en prueba
@@ -34,10 +34,38 @@
 | Débito automático | 0,305 (0,300 a 0,312) | 0,046 | 19.962 |
 | Tarjeta de crédito | 0,239 (0,229 a 0,247) | 0,020 | 8.348 |
 
-**MAP@7:** 0,856 con el modelo frente a 0,700 con la referencia, sobre los 54.213
-clientes-mes con al menos una adquisición. Los productos raros (fondos, valores, depósitos a
-largo plazo, impuestos) quedan con AP menor a 0,05; el detalle está en
-[metricas.json](resultados/hito2/metricas.json).
+Los productos raros (fondos, valores, depósitos a largo plazo, impuestos) quedan con AP menor
+a 0,05; el detalle está en [metricas.json](resultados/hito2/metricas.json).
+
+## Qué mide el MAP@7 (y por qué 0,856 no se compara con Kaggle)
+
+Se predicen **solo productos nuevos**: la etiqueta vale 1 si el cliente no tenía el producto en
+`t` y lo tiene en `t+1`, y el ranking nunca incluye un producto que ya tiene (0 etiquetas y 0
+puntajes sobre productos tenidos, verificado). No hay tenencia previa inflando la cifra.
+
+Lo que sí la hace alta es **sobre quién se promedia**. El MAP@7 publicado promedia solo los
+clientes-mes que adquirieron algo (el 3 %) y elige entre 13 productos. Un
+[diagnóstico](resultados/hito2/diagnostico_map.json) sobre las mismas predicciones del modelo
+congelado (reproducido y verificado: la AP de los 13 productos coincide con la publicada):
+
+| Definición del MAP@7 | Clientes-mes | Modelo | Referencia | Popularidad global |
+|---|---|---|---|---|
+| Publicada: con alguna adquisición entre los 13 productos | 54.213 | 0,856 | 0,700 | 0,646 |
+| Con alguna adquisición entre los 24 productos | 54.611 | 0,849 | 0,695 | 0,641 |
+| Todos los clientes-mes (0 si no adquiere nada, como Kaggle) | 1.850.077 | 0,0251 | 0,0205 | 0,0189 |
+| "Nuevo estricto": sin el producto ni en t ni en t-1 | 36.837 | 0,775 | 0,673 | 0,604 |
+
+- Hasta la popularidad global (recomendar a todos los mismos productos) llega a 0,646 con la
+  definición publicada: la cifra absoluta dice poco; lo que vale es la **mejora sobre las
+  referencias**, que se mantiene en todas las definiciones (+0,16 sobre la referencia por
+  celdas en la publicada, +22 % relativo en la de todos los clientes).
+- Muchas adquisiciones son **productos que vuelven**: el cliente los tenía en `t-1`, no en
+  `t`, y otra vez en `t+1` (45 % de las altas de nómina, 35 % de las de débito y de tarjeta).
+  La definición de Kaggle también los cuenta como nuevos. Sin ellos, un tercio de los
+  clientes-mes con adquisición se queda sin ninguna (de 54.213 a 36.837) y el MAP@7 baja a
+  0,775.
+- **No hizo falta reentrenar:** el modelo ya se entrenó para productos nuevos. Estas cifras son
+  un diagnóstico sobre la misma medición en prueba, no una segunda prueba.
 
 ## Lo que predice (y lo que no dice)
 
