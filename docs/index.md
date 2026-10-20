@@ -10,3 +10,4 @@ ciencia de datos aplicada a banca.
 ## Hitos
 
 1. [Datos, calidad y diseños](hito1.md) ✔
+2. [Capa predictiva](hito2.md) ✔

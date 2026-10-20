@@ -49,6 +49,16 @@ uv run pytest -m "not integracion"            # solo pruebas rápidas
 uv run ruff check . && uv run ruff format .   # lint y formato
 uv run python scripts/hito1.py preparar       # CSV -> data/santander.duckdb (~2 min)
 uv run python scripts/hito1.py explorar       # -> reports/hito1/exploracion.json y gráficos
+uv run python scripts/hito2.py desarrollar    # validación -> reports/hito2/parametros.json (~10 min)
+uv run python scripts/publicar_resultados.py --hito 2 --solo-parametros   # congelar (+ tag)
+uv run python scripts/hito2.py evaluar        # prueba, una vez, con los parámetros publicados
+uv run python scripts/hito3.py hillstrom      # validación en Hillstrom (~5 min)
+uv run python scripts/hito3.py semisintetico  # validación en el semisintético (~15 min)
+uv run python scripts/hito3.py graficos
+uv run python scripts/preregistrar.py         # docs/resultados/preregistro.json (+ tag preregistro)
+uv run python scripts/hito4.py estimar        # Santander; se niega a correr sin el tag preregistro
+uv run python scripts/hito4.py graficos
+uv run python scripts/hito5.py                # heterogeneidad y políticas
 uv run python scripts/publicar_resultados.py --hito 1   # reports/hitoN -> docs/resultados/hitoN
 uv run python scripts/verificar_cifras.py     # cifras de README y Pages contra los JSON
 ```
@@ -84,6 +94,19 @@ uv run python scripts/verificar_cifras.py     # cifras de README y Pages contra 
   - `graficos.py`: Altair a HTML y PNG.
   - `sintetico.py`: mini-Santander con el formato del CSV real, para pruebas y CI.
   - `flujo_hito1.py`: preparar y explorar.
+  - Hito 2: `prediccion.py` (tabla `pred`: variables en t, etiqueta = adquisición en t+1;
+    LightGBM, métricas, referencia por celdas, MAP@7) y `flujo_hito2.py` (desarrollar y
+    evaluar). Congelado en `hito2-congelado` con `docs/resultados/hito2/parametros.json`
+    (lo verifica `tests/test_congelados.py`). Los modelos finales de nómina, débito, tarjeta y
+    cuenta electrónica quedan en `reports/hito2/modelos/` para el contraste del hito 5.
+  - Hito 3: `metodos.py` (ingenuo, regresión, emparejamiento, Double ML del ATT, DiD doble
+    robusto, bosque causal; salida común `Estimacion`), `hillstrom.py`, `semisintetico.py`
+    (solo recibe covariables) y `flujo_hito3.py`.
+  - Hito 4: `refutaciones.py` (DoWhy, valor de robustez, valor E, consistencia, Holm),
+    `preregistro.py` (DAG, supuestos, huellas) y `flujo_hito4.py` (`ANALISIS` preregistrados,
+    veredicto). `scripts/hito4.py` no corre sin el tag `preregistro`.
+  - Hito 5: `flujo_hito5.py` (bosque causal, SHAP sobre el efecto, árboles de política;
+    Hillstrom con mitad de prueba; contraste predice contra causa).
 - `scripts/`: puntos de entrada delgados que orquestan funciones de `src/`.
 - `notebooks/`: solo exploración. Nada en `src/` ni `scripts/` importa de notebooks.
 - `tests/`: pytest. Las lentas se marcan con `@pytest.mark.integracion`. Todas corren sobre el

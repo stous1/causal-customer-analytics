@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@6"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@7"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-ef6a3e4d81d1af8d9bcb1837a6c02744"}, "mark": {"type": "bar"}, "encoding": {"x": {"axis": {}, "field": "shap_medio_abs", "title": "Valor SHAP absoluto medio (log-odds)", "type": "quantitative"}, "y": {"field": "nombre", "sort": "-x", "title": null, "type": "nominal"}}, "height": 270, "title": "Lo que PREDICE la adquisici\u00f3n de tarjeta de cr\u00e9dito (SHAP, no causal)", "width": 480, "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json", "datasets": {"data-ef6a3e4d81d1af8d9bcb1837a6c02744": [{"variable": "relacion_activa", "nombre": "Relaci\u00f3n activa (tiprel A)", "shap_medio_abs": 0.5228355491108481, "correlacion_valor_shap": 0.9736107877261911}, {"variable": "n_productos_t3", "nombre": "Productos en t-3", "shap_medio_abs": 0.3349888462533465, "correlacion_valor_shap": 0.8493819593497616}, {"variable": "edad", "nombre": "Edad", "shap_medio_abs": 0.2277280173576769, "correlacion_valor_shap": 0.5826227306027504}, {"variable": "activo", "nombre": "Activo en t", "shap_medio_abs": 0.17952573152182655, "correlacion_valor_shap": 0.9462077304151384}, {"variable": "n_productos", "nombre": "N\u00famero de productos", "shap_medio_abs": 0.13918512819062495, "correlacion_valor_shap": 0.8310335988589227}, {"variable": "tjcr_ant", "nombre": "Tarjeta de cr\u00e9dito en t-1", "shap_medio_abs": 0.09239676822320539, "correlacion_valor_shap": 0.9929081653752336}, {"variable": "bajas_3m", "nombre": "Bajas en 3 meses", "shap_medio_abs": 0.090915004002283, "correlacion_valor_shap": 0.7782779415600867}, {"variable": "antiguedad", "nombre": "Antig\u00fcedad (meses)", "shap_medio_abs": 0.05814206692780861, "correlacion_valor_shap": 0.7053421734624337}, {"variable": "seg_universitario", "nombre": "Segmento universitario", "shap_medio_abs": 0.0426529070499581, "correlacion_valor_shap": -0.9338134481389857}, {"variable": "canal_khe", "nombre": "Canal KHE", "shap_medio_abs": 0.037508809231128454, "correlacion_valor_shap": -0.7974382931160366}, {"variable": "activo_ant", "nombre": "Activo en t-1", "shap_medio_abs": 0.029100823070653037, "correlacion_valor_shap": 0.8051535789293494}, {"variable": "cno", "nombre": "Tiene cuenta n\u00f3mina", "shap_medio_abs": 0.024545242904602846, "correlacion_valor_shap": 0.9093293344587714}, {"variable": "altas_3m", "nombre": "Altas en 3 meses", "shap_medio_abs": 0.022649767941189905, "correlacion_valor_shap": 0.6669583200860233}, {"variable": "recibo", "nombre": "Tiene d\u00e9bito autom\u00e1tico", "shap_medio_abs": 0.02233636519287671, "correlacion_valor_shap": 0.7268025784668977}, {"variable": "mujer", "nombre": "Mujer", "shap_medio_abs": 0.017595435996325817, "correlacion_valor_shap": -0.5379596805945737}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

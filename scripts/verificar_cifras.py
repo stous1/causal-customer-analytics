@@ -11,7 +11,7 @@ o una frase) y exige que aparezcan en ella (o en la línea siguiente) los valore
 import sys
 
 from causal.rutas import DOCS, DOCS_RESULTADOS, RAIZ
-from causal.util import leer_json, miles
+from causal.util import coma, leer_json, miles
 
 
 def _j(ruta: str) -> dict:
@@ -112,6 +112,38 @@ def comprobaciones() -> list[tuple[str, str, list[str]]]:
             [miles(conteos["d_producto_ecue"]["tratados"])],
         ),
     ]
+    salida += comprobaciones_hito2()
+    return salida
+
+
+def comprobaciones_hito2() -> list[tuple[str, str, list[str]]]:
+    h2 = _j("hito2/metricas.json")
+    salida = []
+    for p in ("cno", "nom_pens", "cco", "ecue", "nomina", "recibo", "tjcr"):
+        r = h2["productos"][p]
+        m, ref = r["modelo"], r["referencia"]
+        salida.append(
+            (
+                "docs/hito2.md",
+                f"| {r['nombre']} |",
+                [
+                    f"{coma(m['ap'], 3)} ({coma(m['ap_ic95'][0], 3)} a {coma(m['ap_ic95'][1], 3)})",
+                    coma(ref["ap"], 3),
+                    miles(m["positivos"]),
+                ],
+            )
+        )
+    salida.append(
+        (
+            "docs/hito2.md",
+            "**MAP@7:**",
+            [
+                coma(h2["map7"]["modelo"], 3),
+                coma(h2["map7"]["referencia"], 3),
+                miles(h2["map7"]["clientes"]),
+            ],
+        )
+    )
     return salida
 
 

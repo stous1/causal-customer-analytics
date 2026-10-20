@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@6"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@7"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "layer": [{"mark": {"type": "rule", "strokeWidth": 2}, "encoding": {"color": {"field": "quien", "scale": {"range": ["#2f6db5", "#d9822b", "#2e9e6b", "#c8453b", "#7b5ea7", "#8a8f98", "#3aa6b9", "#b5892f"]}, "title": null, "type": "nominal"}, "x": {"field": "inf", "title": "Precisi\u00f3n promedio (AP)", "type": "quantitative"}, "x2": {"field": "sup"}, "y": {"field": "producto", "sort": null, "title": null, "type": "nominal"}}}, {"mark": {"type": "point", "filled": true, "size": 60}, "encoding": {"color": {"field": "quien", "scale": {"range": ["#2f6db5", "#d9822b", "#2e9e6b", "#c8453b", "#7b5ea7", "#8a8f98", "#3aa6b9", "#b5892f"]}, "title": null, "type": "nominal"}, "x": {"field": "ap", "type": "quantitative"}, "y": {"field": "producto", "sort": null, "title": null, "type": "nominal"}}}], "data": {"name": "data-beb2731a16a3ebb922063f0dee6fe42f"}, "height": 286, "title": "Precisi\u00f3n promedio en prueba (abril y mayo de 2016), IC 95 %", "width": 480, "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json", "datasets": {"data-beb2731a16a3ebb922063f0dee6fe42f": [{"producto": "Cuenta corriente", "quien": "Modelo (LightGBM)", "ap": 0.3710081088226161, "inf": 0.36044115260542764, "sup": 0.3834024567760162}, {"producto": "Cuenta corriente", "quien": "Referencia simple", "ap": 0.027141220490915535, "inf": 0.026094856060420692, "sup": 0.028101750219155838}, {"producto": "Cuenta n\u00f3mina", "quien": "Modelo (LightGBM)", "ap": 0.471550202339924, "inf": 0.4591622747395128, "sup": 0.48938533526219824}, {"producto": "Cuenta n\u00f3mina", "quien": "Referencia simple", "ap": 0.010390510994273749, "inf": 0.00994431725137492, "sup": 0.010960227745768058}, {"producto": "Cuenta m\u00e1s particulares", "quien": "Modelo (LightGBM)", "ap": 0.1375827950791603, "inf": 0.12317814839017381, "sup": 0.15362107609285705}, {"producto": "Cuenta m\u00e1s particulares", "quien": "Referencia simple", "ap": 0.0025198197443727964, "inf": 0.0022671812442249073, "sup": 0.003286785940304225}, {"producto": "Cuenta particulares", "quien": "Modelo (LightGBM)", "ap": 0.10476805235570998, "inf": 0.08373458005303883, "sup": 0.1462391661391227}, {"producto": "Cuenta particulares", "quien": "Referencia simple", "ap": 0.001092342858370365, "inf": 0.0009668967513353753, "sup": 0.0012471162052634418}, {"producto": "Dep\u00f3sito a largo plazo", "quien": "Modelo (LightGBM)", "ap": 0.021126329712409034, "inf": 0.0127073758738942, "sup": 0.0385942395162588}, {"producto": "Dep\u00f3sito a largo plazo", "quien": "Referencia simple", "ap": 0.0012845867572718647, "inf": 0.0008709242343802462, "sup": 0.001884289754909604}, {"producto": "Cuenta electr\u00f3nica", "quien": "Modelo (LightGBM)", "ap": 0.35145845619452964, "inf": 0.3394971719703647, "sup": 0.36577088610461206}, {"producto": "Cuenta electr\u00f3nica", "quien": "Referencia simple", "ap": 0.022528283966717324, "inf": 0.02100954349433655, "sup": 0.02450540660319723}, {"producto": "Fondos", "quien": "Modelo (LightGBM)", "ap": 0.01683178501767858, "inf": 0.0052167510073003, "sup": 0.03558686033419563}, {"producto": "Fondos", "quien": "Referencia simple", "ap": 0.00032508442373430346, "inf": 0.0002360636831897631, "sup": 0.0004467705825953879}, {"producto": "Impuestos", "quien": "Modelo (LightGBM)", "ap": 0.00624726401589948, "inf": 0.0055529973161043845, "sup": 0.007376027019768619}, {"producto": "Impuestos", "quien": "Referencia simple", "ap": 0.002203201644244903, "inf": 0.002012862814265838, "sup": 0.0023764591873348855}, {"producto": "Tarjeta de cr\u00e9dito", "quien": "Modelo (LightGBM)", "ap": 0.2388830770927844, "inf": 0.22908366856576645, "sup": 0.2472733602703285}, {"producto": "Tarjeta de cr\u00e9dito", "quien": "Referencia simple", "ap": 0.020315680075254104, "inf": 0.01978441778753925, "sup": 0.021118598070213098}, {"producto": "Valores", "quien": "Modelo (LightGBM)", "ap": 0.04609419313791581, "inf": 0.030618446693498523, "sup": 0.06767676431205148}, {"producto": "Valores", "quien": "Referencia simple", "ap": 0.0006695895362111055, "inf": 0.0005682335074469881, "sup": 0.0007731595112811308}, {"producto": "N\u00f3mina", "quien": "Modelo (LightGBM)", "ap": 0.3506695885415632, "inf": 0.3383207679678158, "sup": 0.3639380243441294}, {"producto": "N\u00f3mina", "quien": "Referencia simple", "ap": 0.020269757861030035, "inf": 0.0196416881534, "sup": 0.020961534776792634}, {"producto": "Pensiones (n\u00f3mina)", "quien": "Modelo (LightGBM)", "ap": 0.38949991114079374, "inf": 0.379460969748908, "sup": 0.39911968400283926}, {"producto": "Pensiones (n\u00f3mina)", "quien": "Referencia simple", "ap": 0.020365451618052983, "inf": 0.019724471073010973, "sup": 0.021003104957028167}, {"producto": "D\u00e9bito autom\u00e1tico", "quien": "Modelo (LightGBM)", "ap": 0.3049644788232823, "inf": 0.30004255798427193, "sup": 0.31196787263901743}, {"producto": "D\u00e9bito autom\u00e1tico", "quien": "Referencia simple", "ap": 0.046034823753149774, "inf": 0.04496640539284548, "sup": 0.04696354033419016}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,758 @@
+{
+  "tipo": "predictivo",
+  "ventanas": {
+    "entrenamiento": [
+      6,
+      13
+    ],
+    "prueba": [
+      14,
+      15
+    ]
+  },
+  "productos": {
+    "cco": {
+      "modelo": {
+        "ap": 0.3710081088226161,
+        "auc": 0.9202629528868052,
+        "tasa_base": 0.010842617637104562,
+        "precision_top1pct": 0.4570720968629609,
+        "positivos": 7881,
+        "filas": 726854,
+        "ap_ic95": [
+          0.36044115260542764,
+          0.3834024567760162
+        ]
+      },
+      "referencia": {
+        "ap": 0.027141220490915535,
+        "auc": 0.7499439556879548,
+        "tasa_base": 0.010842617637104562,
+        "precision_top1pct": 0.05407264722069345,
+        "positivos": 7881,
+        "filas": 726854,
+        "ap_ic95": [
+          0.026094856060420692,
+          0.028101750219155838
+        ]
+      },
+      "nombre": "Cuenta corriente"
+    },
+    "cno": {
+      "modelo": {
+        "ap": 0.471550202339924,
+        "auc": 0.9521507362839196,
+        "tasa_base": 0.002767271149837166,
+        "precision_top1pct": 0.16603243369826123,
+        "positivos": 4727,
+        "filas": 1708181,
+        "ap_ic95": [
+          0.4591622747395128,
+          0.48938533526219824
+        ]
+      },
+      "referencia": {
+        "ap": 0.010390510994273749,
+        "auc": 0.8228373185176516,
+        "tasa_base": 0.002767271149837166,
+        "precision_top1pct": 0.017797552836484983,
+        "positivos": 4727,
+        "filas": 1708181,
+        "ap_ic95": [
+          0.00994431725137492,
+          0.010960227745768058
+        ]
+      },
+      "nombre": "Cuenta nómina"
+    },
+    "ctma": {
+      "modelo": {
+        "ap": 0.1375827950791603,
+        "auc": 0.9869300299392285,
+        "tasa_base": 0.0006045691898881984,
+        "precision_top1pct": 0.04916243793310417,
+        "positivos": 1108,
+        "filas": 1832710,
+        "ap_ic95": [
+          0.12317814839017381,
+          0.15362107609285705
+        ]
+      },
+      "referencia": {
+        "ap": 0.0025198197443727964,
+        "auc": 0.8109482119353748,
+        "tasa_base": 0.0006045691898881984,
+        "precision_top1pct": 0.00027282152016151035,
+        "positivos": 1108,
+        "filas": 1832710,
+        "ap_ic95": [
+          0.0022671812442249073,
+          0.003286785940304225
+        ]
+      },
+      "nombre": "Cuenta más particulares"
+    },
+    "ctop": {
+      "modelo": {
+        "ap": 0.10476805235570998,
+        "auc": 0.9578203746789553,
+        "tasa_base": 0.00028282534017940597,
+        "precision_top1pct": 0.015659140568099052,
+        "positivos": 466,
+        "filas": 1647660,
+        "ap_ic95": [
+          0.08373458005303883,
+          0.1462391661391227
+        ]
+      },
+      "referencia": {
+        "ap": 0.001092342858370365,
+        "auc": 0.8369237347221065,
+        "tasa_base": 0.00028282534017940597,
+        "precision_top1pct": 0.0019422189851905803,
+        "positivos": 466,
+        "filas": 1647660,
+        "ap_ic95": [
+          0.0009668967513353753,
+          0.0012471162052634418
+        ]
+      },
+      "nombre": "Cuenta particulares"
+    },
+    "dela": {
+      "modelo": {
+        "ap": 0.021126329712409034,
+        "auc": 0.9443489750164952,
+        "tasa_base": 8.125379651359572e-05,
+        "precision_top1pct": 0.003922667413841412,
+        "positivos": 145,
+        "filas": 1784532,
+        "ap_ic95": [
+          0.0127073758738942,
+          0.0385942395162588
+        ]
+      },
+      "referencia": {
+        "ap": 0.0012845867572718647,
+        "auc": 0.9097371911145841,
+        "tasa_base": 8.125379651359572e-05,
+        "precision_top1pct": 0.0021294480246567666,
+        "positivos": 145,
+        "filas": 1784532,
+        "ap_ic95": [
+          0.0008709242343802462,
+          0.001884289754909604
+        ]
+      },
+      "nombre": "Depósito a largo plazo"
+    },
+    "ecue": {
+      "modelo": {
+        "ap": 0.35145845619452964,
+        "auc": 0.9426281773707113,
+        "tasa_base": 0.0029091310217926655,
+        "precision_top1pct": 0.15696514493604036,
+        "positivos": 4958,
+        "filas": 1704289,
+        "ap_ic95": [
+          0.3394971719703647,
+          0.36577088610461206
+        ]
+      },
+      "referencia": {
+        "ap": 0.022528283966717324,
+        "auc": 0.8605065219376442,
+        "tasa_base": 0.0029091310217926655,
+        "precision_top1pct": 0.0407815984039432,
+        "positivos": 4958,
+        "filas": 1704289,
+        "ap_ic95": [
+          0.02100954349433655,
+          0.02450540660319723
+        ]
+      },
+      "nombre": "Cuenta electrónica"
+    },
+    "fond": {
+      "modelo": {
+        "ap": 0.01683178501767858,
+        "auc": 0.9217237713484883,
+        "tasa_base": 7.855550165927897e-05,
+        "precision_top1pct": 0.002636927978904576,
+        "positivos": 143,
+        "filas": 1820369,
+        "ap_ic95": [
+          0.0052167510073003,
+          0.03558686033419563
+        ]
+      },
+      "referencia": {
+        "ap": 0.00032508442373430346,
+        "auc": 0.8455424969552886,
+        "tasa_base": 7.855550165927897e-05,
+        "precision_top1pct": 0.000604295995165632,
+        "positivos": 143,
+        "filas": 1820369,
+        "ap_ic95": [
+          0.0002360636831897631,
+          0.0004467705825953879
+        ]
+      },
+      "nombre": "Fondos"
+    },
+    "reca": {
+      "modelo": {
+        "ap": 0.00624726401589948,
+        "auc": 0.8956160056834361,
+        "tasa_base": 0.0006169185656132091,
+        "precision_top1pct": 0.010168721240697608,
+        "positivos": 1086,
+        "filas": 1760362,
+        "ap_ic95": [
+          0.0055529973161043845,
+          0.007376027019768619
+        ]
+      },
+      "referencia": {
+        "ap": 0.002203201644244903,
+        "auc": 0.8286899001421215,
+        "tasa_base": 0.0006169185656132091,
+        "precision_top1pct": 0.004999147872521729,
+        "positivos": 1086,
+        "filas": 1760362,
+        "ap_ic95": [
+          0.002012862814265838,
+          0.0023764591873348855
+        ]
+      },
+      "nombre": "Impuestos"
+    },
+    "tjcr": {
+      "modelo": {
+        "ap": 0.2388830770927844,
+        "auc": 0.9590343925842789,
+        "tasa_base": 0.004687409633446588,
+        "precision_top1pct": 0.23437587736537704,
+        "positivos": 8348,
+        "filas": 1780941,
+        "ap_ic95": [
+          0.22908366856576645,
+          0.2472733602703285
+        ]
+      },
+      "referencia": {
+        "ap": 0.020315680075254104,
+        "auc": 0.8601284262409239,
+        "tasa_base": 0.004687409633446588,
+        "precision_top1pct": 0.03705991352686844,
+        "positivos": 8348,
+        "filas": 1780941,
+        "ap_ic95": [
+          0.01978441778753925,
+          0.021118598070213098
+        ]
+      },
+      "nombre": "Tarjeta de crédito"
+    },
+    "valo": {
+      "modelo": {
+        "ap": 0.04609419313791581,
+        "auc": 0.9093771118212641,
+        "tasa_base": 0.00017208627775167895,
+        "precision_top1pct": 0.005754758742806552,
+        "positivos": 311,
+        "filas": 1807233,
+        "ap_ic95": [
+          0.030618446693498523,
+          0.06767676431205148
+        ]
+      },
+      "referencia": {
+        "ap": 0.0006695895362111055,
+        "auc": 0.840393456074639,
+        "tasa_base": 0.00017208627775167895,
+        "precision_top1pct": 0.0009406817175741478,
+        "positivos": 311,
+        "filas": 1807233,
+        "ap_ic95": [
+          0.0005682335074469881,
+          0.0007731595112811308
+        ]
+      },
+      "nombre": "Valores"
+    },
+    "nomina": {
+      "modelo": {
+        "ap": 0.3506695885415632,
+        "auc": 0.9571963011977838,
+        "tasa_base": 0.00528089248107462,
+        "precision_top1pct": 0.29170698389208266,
+        "positivos": 9278,
+        "filas": 1756900,
+        "ap_ic95": [
+          0.3383207679678158,
+          0.3639380243441294
+        ]
+      },
+      "referencia": {
+        "ap": 0.020269757861030035,
+        "auc": 0.8396433172813856,
+        "tasa_base": 0.00528089248107462,
+        "precision_top1pct": 0.028117707325402697,
+        "positivos": 9278,
+        "filas": 1756900,
+        "ap_ic95": [
+          0.0196416881534,
+          0.020961534776792634
+        ]
+      },
+      "nombre": "Nómina"
+    },
+    "nom_pens": {
+      "modelo": {
+        "ap": 0.38949991114079374,
+        "auc": 0.9543806409505633,
+        "tasa_base": 0.005683173243274931,
+        "precision_top1pct": 0.3183482040722947,
+        "positivos": 9937,
+        "filas": 1748495,
+        "ap_ic95": [
+          0.379460969748908,
+          0.39911968400283926
+        ]
+      },
+      "referencia": {
+        "ap": 0.020365451618052983,
+        "auc": 0.8295358305985853,
+        "tasa_base": 0.005683173243274931,
+        "precision_top1pct": 0.028597574925646307,
+        "positivos": 9937,
+        "filas": 1748495,
+        "ap_ic95": [
+          0.019724471073010973,
+          0.021003104957028167
+        ]
+      },
+      "nombre": "Pensiones (nómina)"
+    },
+    "recibo": {
+      "modelo": {
+        "ap": 0.3049644788232823,
+        "auc": 0.9443761435613652,
+        "tasa_base": 0.012265573444130257,
+        "precision_top1pct": 0.4283519724714268,
+        "positivos": 19962,
+        "filas": 1627482,
+        "ap_ic95": [
+          0.30004255798427193,
+          0.31196787263901743
+        ]
+      },
+      "referencia": {
+        "ap": 0.046034823753149774,
+        "auc": 0.8489406592722499,
+        "tasa_base": 0.012265573444130257,
+        "precision_top1pct": 0.06525746589652207,
+        "positivos": 19962,
+        "filas": 1627482,
+        "ap_ic95": [
+          0.04496640539284548,
+          0.04696354033419016
+        ]
+      },
+      "nombre": "Débito automático"
+    }
+  },
+  "map7": {
+    "modelo": 0.8557325301815092,
+    "referencia": 0.7003337606601123,
+    "clientes": 54213
+  },
+  "shap": {
+    "ecue": {
+      "tipo": "predictivo",
+      "muestra": 20000,
+      "variables": [
+        {
+          "variable": "activo",
+          "nombre": "Activo en t",
+          "shap_medio_abs": 0.7377520951344536,
+          "correlacion_valor_shap": 0.9877183899916623
+        },
+        {
+          "variable": "canal_khe",
+          "nombre": "Canal KHE",
+          "shap_medio_abs": 0.46223794462745144,
+          "correlacion_valor_shap": -0.9867057916050848
+        },
+        {
+          "variable": "relacion_activa",
+          "nombre": "Relación activa (tiprel A)",
+          "shap_medio_abs": 0.3737063319748625,
+          "correlacion_valor_shap": 0.9774986606969776
+        },
+        {
+          "variable": "seg_universitario",
+          "nombre": "Segmento universitario",
+          "shap_medio_abs": 0.221761090045844,
+          "correlacion_valor_shap": -0.964255971197273
+        },
+        {
+          "variable": "edad",
+          "nombre": "Edad",
+          "shap_medio_abs": 0.1488873888273825,
+          "correlacion_valor_shap": 0.3879679499281123
+        },
+        {
+          "variable": "antiguedad",
+          "nombre": "Antigüedad (meses)",
+          "shap_medio_abs": 0.14279534090223658,
+          "correlacion_valor_shap": -0.4424051961627292
+        },
+        {
+          "variable": "n_productos",
+          "nombre": "Número de productos",
+          "shap_medio_abs": 0.13476788654188598,
+          "correlacion_valor_shap": 0.8745218072732336
+        },
+        {
+          "variable": "canal_khq",
+          "nombre": "Canal KHQ",
+          "shap_medio_abs": 0.09396238903594466,
+          "correlacion_valor_shap": -0.9100894508706119
+        },
+        {
+          "variable": "activo_ant",
+          "nombre": "Activo en t-1",
+          "shap_medio_abs": 0.08965695151175171,
+          "correlacion_valor_shap": -0.16136747411647015
+        },
+        {
+          "variable": "ctma_ant",
+          "nombre": "Cuenta más particulares en t-1",
+          "shap_medio_abs": 0.07241111598109837,
+          "correlacion_valor_shap": 0.8645573350769102
+        },
+        {
+          "variable": "n_productos_t3",
+          "nombre": "Productos en t-3",
+          "shap_medio_abs": 0.04692036255599271,
+          "correlacion_valor_shap": 0.2679759410539595
+        },
+        {
+          "variable": "altas_3m",
+          "nombre": "Altas en 3 meses",
+          "shap_medio_abs": 0.04369670838550468,
+          "correlacion_valor_shap": 0.8862417724389352
+        },
+        {
+          "variable": "bajas_3m",
+          "nombre": "Bajas en 3 meses",
+          "shap_medio_abs": 0.040481700650704264,
+          "correlacion_valor_shap": 0.8409693068753602
+        },
+        {
+          "variable": "dela_ant",
+          "nombre": "Depósito a largo plazo en t-1",
+          "shap_medio_abs": 0.0383397018426219,
+          "correlacion_valor_shap": 0.9441567190576311
+        },
+        {
+          "variable": "mujer",
+          "nombre": "Mujer",
+          "shap_medio_abs": 0.03749310448596842,
+          "correlacion_valor_shap": -0.9195461380198101
+        }
+      ]
+    },
+    "tjcr": {
+      "tipo": "predictivo",
+      "muestra": 20000,
+      "variables": [
+        {
+          "variable": "relacion_activa",
+          "nombre": "Relación activa (tiprel A)",
+          "shap_medio_abs": 0.5228355491108481,
+          "correlacion_valor_shap": 0.9736107877261911
+        },
+        {
+          "variable": "n_productos_t3",
+          "nombre": "Productos en t-3",
+          "shap_medio_abs": 0.3349888462533465,
+          "correlacion_valor_shap": 0.8493819593497616
+        },
+        {
+          "variable": "edad",
+          "nombre": "Edad",
+          "shap_medio_abs": 0.2277280173576769,
+          "correlacion_valor_shap": 0.5826227306027504
+        },
+        {
+          "variable": "activo",
+          "nombre": "Activo en t",
+          "shap_medio_abs": 0.17952573152182655,
+          "correlacion_valor_shap": 0.9462077304151384
+        },
+        {
+          "variable": "n_productos",
+          "nombre": "Número de productos",
+          "shap_medio_abs": 0.13918512819062495,
+          "correlacion_valor_shap": 0.8310335988589227
+        },
+        {
+          "variable": "tjcr_ant",
+          "nombre": "Tarjeta de crédito en t-1",
+          "shap_medio_abs": 0.09239676822320539,
+          "correlacion_valor_shap": 0.9929081653752336
+        },
+        {
+          "variable": "bajas_3m",
+          "nombre": "Bajas en 3 meses",
+          "shap_medio_abs": 0.090915004002283,
+          "correlacion_valor_shap": 0.7782779415600867
+        },
+        {
+          "variable": "antiguedad",
+          "nombre": "Antigüedad (meses)",
+          "shap_medio_abs": 0.05814206692780861,
+          "correlacion_valor_shap": 0.7053421734624337
+        },
+        {
+          "variable": "seg_universitario",
+          "nombre": "Segmento universitario",
+          "shap_medio_abs": 0.0426529070499581,
+          "correlacion_valor_shap": -0.9338134481389857
+        },
+        {
+          "variable": "canal_khe",
+          "nombre": "Canal KHE",
+          "shap_medio_abs": 0.037508809231128454,
+          "correlacion_valor_shap": -0.7974382931160366
+        },
+        {
+          "variable": "activo_ant",
+          "nombre": "Activo en t-1",
+          "shap_medio_abs": 0.029100823070653037,
+          "correlacion_valor_shap": 0.8051535789293494
+        },
+        {
+          "variable": "cno",
+          "nombre": "Tiene cuenta nómina",
+          "shap_medio_abs": 0.024545242904602846,
+          "correlacion_valor_shap": 0.9093293344587714
+        },
+        {
+          "variable": "altas_3m",
+          "nombre": "Altas en 3 meses",
+          "shap_medio_abs": 0.022649767941189905,
+          "correlacion_valor_shap": 0.6669583200860233
+        },
+        {
+          "variable": "recibo",
+          "nombre": "Tiene débito automático",
+          "shap_medio_abs": 0.02233636519287671,
+          "correlacion_valor_shap": 0.7268025784668977
+        },
+        {
+          "variable": "mujer",
+          "nombre": "Mujer",
+          "shap_medio_abs": 0.017595435996325817,
+          "correlacion_valor_shap": -0.5379596805945737
+        }
+      ]
+    },
+    "nomina": {
+      "tipo": "predictivo",
+      "muestra": 20000,
+      "variables": [
+        {
+          "variable": "relacion_activa",
+          "nombre": "Relación activa (tiprel A)",
+          "shap_medio_abs": 0.6081550001934463,
+          "correlacion_valor_shap": 0.9628390734176325
+        },
+        {
+          "variable": "activo",
+          "nombre": "Activo en t",
+          "shap_medio_abs": 0.3898340654854327,
+          "correlacion_valor_shap": 0.9756397508029908
+        },
+        {
+          "variable": "antiguedad",
+          "nombre": "Antigüedad (meses)",
+          "shap_medio_abs": 0.34646572661552866,
+          "correlacion_valor_shap": -0.8322244834387206
+        },
+        {
+          "variable": "edad",
+          "nombre": "Edad",
+          "shap_medio_abs": 0.3393291814483734,
+          "correlacion_valor_shap": -0.6848111964790861
+        },
+        {
+          "variable": "activo_ant",
+          "nombre": "Activo en t-1",
+          "shap_medio_abs": 0.17759181952876435,
+          "correlacion_valor_shap": 0.9137192326744572
+        },
+        {
+          "variable": "cno",
+          "nombre": "Tiene cuenta nómina",
+          "shap_medio_abs": 0.1383714798821647,
+          "correlacion_valor_shap": 0.9700746404837308
+        },
+        {
+          "variable": "nomina_ant",
+          "nombre": "Nómina en t-1",
+          "shap_medio_abs": 0.12538968819252516,
+          "correlacion_valor_shap": 0.993247579898491
+        },
+        {
+          "variable": "recibo",
+          "nombre": "Tiene débito automático",
+          "shap_medio_abs": 0.11946300313063205,
+          "correlacion_valor_shap": 0.9784845318111262
+        },
+        {
+          "variable": "n_productos",
+          "nombre": "Número de productos",
+          "shap_medio_abs": 0.10302399226103869,
+          "correlacion_valor_shap": 0.6476419636133696
+        },
+        {
+          "variable": "cno_ant",
+          "nombre": "Cuenta nómina en t-1",
+          "shap_medio_abs": 0.06686388321274178,
+          "correlacion_valor_shap": 0.864070499178058
+        },
+        {
+          "variable": "prov_28",
+          "nombre": "Provincia 28",
+          "shap_medio_abs": 0.06418476597710941,
+          "correlacion_valor_shap": 0.7624846202759343
+        },
+        {
+          "variable": "bajas_3m",
+          "nombre": "Bajas en 3 meses",
+          "shap_medio_abs": 0.05796766434624591,
+          "correlacion_valor_shap": 0.8720855984622112
+        },
+        {
+          "variable": "seg_universitario",
+          "nombre": "Segmento universitario",
+          "shap_medio_abs": 0.05359242482861598,
+          "correlacion_valor_shap": 0.6839863196721667
+        },
+        {
+          "variable": "altas_3m",
+          "nombre": "Altas en 3 meses",
+          "shap_medio_abs": 0.05193925908040266,
+          "correlacion_valor_shap": 0.8831374962225033
+        },
+        {
+          "variable": "cco",
+          "nombre": "Tiene cuenta corriente",
+          "shap_medio_abs": 0.0503699207894146,
+          "correlacion_valor_shap": 0.8940264082184955
+        }
+      ]
+    },
+    "recibo": {
+      "tipo": "predictivo",
+      "muestra": 20000,
+      "variables": [
+        {
+          "variable": "activo",
+          "nombre": "Activo en t",
+          "shap_medio_abs": 0.5282421354643316,
+          "correlacion_valor_shap": 0.9708999630582329
+        },
+        {
+          "variable": "activo_ant",
+          "nombre": "Activo en t-1",
+          "shap_medio_abs": 0.17926771502749472,
+          "correlacion_valor_shap": 0.7888801433852488
+        },
+        {
+          "variable": "relacion_activa",
+          "nombre": "Relación activa (tiprel A)",
+          "shap_medio_abs": 0.16628456781219353,
+          "correlacion_valor_shap": 0.9149450219396729
+        },
+        {
+          "variable": "recibo_ant",
+          "nombre": "Débito automático en t-1",
+          "shap_medio_abs": 0.14843683886879905,
+          "correlacion_valor_shap": 0.9879040622204394
+        },
+        {
+          "variable": "cco",
+          "nombre": "Tiene cuenta corriente",
+          "shap_medio_abs": 0.14841408592744684,
+          "correlacion_valor_shap": 0.9472305193551352
+        },
+        {
+          "variable": "bajas_3m",
+          "nombre": "Bajas en 3 meses",
+          "shap_medio_abs": 0.12277327498730285,
+          "correlacion_valor_shap": 0.8359543895205732
+        },
+        {
+          "variable": "antiguedad",
+          "nombre": "Antigüedad (meses)",
+          "shap_medio_abs": 0.06634328183734689,
+          "correlacion_valor_shap": -0.6320371624522376
+        },
+        {
+          "variable": "edad",
+          "nombre": "Edad",
+          "shap_medio_abs": 0.05901937684691615,
+          "correlacion_valor_shap": -0.3890849187853622
+        },
+        {
+          "variable": "canal_khq",
+          "nombre": "Canal KHQ",
+          "shap_medio_abs": 0.03531307457072323,
+          "correlacion_valor_shap": -0.7504084258776171
+        },
+        {
+          "variable": "cno",
+          "nombre": "Tiene cuenta nómina",
+          "shap_medio_abs": 0.032690933096450804,
+          "correlacion_valor_shap": 0.9494412826613057
+        },
+        {
+          "variable": "cco_ant",
+          "nombre": "Cuenta corriente en t-1",
+          "shap_medio_abs": 0.02849098297689041,
+          "correlacion_valor_shap": -0.6602608905900216
+        },
+        {
+          "variable": "n_productos_t3",
+          "nombre": "Productos en t-3",
+          "shap_medio_abs": 0.027099741903420897,
+          "correlacion_valor_shap": 0.517645467677039
+        },
+        {
+          "variable": "cno_ant",
+          "nombre": "Cuenta nómina en t-1",
+          "shap_medio_abs": 0.013465648757141542,
+          "correlacion_valor_shap": 0.9048340961744931
+        },
+        {
+          "variable": "n_productos",
+          "nombre": "Número de productos",
+          "shap_medio_abs": 0.0134406099247839,
+          "correlacion_valor_shap": 0.6212637428771393
+        },
+        {
+          "variable": "canal_khe",
+          "nombre": "Canal KHE",
+          "shap_medio_abs": 0.011818599970973304,
+          "correlacion_valor_shap": -0.5248452055674674
+        }
+      ]
+    }
+  },
+  "advertencia": "Importancias SHAP de un modelo predictivo: dicen qué variables usa el modelo para anticipar una adquisición, no qué la causa."
+}
