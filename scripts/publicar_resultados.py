@@ -29,7 +29,9 @@ def main() -> None:
         raise SystemExit(f"No existe {origen}")
     if args.solo_parametros:
         archivos = [origen / n for n in CONGELADOS if (origen / n).exists()]
-        archivos += sorted((origen / "modelos").glob("*")) if (origen / "modelos").exists() else []
+        archivos += (
+            sorted((origen / "modelos").glob("*.json")) if (origen / "modelos").exists() else []
+        )
     else:
         archivos = [
             a
