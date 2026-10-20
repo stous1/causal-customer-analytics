@@ -1,0 +1,2564 @@
+{
+  "faltantes_por_mes": [
+    {
+      "mes": 0,
+      "filas": 625457,
+      "empleado": 0.01112,
+      "pais": 0.01112,
+      "sexo": 0.01112,
+      "edad": 0.01112,
+      "fecha_alta": 0.01112,
+      "antiguedad": 0.01112,
+      "tipo_cliente_mes": 0.01112,
+      "relacion_mes": 0.01112,
+      "canal": 0.0112,
+      "cod_prov": 0.017,
+      "activo": 0.01112,
+      "renta": 0.17839,
+      "segmento": 0.01123,
+      "nomina": 0.00497,
+      "nom_pens": 0.00497
+    },
+    {
+      "mes": 1,
+      "filas": 627394,
+      "empleado": 0.00947,
+      "pais": 0.00947,
+      "sexo": 0.00947,
+      "edad": 0.00947,
+      "fecha_alta": 0.00947,
+      "antiguedad": 0.00947,
+      "tipo_cliente_mes": 0.00947,
+      "relacion_mes": 0.00947,
+      "canal": 0.00953,
+      "cod_prov": 0.01533,
+      "activo": 0.00947,
+      "renta": 0.17711,
+      "segmento": 0.00957,
+      "nomina": 0.00454,
+      "nom_pens": 0.00454
+    },
+    {
+      "mes": 2,
+      "filas": 629209,
+      "empleado": 0.00809,
+      "pais": 0.00809,
+      "sexo": 0.0081,
+      "edad": 0.00809,
+      "fecha_alta": 0.00809,
+      "antiguedad": 0.00809,
+      "tipo_cliente_mes": 0.00809,
+      "relacion_mes": 0.00809,
+      "canal": 0.00815,
+      "cod_prov": 0.01394,
+      "activo": 0.00809,
+      "renta": 0.17595,
+      "segmento": 0.00818,
+      "nomina": 0.00435,
+      "nom_pens": 0.00435
+    },
+    {
+      "mes": 3,
+      "filas": 630367,
+      "empleado": 0.00681,
+      "pais": 0.00681,
+      "sexo": 0.00681,
+      "edad": 0.00681,
+      "fecha_alta": 0.00681,
+      "antiguedad": 0.00681,
+      "tipo_cliente_mes": 0.00681,
+      "relacion_mes": 0.00681,
+      "canal": 0.00686,
+      "cod_prov": 0.01264,
+      "activo": 0.00681,
+      "renta": 0.17492,
+      "segmento": 0.00685,
+      "nomina": 0.00434,
+      "nom_pens": 0.00434
+    },
+    {
+      "mes": 4,
+      "filas": 631957,
+      "empleado": 0.00569,
+      "pais": 0.00569,
+      "sexo": 0.0057,
+      "edad": 0.00569,
+      "fecha_alta": 0.00569,
+      "antiguedad": 0.0057,
+      "tipo_cliente_mes": 0.00569,
+      "relacion_mes": 0.00569,
+      "canal": 0.00574,
+      "cod_prov": 0.01151,
+      "activo": 0.00569,
+      "renta": 0.17393,
+      "segmento": 0.00573,
+      "nomina": 0.00444,
+      "nom_pens": 0.00444
+    },
+    {
+      "mes": 5,
+      "filas": 632110,
+      "empleado": 0.00294,
+      "pais": 0.00294,
+      "sexo": 0.00295,
+      "edad": 0.00294,
+      "fecha_alta": 0.00294,
+      "antiguedad": 0.00295,
+      "tipo_cliente_mes": 0.00294,
+      "relacion_mes": 0.00294,
+      "canal": 0.00298,
+      "cod_prov": 0.00876,
+      "activo": 0.00294,
+      "renta": 0.17155,
+      "segmento": 0.00296,
+      "nomina": 0.00289,
+      "nom_pens": 0.00289
+    },
+    {
+      "mes": 6,
+      "filas": 829817,
+      "empleado": 0.0,
+      "pais": 0.0,
+      "sexo": 0.0,
+      "edad": 0.0,
+      "fecha_alta": 0.0,
+      "antiguedad": 0.0,
+      "tipo_cliente_mes": 0.01977,
+      "relacion_mes": 0.01977,
+      "canal": 0.02299,
+      "cod_prov": 0.00479,
+      "activo": 0.0,
+      "renta": 0.17177,
+      "segmento": 0.02333,
+      "nomina": 0.0,
+      "nom_pens": 0.0
+    },
+    {
+      "mes": 7,
+      "filas": 843201,
+      "empleado": 0.0,
+      "pais": 0.0,
+      "sexo": 1e-05,
+      "edad": 0.0,
+      "fecha_alta": 0.0,
+      "antiguedad": 0.0,
+      "tipo_cliente_mes": 0.01363,
+      "relacion_mes": 0.01363,
+      "canal": 0.01981,
+      "cod_prov": 0.00472,
+      "activo": 0.0,
+      "renta": 0.17106,
+      "segmento": 0.02014,
+      "nomina": 0.0,
+      "nom_pens": 0.0
+    },
+    {
+      "mes": 8,
+      "filas": 865440,
+      "empleado": 0.0,
+      "pais": 0.0,
+      "sexo": 1e-05,
+      "edad": 0.0,
+      "fecha_alta": 0.0,
+      "antiguedad": 0.0,
+      "tipo_cliente_mes": 0.0261,
+      "relacion_mes": 0.0261,
+      "canal": 0.02951,
+      "cod_prov": 0.00459,
+      "activo": 0.0,
+      "renta": 0.18029,
+      "segmento": 0.02987,
+      "nomina": 0.0,
+      "nom_pens": 0.0
+    },
+    {
+      "mes": 9,
+      "filas": 892251,
+      "empleado": 0.0,
+      "pais": 0.0,
+      "sexo": 1e-05,
+      "edad": 0.0,
+      "fecha_alta": 0.0,
+      "antiguedad": 0.0,
+      "tipo_cliente_mes": 0.02981,
+      "relacion_mes": 0.02981,
+      "canal": 0.03416,
+      "cod_prov": 0.00446,
+      "activo": 0.0,
+      "renta": 0.20545,
+      "segmento": 0.03444,
+      "nomina": 0.0,
+      "nom_pens": 0.0
+    },
+    {
+      "mes": 10,
+      "filas": 906109,
+      "empleado": 0.0,
+      "pais": 0.0,
+      "sexo": 1e-05,
+      "edad": 0.0,
+      "fecha_alta": 0.0,
+      "antiguedad": 0.0,
+      "tipo_cliente_mes": 0.01546,
+      "relacion_mes": 0.01546,
+      "canal": 0.0197,
+      "cod_prov": 0.00439,
+      "activo": 0.0,
+      "renta": 0.21885,
+      "segmento": 0.02004,
+      "nomina": 0.0,
+      "nom_pens": 0.0
+    },
+    {
+      "mes": 11,
+      "filas": 912021,
+      "empleado": 0.0,
+      "pais": 0.0,
+      "sexo": 1e-05,
+      "edad": 0.0,
+      "fecha_alta": 0.0,
+      "antiguedad": 0.0,
+      "tipo_cliente_mes": 0.00737,
+      "relacion_mes": 0.00737,
+      "canal": 0.01063,
+      "cod_prov": 0.00436,
+      "activo": 0.0,
+      "renta": 0.22481,
+      "segmento": 0.01092,
+      "nomina": 0.0,
+      "nom_pens": 0.0
+    },
+    {
+      "mes": 12,
+      "filas": 916269,
+      "empleado": 0.0,
+      "pais": 0.0,
+      "sexo": 1e-05,
+      "edad": 0.0,
+      "fecha_alta": 0.0,
+      "antiguedad": 0.0,
+      "tipo_cliente_mes": 0.00659,
+      "relacion_mes": 0.00659,
+      "canal": 0.01018,
+      "cod_prov": 0.00434,
+      "activo": 0.0,
+      "renta": 0.23016,
+      "segmento": 0.0105,
+      "nomina": 0.0,
+      "nom_pens": 0.0
+    },
+    {
+      "mes": 13,
+      "filas": 920904,
+      "empleado": 0.0,
+      "pais": 0.0,
+      "sexo": 1e-05,
+      "edad": 0.0,
+      "fecha_alta": 0.0,
+      "antiguedad": 0.0,
+      "tipo_cliente_mes": 0.0059,
+      "relacion_mes": 0.0059,
+      "canal": 0.00921,
+      "cod_prov": 0.00433,
+      "activo": 0.0,
+      "renta": 0.23496,
+      "segmento": 0.00958,
+      "nomina": 0.0,
+      "nom_pens": 0.0
+    },
+    {
+      "mes": 14,
+      "filas": 925076,
+      "empleado": 0.0,
+      "pais": 0.0,
+      "sexo": 1e-05,
+      "edad": 0.0,
+      "fecha_alta": 0.0,
+      "antiguedad": 0.0,
+      "tipo_cliente_mes": 0.00503,
+      "relacion_mes": 0.00503,
+      "canal": 0.00817,
+      "cod_prov": 0.00431,
+      "activo": 0.0,
+      "renta": 0.23929,
+      "segmento": 0.00847,
+      "nomina": 0.0,
+      "nom_pens": 0.0
+    },
+    {
+      "mes": 15,
+      "filas": 928274,
+      "empleado": 0.0,
+      "pais": 0.0,
+      "sexo": 1e-05,
+      "edad": 0.0,
+      "fecha_alta": 0.0,
+      "antiguedad": 0.0,
+      "tipo_cliente_mes": 0.00441,
+      "relacion_mes": 0.00441,
+      "canal": 0.00728,
+      "cod_prov": 0.0043,
+      "activo": 0.0,
+      "renta": 0.24266,
+      "segmento": 0.00759,
+      "nomina": 0.0,
+      "nom_pens": 0.0
+    },
+    {
+      "mes": 16,
+      "filas": 931453,
+      "empleado": 0.0,
+      "pais": 0.0,
+      "sexo": 1e-05,
+      "edad": 0.0,
+      "fecha_alta": 0.0,
+      "antiguedad": 0.0,
+      "tipo_cliente_mes": 0.00431,
+      "relacion_mes": 0.00431,
+      "canal": 0.00719,
+      "cod_prov": 0.00429,
+      "activo": 0.0,
+      "renta": 0.24587,
+      "segmento": 0.00754,
+      "nomina": 0.0,
+      "nom_pens": 0.0
+    }
+  ],
+  "filas_vacias": {
+    "filas": 27734,
+    "clientes": 7340,
+    "ultimo_mes": 5,
+    "con_productos": 10362,
+    "por_mes": [
+      {
+        "mes": 0,
+        "filas": 6953
+      },
+      {
+        "mes": 1,
+        "filas": 5940
+      },
+      {
+        "mes": 2,
+        "filas": 5091
+      },
+      {
+        "mes": 3,
+        "filas": 4292
+      },
+      {
+        "mes": 4,
+        "filas": 3597
+      },
+      {
+        "mes": 5,
+        "filas": 1861
+      }
+    ],
+    "clientes_siempre_vacios": 7031
+  },
+  "inconsistencias": {
+    "por_cliente": {
+      "clientes": 956645,
+      "cambia_sexo": 46,
+      "cambia_fecha_alta": 17,
+      "cambia_canal": 3704,
+      "cambia_segmento": 25386,
+      "cambia_renta": 0,
+      "cambia_provincia": 3662,
+      "edad_salta_imposible": 260
+    },
+    "meses_consecutivos": {
+      "edad_disminuye": 22682,
+      "antiguedad_disminuye": 2150,
+      "huecos": 8243
+    },
+    "valores": {
+      "menores_de_18": 118796,
+      "menores_con_nomina": 57,
+      "mayores_de_100": 12869,
+      "alta_posterior_al_mes": 11586,
+      "alta_antes_de_1995": 0,
+      "antiguedad_no_cuadra_con_alta": 3797768,
+      "fallecido_activo": 16307,
+      "fallecido": 34762,
+      "universitario_mayor_de_60": 1163,
+      "nomina_sin_nom_pens": 0,
+      "nom_pens_sin_nomina": 64124,
+      "relacion_a_inactivo": 616758,
+      "renta_menor_1000": 0,
+      "filas": 13647309
+    }
+  },
+  "evolucion": [
+    {
+      "mes": 0,
+      "fecha": "2015-01-28",
+      "clientes": 625457,
+      "entran": 625457,
+      "ultimo_mes_en_panel": 1119,
+      "alta_este_mes": 2178,
+      "tasa_actividad": 0.5378,
+      "productos_medios": 1.7737,
+      "tasa_nomina": 0.0627,
+      "renta_faltante": 0.1784,
+      "frac_universitario": 0.3671,
+      "frac_menor_25": 0.2493
+    },
+    {
+      "mes": 1,
+      "fecha": "2015-02-28",
+      "clientes": 627394,
+      "entran": 4468,
+      "ultimo_mes_en_panel": 890,
+      "alta_este_mes": 2509,
+      "tasa_actividad": 0.5403,
+      "productos_medios": 1.7736,
+      "tasa_nomina": 0.0652,
+      "renta_faltante": 0.1771,
+      "frac_universitario": 0.3658,
+      "frac_menor_25": 0.2485
+    },
+    {
+      "mes": 2,
+      "fecha": "2015-03-28",
+      "clientes": 629209,
+      "entran": 3976,
+      "ultimo_mes_en_panel": 812,
+      "alta_este_mes": 2186,
+      "tasa_actividad": 0.5428,
+      "productos_medios": 1.7782,
+      "tasa_nomina": 0.0686,
+      "renta_faltante": 0.1759,
+      "frac_universitario": 0.3645,
+      "frac_menor_25": 0.2477
+    },
+    {
+      "mes": 3,
+      "fecha": "2015-04-28",
+      "clientes": 630367,
+      "entran": 3423,
+      "ultimo_mes_en_panel": 734,
+      "alta_este_mes": 1903,
+      "tasa_actividad": 0.5455,
+      "productos_medios": 1.7843,
+      "tasa_nomina": 0.0676,
+      "renta_faltante": 0.1749,
+      "frac_universitario": 0.3635,
+      "frac_menor_25": 0.2472
+    },
+    {
+      "mes": 4,
+      "fecha": "2015-05-28",
+      "clientes": 631957,
+      "entran": 3501,
+      "ultimo_mes_en_panel": 1659,
+      "alta_este_mes": 1995,
+      "tasa_actividad": 0.5484,
+      "productos_medios": 1.772,
+      "tasa_nomina": 0.0658,
+      "renta_faltante": 0.1739,
+      "frac_universitario": 0.3624,
+      "frac_menor_25": 0.2465
+    },
+    {
+      "mes": 5,
+      "fecha": "2015-06-28",
+      "clientes": 632110,
+      "entran": 3217,
+      "ultimo_mes_en_panel": 1817,
+      "alta_este_mes": 1872,
+      "tasa_actividad": 0.5512,
+      "productos_medios": 1.7916,
+      "tasa_nomina": 0.0691,
+      "renta_faltante": 0.1716,
+      "frac_universitario": 0.3614,
+      "frac_menor_25": 0.2461
+    },
+    {
+      "mes": 6,
+      "fecha": "2015-07-28",
+      "clientes": 829817,
+      "entran": 193115,
+      "ultimo_mes_en_panel": 1381,
+      "alta_este_mes": 16708,
+      "tasa_actividad": 0.429,
+      "productos_medios": 1.3834,
+      "tasa_nomina": 0.0542,
+      "renta_faltante": 0.1718,
+      "frac_universitario": 0.3361,
+      "frac_menor_25": 0.247
+    },
+    {
+      "mes": 7,
+      "fecha": "2015-08-28",
+      "clientes": 843201,
+      "entran": 14799,
+      "ultimo_mes_en_panel": 1353,
+      "alta_este_mes": 14378,
+      "tasa_actividad": 0.43,
+      "productos_medios": 1.366,
+      "tasa_nomina": 0.0507,
+      "renta_faltante": 0.1711,
+      "frac_universitario": 0.3433,
+      "frac_menor_25": 0.252
+    },
+    {
+      "mes": 8,
+      "fecha": "2015-09-28",
+      "clientes": 865440,
+      "entran": 23598,
+      "ultimo_mes_en_panel": 1696,
+      "alta_este_mes": 23180,
+      "tasa_actividad": 0.4286,
+      "productos_medios": 1.3562,
+      "tasa_nomina": 0.0505,
+      "renta_faltante": 0.1803,
+      "frac_universitario": 0.349,
+      "frac_menor_25": 0.2618
+    },
+    {
+      "mes": 9,
+      "fecha": "2015-10-28",
+      "clientes": 892251,
+      "entran": 28495,
+      "ultimo_mes_en_panel": 2005,
+      "alta_este_mes": 27985,
+      "tasa_actividad": 0.4233,
+      "productos_medios": 1.3427,
+      "tasa_nomina": 0.05,
+      "renta_faltante": 0.2055,
+      "frac_universitario": 0.3604,
+      "frac_menor_25": 0.2731
+    },
+    {
+      "mes": 10,
+      "fecha": "2015-11-28",
+      "clientes": 906109,
+      "entran": 15862,
+      "ultimo_mes_en_panel": 1753,
+      "alta_este_mes": 15294,
+      "tasa_actividad": 0.4213,
+      "productos_medios": 1.3329,
+      "tasa_nomina": 0.0496,
+      "renta_faltante": 0.2188,
+      "frac_universitario": 0.3753,
+      "frac_menor_25": 0.2754
+    },
+    {
+      "mes": 11,
+      "fecha": "2015-12-28",
+      "clientes": 912021,
+      "entran": 7667,
+      "ultimo_mes_en_panel": 3003,
+      "alta_este_mes": 7295,
+      "tasa_actividad": 0.4218,
+      "productos_medios": 1.3384,
+      "tasa_nomina": 0.0523,
+      "renta_faltante": 0.2248,
+      "frac_universitario": 0.3812,
+      "frac_menor_25": 0.2731
+    },
+    {
+      "mes": 12,
+      "fecha": "2016-01-28",
+      "clientes": 916269,
+      "entran": 7234,
+      "ultimo_mes_en_panel": 1902,
+      "alta_este_mes": 6814,
+      "tasa_actividad": 0.4232,
+      "productos_medios": 1.3165,
+      "tasa_nomina": 0.0439,
+      "renta_faltante": 0.2302,
+      "frac_universitario": 0.3828,
+      "frac_menor_25": 0.2675
+    },
+    {
+      "mes": 13,
+      "fecha": "2016-02-28",
+      "clientes": 920904,
+      "entran": 6473,
+      "ultimo_mes_en_panel": 1809,
+      "alta_este_mes": 5873,
+      "tasa_actividad": 0.4235,
+      "productos_medios": 1.328,
+      "tasa_nomina": 0.0494,
+      "renta_faltante": 0.235,
+      "frac_universitario": 0.3804,
+      "frac_menor_25": 0.2626
+    },
+    {
+      "mes": 14,
+      "fecha": "2016-03-28",
+      "clientes": 925076,
+      "entran": 5913,
+      "ultimo_mes_en_panel": 1648,
+      "alta_este_mes": 5064,
+      "tasa_actividad": 0.4248,
+      "productos_medios": 1.3307,
+      "tasa_nomina": 0.0508,
+      "renta_faltante": 0.2393,
+      "frac_universitario": 0.3782,
+      "frac_menor_25": 0.2566
+    },
+    {
+      "mes": 15,
+      "fecha": "2016-04-28",
+      "clientes": 928274,
+      "entran": 4754,
+      "ultimo_mes_en_panel": 1611,
+      "alta_este_mes": 4452,
+      "tasa_actividad": 0.425,
+      "productos_medios": 1.3292,
+      "tasa_nomina": 0.0497,
+      "renta_faltante": 0.2427,
+      "frac_universitario": 0.3764,
+      "frac_menor_25": 0.2514
+    },
+    {
+      "mes": 16,
+      "fecha": "2016-05-28",
+      "clientes": 931453,
+      "entran": 4693,
+      "ultimo_mes_en_panel": 931453,
+      "alta_este_mes": 4383,
+      "tasa_actividad": 0.4248,
+      "productos_medios": 1.3318,
+      "tasa_nomina": 0.0519,
+      "renta_faltante": 0.2459,
+      "frac_universitario": 0.3747,
+      "frac_menor_25": 0.2461
+    }
+  ],
+  "tenencia_por_mes": [
+    {
+      "mes": 0,
+      "ahor": 0.00014,
+      "aval": 3e-05,
+      "cco": 0.78,
+      "cder": 0.00048,
+      "cno": 0.09395,
+      "ctju": 0.0124,
+      "ctma": 0.01346,
+      "ctop": 0.17023,
+      "ctpp": 0.05787,
+      "deco": 0.00242,
+      "deme": 0.00259,
+      "dela": 0.05757,
+      "ecue": 0.09654,
+      "fond": 0.02217,
+      "hip": 0.00801,
+      "plan": 0.01188,
+      "pres": 0.00376,
+      "reca": 0.06122,
+      "tjcr": 0.05694,
+      "valo": 0.0324,
+      "viv": 0.00517,
+      "nomina": 0.06266,
+      "nom_pens": 0.06963,
+      "recibo": 0.15285
+    },
+    {
+      "mes": 1,
+      "ahor": 0.00014,
+      "aval": 3e-05,
+      "cco": 0.77887,
+      "cder": 0.00048,
+      "cno": 0.09568,
+      "ctju": 0.01226,
+      "ctma": 0.01311,
+      "ctop": 0.16902,
+      "ctpp": 0.05744,
+      "deco": 0.00328,
+      "deme": 0.00254,
+      "dela": 0.05678,
+      "ecue": 0.09736,
+      "fond": 0.02257,
+      "hip": 0.00797,
+      "plan": 0.01181,
+      "pres": 0.00374,
+      "reca": 0.06138,
+      "tjcr": 0.05475,
+      "valo": 0.03219,
+      "viv": 0.00513,
+      "nomina": 0.06524,
+      "nom_pens": 0.07175,
+      "recibo": 0.15069
+    },
+    {
+      "mes": 2,
+      "ahor": 0.00014,
+      "aval": 3e-05,
+      "cco": 0.77728,
+      "cder": 0.0005,
+      "cno": 0.09683,
+      "ctju": 0.0122,
+      "ctma": 0.01252,
+      "ctop": 0.16797,
+      "ctpp": 0.05697,
+      "deco": 0.00381,
+      "deme": 0.00248,
+      "dela": 0.05547,
+      "ecue": 0.0985,
+      "fond": 0.02312,
+      "hip": 0.00793,
+      "plan": 0.01174,
+      "pres": 0.00372,
+      "reca": 0.06155,
+      "tjcr": 0.05561,
+      "valo": 0.03182,
+      "viv": 0.00508,
+      "nomina": 0.06859,
+      "nom_pens": 0.07041,
+      "recibo": 0.1545
+    },
+    {
+      "mes": 3,
+      "ahor": 0.00014,
+      "aval": 3e-05,
+      "cco": 0.77585,
+      "cder": 0.0005,
+      "cno": 0.09871,
+      "ctju": 0.01214,
+      "ctma": 0.01187,
+      "ctop": 0.16683,
+      "ctpp": 0.05655,
+      "deco": 0.00387,
+      "deme": 0.0024,
+      "dela": 0.05538,
+      "ecue": 0.09943,
+      "fond": 0.02357,
+      "hip": 0.00788,
+      "plan": 0.01169,
+      "pres": 0.00372,
+      "reca": 0.06283,
+      "tjcr": 0.05709,
+      "valo": 0.03163,
+      "viv": 0.00503,
+      "nomina": 0.06762,
+      "nom_pens": 0.07424,
+      "recibo": 0.15596
+    },
+    {
+      "mes": 4,
+      "ahor": 0.00013,
+      "aval": 3e-05,
+      "cco": 0.77495,
+      "cder": 0.0005,
+      "cno": 0.10031,
+      "ctju": 0.0121,
+      "ctma": 0.01123,
+      "ctop": 0.16607,
+      "ctpp": 0.05617,
+      "deco": 0.00328,
+      "deme": 0.00234,
+      "dela": 0.05555,
+      "ecue": 0.10065,
+      "fond": 0.02388,
+      "hip": 0.00759,
+      "plan": 0.01165,
+      "pres": 0.00371,
+      "reca": 0.06321,
+      "tjcr": 0.05678,
+      "valo": 0.03158,
+      "viv": 0.00499,
+      "nomina": 0.06578,
+      "nom_pens": 0.06748,
+      "recibo": 0.15268
+    },
+    {
+      "mes": 5,
+      "ahor": 0.00013,
+      "aval": 3e-05,
+      "cco": 0.78155,
+      "cder": 0.0005,
+      "cno": 0.09467,
+      "ctju": 0.01202,
+      "ctma": 0.01095,
+      "ctop": 0.16548,
+      "ctpp": 0.05591,
+      "deco": 0.00285,
+      "deme": 0.00228,
+      "dela": 0.0555,
+      "ecue": 0.1014,
+      "fond": 0.02383,
+      "hip": 0.00747,
+      "plan": 0.01165,
+      "pres": 0.00323,
+      "reca": 0.06785,
+      "tjcr": 0.05782,
+      "valo": 0.03113,
+      "viv": 0.00496,
+      "nomina": 0.06905,
+      "nom_pens": 0.07568,
+      "recibo": 0.15607
+    },
+    {
+      "mes": 6,
+      "ahor": 0.0001,
+      "aval": 2e-05,
+      "cco": 0.60725,
+      "cder": 0.00039,
+      "cno": 0.07424,
+      "ctju": 0.00914,
+      "ctma": 0.00836,
+      "ctop": 0.12568,
+      "ctpp": 0.04235,
+      "deco": 0.00222,
+      "deme": 0.00168,
+      "dela": 0.04217,
+      "ecue": 0.0777,
+      "fond": 0.01809,
+      "hip": 0.00567,
+      "plan": 0.00885,
+      "pres": 0.00244,
+      "reca": 0.05035,
+      "tjcr": 0.04478,
+      "valo": 0.02374,
+      "viv": 0.00377,
+      "nomina": 0.05415,
+      "nom_pens": 0.05976,
+      "recibo": 0.12049
+    },
+    {
+      "mes": 7,
+      "ahor": 0.0001,
+      "aval": 2e-05,
+      "cco": 0.61056,
+      "cder": 0.00038,
+      "cno": 0.07471,
+      "ctju": 0.00896,
+      "ctma": 0.00829,
+      "ctop": 0.1234,
+      "ctpp": 0.04152,
+      "deco": 0.00226,
+      "deme": 0.00163,
+      "dela": 0.04144,
+      "ecue": 0.07684,
+      "fond": 0.01786,
+      "hip": 0.00557,
+      "plan": 0.00871,
+      "pres": 0.0024,
+      "reca": 0.04984,
+      "tjcr": 0.04367,
+      "valo": 0.02366,
+      "viv": 0.00369,
+      "nomina": 0.05074,
+      "nom_pens": 0.05581,
+      "recibo": 0.11391
+    },
+    {
+      "mes": 8,
+      "ahor": 9e-05,
+      "aval": 2e-05,
+      "cco": 0.61195,
+      "cder": 0.00037,
+      "cno": 0.07367,
+      "ctju": 0.00869,
+      "ctma": 0.0083,
+      "ctop": 0.1198,
+      "ctpp": 0.0402,
+      "deco": 0.00229,
+      "deme": 0.00157,
+      "dela": 0.04053,
+      "ecue": 0.07519,
+      "fond": 0.01739,
+      "hip": 0.00541,
+      "plan": 0.00848,
+      "pres": 0.00234,
+      "reca": 0.04884,
+      "tjcr": 0.04188,
+      "valo": 0.02329,
+      "viv": 0.00357,
+      "nomina": 0.05046,
+      "nom_pens": 0.05546,
+      "recibo": 0.11639
+    },
+    {
+      "mes": 9,
+      "ahor": 9e-05,
+      "aval": 2e-05,
+      "cco": 0.61139,
+      "cder": 0.00036,
+      "cno": 0.07335,
+      "ctju": 0.00843,
+      "ctma": 0.00835,
+      "ctop": 0.11577,
+      "ctpp": 0.03882,
+      "deco": 0.00219,
+      "deme": 0.0015,
+      "dela": 0.0394,
+      "ecue": 0.07342,
+      "fond": 0.01686,
+      "hip": 0.00523,
+      "plan": 0.00823,
+      "pres": 0.00226,
+      "reca": 0.048,
+      "tjcr": 0.04041,
+      "valo": 0.02333,
+      "viv": 0.00344,
+      "nomina": 0.05005,
+      "nom_pens": 0.0548,
+      "recibo": 0.11704
+    },
+    {
+      "mes": 10,
+      "ahor": 9e-05,
+      "aval": 2e-05,
+      "cco": 0.60898,
+      "cder": 0.00035,
+      "cno": 0.07436,
+      "ctju": 0.00828,
+      "ctma": 0.00865,
+      "ctop": 0.11356,
+      "ctpp": 0.038,
+      "deco": 0.00169,
+      "deme": 0.00143,
+      "dela": 0.0383,
+      "ecue": 0.07331,
+      "fond": 0.01661,
+      "hip": 0.00513,
+      "plan": 0.00807,
+      "pres": 0.00223,
+      "reca": 0.04769,
+      "tjcr": 0.04002,
+      "valo": 0.02293,
+      "viv": 0.00337,
+      "nomina": 0.04962,
+      "nom_pens": 0.05433,
+      "recibo": 0.11587
+    },
+    {
+      "mes": 11,
+      "ahor": 9e-05,
+      "aval": 2e-05,
+      "cco": 0.61079,
+      "cder": 0.00035,
+      "cno": 0.07263,
+      "ctju": 0.00831,
+      "ctma": 0.00898,
+      "ctop": 0.11248,
+      "ctpp": 0.03754,
+      "deco": 0.00105,
+      "deme": 0.00136,
+      "dela": 0.03844,
+      "ecue": 0.07403,
+      "fond": 0.01656,
+      "hip": 0.00508,
+      "plan": 0.00805,
+      "pres": 0.0022,
+      "reca": 0.0476,
+      "tjcr": 0.03968,
+      "valo": 0.02282,
+      "viv": 0.00333,
+      "nomina": 0.05229,
+      "nom_pens": 0.05707,
+      "recibo": 0.11767
+    },
+    {
+      "mes": 12,
+      "ahor": 9e-05,
+      "aval": 2e-05,
+      "cco": 0.61072,
+      "cder": 0.00035,
+      "cno": 0.07357,
+      "ctju": 0.00829,
+      "ctma": 0.00901,
+      "ctop": 0.1115,
+      "ctpp": 0.03711,
+      "deco": 0.00054,
+      "deme": 0.0013,
+      "dela": 0.03732,
+      "ecue": 0.07548,
+      "fond": 0.01643,
+      "hip": 0.00503,
+      "plan": 0.00803,
+      "pres": 0.00219,
+      "reca": 0.04783,
+      "tjcr": 0.03856,
+      "valo": 0.02335,
+      "viv": 0.00329,
+      "nomina": 0.04393,
+      "nom_pens": 0.04577,
+      "recibo": 0.11681
+    },
+    {
+      "mes": 13,
+      "ahor": 8e-05,
+      "aval": 2e-05,
+      "cco": 0.60811,
+      "cder": 0.00036,
+      "cno": 0.07453,
+      "ctju": 0.00827,
+      "ctma": 0.00913,
+      "ctop": 0.11047,
+      "ctpp": 0.0367,
+      "deco": 0.00038,
+      "deme": 0.00123,
+      "dela": 0.03676,
+      "ecue": 0.0769,
+      "fond": 0.01622,
+      "hip": 0.00498,
+      "plan": 0.008,
+      "pres": 0.00217,
+      "reca": 0.04816,
+      "tjcr": 0.03734,
+      "valo": 0.02341,
+      "viv": 0.00325,
+      "nomina": 0.04936,
+      "nom_pens": 0.05417,
+      "recibo": 0.118
+    },
+    {
+      "mes": 14,
+      "ahor": 8e-05,
+      "aval": 2e-05,
+      "cco": 0.60692,
+      "cder": 0.00034,
+      "cno": 0.07582,
+      "ctju": 0.00823,
+      "ctma": 0.00942,
+      "ctop": 0.10959,
+      "ctpp": 0.03635,
+      "deco": 0.00036,
+      "deme": 0.00116,
+      "dela": 0.03588,
+      "ecue": 0.0779,
+      "fond": 0.0161,
+      "hip": 0.00493,
+      "plan": 0.00796,
+      "pres": 0.00216,
+      "reca": 0.04811,
+      "tjcr": 0.03711,
+      "valo": 0.0232,
+      "viv": 0.00322,
+      "nomina": 0.05084,
+      "nom_pens": 0.05504,
+      "recibo": 0.1199
+    },
+    {
+      "mes": 15,
+      "ahor": 8e-05,
+      "aval": 2e-05,
+      "cco": 0.60522,
+      "cder": 0.00034,
+      "cno": 0.0773,
+      "ctju": 0.00819,
+      "ctma": 0.00932,
+      "ctop": 0.10885,
+      "ctpp": 0.03606,
+      "deco": 0.00035,
+      "deme": 0.00111,
+      "dela": 0.03486,
+      "ecue": 0.07943,
+      "fond": 0.01596,
+      "hip": 0.0049,
+      "plan": 0.00793,
+      "pres": 0.00214,
+      "reca": 0.04877,
+      "tjcr": 0.0375,
+      "valo": 0.02304,
+      "viv": 0.00319,
+      "nomina": 0.04971,
+      "nom_pens": 0.05459,
+      "recibo": 0.12038
+    },
+    {
+      "mes": 16,
+      "ahor": 8e-05,
+      "aval": 2e-05,
+      "cco": 0.60295,
+      "cder": 0.00034,
+      "cno": 0.07844,
+      "ctju": 0.00814,
+      "ctma": 0.00869,
+      "ctop": 0.10799,
+      "ctpp": 0.03572,
+      "deco": 0.00034,
+      "deme": 0.0011,
+      "dela": 0.03351,
+      "ecue": 0.08143,
+      "fond": 0.01577,
+      "hip": 0.00486,
+      "plan": 0.0079,
+      "pres": 0.00214,
+      "reca": 0.04889,
+      "tjcr": 0.03738,
+      "valo": 0.023,
+      "viv": 0.00318,
+      "nomina": 0.05186,
+      "nom_pens": 0.05674,
+      "recibo": 0.12137
+    }
+  ],
+  "altas_productos_por_mes": [
+    {
+      "mes": 1,
+      "clientes_con_mes_anterior": 622926,
+      "ahor": 1,
+      "aval": 1,
+      "cco": 2132,
+      "cder": 12,
+      "cno": 1884,
+      "ctju": 7,
+      "ctma": 291,
+      "ctop": 249,
+      "ctpp": 171,
+      "deco": 348,
+      "deme": 33,
+      "dela": 724,
+      "ecue": 1472,
+      "fond": 451,
+      "hip": 5,
+      "plan": 27,
+      "pres": 9,
+      "reca": 217,
+      "tjcr": 3471,
+      "valo": 259,
+      "viv": 8,
+      "nomina": 5659,
+      "nom_pens": 5656,
+      "recibo": 8285
+    },
+    {
+      "mes": 2,
+      "clientes_con_mes_anterior": 625094,
+      "ahor": 0,
+      "aval": 1,
+      "cco": 2293,
+      "cder": 15,
+      "cno": 1786,
+      "ctju": 18,
+      "ctma": 272,
+      "ctop": 284,
+      "ctpp": 165,
+      "deco": 481,
+      "deme": 23,
+      "dela": 814,
+      "ecue": 1594,
+      "fond": 570,
+      "hip": 7,
+      "plan": 24,
+      "pres": 12,
+      "reca": 217,
+      "tjcr": 5076,
+      "valo": 205,
+      "viv": 4,
+      "nomina": 4479,
+      "nom_pens": 4473,
+      "recibo": 9135
+    },
+    {
+      "mes": 3,
+      "clientes_con_mes_anterior": 626698,
+      "ahor": 0,
+      "aval": 1,
+      "cco": 2366,
+      "cder": 12,
+      "cno": 1984,
+      "ctju": 10,
+      "ctma": 217,
+      "ctop": 278,
+      "ctpp": 167,
+      "deco": 263,
+      "deme": 26,
+      "dela": 775,
+      "ecue": 1459,
+      "fond": 492,
+      "hip": 4,
+      "plan": 22,
+      "pres": 17,
+      "reca": 871,
+      "tjcr": 4627,
+      "valo": 194,
+      "viv": 5,
+      "nomina": 2663,
+      "nom_pens": 5628,
+      "recibo": 8346
+    },
+    {
+      "mes": 4,
+      "clientes_con_mes_anterior": 628135,
+      "ahor": 0,
+      "aval": 0,
+      "cco": 2264,
+      "cder": 7,
+      "cno": 1900,
+      "ctju": 10,
+      "ctma": 205,
+      "ctop": 289,
+      "ctpp": 172,
+      "deco": 238,
+      "deme": 25,
+      "dela": 885,
+      "ecue": 1461,
+      "fond": 396,
+      "hip": 9,
+      "plan": 21,
+      "pres": 11,
+      "reca": 343,
+      "tjcr": 4071,
+      "valo": 201,
+      "viv": 4,
+      "nomina": 3369,
+      "nom_pens": 3345,
+      "recibo": 7085
+    },
+    {
+      "mes": 5,
+      "clientes_con_mes_anterior": 628603,
+      "ahor": 0,
+      "aval": 0,
+      "cco": 6588,
+      "cder": 9,
+      "cno": 1857,
+      "ctju": 7,
+      "ctma": 210,
+      "ctop": 213,
+      "ctpp": 151,
+      "deco": 289,
+      "deme": 33,
+      "dela": 939,
+      "ecue": 1204,
+      "fond": 245,
+      "hip": 4,
+      "plan": 19,
+      "pres": 8,
+      "reca": 2931,
+      "tjcr": 4655,
+      "valo": 152,
+      "viv": 3,
+      "nomina": 5070,
+      "nom_pens": 8135,
+      "recibo": 9023
+    },
+    {
+      "mes": 6,
+      "clientes_con_mes_anterior": 630249,
+      "ahor": 0,
+      "aval": 0,
+      "cco": 3056,
+      "cder": 10,
+      "cno": 2771,
+      "ctju": 18,
+      "ctma": 191,
+      "ctop": 252,
+      "ctpp": 164,
+      "deco": 265,
+      "deme": 24,
+      "dela": 1138,
+      "ecue": 1085,
+      "fond": 204,
+      "hip": 6,
+      "plan": 27,
+      "pres": 5,
+      "reca": 589,
+      "tjcr": 4886,
+      "valo": 232,
+      "viv": 9,
+      "nomina": 4408,
+      "nom_pens": 4850,
+      "recibo": 9172
+    },
+    {
+      "mes": 7,
+      "clientes_con_mes_anterior": 828361,
+      "ahor": 0,
+      "aval": 0,
+      "cco": 5730,
+      "cder": 10,
+      "cno": 2412,
+      "ctju": 37,
+      "ctma": 240,
+      "ctop": 231,
+      "ctpp": 145,
+      "deco": 322,
+      "deme": 33,
+      "dela": 1024,
+      "ecue": 924,
+      "fond": 223,
+      "hip": 1,
+      "plan": 22,
+      "pres": 13,
+      "reca": 264,
+      "tjcr": 4379,
+      "valo": 445,
+      "viv": 2,
+      "nomina": 2950,
+      "nom_pens": 2968,
+      "recibo": 7115
+    },
+    {
+      "mes": 8,
+      "clientes_con_mes_anterior": 841795,
+      "ahor": 0,
+      "aval": 0,
+      "cco": 4389,
+      "cder": 7,
+      "cno": 1775,
+      "ctju": 22,
+      "ctma": 471,
+      "ctop": 191,
+      "ctpp": 122,
+      "deco": 387,
+      "deme": 30,
+      "dela": 1348,
+      "ecue": 1072,
+      "fond": 130,
+      "hip": 8,
+      "plan": 21,
+      "pres": 13,
+      "reca": 271,
+      "tjcr": 4463,
+      "valo": 328,
+      "viv": 2,
+      "nomina": 4683,
+      "nom_pens": 4753,
+      "recibo": 11210
+    },
+    {
+      "mes": 9,
+      "clientes_con_mes_anterior": 863690,
+      "ahor": 0,
+      "aval": 0,
+      "cco": 5682,
+      "cder": 3,
+      "cno": 2409,
+      "ctju": 43,
+      "ctma": 468,
+      "ctop": 223,
+      "ctpp": 153,
+      "deco": 349,
+      "deme": 22,
+      "dela": 1390,
+      "ecue": 1205,
+      "fond": 146,
+      "hip": 7,
+      "plan": 19,
+      "pres": 9,
+      "reca": 593,
+      "tjcr": 4461,
+      "valo": 911,
+      "viv": 2,
+      "nomina": 4818,
+      "nom_pens": 4790,
+      "recibo": 12100
+    },
+    {
+      "mes": 10,
+      "clientes_con_mes_anterior": 890170,
+      "ahor": 0,
+      "aval": 0,
+      "cco": 4670,
+      "cder": 6,
+      "cno": 2930,
+      "ctju": 31,
+      "ctma": 633,
+      "ctop": 209,
+      "ctpp": 140,
+      "deco": 110,
+      "deme": 1,
+      "dela": 908,
+      "ecue": 1588,
+      "fond": 169,
+      "hip": 3,
+      "plan": 37,
+      "pres": 8,
+      "reca": 416,
+      "tjcr": 4312,
+      "valo": 133,
+      "viv": 5,
+      "nomina": 4395,
+      "nom_pens": 4409,
+      "recibo": 10102
+    },
+    {
+      "mes": 11,
+      "clientes_con_mes_anterior": 904294,
+      "ahor": 0,
+      "aval": 0,
+      "cco": 9077,
+      "cder": 9,
+      "cno": 3869,
+      "ctju": 69,
+      "ctma": 592,
+      "ctop": 283,
+      "ctpp": 155,
+      "deco": 8,
+      "deme": 0,
+      "dela": 1199,
+      "ecue": 1816,
+      "fond": 205,
+      "hip": 3,
+      "plan": 157,
+      "pres": 11,
+      "reca": 235,
+      "tjcr": 4295,
+      "valo": 255,
+      "viv": 8,
+      "nomina": 5071,
+      "nom_pens": 5148,
+      "recibo": 9888
+    },
+    {
+      "mes": 12,
+      "clientes_con_mes_anterior": 908930,
+      "ahor": 0,
+      "aval": 1,
+      "cco": 4436,
+      "cder": 12,
+      "cno": 2155,
+      "ctju": 37,
+      "ctma": 545,
+      "ctop": 259,
+      "ctpp": 149,
+      "deco": 0,
+      "deme": 0,
+      "dela": 447,
+      "ecue": 2272,
+      "fond": 145,
+      "hip": 2,
+      "plan": 104,
+      "pres": 7,
+      "reca": 445,
+      "tjcr": 3792,
+      "valo": 739,
+      "viv": 2,
+      "nomina": 2437,
+      "nom_pens": 2892,
+      "recibo": 10078
+    },
+    {
+      "mes": 13,
+      "clientes_con_mes_anterior": 914329,
+      "ahor": 0,
+      "aval": 0,
+      "cco": 3988,
+      "cder": 9,
+      "cno": 2211,
+      "ctju": 48,
+      "ctma": 770,
+      "ctop": 217,
+      "ctpp": 141,
+      "deco": 1,
+      "deme": 0,
+      "dela": 684,
+      "ecue": 2342,
+      "fond": 82,
+      "hip": 6,
+      "plan": 45,
+      "pres": 6,
+      "reca": 557,
+      "tjcr": 3881,
+      "valo": 320,
+      "viv": 2,
+      "nomina": 9499,
+      "nom_pens": 12687,
+      "recibo": 11528
+    },
+    {
+      "mes": 14,
+      "clientes_con_mes_anterior": 919070,
+      "ahor": 0,
+      "aval": 0,
+      "cco": 4551,
+      "cder": 5,
+      "cno": 2428,
+      "ctju": 45,
+      "ctma": 643,
+      "ctop": 225,
+      "ctpp": 131,
+      "deco": 0,
+      "deme": 0,
+      "dela": 239,
+      "ecue": 1909,
+      "fond": 92,
+      "hip": 2,
+      "plan": 30,
+      "pres": 7,
+      "reca": 199,
+      "tjcr": 4401,
+      "valo": 163,
+      "viv": 4,
+      "nomina": 4974,
+      "nom_pens": 5038,
+      "recibo": 10117
+    },
+    {
+      "mes": 15,
+      "clientes_con_mes_anterior": 923414,
+      "ahor": 0,
+      "aval": 0,
+      "cco": 4027,
+      "cder": 5,
+      "cno": 2381,
+      "ctju": 40,
+      "ctma": 596,
+      "ctop": 240,
+      "ctpp": 161,
+      "deco": 0,
+      "deme": 0,
+      "dela": 99,
+      "ecue": 2249,
+      "fond": 83,
+      "hip": 5,
+      "plan": 21,
+      "pres": 4,
+      "reca": 807,
+      "tjcr": 4100,
+      "valo": 128,
+      "viv": 3,
+      "nomina": 3790,
+      "nom_pens": 4424,
+      "recibo": 9799
+    },
+    {
+      "mes": 16,
+      "clientes_con_mes_anterior": 926663,
+      "ahor": 1,
+      "aval": 0,
+      "cco": 3854,
+      "cder": 5,
+      "cno": 2346,
+      "ctju": 40,
+      "ctma": 512,
+      "ctop": 226,
+      "ctpp": 131,
+      "deco": 0,
+      "deme": 0,
+      "dela": 46,
+      "ecue": 2709,
+      "fond": 60,
+      "hip": 3,
+      "plan": 22,
+      "pres": 7,
+      "reca": 279,
+      "tjcr": 4248,
+      "valo": 183,
+      "viv": 7,
+      "nomina": 5488,
+      "nom_pens": 5513,
+      "recibo": 10163
+    }
+  ],
+  "transiciones_actividad": [
+    {
+      "mes": 1,
+      "activos_mes_anterior": 332419,
+      "tasa_activo_a_inactivo": 0.0,
+      "tasa_inactivo_a_activo": 0.0
+    },
+    {
+      "mes": 2,
+      "activos_mes_anterior": 335559,
+      "tasa_activo_a_inactivo": 0.0,
+      "tasa_inactivo_a_activo": 0.0
+    },
+    {
+      "mes": 3,
+      "activos_mes_anterior": 338515,
+      "tasa_activo_a_inactivo": 0.0,
+      "tasa_inactivo_a_activo": 0.0
+    },
+    {
+      "mes": 4,
+      "activos_mes_anterior": 341397,
+      "tasa_activo_a_inactivo": 0.0,
+      "tasa_inactivo_a_activo": 0.0
+    },
+    {
+      "mes": 5,
+      "activos_mes_anterior": 344396,
+      "tasa_activo_a_inactivo": 0.0,
+      "tasa_inactivo_a_activo": 0.0
+    },
+    {
+      "mes": 6,
+      "activos_mes_anterior": 347372,
+      "tasa_activo_a_inactivo": 0.0,
+      "tasa_inactivo_a_activo": 0.0
+    },
+    {
+      "mes": 7,
+      "activos_mes_anterior": 355855,
+      "tasa_activo_a_inactivo": 0.01492,
+      "tasa_inactivo_a_activo": 0.01187
+    },
+    {
+      "mes": 8,
+      "activos_mes_anterior": 362482,
+      "tasa_activo_a_inactivo": 0.01504,
+      "tasa_inactivo_a_activo": 0.01356
+    },
+    {
+      "mes": 9,
+      "activos_mes_anterior": 370796,
+      "tasa_activo_a_inactivo": 0.01584,
+      "tasa_inactivo_a_activo": 0.01286
+    },
+    {
+      "mes": 10,
+      "activos_mes_anterior": 377558,
+      "tasa_activo_a_inactivo": 0.01604,
+      "tasa_inactivo_a_activo": 0.0124
+    },
+    {
+      "mes": 11,
+      "activos_mes_anterior": 381613,
+      "tasa_activo_a_inactivo": 0.01585,
+      "tasa_inactivo_a_activo": 0.01283
+    },
+    {
+      "mes": 12,
+      "activos_mes_anterior": 384572,
+      "tasa_activo_a_inactivo": 0.01582,
+      "tasa_inactivo_a_activo": 0.01089
+    },
+    {
+      "mes": 13,
+      "activos_mes_anterior": 387652,
+      "tasa_activo_a_inactivo": 0.01502,
+      "tasa_inactivo_a_activo": 0.01089
+    },
+    {
+      "mes": 14,
+      "activos_mes_anterior": 389816,
+      "tasa_activo_a_inactivo": 0.01455,
+      "tasa_inactivo_a_activo": 0.01181
+    },
+    {
+      "mes": 15,
+      "activos_mes_anterior": 392800,
+      "tasa_activo_a_inactivo": 0.01401,
+      "tasa_inactivo_a_activo": 0.01027
+    },
+    {
+      "mes": 16,
+      "activos_mes_anterior": 394386,
+      "tasa_activo_a_inactivo": 0.01388,
+      "tasa_inactivo_a_activo": 0.00977
+    }
+  ],
+  "canales": {
+    "todos": [
+      {
+        "canal": "KHE",
+        "clientes": 254207
+      },
+      {
+        "canal": "KAT",
+        "clientes": 208389
+      },
+      {
+        "canal": "KFC",
+        "clientes": 203033
+      },
+      {
+        "canal": "KHQ",
+        "clientes": 76220
+      },
+      {
+        "canal": "KHM",
+        "clientes": 33247
+      },
+      {
+        "canal": "KFA",
+        "clientes": 26137
+      },
+      {
+        "canal": null,
+        "clientes": 18329
+      },
+      {
+        "canal": "KHN",
+        "clientes": 18265
+      },
+      {
+        "canal": "KHK",
+        "clientes": 17697
+      },
+      {
+        "canal": "KHD",
+        "clientes": 7474
+      },
+      {
+        "canal": "RED",
+        "clientes": 6298
+      },
+      {
+        "canal": "KAS",
+        "clientes": 5618
+      }
+    ],
+    "altas_en_el_panel": [
+      {
+        "canal": "KHQ",
+        "clientes": 76211,
+        "edad_media": 22.1,
+        "frac_universitario": 0.915
+      },
+      {
+        "canal": "KHM",
+        "clientes": 32379,
+        "edad_media": 38.2,
+        "frac_universitario": 0.131
+      },
+      {
+        "canal": "KHN",
+        "clientes": 16700,
+        "edad_media": 41.6,
+        "frac_universitario": 0.036
+      },
+      {
+        "canal": "KHK",
+        "clientes": 9000,
+        "edad_media": 39.5,
+        "frac_universitario": 0.114
+      },
+      {
+        "canal": null,
+        "clientes": 8701,
+        "edad_media": 38.6,
+        "frac_universitario": 0.305
+      },
+      {
+        "canal": "KHL",
+        "clientes": 1905,
+        "edad_media": 42.0,
+        "frac_universitario": 0.051
+      },
+      {
+        "canal": "KFC",
+        "clientes": 1693,
+        "edad_media": 27.6,
+        "frac_universitario": 0.006
+      },
+      {
+        "canal": "KHO",
+        "clientes": 1278,
+        "edad_media": 42.9,
+        "frac_universitario": 0.214
+      },
+      {
+        "canal": "KAT",
+        "clientes": 1230,
+        "edad_media": 42.2,
+        "frac_universitario": 0.01
+      },
+      {
+        "canal": "RED",
+        "clientes": 779,
+        "edad_media": 37.5,
+        "frac_universitario": 0.164
+      },
+      {
+        "canal": "KFA",
+        "clientes": 730,
+        "edad_media": 46.2,
+        "frac_universitario": 0.019
+      },
+      {
+        "canal": "KHF",
+        "clientes": 162,
+        "edad_media": 27.5,
+        "frac_universitario": 0.852
+      }
+    ]
+  },
+  "inicios_nomina": [
+    {
+      "mes": 3,
+      "elegibles": 570180,
+      "inician": 1418
+    },
+    {
+      "mes": 4,
+      "elegibles": 571879,
+      "inician": 1400
+    },
+    {
+      "mes": 5,
+      "elegibles": 572631,
+      "inician": 1652
+    },
+    {
+      "mes": 6,
+      "elegibles": 575342,
+      "inician": 2442
+    },
+    {
+      "mes": 7,
+      "elegibles": 576723,
+      "inician": 1633
+    },
+    {
+      "mes": 8,
+      "elegibles": 578939,
+      "inician": 1395
+    },
+    {
+      "mes": 9,
+      "elegibles": 776419,
+      "inician": 2100
+    },
+    {
+      "mes": 10,
+      "elegibles": 789116,
+      "inician": 2130
+    },
+    {
+      "mes": 11,
+      "elegibles": 810197,
+      "inician": 2324
+    },
+    {
+      "mes": 12,
+      "elegibles": 834525,
+      "inician": 1438
+    },
+    {
+      "mes": 13,
+      "elegibles": 848580,
+      "inician": 1751
+    },
+    {
+      "mes": 14,
+      "elegibles": 854106,
+      "inician": 1786
+    },
+    {
+      "mes": 15,
+      "elegibles": 859814,
+      "inician": 1838
+    },
+    {
+      "mes": 16,
+      "elegibles": 864279,
+      "inician": 2220
+    }
+  ],
+  "cambios_mes_a_mes": [
+    {
+      "mes": 1,
+      "clientes": 622926,
+      "activo": 0.0,
+      "antiguedad": 0.0,
+      "edad": 0.0,
+      "segmento": 0.0,
+      "relacion_mes": 0.0,
+      "nomina": 0.01673,
+      "tjcr": 0.01328,
+      "recibo": 0.0283,
+      "cco": 0.01149
+    },
+    {
+      "mes": 2,
+      "clientes": 625094,
+      "activo": 0.0,
+      "antiguedad": 0.0,
+      "edad": 0.0,
+      "segmento": 0.0,
+      "relacion_mes": 0.0,
+      "nomina": 0.01203,
+      "tjcr": 0.01538,
+      "recibo": 0.02503,
+      "cco": 0.01211
+    },
+    {
+      "mes": 3,
+      "clientes": 626698,
+      "activo": 0.0,
+      "antiguedad": 0.0,
+      "edad": 0.0,
+      "segmento": 0.0,
+      "relacion_mes": 0.0,
+      "nomina": 0.01056,
+      "tjcr": 0.01319,
+      "recibo": 0.02491,
+      "cco": 0.01216
+    },
+    {
+      "mes": 4,
+      "clientes": 628135,
+      "activo": 0.0,
+      "antiguedad": 0.0,
+      "edad": 0.0,
+      "segmento": 0.0,
+      "relacion_mes": 0.0,
+      "nomina": 0.01362,
+      "tjcr": 0.01332,
+      "recibo": 0.0255,
+      "cco": 0.01106
+    },
+    {
+      "mes": 5,
+      "clientes": 628603,
+      "activo": 0.0,
+      "antiguedad": 0.0,
+      "edad": 0.0,
+      "segmento": 0.0,
+      "relacion_mes": 0.0,
+      "nomina": 0.01293,
+      "tjcr": 0.01369,
+      "recibo": 0.02526,
+      "cco": 0.0178
+    },
+    {
+      "mes": 6,
+      "clientes": 630249,
+      "activo": 0.0,
+      "antiguedad": 0.0,
+      "edad": 0.0,
+      "segmento": 0.0,
+      "relacion_mes": 0.0,
+      "nomina": 0.01201,
+      "tjcr": 0.01475,
+      "recibo": 0.02723,
+      "cco": 0.01388
+    },
+    {
+      "mes": 7,
+      "clientes": 828361,
+      "activo": 0.01318,
+      "antiguedad": 0.99355,
+      "edad": 0.08405,
+      "segmento": 0.02327,
+      "relacion_mes": 0.03286,
+      "nomina": 0.00975,
+      "tjcr": 0.01099,
+      "recibo": 0.02197,
+      "cco": 0.0137
+    },
+    {
+      "mes": 8,
+      "clientes": 841795,
+      "activo": 0.0142,
+      "antiguedad": 0.98468,
+      "edad": 0.08332,
+      "segmento": 0.02,
+      "relacion_mes": 0.0351,
+      "nomina": 0.01013,
+      "tjcr": 0.01129,
+      "recibo": 0.02114,
+      "cco": 0.01169
+    },
+    {
+      "mes": 9,
+      "clientes": 863690,
+      "activo": 0.01414,
+      "antiguedad": 0.98067,
+      "edad": 0.08313,
+      "segmento": 0.03005,
+      "relacion_mes": 0.05316,
+      "nomina": 0.01007,
+      "tjcr": 0.01056,
+      "recibo": 0.02377,
+      "cco": 0.0133
+    },
+    {
+      "mes": 10,
+      "clientes": 890170,
+      "activo": 0.01394,
+      "antiguedad": 0.99614,
+      "edad": 0.08171,
+      "segmento": 0.03505,
+      "relacion_mes": 0.06039,
+      "nomina": 0.0096,
+      "tjcr": 0.00945,
+      "recibo": 0.0221,
+      "cco": 0.01279
+    },
+    {
+      "mes": 11,
+      "clientes": 904294,
+      "activo": 0.0141,
+      "antiguedad": 0.99551,
+      "edad": 0.08351,
+      "segmento": 0.0209,
+      "relacion_mes": 0.05808,
+      "nomina": 0.00826,
+      "tjcr": 0.00959,
+      "recibo": 0.01933,
+      "cco": 0.01759
+    },
+    {
+      "mes": 12,
+      "clientes": 908930,
+      "activo": 0.01297,
+      "antiguedad": 0.95439,
+      "edad": 0.08577,
+      "segmento": 0.01163,
+      "relacion_mes": 0.03682,
+      "nomina": 0.01359,
+      "tjcr": 0.00928,
+      "recibo": 0.02252,
+      "cco": 0.01111
+    },
+    {
+      "mes": 13,
+      "clientes": 914329,
+      "activo": 0.01264,
+      "antiguedad": 0.99841,
+      "edad": 0.08315,
+      "segmento": 0.00982,
+      "relacion_mes": 0.02574,
+      "nomina": 0.01513,
+      "tjcr": 0.00953,
+      "recibo": 0.02348,
+      "cco": 0.01101
+    },
+    {
+      "mes": 14,
+      "clientes": 919070,
+      "activo": 0.01297,
+      "antiguedad": 0.99813,
+      "edad": 0.09226,
+      "segmento": 0.00942,
+      "relacion_mes": 0.02071,
+      "nomina": 0.00913,
+      "tjcr": 0.00965,
+      "recibo": 0.0196,
+      "cco": 0.01114
+    },
+    {
+      "mes": 15,
+      "clientes": 923414,
+      "activo": 0.01186,
+      "antiguedad": 0.95511,
+      "edad": 0.08545,
+      "segmento": 0.00822,
+      "relacion_mes": 0.02012,
+      "nomina": 0.00922,
+      "tjcr": 0.00837,
+      "recibo": 0.02034,
+      "cco": 0.01019
+    },
+    {
+      "mes": 16,
+      "clientes": 926663,
+      "activo": 0.01152,
+      "antiguedad": 0.99883,
+      "edad": 0.09321,
+      "segmento": 0.00726,
+      "relacion_mes": 0.01836,
+      "nomina": 0.00954,
+      "tjcr": 0.00916,
+      "recibo": 0.02056,
+      "cco": 0.0103
+    }
+  ],
+  "registro_tardio": {
+    "clientes_nuevos": 123046,
+    "canal_alta": 0.992,
+    "segmento_alta": 1.0,
+    "relacion_mes_alta": 0.9285,
+    "renta_alta": 0.718,
+    "cod_prov_alta": 0.0001,
+    "sexo_alta": 0.0,
+    "edad_alta": 0.0,
+    "canal_siguiente": 0.0031,
+    "segmento_siguiente": 0.0006,
+    "relacion_mes_siguiente": 0.0,
+    "renta_siguiente": 0.718,
+    "cod_prov_siguiente": 0.0001,
+    "sexo_siguiente": 0.0,
+    "edad_siguiente": 0.0
+  },
+  "conteos_disenos": {
+    "d_nomina": {
+      "por_mes": [
+        {
+          "t": 9,
+          "tratados": 2096,
+          "controles": 38081
+        },
+        {
+          "t": 10,
+          "tratados": 2126,
+          "controles": 38482
+        },
+        {
+          "t": 11,
+          "tratados": 2317,
+          "controles": 39426
+        },
+        {
+          "t": 12,
+          "tratados": 1434,
+          "controles": 40867
+        },
+        {
+          "t": 13,
+          "tratados": 1750,
+          "controles": 41946
+        }
+      ],
+      "tratados": 9723,
+      "controles": 198802
+    },
+    "d_nomina_placebo": {
+      "por_mes": [
+        {
+          "t": 9,
+          "tratados": 1171,
+          "controles": 37904
+        },
+        {
+          "t": 10,
+          "tratados": 1211,
+          "controles": 38564
+        },
+        {
+          "t": 11,
+          "tratados": 1128,
+          "controles": 39333
+        },
+        {
+          "t": 12,
+          "tratados": 1395,
+          "controles": 40664
+        }
+      ],
+      "tratados": 4905,
+      "controles": 156465
+    },
+    "d_canal": {
+      "por_mes": [
+        {
+          "canal": "KHM",
+          "t": 6,
+          "clientes": 1924
+        },
+        {
+          "canal": "KHM",
+          "t": 7,
+          "clientes": 1918
+        },
+        {
+          "canal": "KHM",
+          "t": 8,
+          "clientes": 2416
+        },
+        {
+          "canal": "KHM",
+          "t": 9,
+          "clientes": 2584
+        },
+        {
+          "canal": "KHN",
+          "t": 6,
+          "clientes": 964
+        },
+        {
+          "canal": "KHN",
+          "t": 7,
+          "clientes": 942
+        },
+        {
+          "canal": "KHN",
+          "t": 8,
+          "clientes": 1265
+        },
+        {
+          "canal": "KHN",
+          "t": 9,
+          "clientes": 1309
+        },
+        {
+          "canal": "KHQ",
+          "t": 6,
+          "clientes": 12523
+        },
+        {
+          "canal": "KHQ",
+          "t": 7,
+          "clientes": 10311
+        },
+        {
+          "canal": "KHQ",
+          "t": 8,
+          "clientes": 17856
+        },
+        {
+          "canal": "KHQ",
+          "t": 9,
+          "clientes": 22250
+        }
+      ],
+      "por_canal": {
+        "KHM": 8842,
+        "KHN": 4480,
+        "KHQ": 62940
+      }
+    },
+    "d_producto_recibo": {
+      "por_mes": [
+        {
+          "t": 9,
+          "tratados": 5038,
+          "controles": 11365
+        },
+        {
+          "t": 10,
+          "tratados": 4106,
+          "controles": 11617
+        },
+        {
+          "t": 11,
+          "tratados": 3851,
+          "controles": 11734
+        },
+        {
+          "t": 12,
+          "tratados": 3753,
+          "controles": 12257
+        },
+        {
+          "t": 13,
+          "tratados": 3799,
+          "controles": 12235
+        }
+      ],
+      "tratados": 20547,
+      "controles": 59208
+    },
+    "d_producto_recibo_placebo": {
+      "por_mes": [
+        {
+          "t": 9,
+          "tratados": 2046,
+          "controles": 10738
+        },
+        {
+          "t": 10,
+          "tratados": 1949,
+          "controles": 11148
+        },
+        {
+          "t": 11,
+          "tratados": 1820,
+          "controles": 11561
+        },
+        {
+          "t": 12,
+          "tratados": 2036,
+          "controles": 11609
+        }
+      ],
+      "tratados": 7851,
+      "controles": 45056
+    },
+    "d_producto_tjcr": {
+      "por_mes": [
+        {
+          "t": 9,
+          "tratados": 1875,
+          "controles": 14900
+        },
+        {
+          "t": 10,
+          "tratados": 1879,
+          "controles": 15192
+        },
+        {
+          "t": 11,
+          "tratados": 1951,
+          "controles": 15495
+        },
+        {
+          "t": 12,
+          "tratados": 1819,
+          "controles": 16144
+        },
+        {
+          "t": 13,
+          "tratados": 1624,
+          "controles": 16219
+        }
+      ],
+      "tratados": 9148,
+      "controles": 77950
+    },
+    "d_producto_tjcr_placebo": {
+      "por_mes": [
+        {
+          "t": 9,
+          "tratados": 851,
+          "controles": 14658
+        },
+        {
+          "t": 10,
+          "tratados": 910,
+          "controles": 15087
+        },
+        {
+          "t": 11,
+          "tratados": 868,
+          "controles": 15582
+        },
+        {
+          "t": 12,
+          "tratados": 1027,
+          "controles": 15769
+        }
+      ],
+      "tratados": 3656,
+      "controles": 61096
+    },
+    "d_producto_ecue": {
+      "por_mes": [
+        {
+          "t": 9,
+          "tratados": 764,
+          "controles": 14096
+        },
+        {
+          "t": 10,
+          "tratados": 1147,
+          "controles": 14298
+        },
+        {
+          "t": 11,
+          "tratados": 1324,
+          "controles": 14565
+        },
+        {
+          "t": 12,
+          "tratados": 1632,
+          "controles": 15208
+        },
+        {
+          "t": 13,
+          "tratados": 1778,
+          "controles": 15131
+        }
+      ],
+      "tratados": 6645,
+      "controles": 73298
+    },
+    "d_producto_ecue_placebo": {
+      "por_mes": [
+        {
+          "t": 9,
+          "tratados": 980,
+          "controles": 13762
+        },
+        {
+          "t": 10,
+          "tratados": 875,
+          "controles": 14232
+        },
+        {
+          "t": 11,
+          "tratados": 951,
+          "controles": 14572
+        },
+        {
+          "t": 12,
+          "tratados": 1085,
+          "controles": 14707
+        }
+      ],
+      "tratados": 3891,
+      "controles": 57273
+    }
+  },
+  "disenos": {
+    "nomina": {
+      "nombre": "nomina",
+      "pregunta": "¿Empezar a recibir la nómina en el banco vuelve más activo al cliente y aumenta su tenencia de otros productos, o los más activos son los que la traen?",
+      "tratamiento": "Inicia la nómina en t: nomina_t = 1 con nomina = 0 en t-1, t-2 y t-3.",
+      "control": "No inicia la nómina en t (nomina_t = 0); puede iniciarla después (ITT).",
+      "elegibilidad": [
+        "Presente en el panel en t-3 ... t+3",
+        "Sin nómina en t-1, t-2 y t-3",
+        "Edad >= 18 en t-1, no fallecido, actividad conocida en t-1"
+      ],
+      "resultados": {
+        "y_activo_3": "Activo en t+3 (ind_actividad_cliente)",
+        "y_dprod_3": "Cambio en otros productos entre t-1 y t+3 (sin nómina, pensiones ni cuenta nómina)",
+        "y_activo_1": "Activo en t+1 (secundario)"
+      },
+      "meses_t": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "covariables": "Demografía y los 24 productos en t-1; actividad en t-1, t-2 y t-3; otros productos en t-1, t-3 y t-6; mes t.",
+      "razon_controles": 20,
+      "placebo": "Adelanto: entre elegibles sin nómina en t ... t+3, inician en t+4 contra no inician en t+4; resultados en t+3, antes del inicio (efecto verdadero = 0).",
+      "notas": [
+        "La actividad puede incluir mecánicamente el abono de la nómina: un efecto sobre actividad puede ser de definición.",
+        "Cohortes t = 9 ... 13 para tener actividad real en t-3 (mes >= 6)."
+      ]
+    },
+    "canal": {
+      "nombre": "canal",
+      "pregunta": "¿El canal de vinculación influye en cuánto tiempo se mantiene activo el cliente?",
+      "tratamiento": "Canal de vinculación KHM (tratado) frente a KHN (referencia).",
+      "control": "Canal KHN.",
+      "elegibilidad": [
+        "Alta (fecha_alta) en julio a octubre de 2015 (meses 6 a 9)",
+        "Primer mes en el panel = mes de alta (covariables medidas al entrar)",
+        "Presente en el panel de alta+1 a alta+7",
+        "Edad >= 18 al entrar"
+      ],
+      "resultados": {
+        "y_meses_activo_6": "Meses activo entre alta+2 y alta+7 (0 a 6)",
+        "y_activo_6": "Activo en alta+7"
+      },
+      "meses_t": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "covariables": "Al entrar (canal, segmento y renta en alta+1, porque se registran con un mes de retraso): edad, sexo, renta, segmento, extranjero, residente, empleado del banco, provincia y mes de alta. Los productos del mes de alta no se ajustan: pueden ser parte del efecto del canal (mediadores).",
+      "razon_controles": 0,
+      "placebo": "No hay un placebo de diseño limpio: el canal se fija al entrar.",
+      "notas": [
+        "Contraste secundario: KHQ frente a KHM con edad 18 a 30 (positividad débil: KHQ es el canal universitario).",
+        "Los códigos de canal están anonimizados: no se sabe qué canal es cada uno."
+      ]
+    },
+    "producto_recibo": {
+      "nombre": "producto_recibo",
+      "pregunta": "¿Adquirir débito automático frena el paso de activo a inactivo?",
+      "tratamiento": "Adquiere recibo en t: recibo_t = 1 con recibo = 0 en t-1, t-2 y t-3.",
+      "control": "No adquiere recibo en t; puede adquirirlo después (ITT).",
+      "elegibilidad": [
+        "Presente en t-3 ... t+3",
+        "Activo en t-1 y t-2",
+        "Sin recibo en t-1, t-2 y t-3",
+        "Edad >= 18 en t-1, no fallecido"
+      ],
+      "resultados": {
+        "y_inactivo_3": "Inactivo en t+3",
+        "y_inactivo_1": "Inactivo en t+1 (secundario)"
+      },
+      "meses_t": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "covariables": "Demografía y los 24 productos en t-1; actividad en t-3; otros productos en t-1, t-3 y t-6; nómina en t-1; mes t.",
+      "razon_controles": 20,
+      "placebo": "Adelanto: elegibles sin recibo en t ... t+3; adquieren en t+4 contra no; resultados en t+3.",
+      "notas": [
+        "Un débito automático o una tarjeta generan movimientos: parte del efecto puede ser mecánico sobre la definición de actividad."
+      ]
+    },
+    "producto_tjcr": {
+      "nombre": "producto_tjcr",
+      "pregunta": "¿Adquirir tarjeta de crédito frena el paso de activo a inactivo?",
+      "tratamiento": "Adquiere tjcr en t: tjcr_t = 1 con tjcr = 0 en t-1, t-2 y t-3.",
+      "control": "No adquiere tjcr en t; puede adquirirlo después (ITT).",
+      "elegibilidad": [
+        "Presente en t-3 ... t+3",
+        "Activo en t-1 y t-2",
+        "Sin tjcr en t-1, t-2 y t-3",
+        "Edad >= 18 en t-1, no fallecido"
+      ],
+      "resultados": {
+        "y_inactivo_3": "Inactivo en t+3",
+        "y_inactivo_1": "Inactivo en t+1 (secundario)"
+      },
+      "meses_t": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "covariables": "Demografía y los 24 productos en t-1; actividad en t-3; otros productos en t-1, t-3 y t-6; nómina en t-1; mes t.",
+      "razon_controles": 20,
+      "placebo": "Adelanto: elegibles sin tjcr en t ... t+3; adquieren en t+4 contra no; resultados en t+3.",
+      "notas": [
+        "Un débito automático o una tarjeta generan movimientos: parte del efecto puede ser mecánico sobre la definición de actividad."
+      ]
+    },
+    "producto_ecue": {
+      "nombre": "producto_ecue",
+      "pregunta": "¿Adquirir cuenta electrónica frena el paso de activo a inactivo?",
+      "tratamiento": "Adquiere ecue en t: ecue_t = 1 con ecue = 0 en t-1, t-2 y t-3.",
+      "control": "No adquiere ecue en t; puede adquirirlo después (ITT).",
+      "elegibilidad": [
+        "Presente en t-3 ... t+3",
+        "Activo en t-1 y t-2",
+        "Sin ecue en t-1, t-2 y t-3",
+        "Edad >= 18 en t-1, no fallecido"
+      ],
+      "resultados": {
+        "y_inactivo_3": "Inactivo en t+3",
+        "y_inactivo_1": "Inactivo en t+1 (secundario)"
+      },
+      "meses_t": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "covariables": "Demografía y los 24 productos en t-1; actividad en t-3; otros productos en t-1, t-3 y t-6; nómina en t-1; mes t.",
+      "razon_controles": 20,
+      "placebo": "Adelanto: elegibles sin ecue en t ... t+3; adquieren en t+4 contra no; resultados en t+3.",
+      "notas": [
+        "Un débito automático o una tarjeta generan movimientos: parte del efecto puede ser mecánico sobre la definición de actividad."
+      ]
+    }
+  },
+  "carga": {
+    "filas": 13647309,
+    "meses": 17,
+    "clientes": 956645,
+    "duplicados_cliente_mes": 0,
+    "caracteres_reemplazo": 0,
+    "crudo": {
+      "faltantes_por_columna": {
+        "ind_empleado": 27734,
+        "pais_residencia": 27734,
+        "sexo": 27804,
+        "age": 27734,
+        "fecha_alta": 27734,
+        "ind_nuevo": 27734,
+        "antiguedad": 27734,
+        "indrel": 27734,
+        "ult_fec_cli_1t": 13622516,
+        "indrel_1mes": 149781,
+        "tiprel_1mes": 149781,
+        "indresi": 27734,
+        "indext": 27734,
+        "conyuemp": 13645501,
+        "canal_entrada": 186126,
+        "indfall": 27734,
+        "tipodom": 27735,
+        "cod_prov": 93591,
+        "nomprov": 93591,
+        "ind_actividad_cliente": 27734,
+        "renta": 2794375,
+        "segmento": 189368,
+        "ind_nomina_ult1": 16063,
+        "ind_nom_pens_ult1": 16063
+      },
+      "formas_indrel_1mes": {
+        "1.0": 9133383,
+        "1": 4357298,
+        "None": 149781,
+        "3.0": 2780,
+        "3": 1570,
+        "P": 874,
+        "2.0": 740,
+        "2": 577,
+        "4.0": 223,
+        "4": 83
+      },
+      "antiguedad_menos_999999": 38,
+      "edad_con_espacios": 13631390,
+      "renta_no_numerica": 0
+    }
+  }
+}

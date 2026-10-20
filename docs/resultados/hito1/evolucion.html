@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@6"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@7"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "vconcat": [{"layer": [{"data": {"name": "data-964476257f3fe069a3613b3674765a82"}, "mark": {"type": "rect", "color": "#8a8f98", "opacity": 0.12}, "encoding": {"x": {"field": "a", "type": "quantitative"}, "x2": {"field": "b"}}}, {"data": {"name": "data-8316cf4e799561fa4fcd6e67c68fe238"}, "mark": {"type": "line", "point": true}, "encoding": {"x": {"field": "mes", "scale": {"nice": false, "zero": false}, "title": "Mes", "type": "quantitative"}, "y": {"axis": {}, "field": "clientes", "title": "Clientes", "type": "quantitative"}}}], "height": 200, "title": "Clientes en el panel", "width": 560}, {"layer": [{"data": {"name": "data-964476257f3fe069a3613b3674765a82"}, "mark": {"type": "rect", "color": "#8a8f98", "opacity": 0.12}, "encoding": {"x": {"field": "a", "type": "quantitative"}, "x2": {"field": "b"}}}, {"data": {"name": "data-8316cf4e799561fa4fcd6e67c68fe238"}, "mark": {"type": "line", "point": true}, "encoding": {"x": {"field": "mes", "scale": {"nice": false, "zero": false}, "title": "Mes", "type": "quantitative"}, "y": {"axis": {"format": "%"}, "field": "tasa_actividad", "title": "Activos", "type": "quantitative"}}}], "height": 200, "title": "Tasa de actividad (meses 0 a 5: copia de julio)", "width": 560}], "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json", "datasets": {"data-964476257f3fe069a3613b3674765a82": [{"a": -0.5, "b": 5.5}], "data-8316cf4e799561fa4fcd6e67c68fe238": [{"mes": 0.0, "fecha": "2015-01-01T00:00:00", "clientes": 625457, "entran": 625457, "ultimo_mes_en_panel": 1119, "alta_este_mes": 2178, "tasa_actividad": 0.5378, "productos_medios": 1.7737, "tasa_nomina": 0.0627, "renta_faltante": 0.1784, "frac_universitario": 0.3671, "frac_menor_25": 0.2493}, {"mes": 1.0, "fecha": "2015-02-01T00:00:00", "clientes": 627394, "entran": 4468, "ultimo_mes_en_panel": 890, "alta_este_mes": 2509, "tasa_actividad": 0.5403, "productos_medios": 1.7736, "tasa_nomina": 0.0652, "renta_faltante": 0.1771, "frac_universitario": 0.3658, "frac_menor_25": 0.2485}, {"mes": 2.0, "fecha": "2015-03-01T00:00:00", "clientes": 629209, "entran": 3976, "ultimo_mes_en_panel": 812, "alta_este_mes": 2186, "tasa_actividad": 0.5428, "productos_medios": 1.7782, "tasa_nomina": 0.0686, "renta_faltante": 0.1759, "frac_universitario": 0.3645, "frac_menor_25": 0.2477}, {"mes": 3.0, "fecha": "2015-04-01T00:00:00", "clientes": 630367, "entran": 3423, "ultimo_mes_en_panel": 734, "alta_este_mes": 1903, "tasa_actividad": 0.5455, "productos_medios": 1.7843, "tasa_nomina": 0.0676, "renta_faltante": 0.1749, "frac_universitario": 0.3635, "frac_menor_25": 0.2472}, {"mes": 4.0, "fecha": "2015-05-01T00:00:00", "clientes": 631957, "entran": 3501, "ultimo_mes_en_panel": 1659, "alta_este_mes": 1995, "tasa_actividad": 0.5484, "productos_medios": 1.772, "tasa_nomina": 0.0658, "renta_faltante": 0.1739, "frac_universitario": 0.3624, "frac_menor_25": 0.2465}, {"mes": 5.0, "fecha": "2015-06-01T00:00:00", "clientes": 632110, "entran": 3217, "ultimo_mes_en_panel": 1817, "alta_este_mes": 1872, "tasa_actividad": 0.5512, "productos_medios": 1.7916, "tasa_nomina": 0.0691, "renta_faltante": 0.1716, "frac_universitario": 0.3614, "frac_menor_25": 0.2461}, {"mes": 6.0, "fecha": "2015-07-01T00:00:00", "clientes": 829817, "entran": 193115, "ultimo_mes_en_panel": 1381, "alta_este_mes": 16708, "tasa_actividad": 0.429, "productos_medios": 1.3834, "tasa_nomina": 0.0542, "renta_faltante": 0.1718, "frac_universitario": 0.3361, "frac_menor_25": 0.247}, {"mes": 7.0, "fecha": "2015-08-01T00:00:00", "clientes": 843201, "entran": 14799, "ultimo_mes_en_panel": 1353, "alta_este_mes": 14378, "tasa_actividad": 0.43, "productos_medios": 1.366, "tasa_nomina": 0.0507, "renta_faltante": 0.1711, "frac_universitario": 0.3433, "frac_menor_25": 0.252}, {"mes": 8.0, "fecha": "2015-09-01T00:00:00", "clientes": 865440, "entran": 23598, "ultimo_mes_en_panel": 1696, "alta_este_mes": 23180, "tasa_actividad": 0.4286, "productos_medios": 1.3562, "tasa_nomina": 0.0505, "renta_faltante": 0.1803, "frac_universitario": 0.349, "frac_menor_25": 0.2618}, {"mes": 9.0, "fecha": "2015-10-01T00:00:00", "clientes": 892251, "entran": 28495, "ultimo_mes_en_panel": 2005, "alta_este_mes": 27985, "tasa_actividad": 0.4233, "productos_medios": 1.3427, "tasa_nomina": 0.05, "renta_faltante": 0.2055, "frac_universitario": 0.3604, "frac_menor_25": 0.2731}, {"mes": 10.0, "fecha": "2015-11-01T00:00:00", "clientes": 906109, "entran": 15862, "ultimo_mes_en_panel": 1753, "alta_este_mes": 15294, "tasa_actividad": 0.4213, "productos_medios": 1.3329, "tasa_nomina": 0.0496, "renta_faltante": 0.2188, "frac_universitario": 0.3753, "frac_menor_25": 0.2754}, {"mes": 11.0, "fecha": "2015-12-01T00:00:00", "clientes": 912021, "entran": 7667, "ultimo_mes_en_panel": 3003, "alta_este_mes": 7295, "tasa_actividad": 0.4218, "productos_medios": 1.3384, "tasa_nomina": 0.0523, "renta_faltante": 0.2248, "frac_universitario": 0.3812, "frac_menor_25": 0.2731}, {"mes": 12.0, "fecha": "2016-01-01T00:00:00", "clientes": 916269, "entran": 7234, "ultimo_mes_en_panel": 1902, "alta_este_mes": 6814, "tasa_actividad": 0.4232, "productos_medios": 1.3165, "tasa_nomina": 0.0439, "renta_faltante": 0.2302, "frac_universitario": 0.3828, "frac_menor_25": 0.2675}, {"mes": 13.0, "fecha": "2016-02-01T00:00:00", "clientes": 920904, "entran": 6473, "ultimo_mes_en_panel": 1809, "alta_este_mes": 5873, "tasa_actividad": 0.4235, "productos_medios": 1.328, "tasa_nomina": 0.0494, "renta_faltante": 0.235, "frac_universitario": 0.3804, "frac_menor_25": 0.2626}, {"mes": 14.0, "fecha": "2016-03-01T00:00:00", "clientes": 925076, "entran": 5913, "ultimo_mes_en_panel": 1648, "alta_este_mes": 5064, "tasa_actividad": 0.4248, "productos_medios": 1.3307, "tasa_nomina": 0.0508, "renta_faltante": 0.2393, "frac_universitario": 0.3782, "frac_menor_25": 0.2566}, {"mes": 15.0, "fecha": "2016-04-01T00:00:00", "clientes": 928274, "entran": 4754, "ultimo_mes_en_panel": 1611, "alta_este_mes": 4452, "tasa_actividad": 0.425, "productos_medios": 1.3292, "tasa_nomina": 0.0497, "renta_faltante": 0.2427, "frac_universitario": 0.3764, "frac_menor_25": 0.2514}, {"mes": 16.0, "fecha": "2016-05-01T00:00:00", "clientes": 931453, "entran": 4693, "ultimo_mes_en_panel": 931453, "alta_este_mes": 4383, "tasa_actividad": 0.4248, "productos_medios": 1.3318, "tasa_nomina": 0.0519, "renta_faltante": 0.2459, "frac_universitario": 0.3747, "frac_menor_25": 0.2461}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

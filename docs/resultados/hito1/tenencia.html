@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@6"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@7"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-af81804efcb5098e370f8c367b29aa6a"}, "mark": {"type": "bar"}, "encoding": {"x": {"axis": {"format": "%"}, "field": "frac", "title": "Clientes con el producto", "type": "quantitative"}, "y": {"field": "producto", "sort": "-x", "title": null, "type": "nominal"}}, "height": 432, "title": "Tenencia por producto, mayo de 2016", "width": 480, "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json", "datasets": {"data-af81804efcb5098e370f8c367b29aa6a": [{"producto": "Cuenta de ahorros", "frac": 8e-05}, {"producto": "Avales", "frac": 2e-05}, {"producto": "Cuenta corriente", "frac": 0.60295}, {"producto": "Cuenta derivados", "frac": 0.00034}, {"producto": "Cuenta n\u00f3mina", "frac": 0.07844}, {"producto": "Cuenta joven", "frac": 0.00814}, {"producto": "Cuenta m\u00e1s particulares", "frac": 0.00869}, {"producto": "Cuenta particulares", "frac": 0.10799}, {"producto": "Cuenta particulares plus", "frac": 0.03572}, {"producto": "Dep\u00f3sito a corto plazo", "frac": 0.00034}, {"producto": "Dep\u00f3sito a mediano plazo", "frac": 0.0011}, {"producto": "Dep\u00f3sito a largo plazo", "frac": 0.03351}, {"producto": "Cuenta electr\u00f3nica", "frac": 0.08143}, {"producto": "Fondos", "frac": 0.01577}, {"producto": "Hipoteca", "frac": 0.00486}, {"producto": "Plan de pensiones", "frac": 0.0079}, {"producto": "Pr\u00e9stamo", "frac": 0.00214}, {"producto": "Impuestos", "frac": 0.04889}, {"producto": "Tarjeta de cr\u00e9dito", "frac": 0.03738}, {"producto": "Valores", "frac": 0.023}, {"producto": "Cuenta hogar", "frac": 0.00318}, {"producto": "N\u00f3mina", "frac": 0.05186}, {"producto": "Pensiones (n\u00f3mina)", "frac": 0.05674}, {"producto": "D\u00e9bito autom\u00e1tico", "frac": 0.12137}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

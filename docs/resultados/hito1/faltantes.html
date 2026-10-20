@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@6"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@7"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "layer": [{"mark": {"type": "line", "point": true}, "encoding": {"color": {"field": "variable", "scale": {"range": ["#2f6db5", "#d9822b", "#2e9e6b", "#c8453b", "#7b5ea7", "#8a8f98", "#3aa6b9", "#b5892f"]}, "title": null, "type": "nominal"}, "x": {"field": "mes", "scale": {"nice": false, "zero": false}, "title": "Mes", "type": "quantitative"}, "y": {"axis": {"format": "%"}, "field": "frac", "title": "Fracci\u00f3n de filas", "type": "quantitative"}}}], "data": {"name": "data-3f71ade31ae2d97b3733011978fef1a7"}, "height": 260, "title": "Faltantes por mes", "width": 560, "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json", "datasets": {"data-3f71ade31ae2d97b3733011978fef1a7": [{"mes": 0.0, "fecha": "2015-01-01T00:00:00", "variable": "Renta", "frac": 0.17839}, {"mes": 1.0, "fecha": "2015-02-01T00:00:00", "variable": "Renta", "frac": 0.17711}, {"mes": 2.0, "fecha": "2015-03-01T00:00:00", "variable": "Renta", "frac": 0.17595}, {"mes": 3.0, "fecha": "2015-04-01T00:00:00", "variable": "Renta", "frac": 0.17492}, {"mes": 4.0, "fecha": "2015-05-01T00:00:00", "variable": "Renta", "frac": 0.17393}, {"mes": 5.0, "fecha": "2015-06-01T00:00:00", "variable": "Renta", "frac": 0.17155}, {"mes": 6.0, "fecha": "2015-07-01T00:00:00", "variable": "Renta", "frac": 0.17177}, {"mes": 7.0, "fecha": "2015-08-01T00:00:00", "variable": "Renta", "frac": 0.17106}, {"mes": 8.0, "fecha": "2015-09-01T00:00:00", "variable": "Renta", "frac": 0.18029}, {"mes": 9.0, "fecha": "2015-10-01T00:00:00", "variable": "Renta", "frac": 0.20545}, {"mes": 10.0, "fecha": "2015-11-01T00:00:00", "variable": "Renta", "frac": 0.21885}, {"mes": 11.0, "fecha": "2015-12-01T00:00:00", "variable": "Renta", "frac": 0.22481}, {"mes": 12.0, "fecha": "2016-01-01T00:00:00", "variable": "Renta", "frac": 0.23016}, {"mes": 13.0, "fecha": "2016-02-01T00:00:00", "variable": "Renta", "frac": 0.23496}, {"mes": 14.0, "fecha": "2016-03-01T00:00:00", "variable": "Renta", "frac": 0.23929}, {"mes": 15.0, "fecha": "2016-04-01T00:00:00", "variable": "Renta", "frac": 0.24266}, {"mes": 16.0, "fecha": "2016-05-01T00:00:00", "variable": "Renta", "frac": 0.24587}, {"mes": 0.0, "fecha": "2015-01-01T00:00:00", "variable": "Canal", "frac": 0.0112}, {"mes": 1.0, "fecha": "2015-02-01T00:00:00", "variable": "Canal", "frac": 0.00953}, {"mes": 2.0, "fecha": "2015-03-01T00:00:00", "variable": "Canal", "frac": 0.00815}, {"mes": 3.0, "fecha": "2015-04-01T00:00:00", "variable": "Canal", "frac": 0.00686}, {"mes": 4.0, "fecha": "2015-05-01T00:00:00", "variable": "Canal", "frac": 0.00574}, {"mes": 5.0, "fecha": "2015-06-01T00:00:00", "variable": "Canal", "frac": 0.00298}, {"mes": 6.0, "fecha": "2015-07-01T00:00:00", "variable": "Canal", "frac": 0.02299}, {"mes": 7.0, "fecha": "2015-08-01T00:00:00", "variable": "Canal", "frac": 0.01981}, {"mes": 8.0, "fecha": "2015-09-01T00:00:00", "variable": "Canal", "frac": 0.02951}, {"mes": 9.0, "fecha": "2015-10-01T00:00:00", "variable": "Canal", "frac": 0.03416}, {"mes": 10.0, "fecha": "2015-11-01T00:00:00", "variable": "Canal", "frac": 0.0197}, {"mes": 11.0, "fecha": "2015-12-01T00:00:00", "variable": "Canal", "frac": 0.01063}, {"mes": 12.0, "fecha": "2016-01-01T00:00:00", "variable": "Canal", "frac": 0.01018}, {"mes": 13.0, "fecha": "2016-02-01T00:00:00", "variable": "Canal", "frac": 0.00921}, {"mes": 14.0, "fecha": "2016-03-01T00:00:00", "variable": "Canal", "frac": 0.00817}, {"mes": 15.0, "fecha": "2016-04-01T00:00:00", "variable": "Canal", "frac": 0.00728}, {"mes": 16.0, "fecha": "2016-05-01T00:00:00", "variable": "Canal", "frac": 0.00719}, {"mes": 0.0, "fecha": "2015-01-01T00:00:00", "variable": "Segmento", "frac": 0.01123}, {"mes": 1.0, "fecha": "2015-02-01T00:00:00", "variable": "Segmento", "frac": 0.00957}, {"mes": 2.0, "fecha": "2015-03-01T00:00:00", "variable": "Segmento", "frac": 0.00818}, {"mes": 3.0, "fecha": "2015-04-01T00:00:00", "variable": "Segmento", "frac": 0.00685}, {"mes": 4.0, "fecha": "2015-05-01T00:00:00", "variable": "Segmento", "frac": 0.00573}, {"mes": 5.0, "fecha": "2015-06-01T00:00:00", "variable": "Segmento", "frac": 0.00296}, {"mes": 6.0, "fecha": "2015-07-01T00:00:00", "variable": "Segmento", "frac": 0.02333}, {"mes": 7.0, "fecha": "2015-08-01T00:00:00", "variable": "Segmento", "frac": 0.02014}, {"mes": 8.0, "fecha": "2015-09-01T00:00:00", "variable": "Segmento", "frac": 0.02987}, {"mes": 9.0, "fecha": "2015-10-01T00:00:00", "variable": "Segmento", "frac": 0.03444}, {"mes": 10.0, "fecha": "2015-11-01T00:00:00", "variable": "Segmento", "frac": 0.02004}, {"mes": 11.0, "fecha": "2015-12-01T00:00:00", "variable": "Segmento", "frac": 0.01092}, {"mes": 12.0, "fecha": "2016-01-01T00:00:00", "variable": "Segmento", "frac": 0.0105}, {"mes": 13.0, "fecha": "2016-02-01T00:00:00", "variable": "Segmento", "frac": 0.00958}, {"mes": 14.0, "fecha": "2016-03-01T00:00:00", "variable": "Segmento", "frac": 0.00847}, {"mes": 15.0, "fecha": "2016-04-01T00:00:00", "variable": "Segmento", "frac": 0.00759}, {"mes": 16.0, "fecha": "2016-05-01T00:00:00", "variable": "Segmento", "frac": 0.00754}, {"mes": 0.0, "fecha": "2015-01-01T00:00:00", "variable": "Edad", "frac": 0.01112}, {"mes": 1.0, "fecha": "2015-02-01T00:00:00", "variable": "Edad", "frac": 0.00947}, {"mes": 2.0, "fecha": "2015-03-01T00:00:00", "variable": "Edad", "frac": 0.00809}, {"mes": 3.0, "fecha": "2015-04-01T00:00:00", "variable": "Edad", "frac": 0.00681}, {"mes": 4.0, "fecha": "2015-05-01T00:00:00", "variable": "Edad", "frac": 0.00569}, {"mes": 5.0, "fecha": "2015-06-01T00:00:00", "variable": "Edad", "frac": 0.00294}, {"mes": 6.0, "fecha": "2015-07-01T00:00:00", "variable": "Edad", "frac": 0.0}, {"mes": 7.0, "fecha": "2015-08-01T00:00:00", "variable": "Edad", "frac": 0.0}, {"mes": 8.0, "fecha": "2015-09-01T00:00:00", "variable": "Edad", "frac": 0.0}, {"mes": 9.0, "fecha": "2015-10-01T00:00:00", "variable": "Edad", "frac": 0.0}, {"mes": 10.0, "fecha": "2015-11-01T00:00:00", "variable": "Edad", "frac": 0.0}, {"mes": 11.0, "fecha": "2015-12-01T00:00:00", "variable": "Edad", "frac": 0.0}, {"mes": 12.0, "fecha": "2016-01-01T00:00:00", "variable": "Edad", "frac": 0.0}, {"mes": 13.0, "fecha": "2016-02-01T00:00:00", "variable": "Edad", "frac": 0.0}, {"mes": 14.0, "fecha": "2016-03-01T00:00:00", "variable": "Edad", "frac": 0.0}, {"mes": 15.0, "fecha": "2016-04-01T00:00:00", "variable": "Edad", "frac": 0.0}, {"mes": 16.0, "fecha": "2016-05-01T00:00:00", "variable": "Edad", "frac": 0.0}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
